@@ -4,3 +4,7 @@ responses/exr2/*
 responses/exr3/*
 responses/exr4/*
 responses/exr5/*
+!responses/exr2/.gitkeep
+!responses/exr3/.gitkeep
+!responses/exr4/.gitkeep
+!responses/exr5/.gitkeep
