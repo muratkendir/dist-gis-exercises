@@ -1,9 +1,5 @@
 env-exr
 .ipynb_checkpoints
-!responses/exr2/
-!responses/exr3/
-!responses/exr4/
-!responses/exr5/
 responses/exr2/*
 responses/exr3/*
 responses/exr4/*
