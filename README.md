@@ -6,14 +6,19 @@ Run the Python Notebook via Binder:
 
 ## Local installation for Linux:
 
-### Prerequirements: 
+### Prerequirements:
 
 - git
 - python3
 - venv (```pip install venv```)
-- Check the python installation by typing ```python3 --version``` in Terminal (Command Line Interface). 
+- Check the python installation by typing ```python3 --version``` in Terminal (Command Line Interface).
+- Alternatively you can execute a selected code from the "raw_code" folder like below:
+```bash
+python3 --interactive raw_code/exr2/exr2_step2.py
+```
+  - TIP: Type ```quit()``` to exit from the current python shell.
 
-Installation:
+### Installation:
 
 - (1) Go to your home directory and copy the github repository to your computer in Terminal:
 ```bash
