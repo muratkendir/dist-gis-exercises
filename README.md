@@ -6,7 +6,7 @@ Run the Python Notebook via Binder:
 
 ## Local Installation for Windows
 
-<img style="float: right; width: 100px; height: auto;" src="http://img4.wikia.nocookie.net/__cb20141027012809/simpsons/images/8/8e/Bill_Gates.png">
+<img style="float: right; width: 100px; height: auto;" align="right" width=100 src="http://img4.wikia.nocookie.net/__cb20141027012809/simpsons/images/8/8e/Bill_Gates.png">
 
 ### Prerequisites:
 
@@ -63,7 +63,7 @@ jupyter notebook
 
 ## Local installation for Linux:
 
-<img style="float: right; width: 100px; height: auto;" src="https://seeklogo.com/images/L/linux-logo-704D6BB91C-seeklogo.com.png">
+<img style="float:right; width:100px; height:auto;" align="right" width=100 src="https://vignette.wikia.nocookie.net/penguinsofmadagascar/images/f/f5/Kowalski_(2).png/revision/latest?cb=20180425080533">
 
 ### Prerequisites:
 
