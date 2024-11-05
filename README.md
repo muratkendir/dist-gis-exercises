@@ -56,6 +56,10 @@ pip install notebook
 jupyter notebook
 ```
   - TIP: Press Ctrl+C to shut down the current Jupyter session.
+- (7) Find the file with IPYNB extension and double click on it.
+  - To edit a cell (A block may contain code or makrdown document) double click on it
+  - To run a cell press Ctrl+Enter
+  - To swtich the content type of the cell use the dropdown menu on the top menu.
 
 ## Local installation for Linux:
 
@@ -88,34 +92,38 @@ cd dist-gis-exercises
 ```bash
 python3 -m venv myenv
 ```
-- (4) Check the "myenv" by listing it's contents:
+- (Checkpoint) Check the "myenv" by listing it's contents:
 ```bash
 ls myenv
 ls myenv/bin
 ```
-- (5) Activate the environment (Environment name should appear on the left):
+- (4) Activate the environment (Environment name should appear on the left):
 ```bash
 source myenv/bin/activate
 ```
   - TIP: Type only ```deactivate``` to exit from the current environment and turn back to the base.
-- (6) Check the list of required python libraries:
+- (Checkpoint) Check the list of required python libraries:
 ```bash
 cat requirements.txt
 ```
-- (7) Install the required libraries:
+- (5) Install the required libraries:
 ```bash
 pip install --requirement requirements.txt
 ```
-- (8) Install the Jupyter Notebook using pip command:
+- (6) Install the Jupyter Notebook using pip command:
 ```bash
 pip install notebook
 ```
-- (9) Run the Jupyter Notebook and visit the locally hosted site (localhost:8888) after that:
+- (7) Run the Jupyter Notebook and visit the locally hosted site (localhost:8888) after that:
 ```bash
 jupyter notebook
 ```
   - TIP: Press Ctrl+C to shut down the current Jupyter session.
-- (10) (Optional) If you want to check libraries, classes or built-ins, it is recommended to use bpython. Install bpython via pip:
+- (8) Find the file with IPYNB extension and double click on it.
+  - To edit a cell (A block may contain code or makrdown document) double click on it
+  - To run a cell press Ctrl+Enter
+  - To swtich the content type of the cell use the dropdown menu on the top menu. 
+- (9) (Optional) If you want to check libraries, classes or built-ins, it is recommended to use bpython. Install bpython via pip:
 ```bash
 pip install bpython
 ```
