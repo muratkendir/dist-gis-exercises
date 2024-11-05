@@ -8,7 +8,7 @@ Run the Python Notebook via Binder:
 
 <img style="float: right; width: 100px; height: auto;" src="http://img4.wikia.nocookie.net/__cb20141027012809/simpsons/images/8/8e/Bill_Gates.png">
 
-### Prerequirements:
+### Prerequisites:
 
 - python3
 - venv (```pip install venv```)
@@ -65,7 +65,7 @@ jupyter notebook
 
 <img style="float: right; width: 100px; height: auto;" src="https://seeklogo.com/images/L/linux-logo-704D6BB91C-seeklogo.com.png">
 
-### Prerequirements:
+### Prerequisites:
 
 - git
 - python3
