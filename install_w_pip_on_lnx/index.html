@@ -433,73 +433,51 @@
 <li>python3</li>
 <li>venv (<code>pip install venv</code>)</li>
 <li>Check the python installation by typing <code>python3 --version</code> in Terminal (Command Line Interface).</li>
-<li>Alternatively you can execute a selected code from the "raw_code" folder like below:</li>
-</ul>
-<pre><code class="language-bash">python3 --interactive raw_codes/exr2/exr2_step2.py
-</code></pre>
-<ul>
+<li>Alternatively you can execute a selected code from the "raw_code" folder like below:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>--interactive<span class="w"> </span>raw_codes/exr2/exr2_step2.py
+</code></pre></div></li>
 <li>TIP: Type <code>quit()</code> to exit from the current python shell.</li>
 </ul>
 <h2 id="installation">Installation:</h2>
 <ul>
-<li>(1) Go to your home directory and copy the github repository to your computer in Terminal:</li>
-</ul>
-<pre><code class="language-bash">cd ~
-git clone https://github.com/muratkendir/dist-gis-exercises.git
-</code></pre>
-<ul>
-<li>(2) Go into the downloaded directory:</li>
-</ul>
-<pre><code class="language-bash">cd dist-gis-exercises
-</code></pre>
-<ul>
-<li>(3) Create a python environment as "myenv" or just use a custom name:</li>
-</ul>
-<pre><code class="language-bash">python3 -m venv myenv
-</code></pre>
-<ul>
-<li>(Checkpoint) Check the "myenv" by listing it's contents:</li>
-</ul>
-<pre><code class="language-bash">ls myenv
-ls myenv/bin
-</code></pre>
-<ul>
-<li>(4) Activate the environment (Environment name should appear on the left):</li>
-</ul>
-<pre><code class="language-bash">source myenv/bin/activate
-</code></pre>
-<ul>
+<li>(1) Go to your home directory and copy the github repository to your computer in Terminal:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>~
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/muratkendir/dist-gis-exercises.git
+</code></pre></div></li>
+<li>(2) Go into the downloaded directory:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>dist-gis-exercises
+</code></pre></div></li>
+<li>(3) Create a python environment as "myenv" or just use a custom name:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>myenv
+</code></pre></div></li>
+<li>(Checkpoint) Check the "myenv" by listing it's contents:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ls<span class="w"> </span>myenv
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>ls<span class="w"> </span>myenv/bin
+</code></pre></div></li>
+<li>(4) Activate the environment (Environment name should appear on the left):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">source</span><span class="w"> </span>myenv/bin/activate
+</code></pre></div></li>
 <li>TIP: Type only <code>deactivate</code> to exit from the current environment and turn back to the base.</li>
-<li>(Checkpoint) Check the list of required python libraries:</li>
-</ul>
-<pre><code class="language-bash">cat requirements.txt
-</code></pre>
-<ul>
-<li>(5) Install the required libraries:</li>
-</ul>
-<pre><code class="language-bash">pip install --requirement requirements.txt
-</code></pre>
-<ul>
-<li>(6) Install the Jupyter Notebook using pip command:</li>
-</ul>
-<pre><code class="language-bash">pip install notebook
-</code></pre>
-<ul>
-<li>(7) Run the Jupyter Notebook and visit the locally hosted site (localhost:8888) after that:</li>
-</ul>
-<pre><code class="language-bash">jupyter notebook
-</code></pre>
-<ul>
+<li>(Checkpoint) Check the list of required python libraries:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>cat<span class="w"> </span>requirements.txt
+</code></pre></div></li>
+<li>(5) Install the required libraries:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--requirement<span class="w"> </span>requirements.txt
+</code></pre></div></li>
+<li>(6) Install the Jupyter Notebook using pip command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span>notebook
+</code></pre></div></li>
+<li>(7) Run the Jupyter Notebook and visit the locally hosted site (localhost:8888) after that:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>jupyter<span class="w"> </span>notebook
+</code></pre></div></li>
 <li>TIP: Press Ctrl+C to shut down the current Jupyter session.</li>
 <li>(8) Find the file with IPYNB extension and double click on it.</li>
 <li>To edit a cell (A block may contain code or makrdown document) double click on it</li>
 <li>To run a cell press Ctrl+Enter</li>
 <li>To swtich the content type of the cell use the dropdown menu on the top menu. </li>
-<li>(9) (Optional) If you want to check libraries, classes or built-ins, it is recommended to use bpython. Install bpython via pip:</li>
-</ul>
-<pre><code class="language-bash">pip install bpython
-</code></pre>
-<ul>
+<li>(9) (Optional) If you want to check libraries, classes or built-ins, it is recommended to use bpython. Install bpython via pip:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pip<span class="w"> </span>install<span class="w"> </span>bpython
+</code></pre></div></li>
 <li>TIP: Type <code>Exit()</code> to close current bpython session.</li>
 </ul>
 
