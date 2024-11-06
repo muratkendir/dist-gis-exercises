@@ -8,7 +8,7 @@
 - venv (```pip install venv```)
 - Check the python installation by typing ```python --version``` in CMD (Command Prompt).
 - Alternatively you can execute a selected code from the "raw_code" folder like below:
-```bash
+```bat
 python -i .\raw_codes\exr2\exr2_step2.py
 ```
   - TIP: Type ```quit()``` to exit from the current python shell.
@@ -16,37 +16,37 @@ python -i .\raw_codes\exr2\exr2_step2.py
 ### Installation:
 
 - (1) Download the ZIP file from the [github repository](https://github.com/muratkendir/dist-gis-exercises) and extract the contents into a folder. Than simply change the directory to the extracted one:
-```bash
+```bat
 cd  C:\Users\USERNAME\EXTRACTED_FOLDER
 ```
 - (2) Create a python environment as "myenv" or just use a custom name:
-```bash
+```bat
 python -m venv myenv
 ```
 - (Checkpoint 1) Check the "myenv" by listing it's contents:
-```bash
+```bat
 dir myenv
 dir myenv\Scripts
 ```
 - (3) Activate the environment (Environment name should appear on the left):
-```bash
+```bat
 .\myenv\Scripts\activate.bat
 ```
   - TIP: Type ```.\myenv\Scripts\deactivate.bat``` to deactivate the current environment and turn back to the base.
 - (Checkpoint) Check the list of required python libraries:
-```bash
+```bat
 type requirements.txt
 ```
 - (4) Install the required libraries:
-```bash
+```bat
 pip install --requirement requirements.txt
 ```
 - (5) Install the Jupyter Notebook using pip command:
-```bash
+```bat
 pip install notebook
 ```
 - (6) Run the Jupyter Notebook and visit the locally hosted site (localhost:8888) after that:
-```bash
+```bat
 jupyter notebook
 ```
   - TIP: Press Ctrl+C to shut down the current Jupyter session.

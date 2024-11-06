@@ -2,6 +2,7 @@ site_name: "dist-gis-exercises (Educational Python Notebooks)"
 site_url: 
 nav:
   - Home: index.md
+  - "Exercise 2 (Python Intro)": exercise2.md 
   - "Installation Instructions":
     - "Windows w PIP": install_w_pip_on_win.md
     - "Linux w PIP": install_w_pip_on_lnx.md
@@ -13,3 +14,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      clickable_checkbox: true
