@@ -863,25 +863,25 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <li>However, before starting this exercise you need to know more about the datasets and how to access it.</li>
 </ul>
 <h2 id="step-1-visit-bayernatlas-website">Step 1) Visit <a href="https://geoportal.bayern.de/bayernatlas">BayernAtlas</a> website</h2>
-<ul>
-<li>[ ] Open the "web developer tool" by pressing Ctrl+Shift+C (or Ctrl+Shift+I) or by finding the tool in the browser menu.</li>
-<li>[ ] Select a background map at any specific location on the map.</li>
-<li>[ ] Check the URL of a raster image taken as a base map from the BayernAtlas website.</li>
-<li>[ ] Copy the URL and try requesting this image by pasting the URL into the address bar.</li>
-<li>[ ] or you can test the URL using the "curl" program at the command prompt (CMD / Eingabeaufforderung).
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Open the "web developer tool" by pressing Ctrl+Shift+C (or Ctrl+Shift+I) or by finding the tool in the browser menu.</li>
+<li class="task-list-item"><input type="checkbox"/> Select a background map at any specific location on the map.</li>
+<li class="task-list-item"><input type="checkbox"/> Check the URL of a raster image taken as a base map from the BayernAtlas website.</li>
+<li class="task-list-item"><input type="checkbox"/> Copy the URL and try requesting this image by pasting the URL into the address bar.</li>
+<li class="task-list-item"><input type="checkbox"/> or you can test the URL using the "curl" program at the command prompt (CMD / Eingabeaufforderung).
 <img alt="BayernAtlas Basemap Request Sample" src="../images/exr2/bayernatlas_wmts_image.png" /></li>
 </ul>
 <h2 id="step-2-make-a-request-with-python-and-requests-library">Step 2) Make a request with Python and "Requests" library</h2>
-<ul>
-<li>[ ] Start a text editor (Notepad, Notepad++, SublimeText) or an IDE (Idle, Spyder, PyCharm)</li>
-<li>[ ] Write the following code in the editor and save it as a file with .PY extension.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Start a text editor (Notepad, Notepad++, SublimeText) or an IDE (Idle, Spyder, PyCharm)</li>
+<li class="task-list-item"><input type="checkbox"/> Write the following code in the editor and save it as a file with .PY extension.</li>
 <li>Tip: Enable file extensions in Windows Explorer to view all file extensions.<ul>
 <li><a href="https://fileinfo.com/help/windows_10_show_file_extensions">how to enable file extensions (in english)</a></li>
 <li><a href="https://www.giga.de/tipp/windows-10-und-11-dateiendungen-anzeigen-so-gehts/#windows_10_dateiendungen_einblenden">how to enable file extensions (in german)</a></li>
 </ul>
 </li>
-<li>[ ] Open command prompt (Eingabeaufforderung) and navigate to the same folder as your python file. Execute the file by typing <code>python MY_PYTHON_CODE.py</code> (or type in <code>python3 MY_PYTHON_CODE.py</code> in Linux systems)</li>
-<li>[ ] Try running python within <strong>interactive</strong> mode by typing <code>python --interactive MY_PYTHON_CODE.py</code>.</li>
+<li class="task-list-item"><input type="checkbox"/> Open command prompt (Eingabeaufforderung) and navigate to the same folder as your python file. Execute the file by typing <code>python MY_PYTHON_CODE.py</code> (or type in <code>python3 MY_PYTHON_CODE.py</code> in Linux systems)</li>
+<li class="task-list-item"><input type="checkbox"/> Try running python within <strong>interactive</strong> mode by typing <code>python --interactive MY_PYTHON_CODE.py</code>.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Import the native &quot;requests&quot; library to send a request to the web source.</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">requests</span>
@@ -925,57 +925,57 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <li><code>print(mydata)</code> represents the content of the returned object.</li>
 </ul>
 <h3 id="2b-how-to-work-with-libraries">2b) How to work with libraries?</h3>
-<ul>
-<li>[ ] Find and explore the documentation pages available on the Internet. <a href="https://requests.readthedocs.io/en/latest/user/quickstart/">requests doc</a></li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Find and explore the documentation pages available on the Internet. <a href="https://requests.readthedocs.io/en/latest/user/quickstart/">requests doc</a></li>
 <li>Tip: You can use package repositories to find links to documentation pages. <a href="https://pypi.org/project/requests/">Python Package Installer site</a></li>
-<li>[ ] Use the help() function to read the summarized documentation about the requests library. Type (<code>help(requests)</code>) and run the code.</li>
+<li class="task-list-item"><input type="checkbox"/> Use the help() function to read the summarized documentation about the requests library. Type (<code>help(requests)</code>) and run the code.</li>
 </ul>
 <h3 id="2c-how-to-expose-the-existing-methods-in-a-library">2c) How to expose the existing methods in a library?</h3>
-<ul>
-<li>[ ] In Python, everything is considered an object and each object can be examined by predefined functions such as type, dir, help etc. These predefined functions are called  "Built-ins" and can be listed by typing <code>dir(__builtins__)</code></li>
-<li>[ ] Since the requests class is also considered an object you can follow the same procedure to expose existing methods for this class. Type <code>dir(requests)</code></li>
-<li>[ ] Note that standard HTTP methods (get, post, put, delete etc.) area available in the list.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> In Python, everything is considered an object and each object can be examined by predefined functions such as type, dir, help etc. These predefined functions are called  "Built-ins" and can be listed by typing <code>dir(__builtins__)</code></li>
+<li class="task-list-item"><input type="checkbox"/> Since the requests class is also considered an object you can follow the same procedure to expose existing methods for this class. Type <code>dir(requests)</code></li>
+<li class="task-list-item"><input type="checkbox"/> Note that standard HTTP methods (get, post, put, delete etc.) area available in the list.</li>
 </ul>
 <h3 id="2d-what-we-got-by-the-request">2d) What we got by the request?</h3>
-<ul>
-<li>[ ] If you need to learn more about the data you received with the request, use the following functions:</li>
-<li>[ ] <code>help(mydata)</code></li>
-<li>[ ] <code>type(mydata)</code></li>
-<li>[ ] <code>dir(mydata)</code></li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> If you need to learn more about the data you received with the request, use the following functions:</li>
+<li class="task-list-item"><input type="checkbox"/> <code>help(mydata)</code></li>
+<li class="task-list-item"><input type="checkbox"/> <code>type(mydata)</code></li>
+<li class="task-list-item"><input type="checkbox"/> <code>dir(mydata)</code></li>
 <li>Note that if you are using an IDE to code you may have some useful tools to represent the information of variables. Check Spyder or PyCharm or Visual Studio Code IDE's.</li>
-<li>[ ] You can also examine the hierarchical structure of the "requests" class imported with the library.</li>
-<li>[ ] Try to find requests.models.Response with "dir" function:<ul>
-<li>[ ] dir(requests)</li>
-<li>[ ] dir(requests.models)</li>
-<li>[ ] dir(requests.models.Response)</li>
+<li class="task-list-item"><input type="checkbox"/> You can also examine the hierarchical structure of the "requests" class imported with the library.</li>
+<li class="task-list-item"><input type="checkbox"/> Try to find requests.models.Response with "dir" function:<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> dir(requests)</li>
+<li class="task-list-item"><input type="checkbox"/> dir(requests.models)</li>
+<li class="task-list-item"><input type="checkbox"/> dir(requests.models.Response)</li>
 <li>Note that the class names must be spelled exactly the same, because the python interpreter (the interactive compiler running at the backgorund) is <strong>case-sensitive</strong>. (e.g. <code>dir(requests.models.response)</code> would not work.)</li>
 </ul>
 </li>
-<li>[ ] If you followed the commands you might notice that the variable "mydata" is an instance object of the class "requests.models.Response". You can check it with the function <code>isinstance(my_object, (class_name))</code>.</li>
+<li class="task-list-item"><input type="checkbox"/> If you followed the commands you might notice that the variable "mydata" is an instance object of the class "requests.models.Response". You can check it with the function <code>isinstance(my_object, (class_name))</code>.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">mydata</span><span class="p">,</span> <span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">)))</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>True
 </code></pre></div>
 <h2 id="step-3-how-to-view-the-content-of-the-response">Step 3) How to view the content of the response?</h2>
-<ul>
-<li>[ ] If you type <code>dir(mydata)</code> again, you can see all available methods to reveal the content of the object. <ul>
-<li>[ ] Try to reveal the content by typing <code>print( mydata.content )</code></li>
-<li>[ ] or by typing <code>print( mydata.text )</code></li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> If you type <code>dir(mydata)</code> again, you can see all available methods to reveal the content of the object. <ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Try to reveal the content by typing <code>print( mydata.content )</code></li>
+<li class="task-list-item"><input type="checkbox"/> or by typing <code>print( mydata.text )</code></li>
 <li>Note that because the file is an image file in binary format, the content is displayed as strings that are not human readable.</li>
 </ul>
 </li>
 <li>TIP: You can follow different tactics to view an image file in python. A standard library (native library) called "webbrowser" can call a minimal browser and display the image inside the browser. Another method would be import the "Image" class from the "PIL" library. To import this class, you can add <code>from PIL import Image</code> at the beginning of your code block. Since "PIL" is not a native python library, you may need to install it on your environment using (<code>pip install Pillow</code>)</li>
-<li>[ ] For now we will just save the image file in the same folder using the following code:</li>
+<li class="task-list-item"><input type="checkbox"/> For now we will just save the image file in the same folder using the following code:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/exr2/my_requested_image.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_image_file</span><span class="p">:</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>        <span class="n">my_image_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mydata</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>File might be saved, check the folder: responses/exr2
 </code></pre></div>
-<ul>
-<li>[ ] "open" is another built-in function in pyhton. It needs the filename as the first parameter and the file mode as the second parameter. If you want to learn more about the "file mode", visit this page: <a href="https://realpython.com/read-write-files-python/">Real Python</a> or type <code>help(open)</code> in the python interpreter.</li>
-<li>[ ] We need to set the default export directory as relative path. To make these relative paths compatible with different operating systems (OS), the directory separator must be detected and replaced regarding to the current OS. A native python library "os" has such classes (<strong>os.path.sep</strong> and <strong>os.path.join</strong>) that makes it easy to implement.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> "open" is another built-in function in pyhton. It needs the filename as the first parameter and the file mode as the second parameter. If you want to learn more about the "file mode", visit this page: <a href="https://realpython.com/read-write-files-python/">Real Python</a> or type <code>help(open)</code> in the python interpreter.</li>
+<li class="task-list-item"><input type="checkbox"/> We need to set the default export directory as relative path. To make these relative paths compatible with different operating systems (OS), the directory separator must be detected and replaced regarding to the current OS. A native python library "os" has such classes (<strong>os.path.sep</strong> and <strong>os.path.join</strong>) that makes it easy to implement.</li>
 </ul>
 <p>TIP: The reason for using "open" function via "with" is that the file should be closed after the manipulation. In the past, developers were often used the "close" function after every file manipulation. There is no need to use this file condition test when using "with" phrase.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">requests</span>
@@ -1020,8 +1020,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <p>An example comparison between C and Python programming languages shows how indentation interpreted in python:
 <img alt="PythonvsC" src="../images/exr2/py_vs_c_identation.png" /></p>
 <h3 id="3b-optional-open-images-with-pillow">3b (optional) Open Images with Pillow</h3>
-<ul>
-<li>[ ] You can show up the saved image using "PIL" (Pillow) library by running following code.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> You can show up the saved image using "PIL" (Pillow) library by running following code.</li>
 <li>TIP : If you are calling the "PIL" library for the first time in your local environment, you may need to install it with <code>pip install pillow</code> command.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
@@ -1035,8 +1035,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </code></pre></div>
 <p><img alt="png" src="../output_23_0.png" /></p>
 <h3 id="3c-optional-open-images-with-web-browser">3c (optional) Open Images with Web Browser</h3>
-<ul>
-<li>[ ] If you are running this notebook in your local environment, you can open the image on your default web browser by using the native python library "webbrowser". Try to execute following code.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> If you are running this notebook in your local environment, you can open the image on your default web browser by using the native python library "webbrowser". Try to execute following code.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">webbrowser</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span> <span class="nn">os</span>
@@ -1048,18 +1048,18 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <div class="highlight"><pre><span></span><code>True
 </code></pre></div>
 <h2 id="step-4-what-about-json-xml-html-based-files">Step 4) What about JSON / XML / HTML based files?</h2>
-<ul>
-<li>[ ] Let's find another web service that offers JSON or GML based data files and follow similar instructions to save this data on our local machine or python environment. Visit following web page:<ul>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Let's find another web service that offers JSON or GML based data files and follow similar instructions to save this data on our local machine or python environment. Visit following web page:<ul>
 <li><a href="https://www.ldproxy.nrw.de/kataster">Basic geospatial data of the official surveying system in North Rhine-Westphalia</a> (Geobasisdaten des amtlichen Vermessungswesens in Nordrhein-Westfalen
 )</li>
 </ul>
 </li>
-<li>[ ] Select one of the "collection"s (Landparcel/Flurstück, Building/Gebaeude or Administrative Unit/Verwaltungseinheit). </li>
-<li>[ ] Select one of the features in the list and click on the JSON link at top right side of the page. If the data looks like too complex, try finding and installing a JSON viewer/parser add-on/extension for your browser.<ul>
+<li class="task-list-item"><input type="checkbox"/> Select one of the "collection"s (Landparcel/Flurstück, Building/Gebaeude or Administrative Unit/Verwaltungseinheit). </li>
+<li class="task-list-item"><input type="checkbox"/> Select one of the features in the list and click on the JSON link at top right side of the page. If the data looks like too complex, try finding and installing a JSON viewer/parser add-on/extension for your browser.<ul>
 <li>TIP: It is recommended to search for "JSON Lite" in Firefox, "JSON-Handle" or "JSON Viewer Pro" in Chrome browser.</li>
 </ul>
 </li>
-<li>[ ] Check also the GML file on the same page (Top-right). You can also find some useful add-ons/extensions to visualize XML based files in a "more human-readable way", often called  "pretty-print" style.<ul>
+<li class="task-list-item"><input type="checkbox"/> Check also the GML file on the same page (Top-right). You can also find some useful add-ons/extensions to visualize XML based files in a "more human-readable way", often called  "pretty-print" style.<ul>
 <li>TIP: It is recommended to search for "Pretty XML" in Firefox, "XML Plus" in Chrome browser.</li>
 <li>TIP: If the browser cannot open the GML/XML file in a new tab, then you can save the file on your local machine and open it by using web browser ( Right Click --&gt; Open with ).</li>
 </ul>
@@ -1068,10 +1068,10 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <p>Here you will see different visualizations of JSON or XML files within these extensions:</p>
 <p><img alt="JSON or XML Visualizations" src="../images/exr2/browser_addons.png" /></p>
 <h2 id="step-5-how-to-request-json-xml-html-based-files-from-the-web-services">Step 5) How to request JSON / XML / HTML based files from the web services?</h2>
-<ul>
-<li>[ ] Remove the last two lines from your code block or convert them into comment by adding hashtag (#) to the beginning of lines. (Keyboard Shortcut: Ctrl + / )</li>
-<li>[ ] Copy and paste the requested URL in previous step (4) into your code block.</li>
-<li>[ ] Add the lines <code>myjson = mydata.json()</code> and <code>print(myjson)</code> just after the requested URL.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Remove the last two lines from your code block or convert them into comment by adding hashtag (#) to the beginning of lines. (Keyboard Shortcut: Ctrl + / )</li>
+<li class="task-list-item"><input type="checkbox"/> Copy and paste the requested URL in previous step (4) into your code block.</li>
+<li class="task-list-item"><input type="checkbox"/> Add the lines <code>myjson = mydata.json()</code> and <code>print(myjson)</code> just after the requested URL.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
@@ -1105,30 +1105,30 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </table>
 <h3 id="5a-inspect-the-response">5a) Inspect the response</h3>
 <p>Here you have As you may notice, it was not actually converted into a JSON object, but is now a "<strong>JSON serializable Python object</strong>". In general terms it has been converted into a "<strong>python dictionary</strong>" object. JSON stands for Java Script Object Notation and is designed to provide a more developer-friendly alternative to XML. If you would select a most python-native encoding format, that would be none of these, but YAML. However, YAML format is out of our focus for this exercise. That is, it is a natural data exchange format designed for JavaScript, but not for Python. Python uses predefined data types such as tuples, lists and the most JSON-like format "dictionary" to handle the same data internally. The given code part has converted the response object to a JSON by using a method of requests.get, but ...</p>
-<ul>
-<li>[ ] Is it really JSON?<ul>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Is it really JSON?<ul>
 <li>Type <code>type(myjson)</code></li>
 </ul>
 </li>
-<li>[ ] What are available methods or attributes for this instance object?<ul>
+<li class="task-list-item"><input type="checkbox"/> What are available methods or attributes for this instance object?<ul>
 <li>Type <code>dir(myjson)</code></li>
 </ul>
 </li>
-<li>[ ] How can we use these available methods with this instance?<ul>
+<li class="task-list-item"><input type="checkbox"/> How can we use these available methods with this instance?<ul>
 <li>Type <code>help(myjson)</code></li>
 <li>or get the help document for a specific method (e.g. <code>help(myjson.items)</code>)</li>
 </ul>
 </li>
 </ul>
 <p>TIP: If you would select a most python-native encoding format, that would be none of these, but <strong>YAML</strong>. Since, the YAML format is out of our focus for this exercise, we didn't mention about that yet.</p>
-<ul>
-<li>[ ] If you try to save the python dictionary object to a file, you will notice an error.
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> If you try to save the python dictionary object to a file, you will notice an error.
 <code>with open("responses/exr2/my_request.json", "w") as my_json_request:</code></li>
 </ul>
 <p><code>my_json_request.write(myjson)</code></p>
-<ul>
-<li>[ ] However, you can change the "json()" method with "text" method and save the file as received like in the example below.<ul>
-<li>[ ] Alternatively, you can cast (convert the data type) the dictionary type to a string using the built-in function <strong>str()</strong>.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> However, you can change the "json()" method with "text" method and save the file as received like in the example below.<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Alternatively, you can cast (convert the data type) the dictionary type to a string using the built-in function <strong>str()</strong>.</li>
 </ul>
 </li>
 </ul>
@@ -1173,12 +1173,12 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </table>
 <h3 id="5b-convert-dictionary-to-text-using-json-library-dumps-method">5b) Convert Dictionary to Text using JSON library (dumps method)</h3>
 <p>When this method is applied, ‘text_file’ is assumed to be just a dumped json file and is saved with the file extension ‘.json’. So it is currently no different from a normal text file. By importing the ‘json’ library, we will get more functionality within our data, such as filtering, sorting, re-indenting, etc.</p>
-<ul>
-<li>
-<p>[ ] To do this, you need to import the native library called "json". Add the line at the beginning of code block: <code>import json</code></p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><input type="checkbox"/> To do this, you need to import the native library called "json". Add the line at the beginning of code block: <code>import json</code></p>
 </li>
-<li>
-<p>[ ] Then use <code>json.dumps</code> to convert the dictionary to a string. </p>
+<li class="task-list-item">
+<p><input type="checkbox"/> Then use <code>json.dumps</code> to convert the dictionary to a string. </p>
 </li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span> <span class="nn">json</span>
@@ -1264,8 +1264,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </tbody>
 </table>
 <h3 id="5d-save-the-json-file">5d) Save the JSON file</h3>
-<ul>
-<li>[ ] Now, you can copy the JSON file to our local machine by using "with" statement.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Now, you can copy the JSON file to our local machine by using "with" statement.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">import</span> <span class="nn">json</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">import</span> <span class="nn">requests</span>
@@ -1286,8 +1286,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="c1">#print(json_file)</span>
 </code></pre></div>
 <h3 id="5e-use-one-of-the-parameters-of-dumps-method-eg-indentation">5e) Use one of the parameters of dumps method (e.g. Indentation)</h3>
-<ul>
-<li>[ ] Try using some of the available parameters of "json.dumps" method. (for exp. "indent")<ul>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Try using some of the available parameters of "json.dumps" method. (for exp. "indent")<ul>
 <li>To see all available parameters for the dumps method, type <code>help(json.dumps)</code>.</li>
 </ul>
 </li>
@@ -1311,8 +1311,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="c1">#print(json_file)</span>
 </code></pre></div>
 <h3 id="5f-get-a-subset-of-the-dictionary-using-json-library-__getitem__">5f) Get a subset of the dictionary using JSON library (__getitem__ / [ ] )</h3>
-<ul>
-<li>[ ] Python dictionaries can be filtered by defining keys. ('geometry' in the sample below)<ul>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Python dictionaries can be filtered by defining keys. ('geometry' in the sample below)<ul>
 <li>Note that <code>myjson['geometry']</code> and <code>myjson.__getitem__('geometry')</code> will produce the same results.</li>
 <li>The reason is square brakets [] are the shortcuts to the __getitem__ method and such shortcut mechanisms are called "magic methods" in Python. See <a href="https://devopedia.org/magic-methods-in-python">this web page</a> see more examples for the magic methods.</li>
 <li>You can type <code>help(myjson.__getitem__)</code> to expose the usage of the magic method.</li>
@@ -1342,8 +1342,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="c1">#print(json_file)</span>
 </code></pre></div>
 <h3 id="5g-saving-the-response-as-it-is-in-binary-format">5g) Saving the response as it is in binary format</h3>
-<ul>
-<li>[ ] Another possibility to save the desired JSON file is to export it by reading the data in binary format using the "w" to "b" parameter in the open function. Note that you don't need to import the "json" library as there is nothing to do with the object.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Another possibility to save the desired JSON file is to export it by reading the data in binary format using the "w" to "b" parameter in the open function. Note that you don't need to import the "json" library as there is nothing to do with the object.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">import</span> <span class="nn">os</span>
@@ -1385,8 +1385,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </tbody>
 </table>
 <h2 id="step-6-read-a-json-file-and-display-in-python-interpreter">Step 6) Read a JSON file and display in python interpreter</h2>
-<ul>
-<li>[ ] You can read and modify saved files by using the "load" or "loads" method of the "json" library. To do this, you need to use "open" function with the "r" mode, which stands for "read".</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> You can read and modify saved files by using the "load" or "loads" method of the "json" library. To do this, you need to use "open" function with the "r" mode, which stands for "read".</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span> <span class="nn">json</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="kn">import</span> <span class="nn">requests</span>
@@ -1437,8 +1437,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <h2 id="step-7-convert-the-json-request-into-a-program-that-saves-only-properties-to-a-file">Step 7) Convert the JSON request into a program that saves only properties to a file</h2>
 <p>Suppose we want to save only the attributes of a desired JSON to a text file without all other attributes.</p>
 <p>We can do this easily with loop conditions.</p>
-<ul>
-<li>[ ] Dictionaries, lists, tuples and sets are iterable data types in Python. So we don't need to do more, because the "myjson" variable is already a python dictionary. Let's change the filtering key with "properties".</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Dictionaries, lists, tuples and sets are iterable data types in Python. So we don't need to do more, because the "myjson" variable is already a python dictionary. Let's change the filtering key with "properties".</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">import</span> <span class="nn">json</span>
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kn">import</span> <span class="nn">requests</span>
@@ -1454,8 +1454,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>dict
 </code></pre></div>
-<ul>
-<li>[ ] Since our data is still in the form of a dictionary, we can easily iterate the "key-value" pairs in a "for" condition like the one below:</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Since our data is still in the form of a dictionary, we can easily iterate the "key-value" pairs in a "for" condition like the one below:</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span> <span class="nn">json</span>
 <a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kn">import</span> <span class="nn">requests</span>
@@ -1474,8 +1474,8 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 gebnutzbez
 funktion
 </code></pre></div>
-<ul>
-<li>[ ] Now you can use the "for" condition inside the "open" function to save the properties as a list with automatically generated line numbers.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Now you can use the "for" condition inside the "open" function to save the properties as a list with automatically generated line numbers.</li>
 <li>TIP: <code>i=0</code> and <code>i=i+1</code> automatically produces an integer and is casted as string to combine (concatenate) with other strings. Type casting is possible in python with built-in functions such as str(), int(), float(), bool(). </li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kn">import</span> <span class="nn">json</span>
@@ -1499,9 +1499,9 @@ funktion
 <a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>            <span class="n">my_req</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">myformat</span><span class="p">)</span>            
 </code></pre></div>
 <h2 id="step-8-convert-your-code-block-into-a-function-and-let-users-define-their-own-url-requests">Step 8) Convert your code block into a function and let users define their own URL requests</h2>
-<ul>
-<li>
-<p>[ ] You have already entered the URL you want in the code by manually changing the URL part. Now let's make the program more interactive to allow users to define their own URL on each different request. You need to define a function that listens for a user parameter and uses the same parameter in the computations. To do this, you need to use <strong>"def"</strong> which stands for "definition". Move the lines used to transform the data into the function definition using indentation.</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><input type="checkbox"/> You have already entered the URL you want in the code by manually changing the URL part. Now let's make the program more interactive to allow users to define their own URL on each different request. You need to define a function that listens for a user parameter and uses the same parameter in the computations. To do this, you need to use <strong>"def"</strong> which stands for "definition". Move the lines used to transform the data into the function definition using indentation.</p>
 </li>
 <li>
 <p>TIP: In Python programming, you can define multiple variables with the same name. Any variable defined inside a function will only be within the scope of that function. That is, if you declare a variable inside a function, it can only be accessed inside the function. This behavior is called "local scope" (see the "mysubset" variable in the code block below).</p>
@@ -1564,8 +1564,8 @@ funktion
 </tbody>
 </table>
 <h3 id="8a-seperate-the-listing-mechanism-as-a-function">8a) Seperate the listing mechanism as a function</h3>
-<ul>
-<li>[ ] We can also turn the code block that saves the file into a function, so that users can more easily determine the file name.<ul>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> We can also turn the code block that saves the file into a function, so that users can more easily determine the file name.<ul>
 <li>Note that the first parameter (my_object) of the save_property_as_list function is <strong>required</strong>.</li>
 <li>Second parameter (my_file_name) is <strong>optional</strong>, which means that the function will use the default value if it is not defined.</li>
 </ul>
@@ -1597,8 +1597,8 @@ funktion
 <a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a><span class="n">save_property_as_list</span><span class="p">(</span><span class="n">building_properties</span><span class="p">,</span> <span class="s2">&quot;my_request.txt&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="8b-let-the-users-interact-with-your-program-input-function">8b) Let the users interact with your program (input function)</h3>
-<ul>
-<li>[ ] You can apply the "input" function to turn the code into an interactive program.</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> You can apply the "input" function to turn the code into an interactive program.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">import</span> <span class="nn">json</span>
 <a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="kn">import</span> <span class="nn">requests</span>
