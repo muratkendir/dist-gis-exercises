@@ -7,7 +7,7 @@ Supervisor: Prof. Thomas Kolbe
 
 Contact: murat.kendir(at)tum.de
 
-Run the Python Notebook via Binder:
+**Run the Python Notebook via Binder:**
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/muratkendir/dist-gis-exercises/main)
 
