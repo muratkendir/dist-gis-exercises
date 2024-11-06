@@ -13,7 +13,7 @@ Run the Python Notebook via Binder:
 
 ## Local Installation Instructions
 
-- [Inst. on Windows devices with PIP*](docs/install_w_pip_on_win.md)
-- [Inst. on Unix devices with PIP](docs/install_w_pip_on_lnx.md)
+- [Inst. on Windows devices with PIP*](install_w_pip_on_win.md)
+- [Inst. on Unix devices with PIP](install_w_pip_on_lnx.md)
 
 *PIP : Python's native package management system, which can pull the packages from the [PYPI](https://pypi.org/) online repository.

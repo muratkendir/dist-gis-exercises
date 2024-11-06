@@ -1,0 +1,15 @@
+site_name: "dist-gis-exercises (Educational Python Notebooks)"
+site_url: 
+nav:
+  - Home: index.md
+  - "Installation Instructions":
+    - "Windows w PIP": install_w_pip_on_win.md
+    - "Linux w PIP": install_w_pip_on_lnx.md
+theme: material
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
