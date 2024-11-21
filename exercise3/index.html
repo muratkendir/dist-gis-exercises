@@ -860,7 +860,7 @@
 
 
 <h1 id="spatial-data-infrastructures-sdi">Spatial Data Infrastructures (SDI)</h1>
-<p><img align="right" width=100 height=190 src="./images/TUM_Logo_blau_rgb_p.png"/></p>
+<p><img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
 <blockquote>
 Munich Technical University > Engineering & Design  Aerospace & Geodesy || Chair of Geoinformatics </br></br>
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
@@ -898,7 +898,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 </ul>
 <div align=center>
 <figure style="width:282px;padding:10px;background-color:#dad7cb;">
-    <img src="./images/exr3/hamburg_1962.jpg" width=282 height=200/>
+    <img src="../images/exr3/hamburg_1962.jpg" width=282 height=200/>
     <figcaption>During the catastrophic flood of 1962, boats were used to rescue Hamburg residents from flooded buildings.
             <a href="https://www.bloomberg.com/news/features/2023-11-20/the-design-history-of-london-s-mansion-block-apartment-buildings"> Source</a>
     </figcaption>
@@ -1008,7 +1008,7 @@ To do that, we can implement another function which runs an input command for ev
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function in the code (created in section 2b) and save the relevant information.</p>
 <div align="center">
-<img src="./images/exr3/grundstuecke_service.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/grundstuecke_service.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h3 id="3-b-land-parcels-flurstucke">3 b) Land Parcels (Flurstücke)</h3>
@@ -1028,7 +1028,7 @@ To do that, we can implement another function which runs an input command for ev
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
 <div align="center">
-<img src="./images/exr3/flurstuecke_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/flurstuecke_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h3 id="3-c-digital-elevation-model-dem-hohenmodell">3 c) Digital Elevation Model / DEM (Höhenmodell)</h3>
@@ -1046,7 +1046,7 @@ To do that, we can implement another function which runs an input command for ev
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
 <div align="center">
-<img src="./images/exr3/hohemodell_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/hohemodell_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h3 id="3-d-flood-risk-zones">3 d) Flood Risk Zones</h3>
@@ -1064,7 +1064,7 @@ To do that, we can implement another function which runs an input command for ev
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
 <div align="center">
-<img src="./images/exr3/flood_risk_service.png" width=250 height=250 align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/flood_risk_service.png" width=250 height=250 align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h2 id="4-adding-services-to-gis-software">4) Adding Services to GIS Software</h2>
@@ -1081,7 +1081,7 @@ To do that, we can implement another function which runs an input command for ev
 </li>
 </ul>
 <div align="center">
-<img src="./images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 <ul>
 <li>Check the coordinate system of the active map canvas (map widget in the software). If it is defined as OGC:CRS84, change it to EPSG:4326 Coordinate Reference System (CRS). You will notice some distortion on the map canvas, this is normal because EPSG:4326 (aka WGS84) is a geographic coordinate system, not a projected coordinate system. You may need to use this coordinate system from time to time because it is one of the most widely supported CRS by web services.</li>
@@ -1091,7 +1091,7 @@ To do that, we can implement another function which runs an input command for ev
 </li>
 </ul>
 <div align="center">
-<img src="./images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h4 id="4a-ii-add-wms-service">4a ii) Add WMS Service</h4>
@@ -1101,7 +1101,7 @@ To do that, we can implement another function which runs an input command for ev
 <li class="task-list-item"><input type="checkbox"/> Click to any available layer in the service, check the coordinate system and click to Add Button.</li>
 </ul>
 <div align="center">
-<img src="./images/exr3/qgis_wms.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/qgis_wms.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h4 id="4a-iii-add-wfs-service">4a iii) Add WFS Service</h4>
@@ -1120,7 +1120,7 @@ If you are in doubt about overlapping polygons, simply change the symbology of t
 <li class="task-list-item"><input type="checkbox"/> Copy &amp; Paste WMS address into “Server URL” text box. Specify user authentication if it is needed.</li>
 </ul>
 <div align="center">
-<img src="./images/exr3/arcgis_pro_add_connection.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/arcgis_pro_add_connection.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <ul class="task-list">
@@ -1131,7 +1131,7 @@ If you are in doubt about overlapping polygons, simply change the symbology of t
 <li class="task-list-item"><input type="checkbox"/> If the WMS server connection is "queryable", you can query features in the WMS layers by clicking directly on them. Zoom in on a specific feature and find the "Locate" icon on the Map tab. Then click on the feature.</li>
 </ul>
 <div align="center">
-<img src="./images/exr3/arcgis_pro_locate.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/arcgis_pro_locate.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 <ul class="task-list">
 <li>You will see feature information in a pop-up window in the right pane. If there are multiple features on the map canvas, you may see multiple WMS layers and multiple feature information windows in the popup.</li>
@@ -1143,7 +1143,7 @@ examine the requests send by ArcGIS Pro.</li>
 automation.</li>
 </ul>
 <div align="center">
-<img src="./images/exr3/arcgis_pro_wms_added.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/arcgis_pro_wms_added.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h3 id="4-c-adding-a-wms-service-in-fme">4 c) Adding a WMS Service in FME</h3>
@@ -1157,7 +1157,7 @@ automation.</li>
 <li class="task-list-item"><input type="checkbox"/> Go back to FME and click on the plus icon (+) at the bottom left in the Background Maps window.</li>
 </ul>
 <div align="center">
-<img src="./images/exr3/fme_fme_options.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/fme_fme_options.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <ul class="task-list">
@@ -1168,7 +1168,7 @@ automation.</li>
 <li class="task-list-item"><input type="checkbox"/> If everything went well, you will be able to select the background map as the selected WMS service.</li>
 </ul>
 <div align="center">
-<img src="./images/exr3/fme_background_map.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/fme_background_map.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h4 id="4c-ii-adding-a-wms-service-to-fme-as-reader">4c ii) Adding a WMS Service to FME as Reader</h4>
@@ -1178,7 +1178,7 @@ automation.</li>
 <li>“PointOnRasterValueExtractor” can be one of the useful transformers that can select the band color value of a raster image using point coordinates.</li>
 </ul>
 <div align="center">
-<img src="./images/exr3/fme_tandex_featureinfo.png" width=200 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/fme_tandex_featureinfo.png" width=200 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h4 id="4c-iii-using-getfeatureinfo-request-in-fme-optional-step">4c iii) Using GetFeatureInfo request in FME (Optional Step)</h4>
