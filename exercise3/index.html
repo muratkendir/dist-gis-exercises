@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../exercise2/">
+      
+      
+        <link rel="next" href="../install_w_pip_on_win/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Spatial Data Infrastructures (SDI) - dist-gis-exercises (Educational Python Notebooks)</title>
+        <title>Exercise 3 (SDIs) - dist-gis-exercises (Educational Python Notebooks)</title>
       
     
     
@@ -94,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Spatial Data Infrastructures (SDI)
+              Exercise 3 (SDIs)
             
           </span>
         </div>
@@ -224,6 +228,291 @@
       
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exercise 3 (SDIs)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 3 (SDIs)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-reminders" class="md-nav__link">
+    <span class="md-ellipsis">
+      0) Reminders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0) Reminders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-we-have-learned-in-the-previous-exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      What we have learned in the previous exercise?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-finding-the-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Finding the datasets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-a-short-preparation-creating-a-service-selection-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 a) A short preparation - Creating a "Service Selection Tool"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-b-use-the-created-program-in-another-python-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 b) Use the created program in another python program
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 b) Use the created program in another python program">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-a-building-footprints-grundstuck" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 a) Building Footprints (Grundstück)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-b-land-parcels-flurstucke" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 b) Land Parcels (Flurstücke)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-c-digital-elevation-model-dem-hohenmodell" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 c) Digital Elevation Model / DEM (Höhenmodell)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-d-flood-risk-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 d) Flood Risk Zones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-adding-services-to-gis-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) Adding Services to GIS Software
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Adding Services to GIS Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-a-adding-services-to-qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 a) Adding Services to QGIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 a) Adding Services to QGIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4a-i-add-xyz-basemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      4a i) Add XYZ Basemap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4a-ii-add-wms-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      4a ii) Add WMS Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4a-iii-add-wfs-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      4a iii) Add WFS Service
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-b-adding-services-to-arcgis-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 b) Adding Services to ArcGIS Pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-c-adding-a-wms-service-in-fme" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 c) Adding a WMS Service in FME
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 c) Adding a WMS Service in FME">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4c-i-adding-a-wms-service-to-fme-as-background-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      4c i) Adding a WMS Service to FME as Background Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4c-ii-adding-a-wms-service-to-fme-as-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      4c ii) Adding a WMS Service to FME as Reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4c-iii-using-getfeatureinfo-request-in-fme-optional-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      4c iii) Using GetFeatureInfo request in FME (Optional Step)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-accessing-wms-services-with-owslib-python-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      5) Accessing WMS services with OWSLib Python Library
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5) Accessing WMS services with OWSLib Python Library">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-a-examine-a-wms-service-with-owslib" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 a) Examine a WMS service with OWSLib
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -234,24 +523,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Installation Instructions
+    Virtual Env. Installation
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Installation Instructions
+            Virtual Env. Installation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
