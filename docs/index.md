@@ -14,10 +14,11 @@ Contact: murat.kendir(at)tum.de
 ## Exercises
 
 - [Exercise 2 (Introduction to Python with Samples)](exercise2.md)
+- [Exercise 3 (Spatial Data Infrastructures)](exercise3.md)
 
 ## Local Installation Instructions
 
-- [Inst. on Windows devices with PIP*](install_w_pip_on_win.md)
-- [Inst. on Linux devices with PIP](install_w_pip_on_lnx.md)
+- [Virtual Env.  on Windows devices with PIP*](install_w_pip_on_win.md)
+- [Virtual Env.  on Linux devices with PIP](install_w_pip_on_lnx.md)
 
 *PIP : Python's native package management system, which can pull the packages from the [PYPI](https://pypi.org/) online repository.
