@@ -1,0 +1,1078 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Spatial Data Infrastructures (SDI) - dist-gis-exercises (Educational Python Notebooks)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spatial-data-infrastructures-sdi" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-header__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            dist-gis-exercises (Educational Python Notebooks)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Spatial Data Infrastructures (SDI)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-nav__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    dist-gis-exercises (Educational Python Notebooks)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 2 (Python Intro)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation Instructions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Installation Instructions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_win/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_lnx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-reminders" class="md-nav__link">
+    <span class="md-ellipsis">
+      0) Reminders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0) Reminders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-we-have-learned-in-the-previous-exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      What we have learned in the previous exercise?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-finding-the-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Finding the datasets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-a-short-preparation-creating-a-service-selection-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 a) A short preparation - Creating a "Service Selection Tool"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-b-use-the-created-program-in-another-python-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 b) Use the created program in another python program
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 b) Use the created program in another python program">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-a-building-footprints-grundstuck" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 a) Building Footprints (Grundstück)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-b-land-parcels-flurstucke" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 b) Land Parcels (Flurstücke)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-c-digital-elevation-model-dem-hohenmodell" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 c) Digital Elevation Model / DEM (Höhenmodell)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-d-flood-risk-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 d) Flood Risk Zones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-adding-services-to-gis-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) Adding Services to GIS Software
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Adding Services to GIS Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-a-adding-services-to-qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 a) Adding Services to QGIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 a) Adding Services to QGIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4a-i-add-xyz-basemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      4a i) Add XYZ Basemap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4a-ii-add-wms-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      4a ii) Add WMS Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4a-iii-add-wfs-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      4a iii) Add WFS Service
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-b-adding-services-to-arcgis-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 b) Adding Services to ArcGIS Pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-c-adding-a-wms-service-in-fme" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 c) Adding a WMS Service in FME
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 c) Adding a WMS Service in FME">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4c-i-adding-a-wms-service-to-fme-as-background-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      4c i) Adding a WMS Service to FME as Background Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4c-ii-adding-a-wms-service-to-fme-as-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      4c ii) Adding a WMS Service to FME as Reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4c-iii-using-getfeatureinfo-request-in-fme-optional-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      4c iii) Using GetFeatureInfo request in FME (Optional Step)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-accessing-wms-services-with-owslib-python-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      5) Accessing WMS services with OWSLib Python Library
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5) Accessing WMS services with OWSLib Python Library">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-a-examine-a-wms-service-with-owslib" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 a) Examine a WMS service with OWSLib
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="spatial-data-infrastructures-sdi">Spatial Data Infrastructures (SDI)</h1>
+<p><img align="right" width=100 height=190 src="./images/TUM_Logo_blau_rgb_p.png"/></p>
+<blockquote>
+Munich Technical University > Engineering & Design  Aerospace & Geodesy || Chair of Geoinformatics </br></br>
+Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+</blockquote>
+
+<ul>
+<li>In the previous exercise we explored the python programming language and tried to create a simple application to request geospatial data using the requests library.</li>
+<li>In this tutorial, you will learn how to search for a geospatial dataset using different levels (regional, city scale, etc.) of “Spatial Data Infrastructures” (SDIs). </li>
+<li>You will explore multiple SDI websites that provide some geospatial datasets in different formats or as different types of web services.</li>
+<li>You will then learn how to combine and represent these datasets in popular GIS platforms such as QGIS and ArcGIS Pro.</li>
+<li>Finally, you will create a small python application that connects and utilizes the selected geospatial data for a specific purpose.</li>
+</ul>
+<h2 id="0-reminders">0) Reminders</h2>
+<h3 id="what-we-have-learned-in-the-previous-exercise">What we have learned in the previous exercise?</h3>
+<ul>
+<li>A python program can be executed simply by calling it with the python <strong>interpreter</strong> by simply typing <code>python my_first_python_program.py</code>. </li>
+<li>Python uses <strong>indentation</strong> to highlight the blocks of code.</li>
+<li>Python applications can be run in <strong>virtual environments</strong> with all necessary libraries pre-installed.</li>
+<li>Python have many <strong>libraries</strong> to support main applications with predefined classes, functions and data types (e.g. os, json, requests etc) and they can be implemented with <strong>import</strong> command.</li>
+<li><strong><code>if / elif / else</code></strong> is a conditonal statement.</li>
+<li><strong><code>for x in array</code></strong> creates a sequence to iterate in an array-like (iterative) object.</li>
+<li>There are useful built-in functions (which you can list all with <code>dir(__builtins__)</code>) to investigate an object in python such as <strong>type, dir, help, print, vars</strong>.</li>
+<li>A function can be set with the <strong>def</strong> (stands for DEFinition) command and mandatory and optional parameters can be specified in parentheses. For example: <code>def save_somebody(name, surname, species="Homo Sapiens"):</code></li>
+<li>A file can be manipulated by specifiying file path and file permission. For example: <code>with open("current_folder/relative_file_path.txt", "w") as myfile:</code></li>
+<li>A python <strong>dictionary</strong> is a bit different from a <strong>JSON</strong> object and they can be converted to eachother with json.load(s) and json.dump(s) functions of json library.</li>
+<li>A questionnaire can be set with <strong><code>input("Enter a custom name")</code></strong> function.</li>
+</ul>
+<h2 id="1-finding-the-datasets">1) Finding the datasets</h2>
+<p>Global Sea Level is rising at an increasing rate every year, causing floods to occur more frequently all over the world. This forces local (or regional) governments to take measures against future floods. <b>Suppose you are responsible for preparing a disaster management application in Hamburg.</b> This application will calculate the flood risk for a specific building and generate a report with information on the extent of the risk and the relevant land parcel number. For this purpose, you need to find the most suitable geographic data services using the <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a>, <a href="https://geoportal.de">geoportal.de</a> and <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a>. Imagine that these datasets should contain the following data layers: </p>
+<ul>
+    <li>Buildings footprints (DE: Gebeaude Grundstücke) | (will be searched for in the Section 3a)</li>
+    <li>Land Parcels (DE: Flurstück)</li>
+    <li>Digital Elevation Model / DEM (DE: Höhenmodell / DHM)</li>
+    <li>Flood Risk Zones (DE: Hochwasserrisikos)</li>
+</ul>
+<div align=center>
+<figure style="width:282px;padding:10px;background-color:#dad7cb;">
+    <img src="./images/exr3/hamburg_1962.jpg" width=282 height=200/>
+    <figcaption>During the catastrophic flood of 1962, boats were used to rescue Hamburg residents from flooded buildings.
+            <a href="https://www.bloomberg.com/news/features/2023-11-20/the-design-history-of-london-s-mansion-block-apartment-buildings"> Source</a>
+    </figcaption>
+</figure>
+</div>
+
+<h2 id="2-a-a-short-preparation-creating-a-service-selection-tool">2 a) A short preparation - Creating a "Service Selection Tool"</h2>
+<p>Before you start examining the given Spatial Data Infrastructures (SDIs), you will set up a function in python that makes it easy to store the names, links and additional information of the services.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># In Python, there is no need to specify the variable data type.</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># However, you can still use type conversion methods or shortcuts to specify the data type.</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># For Exp. &#39;{}&#39; is a shortcut to create a python dictionary.</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">#Create an empty dictionary.</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">my_services</span> <span class="o">=</span> <span class="p">{}</span> 
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># !Remember the role of identation in python.</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">def</span> <span class="nf">add_to_store</span><span class="p">(</span><span class="n">service_id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">wms_url</span><span class="p">):</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Here, you set a complex data in python dictionary data type.</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">my_services</span><span class="p">[</span><span class="n">service_id</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="n">name</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="p">,</span> <span class="s2">&quot;url&quot;</span> <span class="p">:</span> <span class="n">url</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="p">,</span> <span class="s2">&quot;WMS_URL&quot;</span> <span class="p">:</span> <span class="n">wms_url</span><span class="p">}</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">my_services</span><span class="p">)</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1">#Extras for checking the dictionary data type and result of the function:</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="c1"># type(my_services)</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="c1"># help(my_services)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="c1"># add_to_store(&quot;service_1&quot;, &quot;my_fav&quot;, &quot;https://sdi.com&quot;, &quot;https://wms.sdi.com/my_city?&quot;)</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># print(my_services.get(&quot;service_1&quot;))</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1"># my_services.clear()</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="c1"># print(my_services.get(&quot;service_1&quot;))</span>
+</code></pre></div>
+<blockquote style="background-color:ivory;"> TIP : You may have noticed that the square brackets <b>[ ]</b> we use to set a new item in the dictionary are
+also a shortcut. You can also find this information in related hidden functions like <b>__getitem__()</b> or
+<b>__setitem__()</b>. Type <i><b>dir(my_services)</i></b> or <i><b>dir(dict())</i></b> to reveal them.</blockquote>
+
+<p>Now, suppose that you want to use the function in an interactive way to let other users also add the found services into the dictionary.
+To do that, we can implement another function which runs an input command for every instance in the dictionary:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># You can now define another function to interactively ask and store the knowledge data in your dictionary.</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;Url of SDI&quot;</span><span class="p">,</span> <span class="s2">&quot;URL of WMS Service&quot;</span><span class="p">]</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">my_services</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Following line adds only the keys defined above. </span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># These kind of inline functions called as comprehensions in Python.</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">my_services</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">}</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># print(my_services) </span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="k">def</span> <span class="nf">add_to_store</span><span class="p">(</span><span class="n">service_id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">sdi_url</span><span class="p">,</span> <span class="n">wms_url</span><span class="p">):</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="c1"># Here, you set a complex data in python dictionary data type.</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">my_services</span><span class="p">[</span><span class="n">service_id</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="n">keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">name</span><span class="p">,</span> <span class="n">keys</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">:</span> <span class="n">sdi_url</span> <span class="p">,</span> <span class="n">keys</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">:</span> <span class="n">wms_url</span><span class="p">}</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">my_services</span><span class="p">)</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="k">def</span> <span class="nf">found_service</span><span class="p">():</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="n">service_id</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Give an ID (number or unique value)...&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="n">service_data</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Created a list to save the values temporarily</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span> <span class="c1"># Meet another object here: range</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>        <span class="n">questionnaire</span> <span class="o">=</span> <span class="s2">&quot;Please specify the &quot;</span> <span class="o">+</span> <span class="n">keys</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>        <span class="n">service_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">questionnaire</span><span class="p">))</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="c1">#Note that a list index is very similar to range, but always starts from 0.</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="n">add_to_store</span><span class="p">(</span><span class="n">service_id</span><span class="p">,</span> <span class="n">service_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">service_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">service_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="c1"># found_service()</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="c1"># my_services.clear()</span>
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> <strong>Save the code</strong> above as "service_selection.py" into "/raw_codes/exr3" directory.</li>
+</ul>
+<h2 id="2-b-use-the-created-program-in-another-python-program">2 b) Use the created program in another python program</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Check if the file exists in the "/raw_codes/exr3" folder.</li>
+<li class="task-list-item"><input type="checkbox"/> Start a new code and import the functions and variables defined in the previously created python file.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># When you save a python file contains classes, functions and variables into another folder</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># , this folder with its contents can be called as a &quot;python module&quot;.</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Note that importing a module is enough to access to the functions and variables.</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># The contents of the modules are only accessible with dot (.) operator.</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Method 1</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kn">from</span> <span class="nn">raw_codes.exr3</span> <span class="kn">import</span> <span class="n">service_selection</span> <span class="k">as</span> <span class="n">srv</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">#print(srv.keys)</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># Method 2</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># from raw_codes.exr3.service_selection import keys, my_services, add_to_store, found_service</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># print(keys)</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1"># Now you can call your program to save the data about the found geospatial services:</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># srv.found_service() </span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># srv.my_services.clear()</span>
+</code></pre></div>
+<blockquote style="background-color:ivory;"> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
+
+<h3 id="3-a-building-footprints-grundstuck">3 a) Building Footprints (Grundstück)</h3>
+<p>Visit the web site <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a> and search for the <strong>building footprints</strong> available for Hamburg city. Try to search with following possible words / tags:
+- Administrative Unit (Verwaltungseinheiten) 
+- House Coordinates (Hauskoordinaten) 
+- ALKIS 
+- Land Parcel (Flurstück) 
+- Building (Gebaeude)</p>
+<p>Explore possible answers to the following questions:
+- [ ] Which one is the correct data for your purpose?
+- [ ] What kind of data it is? Is it a web service or static file?
+- [ ] How current is the data you find?
+- [ ] Where is the metadata of the service or file?</p>
+<p>Finally: 
+- [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function in the code (created in section 2b) and save the relevant information.</p>
+<div align="center">
+<img src="./images/exr3/grundstuecke_service.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h3 id="3-b-land-parcels-flurstucke">3 b) Land Parcels (Flurstücke)</h3>
+<p>Visit the web site <a href="https://geoportal.de">geoportal.de</a> and search for the <strong>land parcels</strong> available for Hamburg city. </p>
+<blockquote>
+<p>TIP: If you can not find the land parcels for the Hamburg city try adding "HH" to your keywords. "HH" is the city code for Hamburg used on license plates and it is possible to find relevant datasets using these codes. More information can be found on this <a href="https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Germany">site</a>.</p>
+</blockquote>
+<p>Find the metadata of the dataset and explore possible answers to the following questions:
+- [ ] What is the base coordinate system for land parcels according to the metadata?
+- [ ] Who or which organization is responsible for the dataset?</p>
+<p>Find the XML responses of WMS or WFS services to the "GetCapabilities" operation and explore possible answers to the following questions:
+- [ ] Is the service response from the same domain? (Check the URL)
+- [ ] Are multiple coordinate systems supported for publishing?
+- [ ] How many layers does a selected web service consists of?
+- [ ] Can the layers be used for querying?
+- [ ] What other possible operations can be requested besides "GetCapabilities"?</p>
+<p>Finally: 
+- [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
+<div align="center">
+<img src="./images/exr3/flurstuecke_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h3 id="3-c-digital-elevation-model-dem-hohenmodell">3 c) Digital Elevation Model / DEM (Höhenmodell)</h3>
+<p>Visit the web site <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> and search for the <strong>Digital Elevation Model</strong> available for the Hamburg city.
+- Click to "Browse INSPIRE Thematic Datasets".
+- Click to "INSPIRE Data Themes"
+- Find the relevant theme on this page and select the country on the following web page.</p>
+<p>Explore possible answers to the following questions:
+- [ ] Where is the service URL?
+- [ ] What kind of services are available in the theme? 
+- [ ] Can TANDEM-X datasets be useful for our project? If not, why?
+- [ ] Is the selected dataset also available on <strong>geoportal.de</strong> ?
+- [ ] Is the selected dataset also available on <strong>Hamburg Transparenzportal</strong>?
+- [ ] Are all domain names in the service URLs the same?</p>
+<p>Finally: 
+- [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
+<div align="center">
+<img src="./images/exr3/hohemodell_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h3 id="3-d-flood-risk-zones">3 d) Flood Risk Zones</h3>
+<p>Visit the web site <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> again and search for the <strong>flood risk zones</strong> available for the Hamburg city.</p>
+<ul>
+<li>Click to "Browse Priority Data Sets".</li>
+<li>Click to "Environmental Domains".</li>
+<li>Click to "Water".</li>
+<li>Select the country and search with following possible words / tags:</li>
+<li>Wasserrahmenrichtlinie (Water Framework Directive)</li>
+<li>Gewässer (Water Bodies)</li>
+<li>Hochwasserrisikos (Flood Risks)</li>
+<li>Fließgewässern (Watercourses)</li>
+</ul>
+<p>Finally: 
+- [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
+<div align="center">
+<img src="./images/exr3/flood_risk_service.png" width=250 height=250 align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h2 id="4-adding-services-to-gis-software">4) Adding Services to GIS Software</h2>
+<p>In this chapter, you will learn how to add web services or datasets to a GIS software. You probably don't know what "web service" actually means or how to use it correctly, but you don't need to have a deep understanding of web services right now. You may need to recognize the type of web service, but nothing more.</p>
+<h3 id="4-a-adding-services-to-qgis">4 a) Adding Services to QGIS</h3>
+<h4 id="4a-i-add-xyz-basemap">4a i) Add XYZ Basemap</h4>
+<ul class="task-list">
+<li>Start by adding a basemap with global coverage and simple styling. "Carto Positron" would be a good option for this purpose. (If you want to try other XYZ basemap services, visit <a href="https://github.com/klakar/QGIS_resources/blob/master/collections/Geosupportsystem/python/qgis_basemaps.py">Klas Karlsson's github repository</a> or search online.</li>
+<li class="task-list-item"><input type="checkbox"/> Find XYZ Tiles in browser panel on the left side and right click to add a new connection.</li>
+<li class="task-list-item"><input type="checkbox"/> Copy and paste <a href="https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png">https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png</a> link to the URL textbox and give any name as you want. Click Ok button.</li>
+<li class="task-list-item"><input type="checkbox"/> Find the city center of Hamburg on the map and zoom in until the canvas covers only some buildings. Alternatively, at the bottom of the QGIS window you can set the scale to 1:2000 or larger.<blockquote>
+<p>TIP: Sometimes you need to zoom in on your area of interest to avoid long loading times or just to make sure that the layer is visible in the area.</p>
+</blockquote>
+</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+</div>
+<ul>
+<li>Check the coordinate system of the active map canvas (map widget in the software). If it is defined as OGC:CRS84, change it to EPSG:4326 Coordinate Reference System (CRS). You will notice some distortion on the map canvas, this is normal because EPSG:4326 (aka WGS84) is a geographic coordinate system, not a projected coordinate system. You may need to use this coordinate system from time to time because it is one of the most widely supported CRS by web services.</li>
+<li>Check the type of web services you noted in section 1) and add them considering the type of web services.<blockquote>
+<p>TIP: There are multiple ways to check the type of web services. One could be to check the categories or filters available on the SDI website. The other method could be to check the metadata to find the type. Finally, if you segment the request URL, you might see a query parameter like "service=WMS" or "service=WFS".</p>
+</blockquote>
+</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h4 id="4a-ii-add-wms-service">4a ii) Add WMS Service</h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Go to <strong>Layer &gt; Add Layer &gt; Add WMS/WMTS Layer</strong> in the menu bar.</li>
+<li class="task-list-item"><input type="checkbox"/> To create a new connection, click the New button and copy &amp; paste the URL you noted in part 1). Click OK and then click the Connect button.</li>
+<li class="task-list-item"><input type="checkbox"/> Click to any available layer in the service, check the coordinate system and click to Add Button.</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/qgis_wms.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h4 id="4a-iii-add-wfs-service">4a iii) Add WFS Service</h4>
+<blockquote>
+<p><strong>IMPORTANT NOTE</strong> Some servers provide Complex Data Features with WFS services, which makes it difficult to add these services to GIS software. So, if you notice such a WFS with complex data, avoid adding this service.
+  - [ ] Go to <strong>Layer &gt; Add Layer &gt; Add WFS / OGC API - Features Layer</strong> in the menu bar. To create a new connection, click the New button and copy and paste the URL you noted in part 1). Specify the "Max. number of features" as 200 or less. Click OK and then click the Connect button.
+  - [ ] Click to any available layer in the service, check the coordinate system and click to Add Button.
+  - [ ] Select only a few features from the screen or press Ctrl + F6 buttons. Take a glance on existing attributes and values for the features.
+Tip: Sometimes features can be presented as overlapping polygons in the same data service.
+If you are in doubt about overlapping polygons, simply change the symbology of the layer in the properties window to transparent fill to reveal the overlapping polygons.</p>
+</blockquote>
+<h3 id="4-b-adding-services-to-arcgis-pro">4 b) Adding Services to ArcGIS Pro</h3>
+<ul class="task-list">
+<li>ArcGIS Pro collects all the data services in the “Servers” section.</li>
+<li class="task-list-item"><input type="checkbox"/> Navigate to Connections &gt; Server &gt; New WMS Server from the Insert tab.      </li>
+<li class="task-list-item"><input type="checkbox"/> Copy &amp; Paste WMS address into “Server URL” text box. Specify user authentication if it is needed.</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/arcgis_pro_add_connection.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> If the server has been successfully added, it can be added into map canvas from Add Data menu. Right Click on “Map” in the left Contents pane and select Add Data.</li>
+<li class="task-list-item"><input type="checkbox"/> Go to Servers and find the WMS Server connection set up in the previous step.</li>
+<li class="task-list-item"><input type="checkbox"/> Select the WMS Server and click to Ok.</li>
+<li class="task-list-item"><input type="checkbox"/> Select the layers of interest from the WMS layers tree.</li>
+<li class="task-list-item"><input type="checkbox"/> If the WMS server connection is "queryable", you can query features in the WMS layers by clicking directly on them. Zoom in on a specific feature and find the "Locate" icon on the Map tab. Then click on the feature.</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/arcgis_pro_locate.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+</div>
+<ul class="task-list">
+<li>You will see feature information in a pop-up window in the right pane. If there are multiple features on the map canvas, you may see multiple WMS layers and multiple feature information windows in the popup.</li>
+<li class="task-list-item"><input type="checkbox"/> Press Ctrl+Alt+M or go to Help &gt; Performance &gt; Diagnostic Monitor to
+examine the requests send by ArcGIS Pro.</li>
+<li>Now you can combine all the layers in your selected GIS software.</li>
+<li>You can now manually inspect land parcels and buildings that intersect flood zones.</li>
+<li>This point can be considered as an outline of a Disaster Management Application apart from the need for
+automation.</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/arcgis_pro_wms_added.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h3 id="4-c-adding-a-wms-service-in-fme">4 c) Adding a WMS Service in FME</h3>
+<ul>
+<li>There are multiple ways to use web services in FME. One of the simplest is to use the WMS as a background map in the “Visual Preview” window/widget.</li>
+</ul>
+<h4 id="4c-i-adding-a-wms-service-to-fme-as-background-map">4c i) Adding a WMS Service to FME as Background Map</h4>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> To use a WMS layer as a background map, find “FME Options” in the menu under Tools. Select the “Background Maps” tab.</li>
+<li class="task-list-item"><input type="checkbox"/> Visit the website <a href="https://geoservice.dlr.de">geoservice.dlr.de</a> and search for the service called “TanDEM-X 30m DEM”. Find the endpoint (WMS URL of the service) of one of the Hillshade layers in the service.</li>
+<li class="task-list-item"><input type="checkbox"/> Go back to FME and click on the plus icon (+) at the bottom left in the Background Maps window.</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/fme_fme_options.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Select “OGC WMS (Web Map Service)” from the “Source” menu.</li>
+<li class="task-list-item"><input type="checkbox"/> Enter any custom name for the web service.</li>
+<li class="task-list-item"><input type="checkbox"/> Copy and paste the WMS URL (endpoint) of the selected layer into the “URL” text box in the "WMS Connection" group.</li>
+<li class="task-list-item"><input type="checkbox"/> Click the three dots (...) button next to the “Layers” text box and select the shorten name of the desired layer.</li>
+<li class="task-list-item"><input type="checkbox"/> If everything went well, you will be able to select the background map as the selected WMS service.</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/fme_background_map.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h4 id="4c-ii-adding-a-wms-service-to-fme-as-reader">4c ii) Adding a WMS Service to FME as Reader</h4>
+<ul>
+<li>You can also add the WMS service as a data source (Reader) in FME. This procedure can be useful for tasks related to raster images.</li>
+<li>To do that, just type "OGC WMS" in an empty area on the main pane of FME Workbench. </li>
+<li>“PointOnRasterValueExtractor” can be one of the useful transformers that can select the band color value of a raster image using point coordinates.</li>
+</ul>
+<div align="center">
+<img src="./images/exr3/fme_tandex_featureinfo.png" width=200 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h4 id="4c-iii-using-getfeatureinfo-request-in-fme-optional-step">4c iii) Using GetFeatureInfo request in FME (Optional Step)</h4>
+<ul class="task-list">
+<li>Since, the service operation "GetFeatureInfo" is not a mandatory in the WMS satndard, there is no a built-in tool to do use it. (You can search in the <a href="https://hub.safe.com/">Community Hub</a> for such a function)</li>
+<li class="task-list-item"><input type="checkbox"/> If you need to implement such a function in FME, then you might be interested with the following tutorial video:</li>
+<li><a href="https://www.youtube.com/watch?v=kNeMNr2fAtM">youtube.com/watch?v=kNeMNr2fAtM</a></li>
+</ul>
+<h2 id="5-accessing-wms-services-with-owslib-python-library">5) Accessing WMS services with OWSLib Python Library</h2>
+<p>OWSLib is one of the OGC compliant web service client and it supports OGC interface standards.
+Before using the OWSLib consider the following steps:
+- If you are on working in online environment, please install OWSLib to your current python environment using : <strong>pip install OWSLib</strong>
+- Then you need to import the OWSLib library into your code.
+- Check the following site to get more information about the OWSLib:
+  - <a href="https://owslib.readthedocs.io/en/latest/">https://owslib.readthedocs.io/en/latest/</a> </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">owslib</span>
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Check available contents (packages + classes) in the library with following code:
+<code>help(owslib)</code></li>
+</ul>
+<p>You can specify a class or package to reduce the loaded library content in your code.
+There are multiple ways to do so:
+- First Option: <code>from owslib import wms</code>
+  - Imports only wms module from owslib package
+  - Type: <code>help(wms)</code>
+- Second Option: <code>import owslib.wms</code>
+  - Again, it calls only wms module from owslib package
+  - Type: <code>help(owslib.wms)</code>
+- Another option to import only the relevant function: <code>from owslib.wms import WebMapService as any_shorten_form</code>
+  - Imports only WebMapService function in the wms module and assigns a custom alias to it.
+  - Type: <code>help(any_shorten_form)</code></p>
+<h3 id="5-a-examine-a-wms-service-with-owslib">5 a) Examine a WMS service with OWSLib</h3>
+<p>Select any Web Map Service (WMS) from your previous work, or select a random WMS that covers the city of Hamburg in whole or in part. (If you want to add a random WMS, revisit the <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a> or <a href="https://geoportal.de">geoportal.de</a> or <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> websites to search for the appropriate web service.)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Decide a way to import the library. </span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span> <span class="nn">owslib.wms</span> <span class="kn">import</span> <span class="n">WebMapService</span> <span class="k">as</span> <span class="n">mywms</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># help(mywms)</span>
+</code></pre></div>
+<p>If you type help(mywms), you will see an explanation of the function as below.</p>
+<p>WebMapService(<strong>url</strong>, version='1.1.1', xml=None, username=None, ...)</p>
+<p>Notice that only "url" parameter is not assigned to a value. This means that the only mandatory parameter is the "url" and all other parameters will be accepted with their default values unless their values are specified.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Now, test your selected WMS with the imported WebMapService function.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># mytest = mywms(&#39;https://geodienste.hamburg.de/HH_WMS_DGM1&#39;)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># The website serves the metadata of the WMS highlights that</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># the recommended version is &quot;1.3.0&quot;. So we can specify that:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">mytest</span> <span class="o">=</span> <span class="n">mywms</span><span class="p">(</span><span class="s1">&#39;https://geodienste.hamburg.de/HH_WMS_DGM1&#39;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.3.0&#39;</span><span class="p">)</span>
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Now, you can use "the built-in functions" to know more about the returned object:
+<code>print(mytest)</code> / <code>type(mytest)</code> / <code>help(mytest)</code> / <code>dir(mytest)</code>
+If you are sure about the data is an iterable object (tuple, set, list, dictionary) then you can use also "list" function.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">list</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">contents</span><span class="p">)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># Alternatively: print(mytest.contents.keys())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>[&#39;HH_WMS_DGM1&#39;, &#39;WMS_DGM1_HAMBURG&#39;, &#39;WMS_DGM1_farbig&#39;, &#39;WMS_DGM1_farbig_10000&#39;]
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Check the available methods by typing dir(mytest).</li>
+<li>You may notice the "operations" method in the list.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">list</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">operations</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x702a34394ad0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x702a34396de0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x702a34394290&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x702a34394230&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x702a343941d0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x702a343943b0&gt;]
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> As operations stored as objects in a list (array), we can access them using list index (For Exp. mylist[0]). Then you can check the available methods or attributes in the class instance by typing <code>dir(mytest.operations[0])</code>. </li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mytest</span><span class="o">.</span><span class="n">operations</span><span class="p">:</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>GetCapabilities
+GetMap
+GetFeatureInfo
+DescribeLayer
+GetLegendGraphic
+GetStyles
+</code></pre></div>
+<ul>
+<li>Alternatively, you can inspect the webservice using the "getServiceXML" method. Please note that the result will be returned as a binary file in XML format. This means that you have to consider the binary format if you want to store or read the returned object as a file. For example, we specified the file mode as "wb" (Write + Binary) in the following code, because the object "mytest.getServiceXML()" was in bytes format, not a string. </li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># type(mytest.getServiceXML())</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Specify your own relative or full path to save the XML file, if it is required.</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/exr3/my_wms_servicexml.xml&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_wms_xml</span><span class="p">:</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="n">my_wms_xml</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">getServiceXML</span><span class="p">())</span>
+</code></pre></div>
+<ul>
+<li>Check the saved XML file and try to find where the layers, bounding boxes or coordinate reference systems (CRSs) are defined.</li>
+</ul>
+<blockquote style="background-color:ivory;"> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
+</blockquote>
+
+<ul>
+<li>You can also send queries to get single images with predefined properties. To do that, you may need to expose more informaiton about the WMS service using following commands:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;CRS Options : &#39;</span><span class="p">,</span><span class="n">mytest</span><span class="p">[</span><span class="s1">&#39;WMS_DGM1_HAMBURG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">crsOptions</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Bounding Box : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="p">[</span><span class="s1">&#39;WMS_DGM1_HAMBURG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">boundingBox</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Layer Style : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="p">[</span><span class="s1">&#39;WMS_DGM1_HAMBURG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">styles</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Supported Formats : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="o">.</span><span class="n">getOperationByName</span><span class="p">(</span><span class="s1">&#39;GetMap&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">formatOptions</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>CRS Options :  [&#39;EPSG:25832&#39;, &#39;EPSG:3857&#39;, &#39;EPSG:4258&#39;, &#39;CRS:84&#39;, &#39;EPSG:3044&#39;, &#39;EPSG:25833&#39;, &#39;EPSG:4326&#39;, &#39;EPSG:31467&#39;, &#39;EPSG:4647&#39;]
+
+Bounding Box :  (8.482047, 53.385591, 10.355638, 53.941383)
+
+Layer Style :  {&#39;default&#39;: {&#39;title&#39;: &#39;default&#39;, &#39;legend&#39;: &#39;https://geodienste.hamburg.de/HH_WMS_DGM1?language=ger&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=WMS_DGM1_HAMBURG&amp;format=image/png&amp;STYLE=default&#39;, &#39;legend_width&#39;: &#39;298&#39;, &#39;legend_height&#39;: &#39;865&#39;, &#39;legend_format&#39;: &#39;image/png&#39;}}
+
+Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png; mode=8bit&#39;, &#39;image/vnd.jpeg-png&#39;, &#39;image/vnd.jpeg-png8&#39;, &#39;application/x-pdf&#39;, &#39;image/svg+xml&#39;, &#39;image/tiff&#39;, &#39;application/vnd.google-earth.kml+xml&#39;, &#39;application/vnd.google-earth.kmz&#39;, &#39;application/vnd.mapbox-vector-tile&#39;, &#39;application/x-protobuf&#39;, &#39;application/json&#39;]
+</code></pre></div>
+<ul>
+<li>So, you are aware of capability of the WMS service and you can use this data to get data from the server:</li>
+</ul>
+<blockquote style="background-color:ivory"><b>Note</b>: Note that if you are using a different WMS service, you need to change the parameters given in the next example.</blockquote>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">img</span> <span class="o">=</span> <span class="n">mytest</span><span class="o">.</span><span class="n">getmap</span><span class="p">(</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    <span class="n">layers</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;WMS_DGM1_HAMBURG&#39;</span><span class="p">],</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="n">size</span><span class="o">=</span><span class="p">[</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">],</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="n">srs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="n">bbox</span><span class="o">=</span><span class="p">[</span><span class="mf">9.5</span><span class="p">,</span> <span class="mf">53.4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">53.7</span><span class="p">],</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;image/jpeg&quot;</span><span class="p">)</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="n">Image</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</code></pre></div>
+<p><img alt="jpeg" src="../output_40_0.jpg" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
