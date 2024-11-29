@@ -377,7 +377,9 @@ XML/GML files are often structured as complex data models. Storing responses is 
 - Reading the data source documentation that may be provided by the provider
 - An additional solution can be parsing XML files in Python with help of **xmltodict library**.
 
-![asd](../images/samples_for_discussion/berlin_heritage_sites_wfs.png)
+<div align="center">
+<img src="../images/samples_for_discussion/berlin_heritage_sites_wfs.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
+</div>
 
 
 
