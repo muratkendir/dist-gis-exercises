@@ -1,6 +1,6 @@
 # Samples for Discussion
 
-<img align="right" width=100 height=190 src="./images/TUM_Logo_blau_rgb_p.png"/>
+<img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/>
 <blockquote>
 Munich Technical University > Engineering & Design > Aerospace & Geodesy > Chair of Geoinformatics </br></br>
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
