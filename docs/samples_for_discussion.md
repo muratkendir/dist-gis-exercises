@@ -6,7 +6,7 @@ Munich Technical University > Engineering & Design > Aerospace & Geodesy > Chair
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 </blockquote>
 
-## Classification of OGC Web Services
+## Sample Web Services
 
 ### CSW Servers (Catalog Service for the Web)
 
@@ -105,7 +105,9 @@ It is therefore theoretically possible to call a WMTS service as an XYZ tile lay
   - Repository : [https://www.sciencebase.gov/catalog/](https://www.sciencebase.gov/catalog/)
   - Get Capabilities URL : [https://sciencebase.usgs.gov/geoserver/ows?service=WCS&acceptversions=2.0.1&request=GetCapabilities](https://sciencebase.usgs.gov/geoserver/ows?service=WCS&acceptversions=2.0.1&request=GetCapabilities)
 
-### Accessing to CSW services with Python
+## Investigation of Web Services in Python
+
+### Accessing to CSW services
 
 Please check first the documentation page of [the OWSLib](https://owslib.readthedocs.io/en/latest/).
 
@@ -159,7 +161,7 @@ for x in my_csw.records:
     2bd333c5-ed2b-4bc2-9c43-eb735ba37f6c  :  Hubschrauber-Elektromagnetik (HEM) Gebiet 196 Gnarrenburg
 
 
-### Accessing to WMS services with Python
+### Accessing to WMS services
 
 
 ```python
@@ -250,7 +252,7 @@ Image(img.read())
 
 
 
-### Accessing to WMTS services using Python
+### Accessing to WMTS services
 
 
 
@@ -308,7 +310,7 @@ Image(img.read())
 
 
 
-### Accessing to WFS with Python
+### Accessing to WFS
 
 
 
@@ -377,11 +379,7 @@ XML/GML files are often structured as complex data models. Storing responses is 
 - Reading the data source documentation that may be provided by the provider
 - An additional solution can be parsing XML files in Python with help of **xmltodict library**.
 
-<div align="center">
-<img src="../images/samples_for_discussion/berlin_heritage_sites_wfs.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
-</div>
-
-
+![Data Model](images/samples_for_discussion/berlin_heritage_sites_wfs.png)
 
 
 ```python
@@ -405,7 +403,7 @@ my_pp.pprint(my_dict['wfs:FeatureCollection']['gml:featureMember'][1]['welterbe:
                                               '@ts': ' '}}}
 
 
-### Accessing to OGC API - Features with Python
+### Accessing to OGC API - Features
 
 
 ```python
@@ -451,7 +449,7 @@ my_query = my_api.collection_items('flurstueck', gemaschl='055100', flur='55', f
     
 
 
-### Accessing to WCS services with Python
+### Accessing to WCS services
 
 If you want to try Copernicus Hub, please register first, then go to “User Dashboard” > “Configuration Utility”. Select “Full WMS Template” and save it. You will find your token under the “Service Entry Points” pane.
 
