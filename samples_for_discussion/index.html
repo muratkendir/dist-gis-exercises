@@ -1,0 +1,1013 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Samples for Discussion - dist-gis-exercises (Educational Python Notebooks)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#samples-for-discussion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-header__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            dist-gis-exercises (Educational Python Notebooks)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Samples for Discussion
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-nav__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    dist-gis-exercises (Educational Python Notebooks)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 2 (Python Intro)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 3 (SDIs)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Virtual Env. Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Virtual Env. Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_win/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_lnx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classification-of-ogc-web-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classification of OGC Web Services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classification of OGC Web Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csw-servers-catalog-service-for-the-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSW Servers (Catalog Service for the Web)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wms-servers-web-map-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      WMS Servers (Web Map Service)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wmts-servers-web-map-tile-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      WMTS Servers (Web Map Tile Service)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wfs-services-web-feature-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      WFS Services (Web Feature Service)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ogc-api-features-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      OGC API - Features services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wcs-services-web-coverage-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      WCS Services (Web Coverage Service)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-to-csw-services-with-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing to CSW services with Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-to-wms-services-with-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing to WMS services with Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-to-wmts-services-using-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing to WMTS services using Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-to-wfs-with-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing to WFS with Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parsing-xmlgml-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parsing XML/GML in Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-to-ogc-api-features-with-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing to OGC API - Features with Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-to-wcs-services-with-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing to WCS services with Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="samples-for-discussion">Samples for Discussion</h1>
+<p><img align="right" width=100 height=190 src="./images/TUM_Logo_blau_rgb_p.png"/></p>
+<blockquote>
+Munich Technical University > Engineering & Design > Aerospace & Geodesy > Chair of Geoinformatics </br></br>
+Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+</blockquote>
+
+<h2 id="classification-of-ogc-web-services">Classification of OGC Web Services</h2>
+<h3 id="csw-servers-catalog-service-for-the-web">CSW Servers (Catalog Service for the Web)</h3>
+<ul>
+<li><strong>Metaver.de</strong></li>
+<li>Repository : <a href="https://metaver.de">metaver.de</a></li>
+<li>Main URL : <a href="https://metaver.de/csw?">https://metaver.de/csw?</a></li>
+<li>GetCapabilities Request : <a href="https://metaver.de/csw?SERVICE=CSW&amp;version=2.0.2&amp;request=GetCapabilities">https://metaver.de/csw?SERVICE=CSW&amp;version=2.0.2&amp;request=GetCapabilities</a></li>
+<li><strong>Federal Institute for Geosciences and Natural Resources</strong></li>
+<li>Repository : <a href="https://geoportal.bgr.de">geoportal.bgr.de</a></li>
+<li>Main URL : <a href="https://geoportal.bgr.de/smartfindersdi-csw/api?">https://geoportal.bgr.de/smartfindersdi-csw/api?</a></li>
+<li>GetCapabilities Request: <a href="https://geoportal.bgr.de/smartfindersdi-csw/api?Request=GetCapabilities&amp;Service=CSW&amp;Version=2.0.2">https://geoportal.bgr.de/smartfindersdi-csw/api?Request=GetCapabilities&amp;Service=CSW&amp;Version=2.0.2</a></li>
+</ul>
+<h3 id="wms-servers-web-map-service">WMS Servers (Web Map Service)</h3>
+<ul>
+<li><strong>German Aerospace Center</strong></li>
+<li>Repository : <a href="https://geoservice.dlr.de">geoservice.dlr.de</a></li>
+<li>Main URL : <a href="https://geoservice.dlr.de/eoc/elevation/wms?">https://geoservice.dlr.de/eoc/elevation/wms?</a></li>
+<li>GetCapabilities Request : <a href="https://geoservice.dlr.de/eoc/elevation/wms?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities">https://geoservice.dlr.de/eoc/elevation/wms?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities</a></li>
+<li>
+<p>GetMap Request Sample : <a href="https://geoservice.dlr.de/eoc/elevation/wms?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=46.77082519987465048%2C9.050240780867593315%2C46.95085097403297425%2C9.234170366642356242&amp;CRS=EPSG%3A4326&amp;WIDTH=1225&amp;HEIGHT=1200&amp;LAYERS=srtm_x-sar_dem_mosaic&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;DPI=96&amp;MAP_RESOLUTION=96&amp;FORMAT_OPTIONS=dpi%3A96&amp;TRANSPARENT=TRUE">SRTM-X DEM Mosaic</a></p>
+</li>
+<li>
+<p><strong>Hamburg Building Footprints (INSPIRE/ATKIS)</strong></p>
+</li>
+<li>Repository : <a href="https://transparenz.hamburg.de/">transparenz.hamburg.de</a></li>
+<li>Main URL : <a href="https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?">https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?</a></li>
+<li>GetCapabilities Request : <a href="https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GETCAPABILITIES">https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GETCAPABILITIES</a></li>
+<li>GetMap Request Sample : <a href="https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=1111942.144059270155%2C7082582.984302694909%2C1115292.715944103431%2C7085541.258006609045&amp;CRS=EPSG%3A3857&amp;WIDTH=1358&amp;HEIGHT=1200&amp;LAYERS=BU.Building&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;DPI=96&amp;MAP_RESOLUTION=96&amp;FORMAT_OPTIONS=dpi%3A96&amp;TRANSPARENT=TRUE">HH_WMS_Gebaeude_2D_ATKIS_Basis</a></li>
+</ul>
+<h3 id="wmts-servers-web-map-tile-service">WMTS Servers (Web Map Tile Service)</h3>
+<ul>
+<li><strong>BaseMap.de</strong></li>
+<li>Repository: <a href="https://basemap.de">basemap.de</a></li>
+<li>Capabilities URL: <a href="https://sgx.geodatenzentrum.de/wmts_basemapde/1.0.0/WMTSCapabilities.xml">https://sgx.geodatenzentrum.de/wmts_basemapde/1.0.0/WMTSCapabilities.xml</a></li>
+<li>
+<p>GetTile URL : <a href="https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/DE_EPSG_25832_ADV/09/383/297.png">https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/DE_EPSG_25832_ADV/09/383/297.png</a></p>
+</li>
+<li>
+<p><strong>TopPlusOpen</strong></p>
+</li>
+<li>
+<p>Repository: <a href="https://gdz.bkg.bund.de/">Bundesamt für Kartographie und Geodaesie</a></p>
+</li>
+<li>Capabilities URL : <a href="https://sgx.geodatenzentrum.de/wmts_topplus_open/1.0.0/WMTSCapabilities.xml">https://sgx.geodatenzentrum.de/wmts_topplus_open/1.0.0/WMTSCapabilities.xml</a></li>
+<li>GetTile URL (sample) : <a href="https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web/default/WEBMERCATOR/10/343/549.png">https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web/default/WEBMERCATOR/10/343/549.png</a></li>
+</ul>
+<blockquote style="background-color:ivory;">
+    TIP: An important clue about WMTS servers is that they work in a similar way to XYZ tiles. The key difference between XYZ tiles and TMS-based (Tile Map Specification) WMTS services is the order of the axes of the desired tile: </br>
+<ul>
+    <li>XYZ tiles is calling tile with this order: {Zoom Level/Z} / {Row Number/Y} / {Column Number/X}</li>
+    <li>WMTS service is calling tile with this order: {Zoom Level/Z} / {Column Number/X} / {Row Number/Y}</li>
+</ul>
+It is therefore theoretically possible to call a WMTS service as an XYZ tile layer. You can test the same service on QGIS by registering it as both WMTS and XYZ and changing the order of the {x} and {y} values.
+</blockquote>
+
+<h3 id="wfs-services-web-feature-service">WFS Services (Web Feature Service)</h3>
+<ul>
+<li><strong>Hamburg - Minimum groundwater level 2019</strong></li>
+<li>Repository : <a href="https://transparenz.hamburg.de/">transparenz.hamburg.de</a></li>
+<li>Main URL : <a href="https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?">https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?</a></li>
+<li>GetCapabilities Request : <a href="https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?REQUEST=GetCapabilities&amp;SERVICE=WFS">https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?REQUEST=GetCapabilities&amp;SERVICE=WFS</a></li>
+<li>
+<p>GetFeature Request Sample (Max 3) : <a href="https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=2.0.0&amp;TYPENAMES=de.hh.up:u12_f_gw_flurabstand_min&amp;SRSNAME=EPSG:25832&amp;COUNT=3">HH_WFS_Grundwasserschutz</a></p>
+</li>
+<li>
+<p><strong>World Heritage Sites in Berlin</strong></p>
+</li>
+<li>Repository : <a href="https://daten.berlin.de">daten.berlin.de</a></li>
+<li>Main URL : <a href="https://gdi.berlin.de/services/wfs/welterbe?">https://gdi.berlin.de/services/wfs/welterbe?</a></li>
+<li>GetCapabilities Request : <a href="https://gdi.berlin.de/services/wfs/welterbe?REQUEST=GetCapabilities&amp;SERVICE=wfs">https://gdi.berlin.de/services/wfs/welterbe?REQUEST=GetCapabilities&amp;SERVICE=wfs</a></li>
+<li>GetFeature Request Sample (Max 3) : <a href="https://gdi.berlin.de/services/wfs/welterbe?SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=2.0.0&amp;TYPENAMES=welterbe:welterbe&amp;STARTINDEX=0&amp;COUNT=3&amp;SRSNAME=urn:ogc:def:crs:EPSG::25833">Welterbestätten / Heritage Sites</a></li>
+</ul>
+<h3 id="ogc-api-features-services">OGC API - Features services</h3>
+<ul>
+<li><strong>Verkehrsstärken Hamburg</strong></li>
+<li>Repository : <a href="https://transparenz.hamburg.de">transparenz.hamburg.de</a></li>
+<li>Main URL : <a href="https://api.hamburg.de/datasets/v1/verkehrsstaerken">api.hamburg.de/datasets/v1/verkehrsstaerken</a></li>
+<li>API Conformance URL : <a href="https://api.hamburg.de/datasets/v1/verkehrsstaerken/conformance?f=json">api.hamburg.de/datasets/v1/verkehrsstaerken/conformance?f=json</a></li>
+<li>Collections : <a href="https://api.hamburg.de/datasets/v1/verkehrsstaerken/collections?f=json">api.hamburg.de/datasets/v1/verkehrsstaerken/collections?f=json</a></li>
+<li>
+<p>Items : <a href="https://api.hamburg.de/datasets/v1/verkehrsstaerken/collections/radverkehr_dtv_dtvw/items?&amp;limit=10&amp;offset=0&amp;f=json">https://api.hamburg.de/datasets/v1/verkehrsstaerken/collections/radverkehr_dtv_dtvw/items?&amp;limit=10&amp;offset=0&amp;f=json</a></p>
+</li>
+<li>
+<p><strong>Niedersachsen ALKIS Data</strong></p>
+</li>
+<li>Repository : <a href="https://ni-lgln-opengeodata.hub.arcgis.com/">ni-lgln-opengeodata.hub.arcgis.com/</a></li>
+<li>Main URL : <a href="https://alkis.stac.lgln.niedersachsen.de/">alkis.stac.lgln.niedersachsen.de/</a></li>
+<li>API Conformance URL : <a href="https://alkis.stac.lgln.niedersachsen.de/conformance">alkis.stac.lgln.niedersachsen.de/conformance</a></li>
+<li>Collections : <a href="https://alkis.stac.lgln.niedersachsen.de/collections">alkis.stac.lgln.niedersachsen.de/collections</a></li>
+<li>
+<p>Items : <a href="https://alkis.stac.lgln.niedersachsen.de/collections/alkis-hausumringe/items?limit=10&amp;bbox=-175.05,-85.05,175.05,85.05&amp;datetime=2018-02-12T23:20:50Z">alkis.stac.lgln.niedersachsen.de/collections/alkis-hausumringe/items?limit=10&amp;bbox=-175.05,-85.05,175.05,85.05&amp;datetime=2018-02-12T23:20:50Z</a></p>
+</li>
+<li>
+<p><strong>North Rhine-Westphalia, Cadastre</strong></p>
+</li>
+<li>Repository : <a href="https://www.bezreg-koeln.nrw.de/">www.bezreg-koeln.nrw.de/</a></li>
+<li>Main URL : <a href="https://ogc-api.nrw.de/lika/v1">ogc-api.nrw.de/lika/v1</a></li>
+<li>API Conformance URL : <a href="https://ogc-api.nrw.de/lika/v1/conformance?f=json">https://ogc-api.nrw.de/lika/v1/conformance?f=json</a></li>
+<li>API Interface : <a href="https://ogc-api.nrw.de/lika/v1/api">https://ogc-api.nrw.de/lika/v1/api</a></li>
+</ul>
+<h3 id="wcs-services-web-coverage-service">WCS Services (Web Coverage Service)</h3>
+<ul>
+<li><strong>Copernicus Data Hub</strong></li>
+<li>Repository : <a href="https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/OGC/WCS.html">documentation.dataspace.copernicus.eu</a></li>
+<li>Main URL : https://sh.dataspace.copernicus.eu/ogc/wcs/<INSTANCE_ID> (Instance_ID is the token given to the registered users)</li>
+<li>Sample URL : https://sh.dataspace.copernicus.eu/ogc/wcs/81ee4fd4-3ef6-4a0e-b2fd-054e6780f32d?</li>
+<li>
+<p>Get Capabilities URL : <a href="https://sh.dataspace.copernicus.eu/ogc/wcs/81ee4fd4-3ef6-4a0e-b2fd-054e6780f32d?REQUEST=GETCAPABILITIES&amp;SERVICE=WCS">https://sh.dataspace.copernicus.eu/ogc/wcs/81ee4fd4-3ef6-4a0e-b2fd-054e6780f32d?REQUEST=GETCAPABILITIES&amp;SERVICE=WCS</a></p>
+</li>
+<li>
+<p><strong>USGS ScienceBase</strong></p>
+</li>
+<li>Repository : <a href="https://www.sciencebase.gov/catalog/">https://www.sciencebase.gov/catalog/</a></li>
+<li>Get Capabilities URL : <a href="https://sciencebase.usgs.gov/geoserver/ows?service=WCS&amp;acceptversions=2.0.1&amp;request=GetCapabilities">https://sciencebase.usgs.gov/geoserver/ows?service=WCS&amp;acceptversions=2.0.1&amp;request=GetCapabilities</a></li>
+</ul>
+<h3 id="accessing-to-csw-services-with-python">Accessing to CSW services with Python</h3>
+<p>Please check first the documentation page of <a href="https://owslib.readthedocs.io/en/latest/">the OWSLib</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Get the CSW class from the OWSLib.</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">owslib.csw</span> <span class="kn">import</span> <span class="n">CatalogueServiceWeb</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span> <span class="nn">owslib.fes</span> <span class="kn">import</span> <span class="n">PropertyIsLike</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">#Specify the CSW Server</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">my_csw</span> <span class="o">=</span> <span class="n">CatalogueServiceWeb</span><span class="p">(</span><span class="s1">&#39;https://geoportal.bgr.de/smartfindersdi-csw/api?&#39;</span><span class="p">)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">#Check the available operations for the CSW service</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">my_csw</span><span class="o">.</span><span class="n">operations</span><span class="p">:</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">op</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># Prepare the query for listing relevant services or data sources</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">bremen_query</span> <span class="o">=</span> <span class="n">PropertyIsLike</span><span class="p">(</span><span class="s1">&#39;csw:AnyText&#39;</span><span class="p">,</span> <span class="s1">&#39;%Bremen%&#39;</span><span class="p">)</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1"># Get results of the given query</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">my_csw</span><span class="o">.</span><span class="n">getrecords2</span><span class="p">(</span><span class="n">constraints</span><span class="o">=</span><span class="p">[</span><span class="n">bremen_query</span><span class="p">],</span> <span class="n">maxrecords</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="c1"># Alternatively, you can use CQL (Common Query Language) expressions:</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="c1">#my_csw.getrecords2(cql=&#39;csw:AnyText like &quot;%Bremen%&quot;&#39;)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># Learn how many records fits actually to our query:</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_csw</span><span class="o">.</span><span class="n">results</span><span class="p">)</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="c1"># Check the available attributes and methods of any instance in the records object</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="c1"># print(dir( next(iter(my_csw.records)) ) )</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">my_csw</span><span class="o">.</span><span class="n">records</span><span class="p">:</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">my_csw</span><span class="o">.</span><span class="n">records</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">identifier</span><span class="p">,</span> <span class="s1">&#39; : &#39;</span><span class="p">,</span> <span class="n">my_csw</span><span class="o">.</span><span class="n">records</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>GetCapabilities
+GetRecords
+GetRecordById
+DescribeRecord
+Harvest
+{&#39;matches&#39;: 15, &#39;returned&#39;: 10, &#39;nextrecord&#39;: 11}
+4466C8F0-3CA5-4098-9869-DBA4269CF0C3  :  Bodenübersichtskarte 1:200.000 (BÜK200) - CC3110 Bremerhaven
+3EE608D6-D46F-4406-933F-2492C55308D3  :  Bodenübersichtskarte 1:200.000 (BÜK200) - CC3118 Hamburg-West
+AC3815DC-663E-4325-9283-CAC631989F15  :  Karte der oberflächennahen Rohstoffe der Bundesrepublik Deutschland 1:200.000 (KOR200) - CC 3118 Hamburg-West
+B36CD520-A63B-4DEF-8F83-79DE64E07236  :  Bodenübersichtskarte 1:200.000 (BÜK200) - CC2310 Helgoland
+8b70fe0f-0b03-477b-a3cd-c0f13a2c41b2  :  3D Modell des tieferen Untergrundes des Norddeutschen Beckens
+66CFEE61-8B60-4DA7-9632-56753CE0BFE8  :  Schutzpotenzial der Grundwasserüberdeckung
+a3f2f6a5-120c-4732-97a0-1db01f26557d  :  Processed seismic data of Cruise HE242
+d973f1af-db9f-4632-bd05-8964cc906b38  :  Processed seismic data of Cruise AL278 2006
+8BEBDE77-8C6A-48D5-BBAA-C7D7EF01D85D  :  Schutzpotenzial der Grundwasserüberdeckung (WMS)
+2bd333c5-ed2b-4bc2-9c43-eb735ba37f6c  :  Hubschrauber-Elektromagnetik (HEM) Gebiet 196 Gnarrenburg
+</code></pre></div>
+<h3 id="accessing-to-wms-services-with-python">Accessing to WMS services with Python</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">owslib.wms</span> <span class="kn">import</span> <span class="n">WebMapService</span> <span class="k">as</span> <span class="n">wms</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Add a WebMapService object using its alias</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">my_wms</span> <span class="o">=</span> <span class="n">wms</span><span class="p">(</span><span class="s1">&#39;https://geoservice.dlr.de/eoc/elevation/wms?&#39;</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># Inspect the service type, version and title</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wms</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wms</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wms</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">title</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># Check the available operations for the WMS service</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">ops_list</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">my_wms</span><span class="o">.</span><span class="n">operations</span><span class="p">:</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">ops_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">op</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">ops_list</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="c1"># Check the layers available in the WMS service</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="nb">print</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span><span class="n">my_wms</span><span class="o">.</span><span class="n">contents</span><span class="p">)</span> <span class="p">)</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="c1"># Check the supported image formats by the WMS service</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="c1"># print(my_wms.getOperationByName(&#39;GetMap&#39;).formatOptions)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>OGC:WMS
+1.1.1
+EOC Elevation Map Service
+
+[&#39;GetCapabilities&#39;, &#39;GetMap&#39;, &#39;GetFeatureInfo&#39;, &#39;DescribeLayer&#39;, &#39;GetLegendGraphic&#39;, &#39;GetStyles&#39;]
+
+[&#39;srtm_x-sar_mosaic&#39;, &#39;srtm_x-sar_hillshade_mosaic&#39;, &#39;srtm_x-sar_dem_mosaic&#39;, &#39;TDM90_AM2&#39;, &#39;TDM90_AMP&#39;, &#39;TDM90_COM&#39;, &#39;TDM90_COV&#39;, &#39;TDM90_DEM&#39;, &#39;TDM90_HEM&#39;, &#39;TDM90_LSM&#39;, &#39;TDM90_WAM&#39;, &#39;TDM_POLARDEM90_ANT_DEM&#39;, &#39;TDM_POLARDEM90_ANT_HSC&#39;, &#39;TDM_POLARDEM90_ANT_HSM&#39;, &#39;TDM_POLARDEM_ANT_COASTLINE&#39;, &#39;srtm_x-sar_hem_mosaic&#39;]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Decide to which extent must be rendered with which CRS. Use your GIS app if you need.</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># SAMPLE GETMAP REQUEST WAS:</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">sample_request</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;https://geoservice.dlr.de/eoc/elevation/wms?</span><span class="se">\</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="s2">SERVICE=WMS</span><span class="se">\</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s2">&amp;VERSION=1.3.0</span><span class="se">\</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="s2">&amp;REQUEST=GetMap</span><span class="se">\</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="s2">&amp;BBOX=47,9.05,47.2,9.25</span><span class="se">\</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="s2">&amp;CRS=EPSG:4326</span><span class="se">\</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="s2">&amp;WIDTH=1200</span><span class="se">\</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="s2">&amp;HEIGHT=1200</span><span class="se">\</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="s2">&amp;LAYERS=srtm_x-sar_dem_mosaic</span><span class="se">\</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="s2">&amp;STYLES=</span><span class="se">\</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="s2">&amp;FORMAT=image/png</span><span class="se">\</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="s2">&amp;DPI=96</span><span class="se">\</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="s2">&amp;MAP_RESOLUTION=96</span><span class="se">\</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="s2">&amp;FORMAT_OPTIONS=dpi:96</span><span class="se">\</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="s2">&amp;TRANSPARENT=TRUE&quot;&quot;&quot;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="c1"># So, you can test it with requests library too:</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="n">test_wms</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">sample_request</span><span class="p">)</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="c1"># Check the available methods and attributes for the requests object:</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="c1"># print(dir(test_wms))</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="c1"># Render the response</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="c1"># Image(test_wms.content)</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="c1"># If your test goes well with the sample URL, you can specify your own request</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="n">img</span> <span class="o">=</span> <span class="n">my_wms</span><span class="o">.</span><span class="n">getmap</span><span class="p">(</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>    <span class="n">layers</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;srtm_x-sar_mosaic&#39;</span><span class="p">],</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>    <span class="n">size</span><span class="o">=</span><span class="p">[</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">],</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>    <span class="n">srs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    <span class="n">bbox</span><span class="o">=</span><span class="p">[</span><span class="mi">47</span><span class="p">,</span><span class="mf">9.05</span><span class="p">,</span><span class="mf">47.2</span><span class="p">,</span><span class="mf">9.25</span><span class="p">],</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>    <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;image/png&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="n">Image</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</code></pre></div>
+<p><img alt="png" src="../output_11_0.png" /></p>
+<h3 id="accessing-to-wmts-services-using-python">Accessing to WMTS services using Python</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">owslib.wmts</span> <span class="kn">import</span> <span class="n">WebMapTileService</span> <span class="k">as</span> <span class="n">wmts</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">my_wmts</span> <span class="o">=</span> <span class="n">wmts</span><span class="p">(</span><span class="s1">&#39;https://sgx.geodatenzentrum.de/wmts_basemapde&#39;</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wmts</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wmts</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wmts</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">title</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># Check the available layers for the WMTS service</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nb">print</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span><span class="n">my_wmts</span><span class="o">.</span><span class="n">contents</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="p">)</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1"># Check the available TileMatrixSets in the WMTS service</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wmts</span><span class="o">.</span><span class="n">tilematrixsets</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># Store the Capabilities document on to your computer</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/samples_for_discussion/my_wmts_servicexml.xml&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">wmts_xml</span><span class="p">:</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        <span class="n">wmts_xml</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">my_wmts</span><span class="o">.</span><span class="n">getServiceXML</span><span class="p">())</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;File (&#39;</span> <span class="o">+</span> <span class="n">wmts_xml</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;) has been saved.&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>OGC WMTS
+1.0.0
+WMTS DE BASEMAP.DE WEB RASTER
+
+[&#39;de_basemapde_web_raster_farbe&#39;, &#39;de_basemapde_web_raster_grau&#39;]
+
+{&#39;DE_EPSG_25832_ADV&#39;: &lt;owslib.wmts.TileMatrixSet object at 0x7e95475eb4a0&gt;, &#39;DE_EPSG_3857_ADV&#39;: &lt;owslib.wmts.TileMatrixSet object at 0x7e95475e80e0&gt;, &#39;DE_EPSG_25833_ADV&#39;: &lt;owslib.wmts.TileMatrixSet object at 0x7e95475e9c10&gt;, &#39;GLOBAL_WEBMERCATOR&#39;: &lt;owslib.wmts.TileMatrixSet object at 0x7e95475ead20&gt;}
+
+File (responses/samples_for_discussion/my_wmts_servicexml.xml) has been saved.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">img</span> <span class="o">=</span> <span class="n">my_wmts</span><span class="o">.</span><span class="n">gettile</span><span class="p">(</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">layer</span><span class="o">=</span><span class="s1">&#39;de_basemapde_web_raster_farbe&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">tilematrixset</span><span class="o">=</span><span class="s2">&quot;DE_EPSG_25832_ADV&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">tilematrix</span><span class="o">=</span><span class="s1">&#39;01&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;image/png&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">Image</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</code></pre></div>
+<p><img alt="png" src="../output_14_0.png" /></p>
+<h3 id="accessing-to-wfs-with-python">Accessing to WFS with Python</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">owslib.wfs</span> <span class="kn">import</span> <span class="n">WebFeatureService</span> <span class="k">as</span> <span class="n">wfs</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">my_wfs</span> <span class="o">=</span> <span class="n">wfs</span><span class="p">(</span><span class="s1">&#39;https://gdi.berlin.de/services/wfs/welterbe?&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># Inspect the service type, version and title</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wfs</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wfs</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wfs</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">title</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c1"># List available operations with a Python comprehension (shorten function)</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="n">op_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">op</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">my_wfs</span><span class="o">.</span><span class="n">operations</span><span class="p">]</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="nb">print</span><span class="p">(</span> <span class="n">op_list</span> <span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="c1"># Check the available contents for the WFS service</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="nb">print</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span><span class="n">my_wfs</span><span class="o">.</span><span class="n">contents</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="p">)</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="c1"># Get help document for a selected operation</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="c1">#help(my_wfs.getfeature)</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="c1"># Sample GetFeature Request URL:</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="c1"># https://gdi.berlin.de/services/wfs/welterbe?</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="c1">#SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=2.0.0&amp;</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="c1">#TYPENAMES=welterbe:welterbe&amp;STARTINDEX=0&amp;COUNT=3&amp;SRSNAME=urn:ogc:def:crs:EPSG::25833</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="n">my_objects</span> <span class="o">=</span> <span class="n">my_wfs</span><span class="o">.</span><span class="n">getfeature</span><span class="p">(</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>    <span class="n">typename</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;welterbe:welterbe&#39;</span><span class="p">],</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>    <span class="n">srsname</span> <span class="o">=</span> <span class="s1">&#39;urn:ogc:def:crs:EPSG::25833&#39;</span><span class="p">,</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>    <span class="n">maxfeatures</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>    <span class="n">startindex</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="p">)</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="c1"># Check the type of the request.</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="c1"># print( type(my_objects) )</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="c1"># Check the supported image formats by the WMS service</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wfs</span><span class="o">.</span><span class="n">getOperationByName</span><span class="p">(</span><span class="s1">&#39;GetFeature&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">formatOptions</span><span class="p">)</span>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a><span class="c1"># Store the response file on to your computer</span>
+<a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/samples_for_discussion/my_wfs_response.gml&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">wfs_gml</span><span class="p">:</span>
+<a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a>        <span class="n">wfs_gml</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">my_objects</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a>        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;File (&#39;</span> <span class="o">+</span> <span class="n">wfs_gml</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;) has been saved.&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>WFS
+1.0.0
+Welterbestätten Berlin
+
+[&#39;GetCapabilities&#39;, &#39;DescribeFeatureType&#39;, &#39;GetFeature&#39;]
+
+[&#39;welterbe:welterbe&#39;]
+
+[&#39;{http://www.opengis.net/wfs}GML2&#39;]
+File (responses/samples_for_discussion/my_wfs_response.gml) has been saved.
+</code></pre></div>
+<h3 id="parsing-xmlgml-in-python">Parsing XML/GML in Python</h3>
+<p>XML/GML files are often structured as complex data models. Storing responses is therefore not always sufficient to understand the data content. Despite this challenge, we have multiple options for understanding the structure of data models:
+- Open downloaded data with an XML Software (see picture below)
+- Download XML Schema (XSD files) using the DescribeFeatureType operation
+- Reading the data source documentation that may be provided by the provider
+- An additional solution can be parsing XML files in Python with help of <strong>xmltodict library</strong>.</p>
+<p><img alt="asd" src="../images/samples_for_discussion/berlin_heritage_sites_wfs.png" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">xmltodict</span> <span class="k">as</span> <span class="nn">xd</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span> <span class="nn">pprint</span> 
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/samples_for_discussion/my_wfs_response.gml&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">stored_wfs</span><span class="p">:</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="n">wfs_text</span> <span class="o">=</span> <span class="n">stored_wfs</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">wfs_text_enc</span> <span class="o">=</span> <span class="n">wfs_text</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="n">my_dict</span> <span class="o">=</span> <span class="n">xd</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">wfs_text_enc</span><span class="p">)</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">my_pp</span> <span class="o">=</span> <span class="n">pprint</span><span class="o">.</span><span class="n">PrettyPrinter</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="n">my_pp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;wfs:FeatureCollection&#39;</span><span class="p">][</span><span class="s1">&#39;gml:featureMember&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;welterbe:welterbe&#39;</span><span class="p">][</span><span class="s1">&#39;gml:boundedBy&#39;</span><span class="p">])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>{   &#39;gml:Box&#39;: {   &#39;@srsName&#39;: &#39;http://www.opengis.net/gml/srs/epsg.xml#25833&#39;,
+                   &#39;gml:coordinates&#39;: {   &#39;#text&#39;: &#39;393520.19630308,5822766.23041044 &#39;
+                                                   &#39;393944.72582015,5823161.95202459&#39;,
+                                          &#39;@cs&#39;: &#39;,&#39;,
+                                          &#39;@decimal&#39;: &#39;.&#39;,
+                                          &#39;@ts&#39;: &#39; &#39;}}}
+</code></pre></div>
+<h3 id="accessing-to-ogc-api-features-with-python">Accessing to OGC API - Features with Python</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span> <span class="nn">owslib.ogcapi.features</span> <span class="kn">import</span> <span class="n">Features</span> <span class="k">as</span> <span class="n">ftr</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span> <span class="nn">pprint</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">my_pp</span> <span class="o">=</span> <span class="n">pprint</span><span class="o">.</span><span class="n">PrettyPrinter</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">my_api</span> <span class="o">=</span> <span class="n">ftr</span><span class="p">(</span><span class="s1">&#39;https://ogc-api.nrw.de/lika/v1/&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="c1"># Print the Conformance document</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># print(my_pp.pprint(my_api.conformance()))</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="nb">print</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span><span class="n">my_api</span><span class="o">.</span><span class="n">feature_collections</span><span class="p">())</span> <span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="c1"># Print the information of parcel collection</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="nb">print</span><span class="p">(</span> <span class="n">my_api</span><span class="o">.</span><span class="n">collection</span><span class="p">(</span><span class="s1">&#39;flurstueck&#39;</span><span class="p">)[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="p">)</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="nb">print</span><span class="p">(</span> <span class="n">my_api</span><span class="o">.</span><span class="n">collection</span><span class="p">(</span><span class="s1">&#39;flurstueck&#39;</span><span class="p">)[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="p">)</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="nb">print</span><span class="p">(</span> <span class="n">my_api</span><span class="o">.</span><span class="n">collection</span><span class="p">(</span><span class="s1">&#39;flurstueck&#39;</span><span class="p">)[</span><span class="s1">&#39;extent&#39;</span><span class="p">][</span><span class="s1">&#39;temporal&#39;</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="c1"># Check the queryables for a specific collection</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="c1"># Sample request: https://ogc-api.nrw.de/lika/v1/collections/flurstueck/queryables?f=json</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="c1"># print(my_pp.pprint(my_api.collection_queryables(&#39;flurstueck&#39;)))</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="c1"># Check an instance from the collection</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="c1"># Sample request : https://ogc-api.nrw.de/lika/v1/collections/flurstueck/items/05510005500013______?f=json</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="n">my_sample</span> <span class="o">=</span> <span class="n">my_api</span><span class="o">.</span><span class="n">collection_item</span><span class="p">(</span><span class="n">collection_id</span><span class="o">=</span><span class="s1">&#39;flurstueck&#39;</span><span class="p">,</span> <span class="n">identifier</span><span class="o">=</span><span class="s1">&#39;05510005500013______&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="c1">#print( my_pp.pprint(my_sample) )</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="c1"># You can also list features with using following queryables:</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="c1"># gemaschl: Gemarkung-Schlüssel: district key </span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="c1"># flur: Bezeichnung/Name der Flur: Description / name of the field</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="c1"># flstnrzae: Zähler der Flurstücksnummer: Counter of the parcel number</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="n">my_query</span> <span class="o">=</span> <span class="n">my_api</span><span class="o">.</span><span class="n">collection_items</span><span class="p">(</span><span class="s1">&#39;flurstueck&#39;</span><span class="p">,</span> <span class="n">gemaschl</span><span class="o">=</span><span class="s1">&#39;055100&#39;</span><span class="p">,</span> <span class="n">flur</span><span class="o">=</span><span class="s1">&#39;55&#39;</span><span class="p">,</span> <span class="n">flstnrzae</span><span class="o">=</span><span class="s1">&#39;13&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="c1"># my_pp.pprint(my_query)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>[&#39;flurstueck&#39;, &#39;flurstueck_punkt&#39;, &#39;gebaeude_bauwerk&#39;, &#39;katasterbezirk&#39;, &#39;nutzung&#39;, &#39;nutzung_flurstueck&#39;, &#39;verwaltungseinheit&#39;]
+
+flurstueck
+Flurstück
+{&#39;interval&#39;: [[&#39;2008-05-20T12:10:43Z&#39;, &#39;2023-09-08T04:24:02Z&#39;]], &#39;trs&#39;: &#39;http://www.opengis.net/def/uom/ISO-8601/0/Gregorian&#39;}
+</code></pre></div>
+<h3 id="accessing-to-wcs-services-with-python">Accessing to WCS services with Python</h3>
+<p>If you want to try Copernicus Hub, please register first, then go to “User Dashboard” &gt; “Configuration Utility”. Select “Full WMS Template” and save it. You will find your token under the “Service Entry Points” pane.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span> <span class="nn">owslib.wcs</span> <span class="kn">import</span> <span class="n">WebCoverageService</span> <span class="k">as</span> <span class="n">wcs</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">my_wcs</span> <span class="o">=</span> <span class="n">wcs</span><span class="p">(</span><span class="s1">&#39;https://sh.dataspace.copernicus.eu/ogc/wcs/81ee4fd4-3ef6-4a0e-b2fd-054e6780f32d?&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wcs</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wcs</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wcs</span><span class="o">.</span><span class="n">identification</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1"># List available operations with a Python comprehension</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="n">op_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">op</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">my_wcs</span><span class="o">.</span><span class="n">operations</span><span class="p">]</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="nb">print</span><span class="p">(</span> <span class="n">op_list</span> <span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="c1"># Print available coverages</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wcs</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="c1"># Print the Bounding Box for the coverage</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_wcs</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="s1">&#39;TRUE_COLOR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">boundingboxes</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="c1"># Print available output options:</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="nb">print</span><span class="p">(</span> <span class="n">my_wcs</span><span class="o">.</span><span class="n">getOperationByName</span><span class="p">(</span><span class="s1">&#39;GetCoverage&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">methods</span> <span class="p">)</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="c1">#help(my_wcs.getCoverage)</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="n">cov</span> <span class="o">=</span> <span class="n">my_wcs</span><span class="o">.</span><span class="n">getCoverage</span><span class="p">(</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>    <span class="n">identifier</span><span class="o">=</span><span class="s2">&quot;TRUE_COLOR&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>    <span class="n">bbox</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">180</span><span class="p">,</span> <span class="o">-</span><span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>    <span class="n">version</span><span class="o">=</span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>    <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;image/png&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>    <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>    <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>    <span class="n">res_x</span><span class="o">=</span><span class="mi">72</span><span class="p">,</span>
+<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>    <span class="n">res_y</span><span class="o">=</span><span class="mi">72</span><span class="p">)</span>
+<a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a>
+<a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a><span class="n">requested_coverage</span> <span class="o">=</span> <span class="n">cov</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a>
+<a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a><span class="c1"># Store the Capabilities document on to your computer</span>
+<a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/samples_for_discussion/my_wcs_sample_query.png&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">wcs_sample</span><span class="p">:</span>
+<a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a>        <span class="n">wcs_sample</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">requested_coverage</span><span class="p">)</span>
+<a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a>        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;File (&#39;</span> <span class="o">+</span> <span class="n">wcs_sample</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;) has been saved.&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a>
+<a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a><span class="n">Image</span><span class="p">(</span><span class="n">cov</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>OGC:WCS
+1.0.0
+Sentinel Hub WCS service - Murat Kendir
+[&#39;GetCapabilities&#39;, &#39;DescribeCoverage&#39;, &#39;GetCoverage&#39;]
+
+dict_keys([&#39;AGRICULTURE&#39;, &#39;ARI1&#39;, &#39;ARI2&#39;, &#39;ATMOSPHERIC_PENETRATION&#39;, &#39;B01&#39;, &#39;B02&#39;, &#39;B03&#39;, &#39;B04&#39;, &#39;B05&#39;, &#39;B06&#39;, &#39;B07&#39;, &#39;B08&#39;, &#39;B09&#39;, &#39;B10&#39;, &#39;B11&#39;, &#39;B12&#39;, &#39;B8A&#39;, &#39;BAI&#39;, &#39;BATHYMETRIC&#39;, &#39;CHL_RED_EDGE&#39;, &#39;CRI1&#39;, &#39;CRI2&#39;, &#39;EVI&#39;, &#39;EVI2&#39;, &#39;FALSE_COLOR&#39;, &#39;FALSE_COLOR_URBAN&#39;, &#39;GEOLOGY&#39;, &#39;GRVI1&#39;, &#39;LAI_SAVI&#39;, &#39;MOISTURE_INDEX&#39;, &#39;MSAVI2&#39;, &#39;NBR_RAW&#39;, &#39;NDVI&#39;, &#39;NDVI_GRAY&#39;, &#39;NDVI_GREEN_GRAY&#39;, &#39;NDWI&#39;, &#39;PSRI&#39;, &#39;PSRI_NIR&#39;, &#39;RED_EDGE_NDVI&#39;, &#39;RE_NDWI&#39;, &#39;RGB_11_8_3&#39;, &#39;RGB_4_3_1&#39;, &#39;RGB_8_11_12&#39;, &#39;RGB_8_11_4&#39;, &#39;RGB_8_5_4&#39;, &#39;RGB_8_6_4&#39;, &#39;SAVI&#39;, &#39;SWIR&#39;, &#39;TRUE_COLOR&#39;])
+
+[{&#39;nativeSrs&#39;: &#39;EPSG:3857&#39;, &#39;bbox&#39;: (-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789)}]
+
+[{&#39;type&#39;: &#39;Get&#39;, &#39;url&#39;: &#39;https://sh.dataspace.copernicus.eu/ogc/wcs/81ee4fd4-3ef6-4a0e-b2fd-054e6780f32d?&#39;}]
+File (responses/samples_for_discussion/my_wcs_sample_query.png) has been saved.
+</code></pre></div>
+<p><img alt="png" src="../output_22_1.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
