@@ -1,6 +1,6 @@
-#  Spatial Data Infrastructures (SDI)
+# Spatial Data Infrastructures (SDI)
 
-<img align="right" width=100 height=190 src="./images/TUM_Logo_blau_rgb_p.png"/>
+<img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/>
 <blockquote>
 Munich Technical University > Engineering & Design  Aerospace & Geodesy || Chair of Geoinformatics </br></br>
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
@@ -39,7 +39,7 @@ Global Sea Level is rising at an increasing rate every year, causing floods to o
 </ul>
 <div align=center>
 <figure style="width:282px;padding:10px;background-color:#dad7cb;">
-    <img src="./images/exr3/hamburg_1962.jpg" width=282 height=200/>
+    <img src="../images/exr3/hamburg_1962.jpg" width=282 height=200/>
     <figcaption>During the catastrophic flood of 1962, boats were used to rescue Hamburg residents from flooded buildings.
             <a href="https://www.bloomberg.com/news/features/2023-11-20/the-design-history-of-london-s-mansion-block-apartment-buildings"> Source</a>
     </figcaption>
@@ -166,7 +166,7 @@ Explore possible answers to the following questions:
 Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “**found_service()**” function in the code (created in section 2b) and save the relevant information.
 <div align="center">
-<img src="./images/exr3/grundstuecke_service.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/grundstuecke_service.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 ### 3 b) Land Parcels (Flurstücke)
@@ -189,7 +189,7 @@ Finally:
 - [ ] If you think you have found a web service that suits your purpose, run the “**found_service()**” function.
 
 <div align="center">
-<img src="./images/exr3/flurstuecke_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/flurstuecke_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 ### 3 c) Digital Elevation Model / DEM (Höhenmodell)
@@ -211,7 +211,7 @@ Finally:
 - [ ] If you think you have found a web service that suits your purpose, run the “**found_service()**” function.
 
 <div align="center">
-<img src="./images/exr3/hohemodell_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/hohemodell_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 ### 3 d) Flood Risk Zones
@@ -231,7 +231,7 @@ Finally:
 - [ ] If you think you have found a web service that suits your purpose, run the “**found_service()**” function.
 
 <div align="center">
-<img src="./images/exr3/flood_risk_service.png" width=250 height=250 align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/flood_risk_service.png" width=250 height=250 align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 ## 4) Adding Services to GIS Software
@@ -247,14 +247,14 @@ In this chapter, you will learn how to add web services or datasets to a GIS sof
   - [ ] Find the city center of Hamburg on the map and zoom in until the canvas covers only some buildings. Alternatively, at the bottom of the QGIS window you can set the scale to 1:2000 or larger.
 > TIP: Sometimes you need to zoom in on your area of interest to avoid long loading times or just to make sure that the layer is visible in the area.
 <div align="center">
-<img src="./images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 - Check the coordinate system of the active map canvas (map widget in the software). If it is defined as OGC:CRS84, change it to EPSG:4326 Coordinate Reference System (CRS). You will notice some distortion on the map canvas, this is normal because EPSG:4326 (aka WGS84) is a geographic coordinate system, not a projected coordinate system. You may need to use this coordinate system from time to time because it is one of the most widely supported CRS by web services.
 - Check the type of web services you noted in section 1) and add them considering the type of web services.
 > TIP: There are multiple ways to check the type of web services. One could be to check the categories or filters available on the SDI website. The other method could be to check the metadata to find the type. Finally, if you segment the request URL, you might see a query parameter like "service=WMS" or "service=WFS".
 
 <div align="center">
-<img src="./images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 #### 4a ii) Add WMS Service
@@ -263,7 +263,7 @@ In this chapter, you will learn how to add web services or datasets to a GIS sof
   - [ ] Click to any available layer in the service, check the coordinate system and click to Add Button.
 
 <div align="center">
-<img src="./images/exr3/qgis_wms.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/qgis_wms.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 #### 4a iii) Add WFS Service
@@ -282,7 +282,7 @@ If you are in doubt about overlapping polygons, simply change the symbology of t
 - [ ] Copy & Paste WMS address into “Server URL” text box. Specify user authentication if it is needed.
 
 <div align="center">
-<img src="./images/exr3/arcgis_pro_add_connection.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/arcgis_pro_add_connection.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 - [ ] If the server has been successfully added, it can be added into map canvas from Add Data menu. Right Click on “Map” in the left Contents pane and select Add Data.
@@ -292,7 +292,7 @@ If you are in doubt about overlapping polygons, simply change the symbology of t
 - [ ] If the WMS server connection is "queryable", you can query features in the WMS layers by clicking directly on them. Zoom in on a specific feature and find the "Locate" icon on the Map tab. Then click on the feature.
 
 <div align="center">
-<img src="./images/exr3/arcgis_pro_locate.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/arcgis_pro_locate.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 - You will see feature information in a pop-up window in the right pane. If there are multiple features on the map canvas, you may see multiple WMS layers and multiple feature information windows in the popup.
 - [ ] Press Ctrl+Alt+M or go to Help > Performance > Diagnostic Monitor to
@@ -303,7 +303,7 @@ examine the requests send by ArcGIS Pro.
 automation.
 
 <div align="center">
-<img src="./images/exr3/arcgis_pro_wms_added.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/arcgis_pro_wms_added.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 ### 4 c) Adding a WMS Service in FME
@@ -317,7 +317,7 @@ automation.
 - [ ] Go back to FME and click on the plus icon (+) at the bottom left in the Background Maps window.
 
 <div align="center">
-<img src="./images/exr3/fme_fme_options.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/fme_fme_options.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 - [ ] Select “OGC WMS (Web Map Service)” from the “Source” menu.
@@ -327,7 +327,7 @@ automation.
 - [ ] If everything went well, you will be able to select the background map as the selected WMS service.
 
 <div align="center">
-<img src="./images/exr3/fme_background_map.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/fme_background_map.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 
@@ -339,7 +339,7 @@ automation.
 - “PointOnRasterValueExtractor” can be one of the useful transformers that can select the band color value of a raster image using point coordinates.
 
 <div align="center">
-<img src="./images/exr3/fme_tandex_featureinfo.png" width=200 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/exr3/fme_tandex_featureinfo.png" width=200 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 #### 4c iii) Using GetFeatureInfo request in FME (Optional Step)

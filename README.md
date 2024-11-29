@@ -14,10 +14,12 @@ Contact: murat.kendir(at)tum.de
 ## Exercises
 
 - [Exercise 2 (Introduction to Python with Samples)](docs/exercise2.md)
+- [Exercise 3 (Spatial Data Infrastructures)](docs/exercise3.md)
+- [OGC Web Service - Samples for Discussion](docs/samples_for_discussion.md)
 
 ## Local Installation Instructions
 
-- [Inst. on Windows devices with PIP*](docs/install_w_pip_on_win.md)
-- [Inst. on Linux devices with PIP](docs/install_w_pip_on_lnx.md)
+- [Virtual Environment Installation on Windows \(with PIP*\)](docs/install_w_pip_on_win.md)
+- [Virtual Environment Installation on Linux \(with PIP\)](docs/install_w_pip_on_lnx.md)
 
 *PIP : Python's native package management system, which can pull the packages from the [PYPI](https://pypi.org/) online repository.
