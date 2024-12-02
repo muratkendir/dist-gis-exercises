@@ -6,7 +6,7 @@ Munich Technical University > Engineering & Design > Aerospace & Geodesy > Chair
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 </blockquote>
 
-## Sample Web Services
+## Classification of OGC Web Services
 
 ### CSW Servers (Catalog Service for the Web)
 
@@ -105,9 +105,7 @@ It is therefore theoretically possible to call a WMTS service as an XYZ tile lay
   - Repository : [https://www.sciencebase.gov/catalog/](https://www.sciencebase.gov/catalog/)
   - Get Capabilities URL : [https://sciencebase.usgs.gov/geoserver/ows?service=WCS&acceptversions=2.0.1&request=GetCapabilities](https://sciencebase.usgs.gov/geoserver/ows?service=WCS&acceptversions=2.0.1&request=GetCapabilities)
 
-## Investigation of Web Services in Python
-
-### Accessing to CSW services
+### Accessing to CSW services with Python
 
 Please check first the documentation page of [the OWSLib](https://owslib.readthedocs.io/en/latest/).
 
@@ -161,7 +159,7 @@ for x in my_csw.records:
     2bd333c5-ed2b-4bc2-9c43-eb735ba37f6c  :  Hubschrauber-Elektromagnetik (HEM) Gebiet 196 Gnarrenburg
 
 
-### Accessing to WMS services
+### Accessing to WMS services with Python
 
 
 ```python
@@ -252,7 +250,7 @@ Image(img.read())
 
 
 
-### Accessing to WMTS services
+### Accessing to WMTS services using Python
 
 
 
@@ -310,7 +308,7 @@ Image(img.read())
 
 
 
-### Accessing to WFS
+### Accessing to WFS with Python
 
 
 
@@ -379,7 +377,9 @@ XML/GML files are often structured as complex data models. Storing responses is 
 - Reading the data source documentation that may be provided by the provider
 - An additional solution can be parsing XML files in Python with help of **xmltodict library**.
 
-![Data Model](images/samples_for_discussion/berlin_heritage_sites_wfs.png)
+![asd](images/samples_for_discussion/berlin_heritage_sites_wfs.png)
+
+
 
 
 ```python
@@ -403,7 +403,7 @@ my_pp.pprint(my_dict['wfs:FeatureCollection']['gml:featureMember'][1]['welterbe:
                                               '@ts': ' '}}}
 
 
-### Accessing to OGC API - Features
+### Accessing to OGC API - Features with Python
 
 
 ```python
@@ -449,7 +449,7 @@ my_query = my_api.collection_items('flurstueck', gemaschl='055100', flur='55', f
     
 
 
-### Accessing to WCS services
+### Accessing to WCS services with Python
 
 If you want to try Copernicus Hub, please register first, then go to “User Dashboard” > “Configuration Utility”. Select “Full WMS Template” and save it. You will find your token under the “Service Entry Points” pane.
 
@@ -458,7 +458,10 @@ If you want to try Copernicus Hub, please register first, then go to “User Das
 from owslib.wcs import WebCoverageService as wcs
 from IPython.display import Image
 
-my_wcs = wcs('https://sh.dataspace.copernicus.eu/ogc/wcs/81ee4fd4-3ef6-4a0e-b2fd-054e6780f32d?')
+# <INSTANCE_ID> is the user token. Replace it with yours.
+# Murat Kendirs token : 81ee4fd4-3ef6-4a0e-b2fd-054e6780f32d
+
+my_wcs = wcs('https://sh.dataspace.copernicus.eu/ogc/wcs/<INSTANCE_ID>?')
 
 print(my_wcs.identification.type)
 print(my_wcs.identification.version)
@@ -481,13 +484,13 @@ print( my_wcs.getOperationByName('GetCoverage').methods )
 
 cov = my_wcs.getCoverage(
     identifier="TRUE_COLOR",
-    bbox=(-180, -90, 180, 90),
-    version="1.0.0",
     format="image/png",
-    width=600,
-    height=600,
-    res_x=72,
-    res_y=72)
+    crs="EPSG:3857",
+    response_crs="EPSG:3857",
+    bbox=(1245054,6061402,1327254,6203842),
+    version="1.0.0",
+    width=922 ,
+    height=1598)
 
 requested_coverage = cov.read()
 
@@ -520,3 +523,29 @@ Image(cov.read())
     
 
 
+
+### Run Kartoza/Geoserver to experience publishing OGC web services
+
+> TIP: If you want to run the following bash script in the Windows CLI (Command Prompt), replace the “\” characters with “^”. These are escape characters used in CLIs to ignore the next character (in our example we used them to escape the usually invisible “newline” \n characters).
+
+```bash
+docker run --interactive --tty \
+--publish 8080:8080 \
+--volume "./shared_w_geoserver":"/home/murat/geodata"\
+ -e GEOSERVER_ADMIN_USER=murat\
+ -e GEOSERVER_ADMIN_PASSWORD=password\
+ kartoza/geoserver
+```
+**Description of the Bash Script** :
+- "**docker run --interactively --tty**"
+  - gives command to run a specific docker image interactively (without closing the interface)
+- "**--publish 8080:8080**"
+  - This option forwards the internal port "8080" to the current local machine (host machine).
+- **' --volume "./shared_w_geoserver":"/home/murat/geodata" '**
+  - This option used to share a folder between host machine and the docker container. The second directory is the one in the container.
+- "**-e GEOSERVER_ADMIN_USER=murat**"
+  - This option specifies an environmental variable, which will be used by geoserver during the initialization.
+- "**-e GEOSERVER_ADMIN_PASSWORD=password**"
+  - Similarly, sets the password as environmental variable for geoserver.
+- "**kartoza/geoserver**"
+  - is the name of the docker image. If you are not sure about the docker image, you can check it always by typing ```docker image list```.
