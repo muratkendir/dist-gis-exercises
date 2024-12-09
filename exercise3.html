@@ -7676,23 +7676,27 @@ To do that, we can implement another function which runs an input command for ev
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3804e1e8-6c5a-42b1-89a0-e9fe50e8eea3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3804e1e8-6c5a-42b1-89a0-e9fe50e8eea3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># You can now define another function to interactively ask and store the knowledge data in your dictionary.</span>
 
 <span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"Url of SDI"</span><span class="p">,</span> <span class="s2">"URL of WMS Service"</span><span class="p">]</span>
 
-<span class="n">my_services</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1"># If the code runs for the first time, then the dictionary needs to be initialized.</span>
+<span class="k">if</span> <span class="s1">'my_services'</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">():</span> <span class="c1"># Checks if a variable is available in the local scope.</span>
+    <span class="k">pass</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">my_services</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="c1"># Following line adds only the keys defined above. </span>
 <span class="c1"># These kind of inline functions called as comprehensions in Python.</span>
-<span class="n">my_services</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">}</span>
+<span class="n">my_services</span><span class="p">[</span><span class="s2">"0"</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">}</span>
 <span class="c1"># print(my_services) </span>
 
 <span class="k">def</span> <span class="nf">add_to_store</span><span class="p">(</span><span class="n">service_id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">sdi_url</span><span class="p">,</span> <span class="n">wms_url</span><span class="p">):</span>
@@ -7710,9 +7714,25 @@ To do that, we can implement another function which runs an input command for ev
     <span class="c1">#Note that a list index is very similar to range, but always starts from 0.</span>
     <span class="n">add_to_store</span><span class="p">(</span><span class="n">service_id</span><span class="p">,</span> <span class="n">service_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">service_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">service_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 
-<span class="c1"># found_service()</span>
+<span class="n">found_service</span><span class="p">()</span>
 <span class="c1"># my_services.clear()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>{'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, 'asd': {'name': 'sad', 'Url of SDI': 'sad', 'URL of WMS Service': 'sad'}, '1': {'name': 'asd', 'Url of SDI': 'asd', 'URL of WMS Service': 'asd'}, '2': {'name': 'asd', 'Url of SDI': '234', 'URL of WMS Service': 'asd'}}
+</pre>
 </div>
 </div>
 </div>

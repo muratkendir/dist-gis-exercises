@@ -89,11 +89,15 @@ To do that, we can implement another function which runs an input command for ev
 
 keys = ["name", "Url of SDI", "URL of WMS Service"]
 
-my_services = {}
+# If the code runs for the first time, then the dictionary needs to be initialized.
+if 'my_services' in locals(): # Checks if a variable is available in the local scope.
+    pass
+else:
+    my_services = {}
 
 # Following line adds only the keys defined above. 
 # These kind of inline functions called as comprehensions in Python.
-my_services[0] = {key: None for key in keys}
+my_services["0"] = {key: None for key in keys}
 # print(my_services) 
 
 def add_to_store(service_id, name, sdi_url, wms_url):
@@ -111,9 +115,18 @@ def found_service():
     #Note that a list index is very similar to range, but always starts from 0.
     add_to_store(service_id, service_data[0], service_data[1], service_data[2])
 
-# found_service()
+found_service()
 # my_services.clear()
 ```
+
+    Give an ID (number or unique value)... 2
+    Please specify the name asd
+    Please specify the Url of SDI 234
+    Please specify the URL of WMS Service asd
+
+
+    {'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, 'asd': {'name': 'sad', 'Url of SDI': 'sad', 'URL of WMS Service': 'sad'}, '1': {'name': 'asd', 'Url of SDI': 'asd', 'URL of WMS Service': 'asd'}, '2': {'name': 'asd', 'Url of SDI': '234', 'URL of WMS Service': 'asd'}}
+
 
 - [ ] **Save the code** above as "service_selection.py" into "/raw_codes/exr3" directory.
 

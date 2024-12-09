@@ -2,11 +2,15 @@
 
 keys = ["name", "Url of SDI", "URL of WMS Service"]
 
-my_services = {}
+# If the code runs for the first time, then the dictionary needs to be initialized.
+if 'my_services' in locals(): # Checks if a variable is available in the local scope.
+    pass
+else:
+    my_services = {}
 
 # Following line adds only the keys defined above. 
 # These kind of inline functions called as comprehensions in Python. 
-my_services[0] = {key: None for key in keys}
+my_services["0"] = {key: None for key in keys}
 # print(my_services) 
 
 def add_to_store(service_id, name, sdi_url, wms_url):
