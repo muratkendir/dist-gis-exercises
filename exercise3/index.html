@@ -501,6 +501,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#6-using-ipyleaflet-to-show-the-web-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) Using ipyleaflet to show the web services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6) Using ipyleaflet to show the web services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-wms-layer-into-the-leaflet-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a WMS layer into the leaflet map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a GeoJSON data into the leaflet map using a OGC API - Features connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -864,6 +897,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#6-using-ipyleaflet-to-show-the-web-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) Using ipyleaflet to show the web services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6) Using ipyleaflet to show the web services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-wms-layer-into-the-leaflet-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a WMS layer into the leaflet map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a GeoJSON data into the leaflet map using a OGC API - Features connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -882,7 +948,7 @@
 <h1 id="spatial-data-infrastructures-sdi">Spatial Data Infrastructures (SDI)</h1>
 <p><img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
 <blockquote>
-Munich Technical University > Engineering & Design  Aerospace & Geodesy || Chair of Geoinformatics </br></br>
+Munich Technical University || Chair of Geoinformatics </br></br>
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 </blockquote>
 
@@ -934,7 +1000,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">#Create an empty dictionary.</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">my_services</span> <span class="o">=</span> <span class="p">{}</span> 
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># !Remember the role of identation in python.</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># !Remember the role of indentation in python.</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">def</span> <span class="nf">add_to_store</span><span class="p">(</span><span class="n">service_id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">wms_url</span><span class="p">):</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Here, you set a complex data in python dictionary data type.</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">my_services</span><span class="p">[</span><span class="n">service_id</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="n">name</span>
@@ -1057,7 +1123,7 @@ To do that, we can implement another function which runs an input command for ev
 - Click to "INSPIRE Data Themes"
 - Find the relevant theme on this page and select the country on the following web page.</p>
 <p>Explore possible answers to the following questions:
-- [ ] Where is the service URL?
+- [ ] Where is the service URL? (Please find the “Copy” icon under the “Preview Dataset” button.)
 - [ ] What kind of services are available in the theme? 
 - [ ] Can TANDEM-X datasets be useful for our project? If not, why?
 - [ ] Is the selected dataset also available on <strong>geoportal.de</strong> ?
@@ -1081,6 +1147,8 @@ To do that, we can implement another function which runs an input command for ev
 <li>Hochwasserrisikos (Flood Risks)</li>
 <li>Fließgewässern (Watercourses)</li>
 </ul>
+<blockquote style="background-color:ivory;">TIP: Please find the “Copy” icon under the “Preview Dataset” button to find the service URLs.</blockquote>
+
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
 <div align="center">
@@ -1101,7 +1169,7 @@ To do that, we can implement another function which runs an input command for ev
 </li>
 </ul>
 <div align="center">
-<img src="../images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="./images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 <ul>
 <li>Check the coordinate system of the active map canvas (map widget in the software). If it is defined as OGC:CRS84, change it to EPSG:4326 Coordinate Reference System (CRS). You will notice some distortion on the map canvas, this is normal because EPSG:4326 (aka WGS84) is a geographic coordinate system, not a projected coordinate system. You may need to use this coordinate system from time to time because it is one of the most widely supported CRS by web services.</li>
@@ -1111,7 +1179,7 @@ To do that, we can implement another function which runs an input command for ev
 </li>
 </ul>
 <div align="center">
-<img src="../images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="./images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <h4 id="4a-ii-add-wms-service">4a ii) Add WMS Service</h4>
@@ -1234,7 +1302,7 @@ There are multiple ways to do so:
 <h3 id="5-a-examine-a-wms-service-with-owslib">5 a) Examine a WMS service with OWSLib</h3>
 <p>Select any Web Map Service (WMS) from your previous work, or select a random WMS that covers the city of Hamburg in whole or in part. (If you want to add a random WMS, revisit the <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a> or <a href="https://geoportal.de">geoportal.de</a> or <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> websites to search for the appropriate web service.)</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Decide a way to import the library. </span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span> <span class="nn">owslib.wms</span> <span class="kn">import</span> <span class="n">WebMapService</span> <span class="k">as</span> <span class="n">mywms</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span> <span class="nn">owslib.wms</span> <span class="kn">import</span> <span class="n">WebMapService</span> <span class="k">as</span> <span class="n">wms</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># help(mywms)</span>
 </code></pre></div>
 <p>If you type help(mywms), you will see an explanation of the function as below.</p>
@@ -1246,7 +1314,7 @@ There are multiple ways to do so:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># mytest = mywms(&#39;https://geodienste.hamburg.de/HH_WMS_DGM1&#39;)</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># The website serves the metadata of the WMS highlights that</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># the recommended version is &quot;1.3.0&quot;. So we can specify that:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">mytest</span> <span class="o">=</span> <span class="n">mywms</span><span class="p">(</span><span class="s1">&#39;https://geodienste.hamburg.de/HH_WMS_DGM1&#39;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.3.0&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">mytest</span> <span class="o">=</span> <span class="n">wms</span><span class="p">(</span><span class="s1">&#39;https://geodienste.hamburg.de/HH_WMS_DGM1&#39;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.3.0&#39;</span><span class="p">)</span>
 </code></pre></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Now, you can use "the built-in functions" to know more about the returned object:
@@ -1331,6 +1399,105 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="n">Image</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre></div>
 <p><img alt="jpeg" src="../output_40_0.jpg" /></p>
+<h2 id="6-using-ipyleaflet-to-show-the-web-services">6) Using ipyleaflet to show the web services</h2>
+<p>ipyleaflet is a Jupyter / Leaflet bridge enabling interactive maps in the Jupyter notebook.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># Add a center point to your map using latitude, longitude values</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">my_center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">53.5452</span><span class="p">,</span> <span class="mf">9.9777</span><span class="p">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="c1"># Add a map object by specifying a zoom level and using the center point</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="n">my_map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="n">my_center</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="c1"># Define a marker object using the defined center point</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="n">my_marker</span> <span class="o">=</span> <span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="n">my_center</span><span class="p">)</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="c1"># Add the marker object to the map</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="n">my_map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">my_marker</span><span class="p">);</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="n">display</span><span class="p">(</span><span class="n">my_map</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
+</code></pre></div>
+<h3 id="add-a-wms-layer-into-the-leaflet-map">Add a WMS layer into the leaflet map</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span><span class="p">,</span> <span class="n">WMSLayer</span><span class="p">,</span> <span class="n">basemaps</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># Add one of the WMS service that you found in the sections above.</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">my_wms</span> <span class="o">=</span> <span class="n">WMSLayer</span><span class="p">(</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="n">url</span><span class="o">=</span><span class="n">mytest</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="n">layers</span><span class="o">=</span><span class="s1">&#39;WMS_DGM1_HAMBURG&#39;</span><span class="p">,</span> <span class="c1"># Check mytest.contents</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;image/png&#39;</span><span class="p">,</span> <span class="c1">#Check mytest.getOperationByName(&#39;GetMap&#39;).formatOptions</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>    <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="c1"># Check the value for mytest[&#39;WMS_DGM1_HAMBURG&#39;].opaque</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="p">)</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="n">my_center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">53.5452</span><span class="p">,</span> <span class="mf">9.9777</span><span class="p">)</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="c1"># Change the following assignment to add a simple basemap for a better visualization</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="n">my_map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">basemap</span><span class="o">=</span><span class="n">basemaps</span><span class="o">.</span><span class="n">CartoDB</span><span class="o">.</span><span class="n">Positron</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="n">my_center</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="n">my_marker</span> <span class="o">=</span> <span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="n">my_center</span><span class="p">)</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="c1"># Add the WMS service into the map</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="n">my_map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">my_wms</span><span class="p">)</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="n">my_map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">my_marker</span><span class="p">);</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="n">display</span><span class="p">(</span><span class="n">my_map</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
+</code></pre></div>
+<h3 id="add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection">Add a GeoJSON data into the leaflet map using a OGC API - Features connection</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">GeoJSON</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># Add &quot;OGC API - Features&quot; class of the OWSLib</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># Alternative Solution: Use requests library to get data directly.</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="kn">from</span> <span class="nn">owslib.ogcapi.features</span> <span class="kn">import</span> <span class="n">Features</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="c1"># Add json library to convert dictionaries to json</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="kn">import</span> <span class="nn">json</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="n">my_api</span> <span class="o">=</span> <span class="n">Features</span><span class="p">(</span><span class="s1">&#39;https://api.hamburg.de/datasets/v1/solarpotenzialanalyse/&#39;</span><span class="p">)</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="c1"># Check following methods or attributes supported by OWSLib:</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="c1"># my_api.collections, my_api.collection_queryables, my_api.collection_items</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="n">my_items</span> <span class="o">=</span> <span class="n">my_api</span><span class="o">.</span><span class="n">collection_items</span><span class="p">(</span><span class="s1">&#39;gebaeude&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="p">[</span><span class="mf">9.9767</span><span class="p">,</span><span class="mf">53.5442</span><span class="p">,</span><span class="mf">9.9787</span><span class="p">,</span><span class="mf">53.5462</span><span class="p">],</span> <span class="n">limit</span><span class="o">=</span><span class="mi">100</span> <span class="p">)</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="n">my_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">my_items</span><span class="p">)</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="c1"># Write the request as a json file, preferably with &quot;.geojson&quot; file extension.</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;responses/exr3/my_api.geojson&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">my_json</span><span class="p">)</span>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a><span class="c1"># Check the file and read as geojson to laod into map</span>
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;responses/exr3/my_api.geojson&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>    <span class="n">my_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="c1"># Specify some styles to the geojson data:</span>
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="n">my_geojson</span> <span class="o">=</span> <span class="n">GeoJSON</span><span class="p">(</span>
+<a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a>    <span class="n">data</span><span class="o">=</span><span class="n">my_data</span><span class="p">,</span>
+<a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a>    <span class="n">style</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a>        <span class="s1">&#39;opacity&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;dashArray&#39;</span><span class="p">:</span> <span class="s1">&#39;9&#39;</span><span class="p">,</span> <span class="s1">&#39;fillOpacity&#39;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span>
+<a id="__codelineno-14-31" name="__codelineno-14-31" href="#__codelineno-14-31"></a>    <span class="p">}</span>
+<a id="__codelineno-14-32" name="__codelineno-14-32" href="#__codelineno-14-32"></a><span class="p">)</span>
+<a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a>
+<a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a><span class="n">my_center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">53.5452</span><span class="p">,</span> <span class="mf">9.9777</span><span class="p">)</span>
+<a id="__codelineno-14-35" name="__codelineno-14-35" href="#__codelineno-14-35"></a>
+<a id="__codelineno-14-36" name="__codelineno-14-36" href="#__codelineno-14-36"></a><span class="c1"># Increase the zoom level to not overload the &quot;Features&quot; request</span>
+<a id="__codelineno-14-37" name="__codelineno-14-37" href="#__codelineno-14-37"></a><span class="n">my_map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">basemap</span><span class="o">=</span><span class="n">basemaps</span><span class="o">.</span><span class="n">CartoDB</span><span class="o">.</span><span class="n">Positron</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="n">my_center</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<a id="__codelineno-14-38" name="__codelineno-14-38" href="#__codelineno-14-38"></a>
+<a id="__codelineno-14-39" name="__codelineno-14-39" href="#__codelineno-14-39"></a><span class="n">my_marker</span> <span class="o">=</span> <span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="n">my_center</span><span class="p">)</span>
+<a id="__codelineno-14-40" name="__codelineno-14-40" href="#__codelineno-14-40"></a>
+<a id="__codelineno-14-41" name="__codelineno-14-41" href="#__codelineno-14-41"></a><span class="c1"># Add the geojson file into the map</span>
+<a id="__codelineno-14-42" name="__codelineno-14-42" href="#__codelineno-14-42"></a><span class="n">my_map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">my_geojson</span><span class="p">);</span>
+<a id="__codelineno-14-43" name="__codelineno-14-43" href="#__codelineno-14-43"></a>
+<a id="__codelineno-14-44" name="__codelineno-14-44" href="#__codelineno-14-44"></a><span class="n">my_map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">my_marker</span><span class="p">);</span>
+<a id="__codelineno-14-45" name="__codelineno-14-45" href="#__codelineno-14-45"></a>
+<a id="__codelineno-14-46" name="__codelineno-14-46" href="#__codelineno-14-46"></a>
+<a id="__codelineno-14-47" name="__codelineno-14-47" href="#__codelineno-14-47"></a><span class="n">display</span><span class="p">(</span><span class="n">my_map</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
+</code></pre></div>
 
 
 
