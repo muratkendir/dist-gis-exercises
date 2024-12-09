@@ -2,7 +2,7 @@
 
 <img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/>
 <blockquote>
-Munich Technical University > Engineering & Design  Aerospace & Geodesy || Chair of Geoinformatics </br></br>
+Munich Technical University || Chair of Geoinformatics </br></br>
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 </blockquote>
 
@@ -58,7 +58,7 @@ Before you start examining the given Spatial Data Infrastructures (SDIs), you wi
 #Create an empty dictionary.
 my_services = {} 
 
-# !Remember the role of identation in python.
+# !Remember the role of indentation in python.
 def add_to_store(service_id, name, url, wms_url):
 # Here, you set a complex data in python dictionary data type.
     my_services[service_id] = { "name" : name
@@ -200,7 +200,7 @@ Visit the web site [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu) a
 - Find the relevant theme on this page and select the country on the following web page.
 
 Explore possible answers to the following questions:
-- [ ] Where is the service URL?
+- [ ] Where is the service URL? (Please find the “Copy” icon under the “Preview Dataset” button.)
 - [ ] What kind of services are available in the theme? 
 - [ ] Can TANDEM-X datasets be useful for our project? If not, why?
 - [ ] Is the selected dataset also available on **geoportal.de** ?
@@ -226,7 +226,9 @@ Visit the web site [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu) a
   - Gewässer (Water Bodies)
   - Hochwasserrisikos (Flood Risks)
   - Fließgewässern (Watercourses)
-  
+
+<blockquote style="background-color:ivory;">TIP: Please find the “Copy” icon under the “Preview Dataset” button to find the service URLs.</blockquote>
+
 Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “**found_service()**” function.
 
@@ -247,14 +249,14 @@ In this chapter, you will learn how to add web services or datasets to a GIS sof
   - [ ] Find the city center of Hamburg on the map and zoom in until the canvas covers only some buildings. Alternatively, at the bottom of the QGIS window you can set the scale to 1:2000 or larger.
 > TIP: Sometimes you need to zoom in on your area of interest to avoid long loading times or just to make sure that the layer is visible in the area.
 <div align="center">
-<img src="../images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="./images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 - Check the coordinate system of the active map canvas (map widget in the software). If it is defined as OGC:CRS84, change it to EPSG:4326 Coordinate Reference System (CRS). You will notice some distortion on the map canvas, this is normal because EPSG:4326 (aka WGS84) is a geographic coordinate system, not a projected coordinate system. You may need to use this coordinate system from time to time because it is one of the most widely supported CRS by web services.
 - Check the type of web services you noted in section 1) and add them considering the type of web services.
 > TIP: There are multiple ways to check the type of web services. One could be to check the categories or filters available on the SDI website. The other method could be to check the metadata to find the type. Finally, if you segment the request URL, you might see a query parameter like "service=WMS" or "service=WFS".
 
 <div align="center">
-<img src="../images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="./images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
 #### 4a ii) Add WMS Service
@@ -382,7 +384,7 @@ Select any Web Map Service (WMS) from your previous work, or select a random WMS
 
 ```python
 # Decide a way to import the library. 
-from owslib.wms import WebMapService as mywms
+from owslib.wms import WebMapService as wms
 # help(mywms)
 ```
 
@@ -399,7 +401,7 @@ Notice that only "url" parameter is not assigned to a value. This means that the
 # mytest = mywms('https://geodienste.hamburg.de/HH_WMS_DGM1')
 # The website serves the metadata of the WMS highlights that
 # the recommended version is "1.3.0". So we can specify that:
-mytest = mywms('https://geodienste.hamburg.de/HH_WMS_DGM1', version='1.3.0')
+mytest = wms('https://geodienste.hamburg.de/HH_WMS_DGM1', version='1.3.0')
 ```
 
 - [ ] Now, you can use "the built-in functions" to know more about the returned object:
@@ -512,4 +514,122 @@ Image(img.read())
 ![jpeg](output_40_0.jpg)
     
 
+
+
+## 6) Using ipyleaflet to show the web services
+
+ipyleaflet is a Jupyter / Leaflet bridge enabling interactive maps in the Jupyter notebook.
+
+
+```python
+from ipyleaflet import Map, Marker
+
+# Add a center point to your map using latitude, longitude values
+my_center = (53.5452, 9.9777)
+
+# Add a map object by specifying a zoom level and using the center point
+my_map = Map(center=my_center, zoom=10)
+
+# Define a marker object using the defined center point
+my_marker = Marker(location=my_center)
+
+# Add the marker object to the map
+my_map.add(my_marker);
+
+display(my_map)
+```
+
+
+    Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', 'zoo…
+
+
+### Add a WMS layer into the leaflet map
+
+
+```python
+from ipyleaflet import Map, Marker, WMSLayer, basemaps
+
+
+# Add one of the WMS service that you found in the sections above.
+my_wms = WMSLayer(
+    url=mytest.url,
+    layers='WMS_DGM1_HAMBURG', # Check mytest.contents
+    format='image/png', #Check mytest.getOperationByName('GetMap').formatOptions
+    transparent=True, # Check the value for mytest['WMS_DGM1_HAMBURG'].opaque
+)
+
+my_center = (53.5452, 9.9777)
+
+# Change the following assignment to add a simple basemap for a better visualization
+my_map = Map(basemap=basemaps.CartoDB.Positron, center=my_center, zoom=10)
+
+my_marker = Marker(location=my_center)
+
+# Add the WMS service into the map
+my_map.add(my_wms)
+my_map.add(my_marker);
+
+
+display(my_map)
+```
+
+
+    Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', 'zoo…
+
+
+### Add a GeoJSON data into the leaflet map using a OGC API - Features connection
+
+
+```python
+from ipyleaflet import Map, Marker, basemaps, GeoJSON
+
+# Add "OGC API - Features" class of the OWSLib
+# Alternative Solution: Use requests library to get data directly.
+from owslib.ogcapi.features import Features
+
+# Add json library to convert dictionaries to json
+import json
+
+my_api = Features('https://api.hamburg.de/datasets/v1/solarpotenzialanalyse/')
+
+# Check following methods or attributes supported by OWSLib:
+# my_api.collections, my_api.collection_queryables, my_api.collection_items
+my_items = my_api.collection_items('gebaeude', bbox=[9.9767,53.5442,9.9787,53.5462], limit=100 )
+
+my_json = json.dumps(my_items)
+
+# Write the request as a json file, preferably with ".geojson" file extension.
+with open('responses/exr3/my_api.geojson', 'w') as f:
+    f.write(my_json)
+
+# Check the file and read as geojson to laod into map
+with open('responses/exr3/my_api.geojson', 'r') as f:
+    my_data = json.load(f)
+
+# Specify some styles to the geojson data:
+my_geojson = GeoJSON(
+    data=my_data,
+    style={
+        'opacity': 1, 'dashArray': '9', 'fillOpacity': 0.1, 'weight': 1, 'color': 'red'
+    }
+)
+
+my_center = (53.5452, 9.9777)
+
+# Increase the zoom level to not overload the "Features" request
+my_map = Map(basemap=basemaps.CartoDB.Positron, center=my_center, zoom=15)
+
+my_marker = Marker(location=my_center)
+
+# Add the geojson file into the map
+my_map.add(my_geojson);
+
+my_map.add(my_marker);
+
+
+display(my_map)
+```
+
+
+    Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', 'zoo…
 
