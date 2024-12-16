@@ -180,18 +180,18 @@ var map = new ol.Map({
 - After finding the target element, you can print the content with ```console.log(map.targetElement_)```
 - Search for the target, layers and view elements.
 
-![console_dir](../images/essentials_of_web_map/console_dir_map.png)
+<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map.png"/>
 
 ### 3.c) Finding the elements of a JavaScript object
 
 - Try to find the specified map center coordinates ```console.dir(map)```
 - Check ```console.log(map.viewPropertyListenerKey_.target.values_)```
 
-![console_dir_view](../images/essentials_of_web_map/console_dir_map_view_elem.png)
+<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map_view_elem.png"/>
 
 ### 3.d) State Diagram for a HTML Parsing Process (HTML+CSS+OpenLayers)
 
-![sd_html_parsing_sample_for_openlayers](../images/essentials_of_web_map/sd_html_parsing_sample_for_openlayers.drawio.svg)
+<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/sd_html_parsing_sample_for_openlayers.drawio.svg"/>
 
 ## 4.a) In which Coordinate Reference System (CRS)?
 
@@ -199,7 +199,7 @@ var map = new ol.Map({
 - Check ```console.log(map.viewPropertyListenerKey_.target.projection_)```
 - Search with the EPSG code on [epsg.io](https://epsg.io) to learn more about it.
 
-![console_dir_view](../images/essentials_of_web_map/console_dir_map_crs.png)
+<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map_crs.png"/>
 
 ### 4.b) How about the Zoom Level?
 
@@ -210,7 +210,7 @@ var map = new ol.Map({
   - Set the CRS as **EPSG:3857 (Pseudo-Mercator)** in Map Properties
   - Search for "**Zoom Level**" and/or "**Layer Tiles Mapcanvas**" in Plugins Manager
 
-![console_dir_view](../images/essentials_of_web_map/ol_zoom_level.png)
+<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/ol_zoom_level.png"/>
 
 
 ### 4.c) Get the current zoom level and write to an HTML element
@@ -259,7 +259,7 @@ Method 1: Check the debugger tool in (Web) Developer Tool.
 
 Method 2: Check the documentation of the used library (e.g. [OpenLayers API Doc](https://openlayers.org/en/latest/apidoc/) ).
 
-![firefox_debugger](../images/essentials_of_web_map/ol_imported_modules.png)
+<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/ol_imported_modules.png"/>
 
 ### 5.c) How to get feature info?
 
@@ -468,8 +468,10 @@ const my_wmts = new ol.layer.Tile({
 
 ### 7.d) What is "Cartesian3"?
 
-![Geographic Coordinates](../images/essentials_of_web_map/geo_coord.gif)
-![Cartesian 3D Coordinates](../images/essentials_of_web_map/cartesian_coord.gif)
+<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/geo_coord.gif"/>
+
+<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/cartesian_coord.gif"/>
+
 - Images taken from [https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html](https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html)
 
 ### 7.e) How the basemaps are loaded into Cesium (Tiling Mechanism)
