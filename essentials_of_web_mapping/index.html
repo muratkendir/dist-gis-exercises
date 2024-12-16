@@ -1,0 +1,1168 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Essentials of Web Mapping based on JavaScript Libraries - dist-gis-exercises (Educational Python Notebooks)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f615399.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#essentials-of-web-mapping-based-on-javascript-libraries" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-header__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            dist-gis-exercises (Educational Python Notebooks)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Essentials of Web Mapping based on JavaScript Libraries
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-nav__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    dist-gis-exercises (Educational Python Notebooks)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 2 (Python Intro)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 3 (SDIs)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samples_for_discussion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OGC Service Samples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Virtual Env. Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Virtual Env. Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_win/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_lnx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-how-to-combine-different-sources-in-html" class="md-nav__link">
+    1) How to combine different sources in HTML?
+  </a>
+  
+    <nav class="md-nav" aria-label="1) How to combine different sources in HTML?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1a-b-defining-styles-for-html-elements" class="md-nav__link">
+    1.a-b) Defining styles for HTML elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1c-referencing-to-html-elements" class="md-nav__link">
+    1.c) Referencing to HTML elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1d-referencing-to-html-elements" class="md-nav__link">
+    1.d) Referencing to HTML elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1e-importing-styles-from-an-external-file" class="md-nav__link">
+    1.e) Importing Styles from an external file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1f-importing-styles-from-an-external-file" class="md-nav__link">
+    1.f) Importing Styles from an external file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2a-how-to-configure-modern-web-sites-using-javascript-libraries" class="md-nav__link">
+    2.a) How to configure modern web sites using JavaScript libraries?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3a-web-map-with-openlayers" class="md-nav__link">
+    3.a) Web Map with OpenLayers
+  </a>
+  
+    <nav class="md-nav" aria-label="3.a) Web Map with OpenLayers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3b-understanding-the-javascript-code" class="md-nav__link">
+    3.b) Understanding the JavaScript code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3c-finding-the-elements-of-a-javascript-object" class="md-nav__link">
+    3.c) Finding the elements of a JavaScript object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3c-finding-the-elements-of-a-javascript-object_1" class="md-nav__link">
+    3.c) Finding the elements of a JavaScript object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-state-diagram-for-a-html-parsing-process-htmlcssopenlayers" class="md-nav__link">
+    3.d) State Diagram for a HTML Parsing Process (HTML+CSS+OpenLayers)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4a-in-which-coordinate-reference-system-crs" class="md-nav__link">
+    4.a) In which Coordinate Reference System (CRS)?
+  </a>
+  
+    <nav class="md-nav" aria-label="4.a) In which Coordinate Reference System (CRS)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4b-how-about-the-zoom-level" class="md-nav__link">
+    4.b) How about the Zoom Level?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4c-get-the-current-zoom-level-and-write-to-an-html-element" class="md-nav__link">
+    4.c) Get the current zoom level and write to an HTML element
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5a-how-to-add-wms-service-to-the-openlayers" class="md-nav__link">
+    5.a) How to add WMS service to the OpenLayers?
+  </a>
+  
+    <nav class="md-nav" aria-label="5.a) How to add WMS service to the OpenLayers?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5b-how-to-detect-the-module-hierarchy-in-a-package" class="md-nav__link">
+    5.b) How to detect the module hierarchy in a package?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5c-how-to-get-feature-info" class="md-nav__link">
+    5.c) How to get feature info?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5d-display-the-feature-information-in-a-html-element" class="md-nav__link">
+    5.d) Display the feature information in a HTML element
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6a-how-to-add-wmts-layer-to-the-openlayers" class="md-nav__link">
+    6.a) How to add WMTS layer to the OpenLayers?
+  </a>
+  
+    <nav class="md-nav" aria-label="6.a) How to add WMTS layer to the OpenLayers?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6b-what-are-the-resolution-and-matrixset-ids" class="md-nav__link">
+    6.b) What are the resolution and MatrixSet IDs?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6c-implementing-the-resolution-and-matrixset-ids-with-openlayers-wmts-request" class="md-nav__link">
+    6.c) Implementing the resolution and MatrixSet IDs with openlayers WMTS request
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7a-3d-mapping-with-cesium" class="md-nav__link">
+    7.a) 3D Mapping with Cesium
+  </a>
+  
+    <nav class="md-nav" aria-label="7.a) 3D Mapping with Cesium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7b-converting-local-js-file-references-to-cloud-repository-references" class="md-nav__link">
+    7b) Converting local JS file references to cloud repository references
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7c-camera-object" class="md-nav__link">
+    7.c) Camera Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7d-what-is-cartesian3" class="md-nav__link">
+    7.d) What is "Cartesian3"?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7e-how-the-basemaps-are-loaded-into-cesium-tiling-mechanism" class="md-nav__link">
+    7.e) How the basemaps are loaded into Cesium (Tiling Mechanism)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7f-how-to-add-wms-service-to-the-cesium" class="md-nav__link">
+    7.f) How to add WMS service to the Cesium
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7g-how-to-add-default-world-terrain-using-cesium-ion-token" class="md-nav__link">
+    7.g) How to add default world terrain using Cesium Ion token
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8a-adding-3d-tiles" class="md-nav__link">
+    8.a) Adding 3D Tiles
+  </a>
+  
+    <nav class="md-nav" aria-label="8.a) Adding 3D Tiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8b-enable-cesium-3dtiles-inspector" class="md-nav__link">
+    8.b) Enable Cesium 3DTiles Inspector
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="essentials-of-web-mapping-based-on-javascript-libraries">Essentials of Web Mapping based on JavaScript Libraries</h1>
+<p><img align="right" width="10%" height="auto" src="./images/TUM_Logo_blau_rgb_p.png"/></p>
+<blockquote>
+<p>Munich Technical University || Chair of Geoinformatics</p>
+<p>Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de</p>
+</blockquote>
+<ul>
+<li>In this document we will discuss concepts related to web mapping based on JavaScript libraries.</li>
+<li>Since all web mapping libraries used in this document are based on the JavaScript language, we will also partially discuss some basic concepts of JavaScript.</li>
+</ul>
+<h2 id="1-how-to-combine-different-sources-in-html">1) How to combine different sources in HTML?</h2>
+<ul>
+<li>In an HTML document, you can combine different resources for use in the web interface.</li>
+<li>Traditionally, files related to style, content and programs are stored in separate files and combined into one HTML file. One popular method of file separation is to use HTML (content), CSS (style) and Javascript (program) files.</li>
+<li>It should be noted that separation is not always the best method. Sometimes developers prefer to use them in a single HTML file.</li>
+</ul>
+<h3 id="1a-b-defining-styles-for-html-elements">1.a-b) Defining styles for HTML elements</h3>
+<p><strong><a href="raw_codes/essentials_of_web_map/demo1a.html">Demo 1a</a></strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Web Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;center&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Welcome to my website!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="p">&gt;</span>This is my first web page design.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;left&quot;</span><span class="p">&gt;</span>I am still very excited to make this.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p><strong><a href="raw_codes/essentials_of_web_map/demo1b.html">Demo 1b</a></strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Web Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;}</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">left</span><span class="p">;}</span><span class="w"> </span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Welcome to my website!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is my first web page design.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>I am still very excited to make this.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<h3 id="1c-referencing-to-html-elements">1.c) Referencing to HTML elements</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo1c.html">Demo 1c</a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Web Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p">#</span><span class="nn">title1</span><span class="w"> </span><span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;}</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="p">#</span><span class="nn">paragraph1</span><span class="w"> </span><span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">left</span><span class="p">;}</span><span class="w"> </span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="p">.</span><span class="nc">right</span><span class="w"> </span><span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">right</span><span class="p">;}</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;title1&quot;</span><span class="p">&gt;</span>Welcome to my website!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="p">&gt;</span>This is my first web page design.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;paragraph1&quot;</span><span class="p">&gt;</span>I am still very excited to make this.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<h3 id="1d-referencing-to-html-elements">1.d) Referencing to HTML elements</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo1d.html">Demo 1d</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Web Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">#</span><span class="nn">title1</span><span class="w"> </span><span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;}</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">#</span><span class="nn">paragraph1</span><span class="w"> </span><span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">left</span><span class="p">;}</span><span class="w"> </span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="p">.</span><span class="nc">right</span><span class="w"> </span><span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">right</span><span class="p">;}</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;title1&quot;</span><span class="p">&gt;</span>Welcome to my website!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="p">&gt;</span>This is my first web page design.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;paragraph1&quot;</span><span class="p">&gt;</span>I am still very excited to make this.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;paragraph1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="p">&gt;</span>What an exciting moment.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="1e-importing-styles-from-an-external-file">1.e) Importing Styles from an external file</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo1e.html">Demo 1e</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Web Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;my_style.css&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;title1&quot;</span><span class="p">&gt;</span>Welcome to my website!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="p">&gt;</span>This is my first web page design.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;paragraph1&quot;</span><span class="p">&gt;</span>I am still very excited to make this.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;paragraph1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="p">&gt;</span>What an exciting moment.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="1f-importing-styles-from-an-external-file">1.f) Importing Styles from an external file</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo1f.html">Demo 1f</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Web Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.neredekaliyor.com/koordinat_paylasma/my_style.css&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;title1&quot;</span><span class="p">&gt;</span>Welcome to my website!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="p">&gt;</span>This is my first web page design.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;paragraph1&quot;</span><span class="p">&gt;</span>I am still very excited to make this.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;paragraph1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="p">&gt;</span>What an exciting moment.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="2a-how-to-configure-modern-web-sites-using-javascript-libraries">2.a) How to configure modern web sites using JavaScript libraries?</h2>
+<ul>
+<li>Similar to CSS implementations, JavaScript code can be applied to HTML files using internal or external sources.</li>
+<li>Modern websites often combine multiple JavaScript libraries.</li>
+</ul>
+<p>An Example: <strong>ThreeJS</strong></p>
+<ul>
+<li>Not only for geospatial use cases, but also animations, 3D models etc.</li>
+<li>is base library of various geospatial JavaScript libraries (e.g. <a href="https://w3reality.github.io/three-geo/">three-geo</a>, <a href="https://vasturiano.github.io/three-globe/">three-globe</a>)</li>
+<li>Implemented into QGIS to use as 3D Visualizer</li>
+<li>accessible through <strong>View &gt; 3D Map Views</strong></li>
+</ul>
+<p><a href="raw_codes/essentials_of_web_map/demo2a.html">Demo 2a</a></p>
+<h2 id="3a-web-map-with-openlayers">3.a) Web Map with OpenLayers</h2>
+<ul>
+<li>OpenLayers is one of the most advanced 2D web map libraries.</li>
+</ul>
+<p><a href="raw_codes/essentials_of_web_map/demo3a.html">Demo3a</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/ol@v7.2.2/dist/ol.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/ol@v7.2.2/ol.css&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Empty Map with defaults<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;demo3a.css&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">link</span><span class="p">&gt;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;box&quot;</span><span class="p">&gt;</span> Check the style of this box. <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;demo3a.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="3b-understanding-the-javascript-code">3.b) Understanding the JavaScript code</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nb">Map</span><span class="p">({</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nx">target</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;map&#39;</span><span class="p">,</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nx">layers</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">      </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">layer</span><span class="p">.</span><span class="nx">Tile</span><span class="p">({</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">        </span><span class="nx">source</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="p">.</span><span class="nx">OSM</span><span class="p">()})</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="p">],</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="nx">view</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">View</span><span class="p">({</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">      </span><span class="nx">center</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">1287392</span><span class="p">,</span><span class="mf">6123424</span><span class="p">],</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">      </span><span class="nx">zoom</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="p">})</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">  </span><span class="p">});</span>
+</code></pre></div>
+<ul>
+<li>var map --&gt; defines a custom variable</li>
+<li>new ol.Map --&gt; calls the <strong>Map</strong> class from the <strong>ol</strong> module.</li>
+<li>target: 'map' --&gt; sets target HTML element as "map"</li>
+<li>layers: [] --&gt; adds some layer to show in map object<ul>
+<li>new ol.layer.Tile() --&gt; adds a layer as a tiled map</li>
+<li>new ol.source.OSM() --&gt; sets the source of the tile map as OSM</li>
+</ul>
+</li>
+<li>view: new ol.View() --&gt; sets view as a new <strong>View</strong> object.</li>
+</ul>
+<h3 id="3c-finding-the-elements-of-a-javascript-object">3.c) Finding the elements of a JavaScript object</h3>
+<ul>
+<li>Type <code>console.dir(map)</code> in the (Web) Developer Tool of browser</li>
+<li>After finding the target element, you can print the content with <code>console.log(map.targetElement_)</code></li>
+<li>Search for the target, layers and view elements.</li>
+</ul>
+<p><img alt="console_dir" src="images/essentials_of_web_map/console_dir_map.png" /></p>
+<h3 id="3c-finding-the-elements-of-a-javascript-object_1">3.c) Finding the elements of a JavaScript object</h3>
+<ul>
+<li>Try to find the specified map center coordinates <code>console.dir(map)</code></li>
+<li>Check <code>console.log(map.viewPropertyListenerKey_.target.values_)</code></li>
+</ul>
+<p><img alt="console_dir_view" src="images/essentials_of_web_map/console_dir_map_view_elem.png" /></p>
+<h3 id="3d-state-diagram-for-a-html-parsing-process-htmlcssopenlayers">3.d) State Diagram for a HTML Parsing Process (HTML+CSS+OpenLayers)</h3>
+<p><img alt="sd_html_parsing_sample_for_openlayers" src="images/essentials_of_web_map/sd_html_parsing_sample_for_openlayers.drawio.svg" /></p>
+<h2 id="4a-in-which-coordinate-reference-system-crs">4.a) In which Coordinate Reference System (CRS)?</h2>
+<ul>
+<li>Even if a custom CRS is not defined, the map has to be visualized based on a default CRS.</li>
+<li>Check <code>console.log(map.viewPropertyListenerKey_.target.projection_)</code></li>
+<li>Search with the EPSG code on <a href="https://epsg.io">epsg.io</a> to learn more about it.</li>
+</ul>
+<p><img alt="console_dir_view" src="images/essentials_of_web_map/console_dir_map_crs.png" /></p>
+<h3 id="4b-how-about-the-zoom-level">4.b) How about the Zoom Level?</h3>
+<ul>
+<li>The zoom level is defined as 10 in the JavaScript code.</li>
+<li>Many web map applications are using the zoom level as one of the main map constructor.</li>
+<li>e.g. <a href="https://www.openstreetmap.org/#map=10/48.1038/11.6483">https://www.openstreetmap.org/#map=10/48.1038/11.6483</a></li>
+<li>To learn and test the zoom levels in the same CRS, you can use some plugins in QGIS:</li>
+<li>Set the CRS as <strong>EPSG:3857 (Pseudo-Mercator)</strong> in Map Properties</li>
+<li>Search for "<strong>Zoom Level</strong>" and/or "<strong>Layer Tiles Mapcanvas</strong>" in Plugins Manager</li>
+</ul>
+<p><img alt="console_dir_view" src="images/essentials_of_web_map/ol_zoom_level.png" /></p>
+<h3 id="4c-get-the-current-zoom-level-and-write-to-an-html-element">4.c) Get the current zoom level and write to an HTML element</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo4c.html">Demo4c</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">onZoomEnd</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">evt</span><span class="p">.</span><span class="nx">map</span><span class="p">;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">zoomInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Zoom level : \n&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">map</span><span class="p">.</span><span class="nx">getView</span><span class="p">().</span><span class="nx">getZoom</span><span class="p">();</span><span class="w"> </span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">zoomInfo</span><span class="p">);</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;topright_box&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">zoomInfo</span><span class="p">;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">}</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nx">map</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;moveend&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">onZoomEnd</span><span class="p">);</span>
+</code></pre></div>
+<h2 id="5a-how-to-add-wms-service-to-the-openlayers">5.a) How to add WMS service to the OpenLayers?</h2>
+<p>Which one is a correct definition for a WMS service in OpenLayers?</p>
+<p><a href="raw_codes/essentials_of_web_map/demo5a.html">Demo5a</a></p>
+<p><strong>A</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">layer</span><span class="p">.</span><span class="nx">Image</span><span class="p">({</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">        </span><span class="nx">source</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="p">.</span><span class="nx">ImageWMS</span><span class="p">({</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://geoportal.muenchen.de/geoserver/gsm_wfs/awm_wertstoffhoefe_opendata/ows&#39;</span><span class="p">,</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">          </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s1">&#39;LAYERS&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;awm_wertstoffhoefe_opendata&#39;</span><span class="p">},</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">          </span><span class="p">}),</span>
+</code></pre></div></p>
+<p><strong>B</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="ow">new</span><span class="w"> </span><span class="nx">Image</span><span class="p">({</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">        </span><span class="nx">source</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ImageWMS</span><span class="p">({</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://geoportal.muenchen.de/geoserver/gsm_wfs/awm_wertstoffhoefe_opendata/ows&#39;</span><span class="p">,</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">          </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s1">&#39;LAYERS&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;awm_wertstoffhoefe_opendata&#39;</span><span class="p">},</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">          </span><span class="p">}),</span>
+</code></pre></div></p>
+<h3 id="5b-how-to-detect-the-module-hierarchy-in-a-package">5.b) How to detect the module hierarchy in a package?</h3>
+<p>Method 1: Check the debugger tool in (Web) Developer Tool.</p>
+<p>Method 2: Check the documentation of the used library (e.g. <a href="https://openlayers.org/en/latest/apidoc/">OpenLayers API Doc</a> ).</p>
+<p><img alt="firefox_debugger" src="images/essentials_of_web_map/ol_imported_modules.png" /></p>
+<h3 id="5c-how-to-get-feature-info">5.c) How to get feature info?</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo5c.html">Demo5c</a></p>
+<ul>
+<li>
+<p>Check the GetFeatureInfo operation's documentation: <a href="http://opengeospatial.github.io/e-learning/wms/text/operations.html#getfeatureinfo">OGC e-Learning</a></p>
+</li>
+<li>
+<p>Check the following classes/methods in OpenLayers API Doc:</p>
+</li>
+<li><a href="https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html">Search for "on(type, listener)" method</a></li>
+<li><a href="https://openlayers.org/en/latest/apidoc/module-ol_source_ImageWMS-ImageWMS.html">Search for "getFeatureInfoUrl" method</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nx">map</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;singleclick&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="c1">//console.log(evt);</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;topright_box&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">viewResolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">view</span><span class="p">.</span><span class="nx">getResolution</span><span class="p">();</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">wmsSource</span><span class="p">.</span><span class="nx">getFeatureInfoUrl</span><span class="p">(</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="nx">evt</span><span class="p">.</span><span class="nx">coordinate</span><span class="p">,</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="nx">viewResolution</span><span class="p">,</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="s1">&#39;EPSG:3857&#39;</span><span class="p">,</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">    </span><span class="p">{</span><span class="s1">&#39;INFO_FORMAT&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;text/plain&#39;</span><span class="p">},</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">  </span><span class="p">);</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="p">});</span>
+</code></pre></div>
+<h3 id="5d-display-the-feature-information-in-a-html-element">5.d) Display the feature information in a HTML element</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo5c.html">Demo5c</a></p>
+<ul>
+<li>If you are not familiar with some JavaScript functions or classes like 'let', 'const', 'Promise', check the documents for the 2015 JavaScript version (aka ECMAScript 6/ES6):</li>
+<li>https://www.w3schools.com/Js/js_es6.asp</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nx">map</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;singleclick&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="c1">//console.log(evt);</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;topright_box&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">viewResolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">view</span><span class="p">.</span><span class="nx">getResolution</span><span class="p">();</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">wmsSource</span><span class="p">.</span><span class="nx">getFeatureInfoUrl</span><span class="p">(</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="nx">evt</span><span class="p">.</span><span class="nx">coordinate</span><span class="p">,</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="nx">viewResolution</span><span class="p">,</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="s1">&#39;EPSG:3857&#39;</span><span class="p">,</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">    </span><span class="p">{</span><span class="s1">&#39;INFO_FORMAT&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;text/plain&#39;</span><span class="p">},</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">  </span><span class="p">);</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">url</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="w">      </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">text</span><span class="p">())</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">      </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">html</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">        </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;topright_box&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">html</span><span class="p">;</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">      </span><span class="p">});</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="p">});</span>
+</code></pre></div>
+<h2 id="6a-how-to-add-wmts-layer-to-the-openlayers">6.a) How to add WMTS layer to the OpenLayers?</h2>
+<p><a href="https://mrdata.usgs.gov/mapcache/wmts?service=wmts&amp;request=getCapabilities">USGS WMTS service (Capabilities)</a></p>
+<ul>
+<li>Which one is a correct definiiton for a WMTS connection?</li>
+</ul>
+<p><strong>A</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">my_wmts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">layer</span><span class="p">.</span><span class="nx">Tile</span><span class="p">({</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">                  </span><span class="nx">opacity</span><span class="o">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">                  </span><span class="nx">source</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="p">.</span><span class="nx">WMTS</span><span class="p">({</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">                    </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://mrdata.usgs.gov/mapcache/wmts&#39;</span><span class="p">,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">                    </span><span class="nx">layer</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;sgmc2&#39;</span><span class="p">,</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">                    </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;256px&#39;</span><span class="p">,</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">                    </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;256px&#39;</span><span class="p">,</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">                    </span><span class="nx">format</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;image/png&#39;</span><span class="p">,</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">                  </span><span class="p">}),</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">                </span><span class="p">});</span>
+</code></pre></div></p>
+<p><strong>B</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">my_wmts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">layer</span><span class="p">.</span><span class="nx">Tile</span><span class="p">({</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">                  </span><span class="nx">opacity</span><span class="o">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">                  </span><span class="nx">source</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="p">.</span><span class="nx">WMTS</span><span class="p">({</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">                    </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://mrdata.usgs.gov/mapcache/wmts&#39;</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">                    </span><span class="nx">layer</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;sgmc2&#39;</span><span class="p">,</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">                    </span><span class="nx">matrixSet</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;GoogleMapsCompatible&#39;</span><span class="p">,</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">                    </span><span class="nx">format</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;image/png&#39;</span><span class="p">,</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">                  </span><span class="p">}),</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">                </span><span class="p">});</span>
+</code></pre></div></p>
+<h3 id="6b-what-are-the-resolution-and-matrixset-ids">6.b) What are the resolution and MatrixSet IDs?</h3>
+<ul>
+<li>Also check the EPSG:3857 (Pseudo-Mercator) extents : <a href="https://epsg.io/3857">EPSG.io</a></li>
+</ul>
+<p><a href="raw_codes/essentials_of_web_map/demo6a.html">Demo6a</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">projection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">proj</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;EPSG:3857&#39;</span><span class="p">);</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">projectionExtent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">projection</span><span class="p">.</span><span class="nx">getExtent</span><span class="p">();</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Projection Extent : &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">projectionExtent</span><span class="p">);</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">extent</span><span class="p">.</span><span class="nx">getWidth</span><span class="p">(</span><span class="nx">projectionExtent</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">256</span><span class="p">;</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Size : &#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="nx">size</span><span class="p">);</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resolutions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">19</span><span class="p">);</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">matrixIds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">19</span><span class="p">);</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">z</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">19</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="nx">z</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span><span class="c1">// generate resolutions and matrixIds arrays for this WMTS</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">  </span><span class="nx">resolutions</span><span class="p">[</span><span class="nx">z</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">size</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">z</span><span class="p">);</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">  </span><span class="nx">matrixIds</span><span class="p">[</span><span class="nx">z</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">z</span><span class="p">;</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="6c-implementing-the-resolution-and-matrixset-ids-with-openlayers-wmts-request">6.c) Implementing the resolution and MatrixSet IDs with openlayers WMTS request</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo6a.html">Demo6a</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">my_wmts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">layer</span><span class="p">.</span><span class="nx">Tile</span><span class="p">({</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">                  </span><span class="nx">opacity</span><span class="o">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">                  </span><span class="nx">source</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="p">.</span><span class="nx">WMTS</span><span class="p">({</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">                    </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://mrdata.usgs.gov/mapcache/wmts&#39;</span><span class="p">,</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">                    </span><span class="nx">layer</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;sgmc2&#39;</span><span class="p">,</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">                    </span><span class="nx">matrixSet</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;GoogleMapsCompatible&#39;</span><span class="p">,</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">                    </span><span class="nx">format</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;image/png&#39;</span><span class="p">,</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">                    </span><span class="nx">projection</span><span class="o">:</span><span class="w"> </span><span class="nx">projection</span><span class="p">,</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">                    </span><span class="nx">tileGrid</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">tilegrid</span><span class="p">.</span><span class="nx">WMTS</span><span class="p">({</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">                      </span><span class="nx">origin</span><span class="o">:</span><span class="w"> </span><span class="nx">ol</span><span class="p">.</span><span class="nx">extent</span><span class="p">.</span><span class="nx">getTopLeft</span><span class="p">(</span><span class="nx">projectionExtent</span><span class="p">),</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">                      </span><span class="nx">resolutions</span><span class="o">:</span><span class="w"> </span><span class="nx">resolutions</span><span class="p">,</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">                      </span><span class="nx">matrixIds</span><span class="o">:</span><span class="w"> </span><span class="nx">matrixIds</span><span class="p">,</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">                    </span><span class="p">}),</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">                    </span><span class="nx">style</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;default&#39;</span><span class="p">,</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">                    </span><span class="nx">wrapX</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="w">                  </span><span class="p">}),</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="w">                </span><span class="p">});</span>
+</code></pre></div>
+<h2 id="7a-3d-mapping-with-cesium">7.a) 3D Mapping with Cesium</h2>
+<ul>
+<li>The existing base map options in CesiumJS need authorization (API token) to limit map requests (e.g. Bing Map)</li>
+<li>However, OpenStreetMap offers a tile basemap that does not require any authorization and can be used in CesiumJS.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Cesium Demo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../cesium/Build/Cesium/Cesium.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../cesium/Build/Cesium/Widgets/widgets.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="p">&lt;</span><span class="nt">body</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%;height:100%;&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;cesiumContainer&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">    </span><span class="c1">// Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">viewer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Viewer</span><span class="p">(</span><span class="s1">&#39;cesiumContainer&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">      </span><span class="c1">//Use OpenStreetMaps</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">      </span><span class="nx">imageryProvider</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">OpenStreetMapImageryProvider</span><span class="p">({</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">        </span><span class="nx">url</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://a.tile.openstreetmap.org/&#39;</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="w">      </span><span class="p">}),</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="w">    </span><span class="p">});</span><span class="w">      </span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a> <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="7b-converting-local-js-file-references-to-cloud-repository-references">7b) Converting local JS file references to cloud repository references</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo7b.html">Cesium with online repositories</a></p>
+<ul>
+<li>Usually online JS repositories provided in the documentation page of the library.</li>
+<li>However, you can also check some known JS repositories such as <a href="https://cdnjs.com">cdnjs</a>, <a href="https://www.jsdelivr.com">jsdelivery</a> etc.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Cesium Demo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/cesium/1.124.0/Cesium.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/cesium@1.124.0/Build/Cesium/Widgets/widgets.min.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="p">&lt;</span><span class="nt">body</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%;height:100%;&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;cesiumContainer&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">    </span><span class="c1">// Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">viewer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Viewer</span><span class="p">(</span><span class="s1">&#39;cesiumContainer&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">      </span><span class="c1">//Use OpenStreetMaps</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">      </span><span class="nx">imageryProvider</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">OpenStreetMapImageryProvider</span><span class="p">({</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w">        </span><span class="nx">url</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://a.tile.openstreetmap.org/&#39;</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w">      </span><span class="p">}),</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="w">    </span><span class="p">});</span><span class="w">  </span>
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a> <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="7c-camera-object">7.c) Camera Object</h3>
+<ul>
+<li>Unlike 2D maps, 3D map environments need a camera object so that a scene selected on the map can be presented to the end user.</li>
+</ul>
+<p><a href="raw_codes/essentials_of_web_map/demo7c.html">Cesium with camera initialization</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1">// Fly the camera to San Francisco at the given longitude, latitude, and height.</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">    </span><span class="nx">viewer</span><span class="p">.</span><span class="nx">camera</span><span class="p">.</span><span class="nx">flyTo</span><span class="p">({</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">      </span><span class="nx">destination</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Cartesian3</span><span class="p">.</span><span class="nx">fromDegrees</span><span class="p">(</span><span class="mf">11.575</span><span class="p">,</span><span class="mf">48.107</span><span class="p">,</span><span class="w"> </span><span class="mf">4000</span><span class="p">),</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">      </span><span class="nx">orientation</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">        </span><span class="nx">heading</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nb">Math</span><span class="p">.</span><span class="nx">toRadians</span><span class="p">(</span><span class="mf">0.0</span><span class="p">),</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">        </span><span class="nx">pitch</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nb">Math</span><span class="p">.</span><span class="nx">toRadians</span><span class="p">(</span><span class="o">-</span><span class="mf">45.0</span><span class="p">),</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span><span class="p">});</span>
+</code></pre></div>
+<h3 id="7d-what-is-cartesian3">7.d) What is "Cartesian3"?</h3>
+<p><img alt="Geographic Coordinates" src="images/essentials_of_web_map/geo_coord.gif" />
+<img alt="Cartesian 3D Coordinates" src="images/essentials_of_web_map/cartesian_coord.gif" />
+- Images taken from <a href="https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html">https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html</a></p>
+<h3 id="7e-how-the-basemaps-are-loaded-into-cesium-tiling-mechanism">7.e) How the basemaps are loaded into Cesium (Tiling Mechanism)</h3>
+<ul>
+<li>Visit the next demo page and try to give some tilt angle to the current view.</li>
+<li>Unfold the Cesium Viewer Inspector and find the Terrain group at the bottom.</li>
+<li>
+<p>Enable the "Show Tile Coordinates" and the "Suspend LOD Update" options, then try zooming out.</p>
+</li>
+<li>
+<p>This is the basic 2D tiling mechanism that used to overlay 2D maps and terrain files.</p>
+</li>
+</ul>
+<p><a href="raw_codes/essentials_of_web_map/demo7d.html">Cesium with viewer Inspector</a></p>
+<h3 id="7f-how-to-add-wms-service-to-the-cesium">7.f) How to add WMS service to the Cesium</h3>
+<ul>
+<li>
+<p>CesiumJS simply calculates the coverage area and tries to request for the WMS image by comparing with the current view area of the camera (frustum).</p>
+</li>
+<li>
+<p>Check the Capabilities of a found WMS service: <a href="https://geoportal.muenchen.de/geoserver/gsm_wfs/vablock_bezirksteil_opendata/ows?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities">München Bezirksteil</a></p>
+</li>
+</ul>
+<p><a href="raw_codes/essentials_of_web_map/demo7f.html">Cesium with WMS service</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1">// Add the main URL of WMS service</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">geourl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://geoportal.muenchen.de/geoserver/gsm_wfs/vablock_bezirksteil_opendata/ows?&#39;</span><span class="p">;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="c1">//Define the WMS service using available parameters</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">geoWmsLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">WebMapServiceImageryProvider</span><span class="p">({</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">      </span><span class="nx">url</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">geourl</span><span class="p">,</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">      </span><span class="nx">parameters</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">        </span><span class="nx">service</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;WMS&#39;</span><span class="p">,</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">        </span><span class="nx">format</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;image/png&#39;</span><span class="p">,</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">        </span><span class="nx">transparent</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">      </span><span class="nx">layers</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;vablock_bezirksteil_opendata&#39;</span><span class="p">,</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="w">        </span><span class="nx">EPSG</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;4326&#39;</span>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="w">      </span><span class="p">});</span>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="c1">//Add to the list of imagery layers of the current viewer.</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="nx">viewer</span><span class="p">.</span><span class="nx">imageryLayers</span><span class="p">.</span><span class="nx">addImageryProvider</span><span class="p">(</span><span class="nx">geoWmsLayer</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="7g-how-to-add-default-world-terrain-using-cesium-ion-token">7.g) How to add default world terrain using Cesium Ion token</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo7g.html">Cesium with Terrain</a></p>
+<ul>
+<li>Create an account on Cesium Ion and generate a token specifically reserved for an application or limited in time.</li>
+<li>Add to the beginning of your CesiumJS code.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1">//Change the token here below</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Ion</span><span class="p">.</span><span class="nx">defaultAccessToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;xyzabcxyzabcxyzabcxyzabcxyzabcxyzabcxyzabcxyzabcxyzabcxyzabcxyzabcxyzabcxyzabc&quot;</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li>Go to Asset Manager in Cesium Ion web site and find the ID number ıf the world terrain.</li>
+<li>Than add the terrain by using its ID number as below.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nx">viewer</span><span class="p">.</span><span class="nx">scene</span><span class="p">.</span><span class="nx">setTerrain</span><span class="p">(</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">      </span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Terrain</span><span class="p">(</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">        </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">CesiumTerrainProvider</span><span class="p">.</span><span class="nx">fromIonAssetId</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">        </span><span class="p">),</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">    </span><span class="p">);</span>
+</code></pre></div>
+<h2 id="8a-adding-3d-tiles">8.a) Adding 3D Tiles</h2>
+<p><a href="raw_codes/essentials_of_web_map/demo8a.html">Cesium with 3D Tiles</a></p>
+<ul>
+<li>Add the main JSON link of the 3DTiles to Cesium </li>
+<li>e.g. <a href="https://basemap.de/beta/beta-lod2/">BaseMap.de - LOD2 Buildings</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">tileset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">viewer</span><span class="p">.</span><span class="nx">scene</span><span class="p">.</span><span class="nx">primitives</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Cesium3DTileset</span><span class="p">({</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">      </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://web3d.basemap.de/cesium/buildings-fly/root.json&#39;</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">    </span><span class="p">}));</span>
+</code></pre></div>
+<ul>
+<li>You can add attribute specific styles</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">cityStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Cesium3DTileStyle</span><span class="p">({</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">            </span><span class="nx">color</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">                </span><span class="nx">conditions</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">                   </span><span class="p">[</span><span class="s2">&quot;${surface} === &#39;wall&#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;color(&#39;#f2f2f2&#39;)&quot;</span><span class="p">],</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">                   </span><span class="p">[</span><span class="s2">&quot;${surface} === &#39;roof&#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;color(&#39;#ff5c4d&#39;)&quot;</span><span class="p">],</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">                   </span><span class="p">[</span><span class="s2">&quot;${surface} === &#39;bridge&#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;color(&#39;#999999&#39;)&quot;</span><span class="p">]</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="w">                </span><span class="p">]</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">         </span><span class="p">});</span>
+</code></pre></div>
+<h3 id="8b-enable-cesium-3dtiles-inspector">8.b) Enable Cesium 3DTiles Inspector</h3>
+<p><a href="raw_codes/essentials_of_web_map/demo8b.html">Cesium with 3D Tiles and Inspector</a></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nx">viewer</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">viewerCesium3DTilesInspectorMixin</span><span class="p">);</span>
+</code></pre></div>
+- Try to play with "Dynamic Screen Space Error" values
+- Check the "Memory Usage" and the "Rendering Statistics"</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>
