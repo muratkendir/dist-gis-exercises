@@ -1,0 +1,19 @@
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.box {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color:red;
+    margin-bottom:auto;
+    margin-left:auto;
+    padding:10px;
+    width:400px;
+    height:600px;
+    color:white;
+}
