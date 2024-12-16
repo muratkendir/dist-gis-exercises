@@ -1113,22 +1113,22 @@
 <li>After finding the target element, you can print the content with <code>console.log(map.targetElement_)</code></li>
 <li>Search for the target, layers and view elements.</li>
 </ul>
-<p><img alt="console_dir" src="../images/essentials_of_web_map/console_dir_map.png" /></p>
+<p><img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map.png"/></p>
 <h3 id="3c-finding-the-elements-of-a-javascript-object_1">3.c) Finding the elements of a JavaScript object</h3>
 <ul>
 <li>Try to find the specified map center coordinates <code>console.dir(map)</code></li>
 <li>Check <code>console.log(map.viewPropertyListenerKey_.target.values_)</code></li>
 </ul>
-<p><img alt="console_dir_view" src="../images/essentials_of_web_map/console_dir_map_view_elem.png" /></p>
+<p><img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map_view_elem.png"/></p>
 <h3 id="3d-state-diagram-for-a-html-parsing-process-htmlcssopenlayers">3.d) State Diagram for a HTML Parsing Process (HTML+CSS+OpenLayers)</h3>
-<p><img alt="sd_html_parsing_sample_for_openlayers" src="../images/essentials_of_web_map/sd_html_parsing_sample_for_openlayers.drawio.svg" /></p>
+<p><img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/sd_html_parsing_sample_for_openlayers.drawio.svg"/></p>
 <h2 id="4a-in-which-coordinate-reference-system-crs">4.a) In which Coordinate Reference System (CRS)?</h2>
 <ul>
 <li>Even if a custom CRS is not defined, the map has to be visualized based on a default CRS.</li>
 <li>Check <code>console.log(map.viewPropertyListenerKey_.target.projection_)</code></li>
 <li>Search with the EPSG code on <a href="https://epsg.io">epsg.io</a> to learn more about it.</li>
 </ul>
-<p><img alt="console_dir_view" src="../images/essentials_of_web_map/console_dir_map_crs.png" /></p>
+<p><img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map_crs.png"/></p>
 <h3 id="4b-how-about-the-zoom-level">4.b) How about the Zoom Level?</h3>
 <ul>
 <li>The zoom level is defined as 10 in the JavaScript code.</li>
@@ -1138,7 +1138,7 @@
 <li>Set the CRS as <strong>EPSG:3857 (Pseudo-Mercator)</strong> in Map Properties</li>
 <li>Search for "<strong>Zoom Level</strong>" and/or "<strong>Layer Tiles Mapcanvas</strong>" in Plugins Manager</li>
 </ul>
-<p><img alt="console_dir_view" src="../images/essentials_of_web_map/ol_zoom_level.png" /></p>
+<p><img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/ol_zoom_level.png"/></p>
 <h3 id="4c-get-the-current-zoom-level-and-write-to-an-html-element">4.c) Get the current zoom level and write to an HTML element</h3>
 <p><a href="../raw_codes/essentials_of_web_map/demo4c.html">Demo4c</a></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">onZoomEnd</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1170,7 +1170,7 @@
 <h3 id="5b-how-to-detect-the-module-hierarchy-in-a-package">5.b) How to detect the module hierarchy in a package?</h3>
 <p>Method 1: Check the debugger tool in (Web) Developer Tool.</p>
 <p>Method 2: Check the documentation of the used library (e.g. <a href="https://openlayers.org/en/latest/apidoc/">OpenLayers API Doc</a> ).</p>
-<p><img alt="firefox_debugger" src="../images/essentials_of_web_map/ol_imported_modules.png" /></p>
+<p><img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/ol_imported_modules.png"/></p>
 <h3 id="5c-how-to-get-feature-info">5.c) How to get feature info?</h3>
 <p><a href="../raw_codes/essentials_of_web_map/demo5c.html">Demo5c</a></p>
 <ul>
@@ -1354,9 +1354,11 @@
 <a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span><span class="p">});</span>
 </code></pre></div>
 <h3 id="7d-what-is-cartesian3">7.d) What is "Cartesian3"?</h3>
-<p><img alt="Geographic Coordinates" src="../images/essentials_of_web_map/geo_coord.gif" />
-<img alt="Cartesian 3D Coordinates" src="../images/essentials_of_web_map/cartesian_coord.gif" />
-- Images taken from <a href="https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html">https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html</a></p>
+<p><img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/geo_coord.gif"/></p>
+<p><img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/cartesian_coord.gif"/></p>
+<ul>
+<li>Images taken from <a href="https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html">https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html</a></li>
+</ul>
 <h3 id="7e-how-the-basemaps-are-loaded-into-cesium-tiling-mechanism">7.e) How the basemaps are loaded into Cesium (Tiling Mechanism)</h3>
 <ul>
 <li>Visit the next demo page and try to give some tilt angle to the current view.</li>
