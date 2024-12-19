@@ -1,4 +1,7 @@
 env-exr
+env-exr/
+env-exr/*
+env-exr/**/*
 _backup
 .ipynb_checkpoints
 site
