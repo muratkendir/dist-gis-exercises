@@ -3,6 +3,9 @@ env-exr/
 env-exr/*
 env-exr/**/*
 _backup
+_backup/
+_backup/*
+_backup/**/*
 .ipynb_checkpoints
 site
 raw_codes/.ipynb_checkpoints
