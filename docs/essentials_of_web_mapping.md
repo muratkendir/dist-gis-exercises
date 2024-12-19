@@ -18,7 +18,7 @@
 
 ### 1.a-b) Defining styles for HTML elements
 
-**[Demo 1a](../raw_codes/essentials_of_web_map/demo1a.html)**
+<a href="../raw_codes/essentials_of_web_map/demo1a.html">Demo 1a</a>
 ```html
 <title>My Web Page</title>
 <div align="center">
@@ -29,7 +29,7 @@
 ```
 
 
-**[Demo 1b](../raw_codes/essentials_of_web_map/demo1b.html)**
+<a href="../raw_codes/essentials_of_web_map/demo1b.html">Demo 1b</a>
 ```html
 <title>My Web Page</title>
 <style>
@@ -46,7 +46,7 @@
 
 ### 1.c) Referencing to HTML elements
 
-[Demo 1c](../raw_codes/essentials_of_web_map/demo1c.html)
+<a href="../raw_codes/essentials_of_web_map/demo1c.html">Demo 1c</a>
 ```html
 <title>My Web Page</title>
 <style>
@@ -63,7 +63,7 @@
 
 ### 1.d) Referencing to HTML elements
 
-[Demo 1d](../raw_codes/essentials_of_web_map/demo1d.html)
+<a href="../raw_codes/essentials_of_web_map/demo1d.html">Demo 1d</a>
 
 ```html
 <title>My Web Page</title>
@@ -82,7 +82,7 @@
 
 ### 1.e) Importing Styles from an external file
 
-[Demo 1e](../raw_codes/essentials_of_web_map/demo1e.html)
+<a href="../raw_codes/essentials_of_web_map/demo1e.html">Demo 1e</a>
 
 ```html
 <title>My Web Page</title>
@@ -99,7 +99,7 @@
 
 ### 1.f) Importing Styles from an external file
 
-[Demo 1f](../raw_codes/essentials_of_web_map/demo1f.html)
+<a href="../raw_codes/essentials_of_web_map/demo1f.html">Demo 1f</a>
 
 ```html
 <title>My Web Page</title>
@@ -126,13 +126,13 @@ An Example: **ThreeJS**
 - Implemented into QGIS to use as 3D Visualizer
   - accessible through **View > 3D Map Views**
 
-[Demo 2a](../raw_codes/essentials_of_web_map/demo2a.html)
+<a href="../raw_codes/essentials_of_web_map/demo2a.html">Demo 2a</a>
 
 ## 3.a) Web Map with OpenLayers
 
 - OpenLayers is one of the most advanced 2D web map libraries.
 
-[Demo3a](../raw_codes/essentials_of_web_map/demo3a.html)
+<a href="../raw_codes/essentials_of_web_map/demo3a.html">Demo3a</a>
 
 ```html
 <html>
@@ -215,7 +215,7 @@ var map = new ol.Map({
 
 ### 4.c) Get the current zoom level and write to an HTML element
 
-[Demo4c](../raw_codes/essentials_of_web_map/demo4c.html)
+<a href="../raw_codes/essentials_of_web_map/demo4c.html">Demo4c</a>
 
 ```javascript
 function onZoomEnd(evt) {
@@ -233,7 +233,7 @@ map.on('moveend', onZoomEnd);
 
 Which one is a correct definition for a WMS service in OpenLayers?
 
-[Demo5a](../raw_codes/essentials_of_web_map/demo5a.html)
+<a href="../raw_codes/essentials_of_web_map/demo5a.html">Demo5a</a>
 
 **A**
 ```javascript
@@ -263,7 +263,7 @@ Method 2: Check the documentation of the used library (e.g. [OpenLayers API Doc]
 
 ### 5.c) How to get feature info?
 
-[Demo5c](../raw_codes/essentials_of_web_map/demo5c.html)
+<a href="../raw_codes/essentials_of_web_map/demo5c.html">Demo5c</a>
 
 - Check the GetFeatureInfo operation's documentation: [OGC e-Learning](http://opengeospatial.github.io/e-learning/wms/text/operations.html#getfeatureinfo)
 
@@ -287,7 +287,7 @@ map.on('singleclick', function (evt) {
 
 ### 5.d) Display the feature information in a HTML element
 
-[Demo5c](../raw_codes/essentials_of_web_map/demo5c.html)
+<a href="../raw_codes/essentials_of_web_map/demo5c.html">Demo5c</a>
 
 - If you are not familiar with some JavaScript functions or classes like 'let', 'const', 'Promise', check the documents for the 2015 JavaScript version (aka ECMAScript 6/ES6):
   - https://www.w3schools.com/Js/js_es6.asp
@@ -350,7 +350,7 @@ const my_wmts = new ol.layer.Tile({
 
 - Also check the EPSG:3857 (Pseudo-Mercator) extents : [EPSG.io](https://epsg.io/3857)
 
-[Demo6a](../raw_codes/essentials_of_web_map/demo6a.html)
+<a href="../raw_codes/essentials_of_web_map/demo6a.html">Demo6a</a>
 
 ```javascript
 const projection = ol.proj.get('EPSG:3857');
@@ -369,7 +369,7 @@ for (let z = 0; z < 19; ++z) {
 
 ### 6.c) Implementing the resolution and MatrixSet IDs with openlayers WMTS request
 
-[Demo6a](../raw_codes/essentials_of_web_map/demo6a.html)
+<a href="../raw_codes/essentials_of_web_map/demo6a.html">Demo6a</a>
 
 ```javascript
 const my_wmts = new ol.layer.Tile({
@@ -421,7 +421,7 @@ const my_wmts = new ol.layer.Tile({
 
 ### 7b) Converting local JS file references to cloud repository references
 
-[Cesium with online repositories](../raw_codes/essentials_of_web_map/demo7b.html)
+<a href="../raw_codes/essentials_of_web_map/demo7b.html">Cesium with online repositories</a>
 
 - Usually online JS repositories provided in the documentation page of the library.
   - However, you can also check some known JS repositories such as [cdnjs](https://cdnjs.com), [jsdelivery](https://www.jsdelivr.com) etc.
@@ -453,7 +453,7 @@ const my_wmts = new ol.layer.Tile({
 
 - Unlike 2D maps, 3D map environments need a camera object so that a scene selected on the map can be presented to the end user.
 
-[Cesium with camera initialization](../raw_codes/essentials_of_web_map/demo7c.html)
+<a href="../raw_codes/essentials_of_web_map/demo7c.html">Cesium with camera initialization</a>
 
 ```javascript
 // Fly the camera to San Francisco at the given longitude, latitude, and height.
@@ -482,7 +482,7 @@ const my_wmts = new ol.layer.Tile({
 
 - This is the basic 2D tiling mechanism that used to overlay 2D maps and terrain files.
 
-[Cesium with viewer Inspector](../raw_codes/essentials_of_web_map/demo7d.html)
+<a href="../raw_codes/essentials_of_web_map/demo7d.html">Cesium with viewer Inspector</a>
 
 ### 7.f) How to add WMS service to the Cesium
 
@@ -490,7 +490,7 @@ const my_wmts = new ol.layer.Tile({
 
 - Check the Capabilities of a found WMS service: [München Bezirksteil](https://geoportal.muenchen.de/geoserver/gsm_wfs/vablock_bezirksteil_opendata/ows?service=WMS&version=1.3.0&request=GetCapabilities)
 
-[Cesium with WMS service](../raw_codes/essentials_of_web_map/demo7f.html)
+<a href="../raw_codes/essentials_of_web_map/demo7f.html">Cesium with WMS service</a>
 
 ```javascript
 // Add the main URL of WMS service
@@ -512,7 +512,7 @@ viewer.imageryLayers.addImageryProvider(geoWmsLayer);
 
 ### 7.g) How to add default world terrain using Cesium Ion token
 
-[Cesium with Terrain](../raw_codes/essentials_of_web_map/demo7g.html)
+<a href="../raw_codes/essentials_of_web_map/demo7g.html">Cesium with Terrain</a>
 
 - Create an account on Cesium Ion and generate a token specifically reserved for an application or limited in time.
 - Add to the beginning of your CesiumJS code.
@@ -536,7 +536,7 @@ viewer.scene.setTerrain(
 
 ## 8.a) Adding 3D Tiles
 
-[Cesium with 3D Tiles](../raw_codes/essentials_of_web_map/demo8a.html)
+<a href="../raw_codes/essentials_of_web_map/demo8a.html">Cesium with 3D Tiles</a>
 
 - Add the main JSON link of the 3DTiles to Cesium 
   - e.g. [BaseMap.de - LOD2 Buildings](https://basemap.de/beta/beta-lod2/)
@@ -563,7 +563,7 @@ var cityStyle = new Cesium.Cesium3DTileStyle({
 
 ### 8.b) Enable Cesium 3DTiles Inspector
 
-[Cesium with 3D Tiles and Inspector](../raw_codes/essentials_of_web_map/demo8b.html)
+<a href="../raw_codes/essentials_of_web_map/demo8b.html">Cesium with 3D Tiles and Inspector</a>
 
 ```javascript
 viewer.extend(Cesium.viewerCesium3DTilesInspectorMixin);
