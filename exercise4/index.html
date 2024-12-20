@@ -368,18 +368,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#32-adding-terrain-to-the-cesium-viewer" class="md-nav__link">
     3.2) Adding terrain to the Cesium viewer
   </a>
   
-    <nav class="md-nav" aria-label="3.2) Adding terrain to the Cesium viewer">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#33-adding-custom-terrain-models-3dtiles-and-wms-services-to-cesium" class="md-nav__link">
@@ -622,18 +616,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#32-adding-terrain-to-the-cesium-viewer" class="md-nav__link">
     3.2) Adding terrain to the Cesium viewer
   </a>
   
-    <nav class="md-nav" aria-label="3.2) Adding terrain to the Cesium viewer">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#33-adding-custom-terrain-models-3dtiles-and-wms-services-to-cesium" class="md-nav__link">
@@ -663,7 +651,7 @@
 
 
 <h1 id="geospatial-web-services-web-mapping-in-2d-3d">Geospatial Web Services &amp; Web Mapping in 2D / 3D</h1>
-<p><img align="right" width=190 height=100 src="images/TUM_Logo_blau_rgb_p.png"/></p>
+<p><img align="right" width=190 height=100 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
 <blockquote>
 Munich Technical University || Chair of Geoinformatics </br></br>
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
@@ -1164,7 +1152,7 @@ Therefore, to add a 3D Tile to the Cesium map, all that is needed is to find a s
 <p><img alt="cesium04" src="../images/exr4/cesium_04.png" />
 <em>Screenshot taken on Jupyter Notebook</em></p>
 <p>As you may notice, the predefined 3D building dataset (based on OpenStreetMap extruded buildings, check <a href="https://osmbuildings.org">OSMBuildings</a> ) is loaded into the scene, but there is a serious problem. The buildings appear to float several hundred meters above the ground. This is because there is no terrain defined yet (a 3d model showing the current heights of the ground) and therefore Cesium works on an artificial surface based on an ellipsoidal geometry (i.e. the WGS84 ellipsoid).</p>
-<h2 id="32-adding-terrain-to-the-cesium-viewer">3.2) Adding terrain to the Cesium viewer</h2>
+<h3 id="32-adding-terrain-to-the-cesium-viewer">3.2) Adding terrain to the Cesium viewer</h3>
 <p>We can add a globally available terrain by adding these codes into our code. Please consider that, terrain object must be defined in CesiumContainer widget as an option.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">viewer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Viewer</span><span class="p">(</span><span class="s1">&#39;cesiumContainer&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">        </span><span class="nx">terrain</span><span class="o">:</span><span class="w"> </span><span class="nx">Cesium</span><span class="p">.</span><span class="nx">Terrain</span><span class="p">.</span><span class="nx">fromWorldTerrain</span><span class="p">(),</span>
