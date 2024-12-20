@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Include the CesiumJS JavaScript and CSS files -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="cesiumContainer"></div>
+
+  <script>
+    // Change the Cesium Ion token
+    Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyNGFiOTc0Ni0wNDJjLTQ0ZTEtYTM5NC05ZTE4MjkyYmE2MzgiLCJpZCI6ODgxLCJpYXQiOjE3MzQ2MjMwNjh9.W0fJntAHFD6m4-oRn2X0WOexJGnTCcRggAwi7HbJMMI";
+    // Set a viewer
+    const viewer = new Cesium.Viewer("cesiumContainer", {});
+          
+    //Prepare the URL of GeoJSON       
+    feature_api_query = 'https://api.hamburg.de/datasets/v1/grundwassergleichen_min/collections/u12_l_gleichenplan_min/items?limit=10&gw_stand_in_meter_nhn=20'
+    const dataSource = Cesium.GeoJsonDataSource.load(feature_api_query);
+          
+    // Add GeoJSON file to the viewer
+    viewer.dataSources.add(dataSource);
+    viewer.zoomTo(dataSource);
+  </script>
+ </div>
+</body>
+</html>

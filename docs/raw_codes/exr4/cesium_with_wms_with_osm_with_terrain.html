@@ -9,9 +9,12 @@
   <div id="cesiumContainer"></div>
   <script type="module">
     Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyNGFiOTc0Ni0wNDJjLTQ0ZTEtYTM5NC05ZTE4MjkyYmE2MzgiLCJpZCI6ODgxLCJpYXQiOjE3MzQ2MjMwNjh9.W0fJntAHFD6m4-oRn2X0WOexJGnTCcRggAwi7HbJMMI";
+
     const viewer = new Cesium.Viewer('cesiumContainer', {
+        terrain: Cesium.Terrain.fromWorldTerrain(),
     });
-    
+    console.log(viewer);
+    //console.log(viewer._container);
     var geourl = 'https://sgx.geodatenzentrum.de/wms_basemapde';
     var imageryLayers = viewer.imageryLayers;
     var geoWmsLayer = new Cesium.WebMapServiceImageryProvider({

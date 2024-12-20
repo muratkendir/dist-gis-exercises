@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://cesium.com/downloads/cesiumjs/releases/1.112/Build/Cesium/Cesium.js"></script>
-  <link href="https://cesium.com/downloads/cesiumjs/releases/1.112/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <!-- Include the CesiumJS JavaScript and CSS files -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
 </head>
+
 <body>
   <div id="cesiumContainer"></div>
-  <script type="module">
-    Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyNGFiOTc0Ni0wNDJjLTQ0ZTEtYTM5NC05ZTE4MjkyYmE2MzgiLCJpZCI6ODgxLCJpYXQiOjE3MzQ2MjMwNjh9.W0fJntAHFD6m4-oRn2X0WOexJGnTCcRggAwi7HbJMMI";
-    const viewer = new Cesium.Viewer('cesiumContainer', {
+
+  <script>
+    const viewer = new Cesium.Viewer("cesiumContainer", {
     });
-    
     var geourl = 'https://sgx.geodatenzentrum.de/wms_basemapde';
     var imageryLayers = viewer.imageryLayers;
     var geoWmsLayer = new Cesium.WebMapServiceImageryProvider({
@@ -27,7 +28,8 @@
 
     viewer.scene.imageryLayers.removeAll();
     imageryLayers.addImageryProvider(geoWmsLayer);
-    // Fly the camera to Munich at the given longitude, latitude, and height.
+
+    // Fly the camera to San Francisco at the given longitude, latitude, and height.
     viewer.camera.flyTo({
       destination : Cesium.Cartesian3.fromDegrees(11.575,48.107, 4000),
       orientation : {
@@ -35,9 +37,8 @@
         pitch : Cesium.Math.toRadians(-45.0),
       }
     });
-    // Add Cesium OSM Buildings.
-    const buildingsTileset = await Cesium.createOsmBuildingsAsync();
-    viewer.scene.primitives.add(buildingsTileset);
+    viewer.extend(Cesium.viewerCesiumInspectorMixin);
   </script>
+ </div>
 </body>
 </html>

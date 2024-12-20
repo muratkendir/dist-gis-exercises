@@ -1,6 +1,6 @@
 # Geospatial Web Services & Web Mapping in 2D / 3D
 
-<img align="right" width=100 height=190 src="./images/TUM_Logo_blau_rgb_p.png"/>
+<img align="right" width=190 height=100 src="../images/TUM_Logo_blau_rgb_p.png"/>
 <blockquote>
 Munich Technical University || Chair of Geoinformatics </br></br>
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
@@ -9,19 +9,6 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 - In this exercise, you will learn how to use geospatial web services in your applications or web views and how to use the operations supported by the web service. 
 - In the previous exercise, we selected a few web map services from the given Spatial Data Infrastructures (SDIs) and examined the responses using GIS software. 
 - Now you will learn how to connect to and interact with geospatial web services with the help of some popular libraries. Additionally, you will learn how to use 2D and 3D JavaScript libraries which supports and visualize 2D or 3D datasets or web services.
-
-### Table of Contents
-- [1) Accessing to the WMS service with Python](#1\)-Accessing-WMS-service-with-Python)
-  - [1.1) Examine a WMS service with OWSLib](#1.1\)-Examine-a-WMS-service-with-OWSLib)
-  - [1.2) Add a WMS layer to Jupyter Notebook using ipyLeaflet](#1.2\)-Add-a-WMS-layer-to-Jupyter-Notebook-using-ipyLeaflet)
-- [2) Accessing WMS services from JavaScript libraries](#2\)-Accessing-WMS-services-from-JavaScript-libraries)
-  - [2.1) Adding WMS services to OpenLayers](#2.1\)-Adding-WMS-services-to-OpenLayers)
-  - [2.2) Adding WMS services to CesiumJS](#2.2\)-Adding-WMS-services-to-CesiumJS)
-  - [2.3) Using OGC Feature API as GeoJSON source in Cesium](#2.3\)-Using-OGC-Feature-API-as-GeoJSON-source-in-Cesium)
-- [3) Fundamentals of 3D Visualization in CesiumJS](#3\)-Fundamentals-of-3D-Visualization-in-CesiumJS)
-  - [3.1) Adding 3D Buildings to the Cesium viewer](#3.1\)-Adding-3D-Buildings-to-the-Cesium-viewer)
-  - [3.2) Adding terrain to the Cesium viewer](#3.2\)-Adding-terrain-to-the-Cesium-viewer)
-  - [3.3) Adding custom terrain models, 3DTiles and WMS services to Cesium](#3.3\)-Adding-custom-terrain-models,-3DTiles-and-WMS-services-to-Cesium)
 
 ## 1) Accessing WMS service with Python
 
@@ -150,7 +137,7 @@ with open("responses/exr4/my_wms_servicexml.xml", "wb") as my_wms_xml:
 ```
 
 - Check the saved XML file and try to find where the layers, bounding boxes or coordinate reference systems (CRSs) are defined.
-<blockquote style="background-color:linen;"> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
+<blockquote> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
 </blockquote>
 
 - You can also send queries to get single images with predefined properties. To do that, you may need to expose more informaiton about the WMS service using following commands:
@@ -193,7 +180,7 @@ Image(img.read())
 
 
     
-![jpeg](output_24_0.jpg)
+![leaflet00](images/exr4/output_23_0.jpg)
     
 
 
@@ -210,8 +197,8 @@ map = Map(center=center, zoom=13)
 display(map)
 ```
 
-
-    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
+![leaflet01](images/exr4/leaflet_01.png)
+*Screenshot taken on Jupyter Notebook*
 
 
 You can change the basemap by importing "basemaps" class into your code.
@@ -228,21 +215,19 @@ map = Map(basemap=basemaps.CartoDB.Positron, center=center, zoom=13)
 #display(map)
 src = 'raw_codes/exr4/ipyleaflet_basemap.html'
 embed_minimal_html(src, views=[map])
-IPython.display.IFrame(src, width='800px', height='400px')
-
+IPython.display.IFrame(src, width='100%', height='300px')
 ```
 
 
-
-
+[//]: # (![leaflet02](images/exr4/leaflet_02.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
-    width="800px"
-    height="400px"
-    src="raw_codes/exr4/ipyleaflet_basemap.html"
-    frameborder="0"
+    width="100%"
+    height="300px"
+    src="../raw_codes/exr4/ipyleaflet_basemap.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
@@ -266,9 +251,8 @@ map
 ```
 
 
-
-
-    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
+![leaflet03](images/exr4/leaflet_03.png)
+*Screenshot taken on Jupyter Notebook*
 
 
 
@@ -296,10 +280,8 @@ map.add(wms)
 map
 ```
 
-
-
-
-    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
+![leaflet04](images/exr4/leaflet_04.png)
+*Screenshot taken on Jupyter Notebook*
 
 
 
@@ -334,9 +316,8 @@ m
 ```
 
 
-
-
-    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
+![leaflet05](images/exr4/leaflet_05.png)
+*Screenshot taken on Jupyter Notebook*
 
 
 
@@ -375,7 +356,8 @@ display(map)
 ```
 
 
-    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
+![leaflet06](images/exr4/leaflet_06.png)
+*Screenshot taken on Jupyter Notebook*
 
 
 - If you are interested in visualizing a 2D/3D map in a python notebook, ipyleaflet can be considered a good starting point in terms of learning curve. However, there are many different alternative python libraries that support 2D/3D geographic data visualization in python notebooks or in a python framework (Flask, Django etc). Take a glance over these libraries, if you want:
@@ -408,15 +390,15 @@ IPython.display.IFrame(src, width='100%', height='300px')
 
 
 
-
+[//]: # (![openlayers01](images/exr4/openlayers_01.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
     height="300px"
-    src="raw_codes/exr4/openlayers_empty_viewer.html"
-    frameborder="0"
+    src="../raw_codes/exr4/openlayers_empty_viewer.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
@@ -479,15 +461,15 @@ IPython.display.IFrame(src, width='100%', height='300px')
 
 
 
-
+[//]: # (![openlayers02](images/exr4/openlayers_02.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
     height="300px"
-    src="raw_codes/exr4/openlayers_with_wms.html"
-    frameborder="0"
+    src="../raw_codes/exr4/openlayers_with_wms.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
@@ -520,16 +502,15 @@ IPython.display.IFrame(src, width='100%', height='400px')
 ```
 
 
-
-
+[//]: # (![cesium01](images/exr4/cesium_01.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_empty_viewer.html"
-    frameborder="0"
+    height="300px"
+    src="../raw_codes/exr4/cesium_empty_viewer.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
@@ -594,15 +575,15 @@ IPython.display.IFrame(src, width='100%', height='400px')
 
 
 
-
+[//]: # (![cesium02](images/exr4/cesium_02.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_wms.html"
-    frameborder="0"
+    height="300px"
+    src="../raw_codes/exr4/cesium_with_wms.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
@@ -654,15 +635,15 @@ IPython.display.IFrame(src, width='100%', height='400px')
 
 
 
-
+[//]: # (![cesium03](images/exr4/cesium_03.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_geojson.html"
-    frameborder="0"
+    height="300px"
+    src="../raw_codes/exr4/cesium_with_geojson.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
@@ -698,15 +679,15 @@ IPython.display.IFrame(src, width='100%', height='400px')
 
 
 
-
+[//]: # (![cesium04](images/exr4/cesium_04.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_wms_with_osm.html"
-    frameborder="0"
+    height="300px"
+    src="../raw_codes/exr4/cesium_with_wms_with_osm.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
@@ -714,7 +695,7 @@ IPython.display.IFrame(src, width='100%', height='400px')
 
 As you may notice, the predefined 3D building dataset (based on OpenStreetMap extruded buildings, check [OSMBuildings](https://osmbuildings.org) ) is loaded into the scene, but there is a serious problem. The buildings appear to float several hundred meters above the ground. This is because there is no terrain defined yet (a 3d model showing the current heights of the ground) and therefore Cesium works on an artificial surface based on an ellipsoidal geometry (i.e. the WGS84 ellipsoid).
 
-## 3.2) Adding terrain to the Cesium viewer
+### 3.2) Adding terrain to the Cesium viewer
 We can add a globally available terrain by adding these codes into our code. Please consider that, terrain object must be defined in CesiumContainer widget as an option.
 ```JavaScript
 const viewer = new Cesium.Viewer('cesiumContainer', {
@@ -734,14 +715,15 @@ IPython.display.IFrame(src, width='100%', height='400px')
 
 
 
+[//]: # (![cesium05](images/exr4/cesium_05.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_wms_with_osm_with_terrain.html"
-    frameborder="0"
+    height="300px"
+    src="../raw_codes/exr4/cesium_with_wms_with_osm_with_terrain.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
@@ -817,16 +799,15 @@ IPython.display.IFrame(src, width='100%', height='400px')
 ```
 
 
-
-
+[//]: # (![cesium06](images/exr4/cesium_06.png))
+[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_everything_custom.html"
-    frameborder="0"
+    height="300px"
+    src="../raw_codes/exr4/cesium_with_everything_custom.html"
+    style="border:10px solid #005293;margin:0;padding:0;" 
     allowfullscreen
-
 ></iframe>
 
 
