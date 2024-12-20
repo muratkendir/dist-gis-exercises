@@ -187,7 +187,9 @@ var map = new ol.Map({
 - Try to find the specified map center coordinates ```console.dir(map)```
 - Check ```console.log(map.viewPropertyListenerKey_.target.values_)```
 
-<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map_view_elem.png"/>
+<!--<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map_view_elem.png"/>-->
+
+![console dir map view elem](images/essentials_of_web_map/console_dir_map_view_elem.png)
 
 ### 3.d) State Diagram for a HTML Parsing Process (HTML+CSS+OpenLayers)
 
@@ -563,7 +565,7 @@ var cityStyle = new Cesium.Cesium3DTileStyle({
 
 ### 8.b) Enable Cesium 3DTiles Inspector
 
-<a href="../raw_codes/essentials_of_web_map/demo8b.html">Cesium with 3D Tiles and Inspector</a>
+<a href="../raw_codes/essentials_of_web_map/demo8b.html" target="_blank">Cesium with 3D Tiles and Inspector</a>
 
 ```javascript
 viewer.extend(Cesium.viewerCesium3DTilesInspectorMixin);
