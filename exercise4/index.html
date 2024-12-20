@@ -293,13 +293,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#1-accessing-wms-service-with-python" class="md-nav__link">
     1) Accessing WMS service with Python
   </a>
@@ -554,13 +547,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#1-accessing-wms-service-with-python" class="md-nav__link">
     1) Accessing WMS service with Python
   </a>
@@ -677,7 +663,7 @@
 
 
 <h1 id="geospatial-web-services-web-mapping-in-2d-3d">Geospatial Web Services &amp; Web Mapping in 2D / 3D</h1>
-<p><img align="right" width=100 height=190 src="./images/TUM_Logo_blau_rgb_p.png"/></p>
+<p><img align="right" width=190 height=100 src="./images/TUM_Logo_blau_rgb_p.png"/></p>
 <blockquote>
 Munich Technical University || Chair of Geoinformatics </br></br>
 Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
@@ -687,20 +673,6 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <li>In this exercise, you will learn how to use geospatial web services in your applications or web views and how to use the operations supported by the web service. </li>
 <li>In the previous exercise, we selected a few web map services from the given Spatial Data Infrastructures (SDIs) and examined the responses using GIS software. </li>
 <li>Now you will learn how to connect to and interact with geospatial web services with the help of some popular libraries. Additionally, you will learn how to use 2D and 3D JavaScript libraries which supports and visualize 2D or 3D datasets or web services.</li>
-</ul>
-<h3 id="table-of-contents">Table of Contents</h3>
-<ul>
-<li><a href="#1)-Accessing-WMS-service-with-Python">1) Accessing to the WMS service with Python</a></li>
-<li><a href="#1.1)-Examine-a-WMS-service-with-OWSLib">1.1) Examine a WMS service with OWSLib</a></li>
-<li><a href="#1.2)-Add-a-WMS-layer-to-Jupyter-Notebook-using-ipyLeaflet">1.2) Add a WMS layer to Jupyter Notebook using ipyLeaflet</a></li>
-<li><a href="#2)-Accessing-WMS-services-from-JavaScript-libraries">2) Accessing WMS services from JavaScript libraries</a></li>
-<li><a href="#2.1)-Adding-WMS-services-to-OpenLayers">2.1) Adding WMS services to OpenLayers</a></li>
-<li><a href="#2.2)-Adding-WMS-services-to-CesiumJS">2.2) Adding WMS services to CesiumJS</a></li>
-<li><a href="#2.3)-Using-OGC-Feature-API-as-GeoJSON-source-in-Cesium">2.3) Using OGC Feature API as GeoJSON source in Cesium</a></li>
-<li><a href="#3)-Fundamentals-of-3D-Visualization-in-CesiumJS">3) Fundamentals of 3D Visualization in CesiumJS</a></li>
-<li><a href="#3.1)-Adding-3D-Buildings-to-the-Cesium-viewer">3.1) Adding 3D Buildings to the Cesium viewer</a></li>
-<li><a href="#3.2)-Adding-terrain-to-the-Cesium-viewer">3.2) Adding terrain to the Cesium viewer</a></li>
-<li><a href="#3.3)-Adding-custom-terrain-models,-3DTiles-and-WMS-services-to-Cesium">3.3) Adding custom terrain models, 3DTiles and WMS services to Cesium</a></li>
 </ul>
 <h2 id="1-accessing-wms-service-with-python">1) Accessing WMS service with Python</h2>
 <p>OWSLib is one of the OGC compliant web service client and it supports OGC interface standards.
@@ -794,7 +766,7 @@ GetStyles
 <ul>
 <li>Check the saved XML file and try to find where the layers, bounding boxes or coordinate reference systems (CRSs) are defined.</li>
 </ul>
-<blockquote style="background-color:linen;"> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
+<blockquote> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
 </blockquote>
 
 <ul>
@@ -829,7 +801,7 @@ GetStyles
 <a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
 <a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">Image</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre></div>
-<p><img alt="jpeg" src="../output_24_0.jpg" /></p>
+<p><img alt="leaflet00" src="../images/exr4/output_23_0.jpg" /></p>
 <h3 id="12-add-a-wms-layer-to-jupyter-notebook-using-ipyleaflet">1.2) Add a WMS layer to Jupyter Notebook using ipyLeaflet</h3>
 <p>As you may know that leaflet is well known and simple-to-use web map library based on JavaScript. However, leaflet has also a widget implementation with Python Notebook which lets users to visualize their leaflet maps in notebook documents. To start using ipyleaflet, type <code>pip install ipyleaflet</code> in your python environment or follow the instructions to install ipyleaflet which are available in <a href="https://ipyleaflet.readthedocs.io/en/latest/installation/index.html">this website</a>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span>
@@ -838,8 +810,8 @@ GetStyles
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
 <a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">display</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, …
-</code></pre></div>
+<p><img alt="leaflet01" src="../images/exr4/leaflet_01.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <p>You can change the basemap by importing "basemaps" class into your code.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">basemaps</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">from</span> <span class="nn">ipywidgets.embed</span> <span class="kn">import</span> <span class="n">embed_minimal_html</span>
@@ -851,17 +823,10 @@ GetStyles
 <a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="c1">#display(map)</span>
 <a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="n">src</span> <span class="o">=</span> <span class="s1">&#39;raw_codes/exr4/ipyleaflet_basemap.html&#39;</span>
 <a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="n">embed_minimal_html</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">views</span><span class="o">=</span><span class="p">[</span><span class="nb">map</span><span class="p">])</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;800px&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;400px&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;300px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="800px"
-    height="400px"
-    src="raw_codes/exr4/ipyleaflet_basemap.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="leaflet02" src="../images/exr4/leaflet_02.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <p>Now, we can add our WMS service to the leaflet widget by specifying the connectiond details.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">WMSLayer</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">53.547668</span><span class="p">,</span> <span class="mf">9.985685</span><span class="p">)</span>
@@ -875,8 +840,8 @@ GetStyles
 <a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="nb">map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">wms</span><span class="p">)</span>
 <a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="nb">map</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, …
-</code></pre></div>
+<p><img alt="leaflet03" src="../images/exr4/leaflet_03.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <p>Alternatively, you can call any WMS parameter including URL from the former OWSLib object.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">53.547668</span><span class="p">,</span> <span class="mf">9.985685</span><span class="p">)</span>
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">basemap</span><span class="o">=</span><span class="n">basemaps</span><span class="o">.</span><span class="n">CartoDB</span><span class="o">.</span><span class="n">Positron</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
@@ -897,8 +862,8 @@ GetStyles
 <a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="nb">map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">wms</span><span class="p">)</span>
 <a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="nb">map</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, …
-</code></pre></div>
+<p><img alt="leaflet04" src="../images/exr4/leaflet_04.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>ipyLeaflet allows users to create some interactions on their notebooks. Incidentally, it should be noted that these interactions may be less than using the leaflet library in pure JavaScript. Here is one of the posssible interaction of ipyleaflet package, which is clearly described in the <a href="https://ipyleaflet.readthedocs.io/en/latest/controls/split_map_control.html">documentation page</a>.</li>
 </ul>
@@ -927,8 +892,8 @@ GetStyles
 <a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>
 <a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="n">m</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, …
-</code></pre></div>
+<p><img alt="leaflet05" src="../images/exr4/leaflet_05.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>You might be wondering what happens to the console (or terminal window) after running the leaflet widget. The console is still there. All you need to show it again is to enable the console by going to View &gt; Show Log Console in the python notebook window.</li>
 </ul>
@@ -961,8 +926,8 @@ GetStyles
 <a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="nb">map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">wms</span><span class="p">)</span>
 <a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a><span class="n">display</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, …
-</code></pre></div>
+<p><img alt="leaflet06" src="../images/exr4/leaflet_06.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>If you are interested in visualizing a 2D/3D map in a python notebook, ipyleaflet can be considered a good starting point in terms of learning curve. However, there are many different alternative python libraries that support 2D/3D geographic data visualization in python notebooks or in a python framework (Flask, Django etc). Take a glance over these libraries, if you want:</li>
 <li><a href="https://python-visualization.github.io/folium/latest/">Folium</a></li>
@@ -988,15 +953,8 @@ GetStyles
 <a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
 <a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;300px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="100%"
-    height="300px"
-    src="raw_codes/exr4/openlayers_empty_viewer.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="openlayers01" src="../images/exr4/openlayers_01.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>Alternatively, you can play with the file in a playground-like web applicaiton like fiddle:</li>
 <li><a href="https://jsfiddle.net/muratkendir/tokr36hf/2/">Copy &amp; Edit the HTML + JavaScript bundle in JSFiddle</a></li>
@@ -1048,15 +1006,8 @@ GetStyles
 <a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
 <a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;300px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="100%"
-    height="300px"
-    src="raw_codes/exr4/openlayers_with_wms.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="openlayers02" src="../images/exr4/openlayers_02.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>Alternatively, you can play with the file in a playground-like web applicaiton like fiddle:</li>
 <li><a href="https://jsfiddle.net/muratkendir/7k1pxhsm/">Copy &amp; Edit the HTML + JavaScript bundle in JSFiddle</a></li>
@@ -1084,15 +1035,8 @@ GetStyles
 <a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
 <a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;400px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_empty_viewer.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="cesium01" src="../images/exr4/cesium_01.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>Alternatively, you can play with the file in Sandcastle (a playground provided by CesiumJS):</li>
 <li>
@@ -1154,15 +1098,8 @@ GetStyles
 <a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
 <a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;400px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_wms.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="cesium02" src="../images/exr4/cesium_02.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>Also check the following samples and related API documentations to learn more about the possibilities in CeisumJS:<ul>
 <li><a href="https://sandcastle.cesium.com/?src=Imagery%20Layers.html&amp;label=Beginner">Imagery Layers</a> | <a href="https://cesium.com/learn/cesiumjs/ref-doc/ImageryProvider.html">API Docs - ImageryProvider</a></li>
@@ -1205,15 +1142,8 @@ GetStyles
 <a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
 <a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;400px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_geojson.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="cesium03" src="../images/exr4/cesium_03.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <h2 id="3-fundamentals-of-3d-visualization-in-cesiumjs">3) Fundamentals of 3D Visualization in CesiumJS</h2>
 <p>We have already added a WMS layer to the 3D map environment using the CesiumJS JavaScript library. Adding 2D overlays (GeoJSON, WMTS, WMS, XYZ basemaps etc) to the 3D map environment is not an outdated or unpopular method, but it is just one step in creating a well-designed 3D map. Generally, the steps required to create a 3D map environment can be summarized as follows: Adding 3D models, adding a 3D terrain model, overlaying the terrain with a coverage and finally adjusting the view to focus on the area of interest. In this step, we will try to follow these instructions one by one and experience 3D assets.</p>
 <h3 id="31-adding-3d-buildings-to-the-cesium-viewer">3.1) Adding 3D Buildings to the Cesium viewer</h3>
@@ -1231,15 +1161,8 @@ Therefore, to add a 3D Tile to the Cesium map, all that is needed is to find a s
 <a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>
 <a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;400px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_wms_with_osm.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="cesium04" src="../images/exr4/cesium_04.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <p>As you may notice, the predefined 3D building dataset (based on OpenStreetMap extruded buildings, check <a href="https://osmbuildings.org">OSMBuildings</a> ) is loaded into the scene, but there is a serious problem. The buildings appear to float several hundred meters above the ground. This is because there is no terrain defined yet (a 3d model showing the current heights of the ground) and therefore Cesium works on an artificial surface based on an ellipsoidal geometry (i.e. the WGS84 ellipsoid).</p>
 <h2 id="32-adding-terrain-to-the-cesium-viewer">3.2) Adding terrain to the Cesium viewer</h2>
 <p>We can add a globally available terrain by adding these codes into our code. Please consider that, terrain object must be defined in CesiumContainer widget as an option.
@@ -1253,15 +1176,8 @@ Therefore, to add a 3D Tile to the Cesium map, all that is needed is to find a s
 <a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>
 <a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;400px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_wms_with_osm_with_terrain.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="cesium05" src="../images/exr4/cesium_05.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <p>Just like 3D Tiles, terrain models can also be called from external sources. In this way, it is possible to provide moew accurate and precise terrain models which is a need especially when visualizing smaller buildings on bumpy areas (For example click to search button at right top side of the cesium widget and type "Neuschwanstein Castle").  </p>
 <h3 id="33-adding-custom-terrain-models-3dtiles-and-wms-services-to-cesium">3.3) Adding custom terrain models, 3DTiles and WMS services to Cesium</h3>
 <p>As mentioned earlier, it is possible to add custom-built 3D Tiles and terrain models to Cesium. As these datasets are usually very large and expensive, there are not many publicly available datasets yet. Most of the time, these datasets are provided by an authority with a requirement to use a token or authentication method.</p>
@@ -1316,15 +1232,8 @@ Therefore, to add a 3D Tile to the Cesium map, all that is needed is to find a s
 <a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>
 <a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;400px&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p><iframe
-    width="100%"
-    height="400px"
-    src="raw_codes/exr4/cesium_with_everything_custom.html"
-    frameborder="0"
-    allowfullscreen
-
-></iframe>
-</p>
+<p><img alt="cesium06" src="../images/exr4/cesium_06.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 
 
 
