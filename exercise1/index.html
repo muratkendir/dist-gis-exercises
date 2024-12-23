@@ -1,0 +1,1130 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../exercise2/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Exercise 1 (Distributed Sys.) - dist-gis-exercises (Educational Python Notebooks)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f615399.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#distributed-systems-computer-networks-internet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-header__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            dist-gis-exercises (Educational Python Notebooks)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exercise 1 (Distributed Sys.)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-nav__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    dist-gis-exercises (Educational Python Notebooks)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exercise 1 (Distributed Sys.)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 1 (Distributed Sys.)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-thin-client-fat-client-architectures-in-the-web-applications" class="md-nav__link">
+    1) Thin-Client &amp; Fat-Client Architectures in the Web Applications
+  </a>
+  
+    <nav class="md-nav" aria-label="1) Thin-Client & Fat-Client Architectures in the Web Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1a-preparation-for-the-next-discussion-about-tiers-web-developer-tool-developer-tool" class="md-nav__link">
+    1.a) Preparation for the Next Discussion about Tiers (Web Developer Tool / Developer Tool)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1b-discussion-about-the-tiers-in-layered-architectures" class="md-nav__link">
+    1.b) Discussion about the Tiers in Layered Architectures
+  </a>
+  
+    <nav class="md-nav" aria-label="1.b) Discussion about the Tiers in Layered Architectures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1bi-seismic-monitor-iris" class="md-nav__link">
+    1.b.i) Seismic Monitor (IRIS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1bii-geoportal-bayern" class="md-nav__link">
+    1.b.ii) Geoportal Bayern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1biii-turf-js-advanced-geospatial-analysis-for-browsers" class="md-nav__link">
+    1.b.iii) TURF JS (Advanced geospatial analysis for browsers)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creating-a-sequence-diagram-using-a-sample-request-response-example" class="md-nav__link">
+    2) Creating a Sequence Diagram using a Sample Request – Response Example
+  </a>
+  
+    <nav class="md-nav" aria-label="2) Creating a Sequence Diagram using a Sample Request – Response Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2a-review-the-requests-and-responses-before-and-after-creating-a-route-for-mountain-bikes-freizeitwege-in-the-bayernatlas-web-app" class="md-nav__link">
+    2.a) Review the requests and responses before and after creating a route for mountain bikes (freizeitwege) in the BayernAtlas web app
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2b-creating-a-sequence-diagram-to-describe-the-process-happened-in-the-previous-step-2a" class="md-nav__link">
+    2.b) Creating a Sequence Diagram to Describe the Process Happened in the Previous Step (2.a)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-examining-the-network-internet-infrastructure" class="md-nav__link">
+    3) Examining the Network &amp; Internet Infrastructure
+  </a>
+  
+    <nav class="md-nav" aria-label="3) Examining the Network & Internet Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3a-what-is-the-current-local-ipv4-address-for-your-machine-ipconfig-windows-ifconfig-linux-ip-address-show-linux-command" class="md-nav__link">
+    3.a) What is the current local IPv4 address for your machine? [ipconfig (Windows) / ifconfig (Linux) / ip address show (Linux) command]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3b-what-is-the-current-ipv6-address" class="md-nav__link">
+    3.b) What is the current IPv6 address?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3c-what-is-the-current-external-ipv4-address-of-your-local-networkrouter" class="md-nav__link">
+    3.c) What is the current external IPV4 address of your local network/router?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-what-is-the-current-ip-based-geolocation" class="md-nav__link">
+    3.d) What is the current IP-based geolocation?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3e-what-is-the-ip-address-of-a-selected-website-command-nslookup" class="md-nav__link">
+    3.e) What is the IP address of a selected website? (command: nslookup)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3f-what-is-happening-after-reverse-lookup-for-the-previous-ip-address-nslookup-x" class="md-nav__link">
+    3.f) What is happening after “Reverse Lookup” for the previous ip address? (nslookup -X)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3g-internal-structure-of-a-web-server-and-its-relation-with-the-ip-address" class="md-nav__link">
+    3.g) Internal structure of a web server and it's relation with the ip address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3h-routing-domain-or-subdomain-dns" class="md-nav__link">
+    3.h) Routing Domain or Subdomain (DNS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3i-checking-dns-records-with-nslookup-command" class="md-nav__link">
+    3.i) Checking DNS records with nslookup command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3j-using-ping-command-for-web-sites-from-different-regions" class="md-nav__link">
+    3.j) Using ping command for web sites from different regions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3k-use-ping-command-for-toher-web-sites" class="md-nav__link">
+    3.k) Use ping command for toher web sites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3l-using-traceroute-command" class="md-nav__link">
+    3.l) Using traceroute command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-python-request-script-for-a-known-public-web-service" class="md-nav__link">
+    4) Python Request Script for a Known Public Web Service
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Python Request Script for a Known Public Web Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4a-method-1-request-library" class="md-nav__link">
+    4.a) Method 1 (Request Library):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4b-method-2-using-curl" class="md-nav__link">
+    4.b) Method 2 (Using CURL) :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 2 (Python Intro)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 3 (SDIs)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 4 (Web Map)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samples_for_discussion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OGC Service Samples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../essentials_of_web_mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essentials of Web Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Virtual Env. Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Virtual Env. Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_win/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_lnx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-thin-client-fat-client-architectures-in-the-web-applications" class="md-nav__link">
+    1) Thin-Client &amp; Fat-Client Architectures in the Web Applications
+  </a>
+  
+    <nav class="md-nav" aria-label="1) Thin-Client & Fat-Client Architectures in the Web Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1a-preparation-for-the-next-discussion-about-tiers-web-developer-tool-developer-tool" class="md-nav__link">
+    1.a) Preparation for the Next Discussion about Tiers (Web Developer Tool / Developer Tool)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1b-discussion-about-the-tiers-in-layered-architectures" class="md-nav__link">
+    1.b) Discussion about the Tiers in Layered Architectures
+  </a>
+  
+    <nav class="md-nav" aria-label="1.b) Discussion about the Tiers in Layered Architectures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1bi-seismic-monitor-iris" class="md-nav__link">
+    1.b.i) Seismic Monitor (IRIS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1bii-geoportal-bayern" class="md-nav__link">
+    1.b.ii) Geoportal Bayern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1biii-turf-js-advanced-geospatial-analysis-for-browsers" class="md-nav__link">
+    1.b.iii) TURF JS (Advanced geospatial analysis for browsers)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creating-a-sequence-diagram-using-a-sample-request-response-example" class="md-nav__link">
+    2) Creating a Sequence Diagram using a Sample Request – Response Example
+  </a>
+  
+    <nav class="md-nav" aria-label="2) Creating a Sequence Diagram using a Sample Request – Response Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2a-review-the-requests-and-responses-before-and-after-creating-a-route-for-mountain-bikes-freizeitwege-in-the-bayernatlas-web-app" class="md-nav__link">
+    2.a) Review the requests and responses before and after creating a route for mountain bikes (freizeitwege) in the BayernAtlas web app
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2b-creating-a-sequence-diagram-to-describe-the-process-happened-in-the-previous-step-2a" class="md-nav__link">
+    2.b) Creating a Sequence Diagram to Describe the Process Happened in the Previous Step (2.a)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-examining-the-network-internet-infrastructure" class="md-nav__link">
+    3) Examining the Network &amp; Internet Infrastructure
+  </a>
+  
+    <nav class="md-nav" aria-label="3) Examining the Network & Internet Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3a-what-is-the-current-local-ipv4-address-for-your-machine-ipconfig-windows-ifconfig-linux-ip-address-show-linux-command" class="md-nav__link">
+    3.a) What is the current local IPv4 address for your machine? [ipconfig (Windows) / ifconfig (Linux) / ip address show (Linux) command]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3b-what-is-the-current-ipv6-address" class="md-nav__link">
+    3.b) What is the current IPv6 address?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3c-what-is-the-current-external-ipv4-address-of-your-local-networkrouter" class="md-nav__link">
+    3.c) What is the current external IPV4 address of your local network/router?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-what-is-the-current-ip-based-geolocation" class="md-nav__link">
+    3.d) What is the current IP-based geolocation?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3e-what-is-the-ip-address-of-a-selected-website-command-nslookup" class="md-nav__link">
+    3.e) What is the IP address of a selected website? (command: nslookup)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3f-what-is-happening-after-reverse-lookup-for-the-previous-ip-address-nslookup-x" class="md-nav__link">
+    3.f) What is happening after “Reverse Lookup” for the previous ip address? (nslookup -X)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3g-internal-structure-of-a-web-server-and-its-relation-with-the-ip-address" class="md-nav__link">
+    3.g) Internal structure of a web server and it's relation with the ip address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3h-routing-domain-or-subdomain-dns" class="md-nav__link">
+    3.h) Routing Domain or Subdomain (DNS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3i-checking-dns-records-with-nslookup-command" class="md-nav__link">
+    3.i) Checking DNS records with nslookup command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3j-using-ping-command-for-web-sites-from-different-regions" class="md-nav__link">
+    3.j) Using ping command for web sites from different regions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3k-use-ping-command-for-toher-web-sites" class="md-nav__link">
+    3.k) Use ping command for toher web sites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3l-using-traceroute-command" class="md-nav__link">
+    3.l) Using traceroute command
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-python-request-script-for-a-known-public-web-service" class="md-nav__link">
+    4) Python Request Script for a Known Public Web Service
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Python Request Script for a Known Public Web Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4a-method-1-request-library" class="md-nav__link">
+    4.a) Method 1 (Request Library):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4b-method-2-using-curl" class="md-nav__link">
+    4.b) Method 2 (Using CURL) :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="distributed-systems-computer-networks-internet">Distributed Systems, Computer Networks &amp; Internet</h1>
+<p><img align="right" width=100 height=190 src="images/TUM_Logo_blau_rgb_p.png"/></p>
+<blockquote>
+Munich Technical University || Chair of Geoinformatics </br></br>
+Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+</blockquote>
+
+<h2 id="1-thin-client-fat-client-architectures-in-the-web-applications">1) Thin-Client &amp; Fat-Client Architectures in the Web Applications</h2>
+<p>n this step,  we will learn how to observe some interactions on different web sites using “web developer tools” (in Firefox) or “Developer Tools” (Chrome). We will discuss which interactions are based on a Fat-Client or Thin-Client architecture in relation to our observations (Relevant Presentation: 01 - System Architectures / page 17).</p>
+<h3 id="1a-preparation-for-the-next-discussion-about-tiers-web-developer-tool-developer-tool">1.a) Preparation for the Next Discussion about Tiers (Web Developer Tool / Developer Tool)</h3>
+<ul>
+<li>Open Firefox or Google Chrome web browser.</li>
+<li>Simply navigate to the relevant page shown in the next topic ( <a href="https://ds.iris.edu/seismon/index.phtml">IRIS Seismic Monitor</a> ) or go to a random web site.</li>
+<li>Press Ctrl + Shift + C buttons together or Ctrl + Shift + I / Alternatively, you can navigate from menu:</li>
+<li>For Firefox: Menu &gt; More Tools &gt; Web Developer Tool</li>
+<li>For Chrome: Menu &gt; More Tools &gt; Developer Tool</li>
+<li>Navigate to the Network tab and press reload button. / Alternatively, you can press F5 key for refreshing the page. (If you want to refresh the web page by clearing the cache, press Ctrl + F5)</li>
+<li>Enable “Disable Cache” by checking the box.</li>
+<li>Observe at a quick glance which files have been successfully downloaded and which have not. Download status is exposed as “status codes” in the first column of the Network tab. If you want to learn more about status codes, visit the page: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP Status Codes</a> or search for “HTTP status codes”</li>
+<li>Right-click on the column headers in the Network Pane and enable the Start Time, End Time, Response Time and Duration columns. All these temporal attributes will be visualized in the Timeline (called Waterfall in the Chrome browser) section in the Network Pane. (The same attributes are available in the Waterfall column in the Chrome browser. If you cannot see the Waterfall column, right-click on one of the column headers and enable it).</li>
+<li>It is now possible to see loaded resources in ascending or descending time order. This is very useful for detecting the latest loaded resources on a web page.</li>
+<li>Simply click on a row to view methods for these resources (GET/POST or DELETE) and header attributes (such as MIME types, and charset).</li>
+<li>You can use the “Raw” switch to see raw data in the Response tab.</li>
+</ul>
+<p>On Chrome: Clear panel, filter requests by requested data type.</p>
+<p><img alt="Chrome Filter Requests" src="../images/exr1/chrome_filter_requests.png" /></p>
+<p>On Chrome: Read the request header and the corresponding response, check the detailed data type (MIME type and character encoding / charset).</p>
+<p><img alt="Chrome Check Details" src="../images/exr1/chrome_check_details.png" /></p>
+<p>On Chrome: You can sort requests by clicking on the column names and it is also possible to sort by start time, end time, response time, etc. These are not displayed directly as separate columns, but you can find them in the “Timeline”/“Waterfall”.</p>
+<p><img alt="Chrome Waterfall" src="../images/exr1/chrome_waterfall.png" /></p>
+<p>On Firefox: Clear panel, filter requests by type of requested data</p>
+<p><img alt="Firefox Data Type" src="../images/exr1/firefox_data_type.png" /></p>
+<p>On Firefox: By clicking on a row, you can also view the details of a request and corresponding response. Also it’s possible to sort requests by start time, end time, etc. in Firefox.</p>
+<p><img alt="Firefox Timings" src="../images/exr1/firefox_timings.png" /></p>
+<h3 id="1b-discussion-about-the-tiers-in-layered-architectures">1.b) Discussion about the Tiers in Layered Architectures</h3>
+<p>Examine the following web sites by using the “Web Developer Tools” / “Developer Tools” as described above and try to answer questions:
+- [ ] A) What kind of tiers might the web applications have? (Application-Interface, Application, Data)
+- [ ] B) Are the parts/files represented on the web app downloaded automatically or is the download triggered by an interaction?
+- [ ] C) Is the web site in Thin-Client Architecture or Fat-Client Architecture?</p>
+<h4 id="1bi-seismic-monitor-iris">1.b.i) Seismic Monitor (IRIS)</h4>
+<p><a href="https://ds.iris.edu/seismon/index.phtml">https://ds.iris.edu/seismon/index.phtml</a></p>
+<ul>
+<li>1) Do the HTML, CSS and image files represent the application interface?</li>
+</ul>
+<p><img alt="IRIS Web Contents" src="../images/exr1/iris_dom_contents.png" /></p>
+<ul>
+<li>2)  After clicking on a point on the map, the World Seismic Map changed. Thus, the click event triggered the app to download another data from the server.</li>
+</ul>
+<p><img alt="IRIS Interaction" src="../images/exr1/iris_interaction.png" /></p>
+<p>This website is a very old but working example of a web mapping application. It is a good example of a "thin client" architecture as data is always downloaded from the server by requests.</p>
+<h4 id="1bii-geoportal-bayern">1.b.ii) Geoportal Bayern</h4>
+<p><a href="https://geoportal.bayern.de/bayernatlas">https://geoportal.bayern.de/bayernatlas</a></p>
+<p>In the bottom right corner, select the base map to be loaded on the screen.</p>
+<p><img alt="BayernAtlas Basemap" src="../images/exr1/bayernatlas_basemap.png" /></p>
+<p>To load bike paths (Radwege), a cycling map, activate the Hiking and cycling trails layers (Freizeit in Bayern &gt; Wander- und Radwege &gt; Radwege). Once activated, you will see a green network on the map.</p>
+<p><img alt="BayernAtlas Overlay" src="../images/exr1/bayernatlas_overlay.png" /></p>
+<p>This individual biking trail net is retrieved from the server and is displayed as a transparent image. Let’s assume you need this image for another purpose, while you don’t see any button that allows you to directly download it. In this case, Web Developer Tool might be helpful.
+Open Web Developer Tool, refresh the page, you will see a list of requests with image data. In order not to spend time on previewing each image, you can filter requests by “Name”. In our case, we search for “radwege” data, therefore we type “radwege” in Filter textbox.</p>
+<p><img alt="bayernatlas_radwege" src="../images/exr1/bayernatlas_radwege.png" /></p>
+<p>Double-click on the relevant row and you will see a png file on a separate web page and you can easily save this bike path image.</p>
+<p><img alt="bayernatlas_radwege response" src="../images/exr1/bayernatlas_radwege_response.png" /></p>
+<h4 id="1biii-turf-js-advanced-geospatial-analysis-for-browsers">1.b.iii) TURF JS (Advanced geospatial analysis for browsers)</h4>
+<p><a href="https://turfjs.org/">https://turfjs.org/</a></p>
+<p>TurfJS is a JavaScript library that supports dealing with geospatial datasets in browsers and manipulating them using some spatial functions. It usually loads JS packages into the browser in compressed or linearized format like the other JS libraries.</p>
+<blockquote>
+<p>Tip: You can use <a href="https://prettier.io/">prettier.io</a> web application to see these files in a “pretty printed” format.</p>
+</blockquote>
+<p><img alt="turf_js_packages" src="../images/exr1/turf_js_packages.png" /></p>
+<p>Clear the available requests in the network pane and try to select an operation on the main web page (For example select “Voronoi”).</p>
+<p><img alt="turf_js_packages" src="../images/exr1/turf_voronoi.png" /></p>
+<p>Try to zoom in and zoom out on one of the map (input or output widget).</p>
+<p><img alt="turf_js_zoom_in_out" src="../images/exr1/turf_zoomin_out.png" /></p>
+<h2 id="2-creating-a-sequence-diagram-using-a-sample-request-response-example">2) Creating a Sequence Diagram using a Sample Request – Response Example</h2>
+<p>In this step, you will observe an interaction that takes place in the BayernAtlas web app. This interaction is a simple routing / navigation application that provides a route for specified leisure activity.
+You will then create a sequence diagram taking into account this interaction and possible web services working in the background.</p>
+<blockquote>
+<p>Note: Do not consider timings (start time, duration etc.) of the requests.</p>
+</blockquote>
+<h3 id="2a-review-the-requests-and-responses-before-and-after-creating-a-route-for-mountain-bikes-freizeitwege-in-the-bayernatlas-web-app">2.a) Review the requests and responses before and after creating a route for mountain bikes (freizeitwege) in the BayernAtlas web app</h3>
+<p>Choose a routing mode. Such as “hiking” (wandern)  as shown in the first icon. Select the start point and end point on the map, a route will be created and a profile showing the elevation along the route.</p>
+<p><img alt="bayernatlas_routing" src="../images/exr1/bayernatlas_routing.png" /></p>
+<p><img alt="bayernatlas_mountain_bike" src="../images/exr1/bayernatlas_mountain_bike.png" /></p>
+<p>The “route” and “profile” are created using data from the server. We can also download them as JSON files from the Web Developer Tool.</p>
+<p><img alt="bayernatlas_profile" src="../images/exr1/bayernatlas_profile.png" /></p>
+<p>Clear the network pane before routing interaction and then observe the requests and responses triggered by this interaction.</p>
+<p><img alt="bayernatlas_clear_requests" src="../images/exr1/bayernatlas_clear_requests.png" /></p>
+<p>Check the “method” of the “profile” request and check both of the request and response tabs in the detailed information pane for this service. </p>
+<p><img alt="bayernatlas_profile_response" src="../images/exr1/bayernatlas_profile_response.png" /></p>
+<p>Just as we did before, open Web Developer Tool, refresh webpage, and filter requests by “route” and “profile” respectively. 
+By clicking the “route” cell, you can view formatted response JSON. 
+Look into them respectively, figure out what information is stored in them.</p>
+<p><img alt="bayernatlas_route_json" src="../images/exr1/bayernatlas_route_json.png" /></p>
+<p>If you are familiar with creating files with file extensions as well as changing file extensions in Windows system, you can skip the following file saving experiment.
+Let’s assume we need these JSON data for another purposes. But unlike image files, which can be directly saved, this JSON data cannot be directly saved by right clicking on the panel. Therefore, we need to create a file with extension on local, copy the whole JSON data and paste it into the file you created. Make sure that the file you created has an extension “.json”, if you don’t see file extensions, check “File name extensions” in File Explore.</p>
+<p><img alt="windows_enable_extensions" src="../images/exr1/windows_enable_extensions.png" /></p>
+<p>In the end, you will get a “route.json” file and a “profile.json” file.</p>
+<h3 id="2b-creating-a-sequence-diagram-to-describe-the-process-happened-in-the-previous-step-2a">2.b) Creating a Sequence Diagram to Describe the Process Happened in the Previous Step (2.a)</h3>
+<p>You can create UML diagram on <a href="https://app.diagrams.net/">Diagrams Net</a></p>
+<p>Choose the location where you want to save your diagram. We suggest saving it in your local device, thus you don’t need to log in or register an account.
+You can start drawing by creating a blank diagram.</p>
+<p><img alt="diagrams_choose_type" src="../images/exr1/diagrams_choose_type.png" /></p>
+<p>As you start drawing, a panel will appear on the left side, where you can select UML shapes. Find those relevant shapes and use them to create your sequence diagram. You can refer to the lecture slides and see which shapes are relevant.</p>
+<p><img alt="diagrams_uml_shapes" src="../images/exr1/diagrams_uml_shapes.png" /></p>
+<blockquote>
+<p>Tip: In the application you can use the shapes named “Actor”, “Lifeline”, “Activation Bar”, “Self Call”, “Message” and “Return”. If you have forgotten the notations of the UML sequence diagram, check the slides 31-39  of the presentation “01 – System architectures”. </p>
+</blockquote>
+<p>If you find it difficult to draw the diagram, this tutorial can help you: <a href="https://guides.visual-paradigm.com/creating-sequence-diagrams-in-uml-a-comprehensive-tutorial/">Visiual Paradigm - UML Tutorial</a></p>
+<h2 id="3-examining-the-network-internet-infrastructure">3) Examining the Network &amp; Internet Infrastructure</h2>
+<p>In this step, we will learn how to diagnose some network connections using Command Prompt (Eingabeaufforderung), Powershell or some web tools.</p>
+<h3 id="3a-what-is-the-current-local-ipv4-address-for-your-machine-ipconfig-windows-ifconfig-linux-ip-address-show-linux-command">3.a) What is the current local IPv4 address for your machine? [ipconfig (Windows) / ifconfig (Linux) / ip address show (Linux) command]</h3>
+<p><img alt="windows_cmd_ip4" src="../images/exr1/windows_cmd_ip4.png" /></p>
+<h3 id="3b-what-is-the-current-ipv6-address">3.b) What is the current IPv6 address?</h3>
+<p><img alt="windows_cmd_ip6" src="../images/exr1/windows_cmd_ip6.png" /></p>
+<h3 id="3c-what-is-the-current-external-ipv4-address-of-your-local-networkrouter">3.c) What is the current external IPV4 address of your local network/router?</h3>
+<p><img alt="windows_powershell_external_ip" src="../images/exr1/windows_powershell_external_ip.png" /></p>
+<p>or visit the web page: <a href="https://www.whatismyipaddress.com">whatismyipaddress.com</a></p>
+<h3 id="3d-what-is-the-current-ip-based-geolocation">3.d) What is the current IP-based geolocation?</h3>
+<p><img alt="geolocation" src="../images/exr1/geolocation.png" /></p>
+<h3 id="3e-what-is-the-ip-address-of-a-selected-website-command-nslookup">3.e) What is the IP address of a selected website? (command: nslookup)</h3>
+<p><img alt="nslookup" src="../images/exr1/nslookup.png" /></p>
+<h3 id="3f-what-is-happening-after-reverse-lookup-for-the-previous-ip-address-nslookup-x">3.f) What is happening after “Reverse Lookup” for the previous ip address? (nslookup -X)</h3>
+<p>What is the TLD (Top Level Domain) authority for this IP address?</p>
+<p><img alt="nslookup-x" src="../images/exr1/nslookup-x.png" /></p>
+<h3 id="3g-internal-structure-of-a-web-server-and-its-relation-with-the-ip-address">3.g) Internal structure of a web server and it's relation with the ip address</h3>
+<p>If you know the internal structure of a web server (web server configuration),you can still reach the web site using that IP address and the path you know.</p>
+<p>To experiment with this, try querying ( <a href="https://neredekaliyor.com">neredekaliyor.com</a>, <a href="https://109.232.216.62">109.232.216.62</a>) using nslookup and visit the page <a href="https://109.232.216.62/~neredek2">109.232.216.62/~neredek2</a> with your browser (Ip address might be changed, check it first with nslookup command).</p>
+<p><img alt="neredekaliyor_internal_structure" src="../images/exr1/neredekaliyor_internal_structure.png" /></p>
+<h3 id="3h-routing-domain-or-subdomain-dns">3.h) Routing Domain or Subdomain (DNS)</h3>
+<p>Visit the page <a href="https://mxtoolbox.com">mxtoolbox.com</a> or <a href="https://dnstools.ch">dnstools.ch</a> website to query DNS
+records for the selected domains.</p>
+<p><img alt="network-tools_web" src="../images/exr1/network-tools_web.png" /></p>
+<h3 id="3i-checking-dns-records-with-nslookup-command">3.i) Checking DNS records with nslookup command</h3>
+<p>Type “nslookup –type=MX” (or –type=A/CNAME/SOA/NS/TXT) for the selected domain to see results at the command prompt and compare results from network tool web applications.</p>
+<p><img alt="dns_records_with_nslookup" src="../images/exr1/dns_records_with_nslookup.png" /></p>
+<h3 id="3j-using-ping-command-for-web-sites-from-different-regions">3.j) Using ping command for web sites from different regions</h3>
+<p>Type “ping -n amazon.DOMAIN_SUFFIX” for different countries that may be near or far from the current country. (For Exp. COM / DE / AU / NZ / CN )</p>
+<p><img alt="ping_australia" src="../images/exr1/ping_australia.png" /></p>
+<h3 id="3k-use-ping-command-for-toher-web-sites">3.k) Use ping command for toher web sites</h3>
+<p>Repeat the same tasks with different domain suffixes on the network-tool or dnstools web site.</p>
+<p><img alt="ping_others" src="../images/exr1/ping_others.png" /></p>
+<h3 id="3l-using-traceroute-command">3.l) Using traceroute command</h3>
+<p>Select the domain with the most delayed ping response and use “traceroute” command in web apps to query it. Check the records of the sites with the least and most delay.</p>
+<p><img alt="using_traceroute" src="../images/exr1/using_traceroute.png" /></p>
+<h2 id="4-python-request-script-for-a-known-public-web-service">4) Python Request Script for a Known Public Web Service</h2>
+<p>Sample python code to run and request a source from internet with a specified URL.</p>
+<h3 id="4a-method-1-request-library">4.a) Method 1 (Request Library):</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># Detailed Information about Requests here: https://pypi.org/project/requests</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">def</span> <span class="nf">get_one_file</span><span class="p">(</span><span class="n">custom_url</span><span class="p">,</span> <span class="n">custom_file_name</span><span class="p">):</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;This function requests a single source from a public service over internet.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">custom_url</span><span class="p">)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">custom_file_name</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_file</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="n">my_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1">#Specify yhe URL here:</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">my_service_url</span> <span class="o">=</span> <span class="s2">&quot;https://geoservices.bayern.de/wms/v1/ogc_freizeitwege_oa.cgi?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;FORMAT=image</span><span class="si">%2F</span><span class="s2">png&amp;TRANSPARENT=true&amp;LAYERS=by_fzw_radwege&amp;LANG=de&amp;SRS=EPSG%3A31468&amp;STYLES=&amp;WIDTH=2000&amp;HEIGHT=819&amp;BBOX=4464822%2C5336201%2C4468822%2C5337839&quot;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1">#Specify the File Name here:</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">my_file_name</span> <span class="o">=</span> <span class="s2">&quot;myfile&quot;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">file_extension</span><span class="o">=</span> <span class="s2">&quot;.png&quot;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">relative_path_of_file</span> <span class="o">=</span> <span class="s2">&quot;responses/exr1/&quot;</span> <span class="o">+</span> <span class="n">my_file_name</span> <span class="o">+</span> <span class="n">file_extension</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="c1">#Function executed here</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="n">get_one_file</span><span class="p">(</span><span class="n">my_service_url</span><span class="p">,</span> <span class="n">relative_path_of_file</span><span class="p">)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Request has been made, check this path: &quot;</span><span class="p">,</span> <span class="n">relative_path_of_file</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Request has been made, check this path:  responses/exr1/myfile.png
+</code></pre></div>
+<h3 id="4b-method-2-using-curl">4.b) Method 2 (Using CURL) :</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># Detailed information about OS library is here: https://docs.python.org/3/library/os.html</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">def</span> <span class="nf">get_one_file</span><span class="p">(</span><span class="n">custom_url</span><span class="p">,</span> <span class="n">custom_file_name</span><span class="p">):</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;This function requests a single source from a public service over internet.&quot;&quot;&quot;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">command</span><span class="o">=</span><span class="s1">&#39;curl -X GET &quot;&#39;</span> <span class="o">+</span> <span class="n">custom_url</span> <span class="o">+</span> <span class="s1">&#39;&quot; &gt;&#39;</span> <span class="o">+</span> <span class="n">custom_file_name</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1">#Specify yhe URL here: </span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">my_service_url</span> <span class="o">=</span> <span class="s2">&quot;https://geoservices.bayern.de/wms/v1/ogc_freizeitwege_oa.cgi?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;FORMAT=image</span><span class="si">%2F</span><span class="s2">png&amp;TRANSPARENT=true&amp;LAYERS=by_fzw_radwege&amp;LANG=de&amp;SRS=EPSG%3A31468&amp;STYLES=&amp;WIDTH=2000&amp;HEIGHT=819&amp;BBOX=4464822%2C5336201%2C4468822%2C5337839&quot;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1">#Specify the File Name here: </span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">my_file_name</span> <span class="o">=</span> <span class="s2">&quot;myfile2&quot;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">file_extension</span><span class="o">=</span> <span class="s2">&quot;.png&quot;</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">relative_path_of_file</span> <span class="o">=</span> <span class="s2">&quot;responses/exr1/&quot;</span> <span class="o">+</span> <span class="n">my_file_name</span> <span class="o">+</span> <span class="n">file_extension</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="n">get_one_file</span><span class="p">(</span><span class="n">my_service_url</span><span class="p">,</span> <span class="n">relative_path_of_file</span><span class="p">)</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Request has been made, check this path : </span><span class="si">{</span><span class="n">relative_path_of_file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Request has been made, check this path : responses/exr1/myfile2.png
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   196  100   196    0     0   2989      0 --:--:-- --:--:-- --:--:--  3015
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>

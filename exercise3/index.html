@@ -209,6 +209,25 @@
   
   
     <li class="md-nav__item">
+      <a href="../exercise1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 1 (Distributed Sys.)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../exercise2/" class="md-nav__link">
         
   
@@ -562,9 +581,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -575,8 +594,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Virtual Env. Installation
           </label>
@@ -951,7 +970,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1"># my_services.clear()</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="c1"># print(my_services.get(&quot;service_1&quot;))</span>
 </code></pre></div>
-<blockquote style="background-color:ivory;"> TIP : You may have noticed that the square brackets <b>[ ]</b> we use to set a new item in the dictionary are
+<blockquote> TIP : You may have noticed that the square brackets <b>[ ]</b> we use to set a new item in the dictionary are
 also a shortcut. You can also find this information in related hidden functions like <b>__getitem__()</b> or
 <b>__setitem__()</b>. Type <i><b>dir(my_services)</i></b> or <i><b>dir(dict())</i></b> to reveal them.</blockquote>
 
@@ -1024,7 +1043,7 @@ Please specify the URL of WMS Service asd
 <a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># srv.found_service() </span>
 <a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># srv.my_services.clear()</span>
 </code></pre></div>
-<blockquote style="background-color:ivory;"> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
+<blockquote> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
 
 <h3 id="3-a-building-footprints-grundstuck">3 a) Building Footprints (Grundstück)</h3>
 <p>Visit the web site <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a> and search for the <strong>building footprints</strong> available for Hamburg city. Try to search with following possible words / tags:
@@ -1094,7 +1113,7 @@ Please specify the URL of WMS Service asd
 <li>Hochwasserrisikos (Flood Risks)</li>
 <li>Fließgewässern (Watercourses)</li>
 </ul>
-<blockquote style="background-color:ivory;">TIP: Please find the “Copy” icon under the “Preview Dataset” button to find the service URLs.</blockquote>
+<blockquote>TIP: Please find the “Copy” icon under the “Preview Dataset” button to find the service URLs.</blockquote>
 
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
@@ -1141,11 +1160,15 @@ Please specify the URL of WMS Service asd
 
 <h4 id="4a-iii-add-wfs-service">4a iii) Add WFS Service</h4>
 <blockquote>
-<p><strong>IMPORTANT NOTE</strong> Some servers provide Complex Data Features with WFS services, which makes it difficult to add these services to GIS software. So, if you notice such a WFS with complex data, avoid adding this service.
-  - [ ] Go to <strong>Layer &gt; Add Layer &gt; Add WFS / OGC API - Features Layer</strong> in the menu bar. To create a new connection, click the New button and copy and paste the URL you noted in part 1). Specify the "Max. number of features" as 200 or less. Click OK and then click the Connect button.
-  - [ ] Click to any available layer in the service, check the coordinate system and click to Add Button.
-  - [ ] Select only a few features from the screen or press Ctrl + F6 buttons. Take a glance on existing attributes and values for the features.
-Tip: Sometimes features can be presented as overlapping polygons in the same data service.
+<p><strong>IMPORTANT NOTE</strong> Some servers provide Complex Data Features with WFS services, which makes it difficult to add these services to GIS software. So, if you notice such a WFS with complex data, avoid adding this service.</p>
+</blockquote>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Go to <strong>Layer &gt; Add Layer &gt; Add WFS / OGC API - Features Layer</strong> in the menu bar. To create a new connection, click the New button and copy and paste the URL you noted in part 1). Specify the "Max. number of features" as 200 or less. Click OK and then click the Connect button.</li>
+<li class="task-list-item"><input type="checkbox"/> Click to any available layer in the service, check the coordinate system and click to Add Button.</li>
+<li class="task-list-item"><input type="checkbox"/> Select only a few features from the screen or press Ctrl + F6 buttons. Take a glance on existing attributes and values for the features.</li>
+</ul>
+<blockquote>
+<p>Tip: Sometimes features can be presented as overlapping polygons in the same data service.
 If you are in doubt about overlapping polygons, simply change the symbology of the layer in the properties window to transparent fill to reveal the overlapping polygons.</p>
 </blockquote>
 <h3 id="4-b-adding-services-to-arcgis-pro">4 b) Adding Services to ArcGIS Pro</h3>
@@ -1310,7 +1333,7 @@ GetStyles
 <ul>
 <li>Check the saved XML file and try to find where the layers, bounding boxes or coordinate reference systems (CRSs) are defined.</li>
 </ul>
-<blockquote style="background-color:ivory;"> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
+<blockquote> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
 </blockquote>
 
 <ul>
@@ -1332,7 +1355,7 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <ul>
 <li>So, you are aware of capability of the WMS service and you can use this data to get data from the server:</li>
 </ul>
-<blockquote style="background-color:ivory"><b>Note</b>: Note that if you are using a different WMS service, you need to change the parameters given in the next example.</blockquote>
+<blockquote><b>Note</b>: Note that if you are using a different WMS service, you need to change the parameters given in the next example.</blockquote>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
@@ -1364,8 +1387,8 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
 <a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="n">display</span><span class="p">(</span><span class="n">my_map</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
-</code></pre></div>
+<p><img alt="Map View 01" src="../images/exr3/map_view_01.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <h3 id="add-a-wms-layer-into-the-leaflet-map">Add a WMS layer into the leaflet map</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span><span class="p">,</span> <span class="n">WMSLayer</span><span class="p">,</span> <span class="n">basemaps</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
@@ -1389,11 +1412,11 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="n">my_map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">my_wms</span><span class="p">)</span>
 <a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="n">my_map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">my_marker</span><span class="p">);</span>
 <a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>
-<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>
-<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="n">display</span><span class="p">(</span><span class="n">my_map</span><span class="p">)</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="c1"># display(my_map)</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="n">my_map</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
-</code></pre></div>
+<p><img alt="Map View 02" src="../images/exr3/map_view_02.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 <h3 id="add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection">Add a GeoJSON data into the leaflet map using a OGC API - Features connection</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">GeoJSON</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
@@ -1441,10 +1464,11 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-14-44" name="__codelineno-14-44" href="#__codelineno-14-44"></a><span class="n">my_map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">my_marker</span><span class="p">);</span>
 <a id="__codelineno-14-45" name="__codelineno-14-45" href="#__codelineno-14-45"></a>
 <a id="__codelineno-14-46" name="__codelineno-14-46" href="#__codelineno-14-46"></a>
-<a id="__codelineno-14-47" name="__codelineno-14-47" href="#__codelineno-14-47"></a><span class="n">display</span><span class="p">(</span><span class="n">my_map</span><span class="p">)</span>
+<a id="__codelineno-14-47" name="__codelineno-14-47" href="#__codelineno-14-47"></a><span class="c1"># display(my_map)</span>
+<a id="__codelineno-14-48" name="__codelineno-14-48" href="#__codelineno-14-48"></a><span class="n">my_map</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
-</code></pre></div>
+<p><img alt="Map View 03" src="../images/exr3/map_view_03.png" />
+<em>Screenshot taken on Jupyter Notebook</em></p>
 
 
 
