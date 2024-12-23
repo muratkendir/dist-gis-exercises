@@ -2,6 +2,7 @@ site_name: "dist-gis-exercises (Educational Python Notebooks)"
 site_url: 
 nav:
   - Home: index.md
+  - "Exercise 1 (Distributed Sys.)" : exercise1.md
   - "Exercise 2 (Python Intro)": exercise2.md
   - "Exercise 3 (SDIs)": exercise3.md
   - "Exercise 4 (Web Map)": exercise4.md

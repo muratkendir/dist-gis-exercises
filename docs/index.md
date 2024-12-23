@@ -13,6 +13,7 @@ Contact: murat.kendir(at)tum.de
 
 ## Exercises
 
+- [Exercise 1 (Distributed Systems, Computer Networks & Internet)](exercise1.md)
 - [Exercise 2 (Introduction to Python with Samples)](exercise2.md)
 - [Exercise 3 (Spatial Data Infrastructures)](exercise3.md)
 - [Exercise 4 (Web Mapping in 2D / 3D)](exercise4.md)  

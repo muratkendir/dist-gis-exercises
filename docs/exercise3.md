@@ -76,7 +76,7 @@ def add_to_store(service_id, name, url, wms_url):
 
 ```
 
-<blockquote style="background-color:ivory;"> TIP : You may have noticed that the square brackets <b>[ ]</b> we use to set a new item in the dictionary are
+<blockquote> TIP : You may have noticed that the square brackets <b>[ ]</b> we use to set a new item in the dictionary are
 also a shortcut. You can also find this information in related hidden functions like <b>__getitem__()</b> or
 <b>__setitem__()</b>. Type <i><b>dir(my_services)</i></b> or <i><b>dir(dict())</i></b> to reveal them.</blockquote>
 
@@ -156,7 +156,7 @@ from raw_codes.exr3 import service_selection as srv
 # srv.my_services.clear()
 ```
 
-<blockquote style="background-color:ivory;"> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
+<blockquote> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
 
 ### 3 a) Building Footprints (Grundstück)
 
@@ -240,7 +240,7 @@ Visit the web site [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu) a
   - Hochwasserrisikos (Flood Risks)
   - Fließgewässern (Watercourses)
 
-<blockquote style="background-color:ivory;">TIP: Please find the “Copy” icon under the “Preview Dataset” button to find the service URLs.</blockquote>
+<blockquote>TIP: Please find the “Copy” icon under the “Preview Dataset” button to find the service URLs.</blockquote>
 
 Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “**found_service()**” function.
@@ -283,9 +283,11 @@ In this chapter, you will learn how to add web services or datasets to a GIS sof
 
 #### 4a iii) Add WFS Service
   > **IMPORTANT NOTE** Some servers provide Complex Data Features with WFS services, which makes it difficult to add these services to GIS software. So, if you notice such a WFS with complex data, avoid adding this service.
+
   - [ ] Go to **Layer > Add Layer > Add WFS / OGC API - Features Layer** in the menu bar. To create a new connection, click the New button and copy and paste the URL you noted in part 1). Specify the "Max. number of features" as 200 or less. Click OK and then click the Connect button.
   - [ ] Click to any available layer in the service, check the coordinate system and click to Add Button.
   - [ ] Select only a few features from the screen or press Ctrl + F6 buttons. Take a glance on existing attributes and values for the features.
+
   > Tip: Sometimes features can be presented as overlapping polygons in the same data service.
 If you are in doubt about overlapping polygons, simply change the symbology of the layer in the properties window to transparent fill to reveal the overlapping polygons.
 
@@ -481,7 +483,7 @@ with open("responses/exr3/my_wms_servicexml.xml", "wb") as my_wms_xml:
 ```
 
 - Check the saved XML file and try to find where the layers, bounding boxes or coordinate reference systems (CRSs) are defined.
-<blockquote style="background-color:ivory;"> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
+<blockquote> Reminder: Firefox and Google Chrome browsers have some extensions to visiualize XML files in a "pretty" way. Otherwise you can open the XML file with your favorite text editor and search for a "pretty print" solution. (For Example: XMLTools extension is available in the Notepad++ plugin repository.)
 </blockquote>
 
 - You can also send queries to get single images with predefined properties. To do that, you may need to expose more informaiton about the WMS service using following commands:
@@ -504,7 +506,7 @@ print('Supported Formats : ', mytest.getOperationByName('GetMap').formatOptions)
 
 
 - So, you are aware of capability of the WMS service and you can use this data to get data from the server:
-<blockquote style="background-color:ivory"><b>Note</b>: Note that if you are using a different WMS service, you need to change the parameters given in the next example.</blockquote>
+<blockquote><b>Note</b>: Note that if you are using a different WMS service, you need to change the parameters given in the next example.</blockquote>
 
 
 ```python
@@ -553,7 +555,8 @@ display(my_map)
 ```
 
 
-    Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', 'zoo…
+![Map View 01](images/exr3/map_view_01.png)
+*Screenshot taken on Jupyter Notebook*
 
 
 ### Add a WMS layer into the leaflet map
@@ -582,12 +585,15 @@ my_marker = Marker(location=my_center)
 my_map.add(my_wms)
 my_map.add(my_marker);
 
-
-display(my_map)
+# display(my_map)
+my_map
 ```
 
 
-    Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', 'zoo…
+
+![Map View 02](images/exr3/map_view_02.png)
+*Screenshot taken on Jupyter Notebook*
+
 
 
 ### Add a GeoJSON data into the leaflet map using a OGC API - Features connection
@@ -640,9 +646,12 @@ my_map.add(my_geojson);
 my_map.add(my_marker);
 
 
-display(my_map)
+# display(my_map)
+my_map
 ```
 
 
-    Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', 'zoo…
+![Map View 03](images/exr3/map_view_03.png)
+*Screenshot taken on Jupyter Notebook*
+
 
