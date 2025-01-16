@@ -17,6 +17,9 @@ Contact: murat.kendir(at)tum.de
 - [Exercise 2 (Introduction to Python with Samples)](docs/exercise2.md)
 - [Exercise 3 (Spatial Data Infrastructures)](docs/exercise3.md)
 - [Exercise 4 (Web Mapping in 2D / 3D)](docs/exercise4.md)
+- Exercise 5 (Virtualization & Cloud Computing)
+  - [Preparation for Exercise 5](docs/exercise5_preparation.md)
+  - [Exercise 5](docs/exercise5.md)
 - [OGC Web Service - Samples for Discussion](docs/samples_for_discussion.md)
 
 ## Local Installation Instructions
