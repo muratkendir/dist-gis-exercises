@@ -10,6 +10,7 @@ _backup/**/*
 .ipynb_checkpoints
 site
 pdf_documents
+html_documents
 raw_codes/.ipynb_checkpoints
 images/.ipynb_checkpoints
 docs/.ipynb_checkpoints
