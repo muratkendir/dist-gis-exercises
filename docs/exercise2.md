@@ -1,6 +1,6 @@
 # Introduction to Python with an Example App Based on Geospatial Data
 
-<img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/>
+<img align="right" width=190 height=100 src="../images/TUM_Logo_blau_rgb_p.png"/>
 <blockquote>
 Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir@tum.de
 </blockquote>
