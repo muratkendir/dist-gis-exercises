@@ -1,0 +1,1266 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../exercise5_preparation/">
+      
+      
+        <link rel="next" href="../samples_for_discussion/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Exercise 5 - dist-gis-exercises (Educational Python Notebooks)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f615399.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exercise-5-virtualization-and-containers-cloud-computing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-header__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            dist-gis-exercises (Educational Python Notebooks)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exercise 5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-nav__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    dist-gis-exercises (Educational Python Notebooks)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 1 (Distributed Sys.)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 2 (Python Intro)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 3 (SDIs)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 4 (Web Map)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercise 5 (Virtualization)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Exercise 5 (Virtualization)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise5_preparation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preparation for Exercise 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exercise 5
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 5
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aim-of-exercise" class="md-nav__link">
+    Aim of Exercise
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-practice-on-play-with-docker-web-application" class="md-nav__link">
+    1 - Practice on Play-With-Docker web application
+  </a>
+  
+    <nav class="md-nav" aria-label="1 - Practice on Play-With-Docker web application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-docker-usage-on-playground" class="md-nav__link">
+    1.1 Docker Usage (on Playground)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-running-the-first-docker-container-in-instance" class="md-nav__link">
+    1.2 Running the first Docker container in instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-what-actually-happens-after-executing-the-docker-run-command" class="md-nav__link">
+    1.3 What actually happens after executing the "docker run" command?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-how-to-removedelete-docker-images-from-the-instance-optional" class="md-nav__link">
+    1.4 How to remove/delete docker images from the instance? (Optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-docker-cheatsheet-and-the-relevance-between-linux-commands" class="md-nav__link">
+    1.5 Docker Cheatsheet and the Relevance between linux commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-access-to-the-grafana-dashboard" class="md-nav__link">
+    1.6 Access to the Grafana Dashboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-find-and-check-the-online-datasource" class="md-nav__link">
+    1.7 Find and check the online datasource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-connect-to-a-specific-dataset-from-sensorthings-api" class="md-nav__link">
+    1.8 Connect to a specific dataset from SensorThings API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-customize-the-graph-panel-in-grafana" class="md-nav__link">
+    1.9 Customize the graph panel in Grafana
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-build-the-app-on-local-computer-with-docker-desktop-and-cli-commands" class="md-nav__link">
+    2. Build the app on local computer with Docker Desktop and CLI commands
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Build the app on local computer with Docker Desktop and CLI commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-docker-desktop-installation-on-windows-systems-optional" class="md-nav__link">
+    2.1 Docker Desktop Installation on Windows systems (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-serving-a-wmtstms-service-from-geoserver-as-a-docker-container" class="md-nav__link">
+    2.2 Serving a WMTS/TMS service from Geoserver as a Docker container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-test-the-availability-of-wmtstms-services-with-qgis" class="md-nav__link">
+    2.3 Test the Availability of WMTS/TMS services with QGIS
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Test the Availability of WMTS/TMS services with QGIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-method-1-use-the-geoserver-preview-option" class="md-nav__link">
+    2.3.1 Method 1: Use the Geoserver Preview option
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-method-2-use-qgis-to-test-wmts-services" class="md-nav__link">
+    2.3.2 Method 2: Use QGIS to test WMTS services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-method-3-use-qgis-to-test-tms-service" class="md-nav__link">
+    2.3.3 Method 3: Use QGIS to test TMS service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-integrating-grafana-dashboard-with-the-tiled-map" class="md-nav__link">
+    2.4 Integrating Grafana Dashboard with the Tiled Map
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Integrating Grafana Dashboard with the Tiled Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-start-grafana-dashboard-and-add-the-xyz-base-map" class="md-nav__link">
+    2.4.1 Start Grafana Dashboard and add the XYZ base map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-set-up-a-data-source-to-show-on-the-map" class="md-nav__link">
+    2.4.2 Set up a data source to show on the map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samples_for_discussion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OGC Service Samples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../essentials_of_web_mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essentials of Web Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Virtual Env. Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Virtual Env. Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_win/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_lnx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aim-of-exercise" class="md-nav__link">
+    Aim of Exercise
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-practice-on-play-with-docker-web-application" class="md-nav__link">
+    1 - Practice on Play-With-Docker web application
+  </a>
+  
+    <nav class="md-nav" aria-label="1 - Practice on Play-With-Docker web application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-docker-usage-on-playground" class="md-nav__link">
+    1.1 Docker Usage (on Playground)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-running-the-first-docker-container-in-instance" class="md-nav__link">
+    1.2 Running the first Docker container in instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-what-actually-happens-after-executing-the-docker-run-command" class="md-nav__link">
+    1.3 What actually happens after executing the "docker run" command?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-how-to-removedelete-docker-images-from-the-instance-optional" class="md-nav__link">
+    1.4 How to remove/delete docker images from the instance? (Optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-docker-cheatsheet-and-the-relevance-between-linux-commands" class="md-nav__link">
+    1.5 Docker Cheatsheet and the Relevance between linux commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-access-to-the-grafana-dashboard" class="md-nav__link">
+    1.6 Access to the Grafana Dashboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-find-and-check-the-online-datasource" class="md-nav__link">
+    1.7 Find and check the online datasource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-connect-to-a-specific-dataset-from-sensorthings-api" class="md-nav__link">
+    1.8 Connect to a specific dataset from SensorThings API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-customize-the-graph-panel-in-grafana" class="md-nav__link">
+    1.9 Customize the graph panel in Grafana
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-build-the-app-on-local-computer-with-docker-desktop-and-cli-commands" class="md-nav__link">
+    2. Build the app on local computer with Docker Desktop and CLI commands
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Build the app on local computer with Docker Desktop and CLI commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-docker-desktop-installation-on-windows-systems-optional" class="md-nav__link">
+    2.1 Docker Desktop Installation on Windows systems (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-serving-a-wmtstms-service-from-geoserver-as-a-docker-container" class="md-nav__link">
+    2.2 Serving a WMTS/TMS service from Geoserver as a Docker container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-test-the-availability-of-wmtstms-services-with-qgis" class="md-nav__link">
+    2.3 Test the Availability of WMTS/TMS services with QGIS
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Test the Availability of WMTS/TMS services with QGIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-method-1-use-the-geoserver-preview-option" class="md-nav__link">
+    2.3.1 Method 1: Use the Geoserver Preview option
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-method-2-use-qgis-to-test-wmts-services" class="md-nav__link">
+    2.3.2 Method 2: Use QGIS to test WMTS services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-method-3-use-qgis-to-test-tms-service" class="md-nav__link">
+    2.3.3 Method 3: Use QGIS to test TMS service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-integrating-grafana-dashboard-with-the-tiled-map" class="md-nav__link">
+    2.4 Integrating Grafana Dashboard with the Tiled Map
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Integrating Grafana Dashboard with the Tiled Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-start-grafana-dashboard-and-add-the-xyz-base-map" class="md-nav__link">
+    2.4.1 Start Grafana Dashboard and add the XYZ base map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-set-up-a-data-source-to-show-on-the-map" class="md-nav__link">
+    2.4.2 Set up a data source to show on the map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="exercise-5-virtualization-and-containers-cloud-computing">Exercise 5 - Virtualization and Containers, Cloud Computing</h1>
+<p><img align="right" width=190 height=100 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
+<blockquote>
+Munich Technical University || Chair of Geoinformatics </br></br>
+Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+</blockquote>
+
+<h2 id="aim-of-exercise">Aim of Exercise</h2>
+<p>This exercise mainly focuses on Cloud Computing technologies and integrating cloud systems with GIS applications. You will practice with these systems to become more familiar with them by:
+- Using virtualization to create a mini-infrastructure and run a GIS application
+- Creating and serving a Tiled Map Layer and interconnecting the service with application interfaces/clients
+- Setting up and publishing a dashboard interface representing a filtered dataset from a Sensorthings API service</p>
+<blockquote>
+<p>Check the "<strong>exercise5_preparation</strong>" document (pdf / ipynb) to review some useful resources.</p>
+</blockquote>
+<p>Our goal is to provide a web interface to show a map containing sensors' online location data, use a custom tiled layer as a base map, and provide some graphical visualizations based on these sensors using virtualization technologies.
+The steps required to achieve this goal will be as follows:
+- Setting up a docker container to run and serve <strong>Geoserver</strong> as a base map provider.
+- Setting up a docker container to run and serve <strong>Grafana Dashboard</strong> as the interface of our application.
+- Connecting the Grafana Dashboard to an online data source (based on <strong>Sensorthings API</strong>), which provides some sensors available in Hamburg city
+- Setting up the Grafana Dashboard interface to publish the <strong>Tiled Map Layer</strong> as the base map and the sensors as points</p>
+<div class="pagebreak" style="page-break-after:always;"> </div>
+
+<h2 id="1-practice-on-play-with-docker-web-application">1 - Practice on Play-With-Docker web application</h2>
+<p>In this section, you will create a web application on the play-with-docker website by avoiding diving into computational needs. This page lets you play with docker containers and images in a limited time (4 hours). So, you can test different docker images or container settings if they integrate seamlessly. In this section, you don't need to provide a predefined dataset to the applications running in docker as a container. Try to only practice with docker commands and settings.</p>
+<h3 id="11-docker-usage-on-playground">1.1 Docker Usage (on Playground)</h3>
+<p>Open the following website:
+<a href="https://labs.play-with-docker.com">play-with-docker</a>
+- [ ] Click to <mark>login</mark> and select <mark>docker</mark>
+  - [ ] Register with your email account first if you do not have a docker hub account.
+    - [ ] If the popup is blocked, disable the popup blocker and try again.
+- [ ] Docker Playground will be launched and a session will be started which will be live for 4 hours.
+- [ ] Click to <mark>Add New Instance</mark>
+- [ ] An instance runtime will be started with a specific local ip address and ssh key.
+- [ ] List the running docker containers by typing <mark>docker ps</mark> in the terminal screen (e.g. command prompt of the instance).
+- [ ] If you want to check all (running and idle) available docker containers, type <mark>docker ps -- all</mark>
+- [ ] Check all available commands: <mark>docker -- help</mark>
+- [ ] If you want to check command-specific options and arguments, type <mark>docker any_command -- help</mark> (For exp. "docker ps --help")</p>
+<blockquote>
+<p>TIP: The terminal screen and available commands here will have the same or similar commands as a Linux terminal screen (command line), because usually the examples run on a Linux system. To check which version of Linux is used as the base operating system, type <mark>uname -a</mark> in the terminal.</p>
+</blockquote>
+<p><img alt="1100 play docker" src="../images/exr5/1100_play_docker.png" /></p>
+<h3 id="12-running-the-first-docker-container-in-instance">1.2 Running the first Docker container in instance</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> There is no working docker containers yet.</li>
+<li class="task-list-item"><input type="checkbox"/> Start a new docker container by typing:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">3000</span>:3000<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--name<span class="o">=</span>grafana<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-e<span class="w"> </span><span class="s2">&quot;GF_INSTALL_PLUGINS=iosb-sensorthings-datasource&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>grafana/grafana:latest
+</code></pre></div></li>
+<li>Explanations of options and arguments:<ul>
+<li><mark>-d or --detach</mark> : The container continues to run in the background.</li>
+<li><mark>-p or --publish</mark> : Forward (Publish) a port in the container to the host (Left side shows the port of the host machine and right side of the column shows the port of the container)</li>
+<li><mark>-e or --env</mark> : Sets environment variables</li>
+<li><mark>--name (no alias)</mark>: Assign a name to the container, to easily recognize containers.</li>
+<li><mark>grafana\/grafana:latest</mark> means "publisher\/image:anyTag" : The last argument is the full name of the docker image. Usually, tags include version numbers.</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox"/> Check the available docker containers by typing <mark>docker ps</mark></li>
+</ul>
+<h3 id="13-what-actually-happens-after-executing-the-docker-run-command">1.3 What actually happens after executing the "docker run" command?</h3>
+<ul class="task-list">
+<li>The Docker app checked if the requested image (grafana/grafana:latest) already exists in our host machine. </li>
+<li>
+<p>If it is not available, it tries to download it from <strong>Docker Hub</strong> by searching for the same image name.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Visit the Docker Hub page and search for our image manually:</p>
+</li>
+<li>https://hub.docker.com</li>
+<li>You can optionally search for any docker image on the command line:</li>
+<li><mark>docker search grafana</mark></li>
+<li>Check the available docker images in the host machine:</li>
+<li><mark>docker image ls</mark></li>
+</ul>
+<p><img alt="1300 docker hub" src="../images/exr5/1300_docker_hub.png" /></p>
+<h3 id="14-how-to-removedelete-docker-images-from-the-instance-optional">1.4 How to remove/delete docker images from the instance? (Optional)</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Try deleting the image:</li>
+<li><mark>docker rmi grafana/grafana:latest</mark></li>
+<li class="task-list-item"><input type="checkbox"/> When an image is referenced to a container, the terminal will show an error and the container may still be running. So what we need to do is first stop the running container and then remove the referenced container:</li>
+<li><mark>docker stop \&lt;CONTAINER_NAME&gt;</mark></li>
+<li>or alternatively use the container ID shown in<ul>
+<li>Type <mark>docker container list</mark> (same as "ps" command) to see container IDs and names.</li>
+<li><mark>docker stop \&lt;CONTAINER_ID&gt;</mark></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox"/> Check existing containers with the -all option:</li>
+<li><mark>docker ps --all</mark></li>
+<li class="task-list-item"><input type="checkbox"/> Remove the container:</li>
+<li><mark>docker rm grafana</mark></li>
+<li>or alternatively with Container ID:<ul>
+<li><mark>docker rm 829224beac3f</mark> (container IDs are not fixed numbers, try find your container's ID and replace with given one)</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox"/> Finally, remove the image from your instance:</li>
+<li><mark>docker rmi grafana\/grafana:latest</mark></li>
+</ul>
+<h3 id="15-docker-cheatsheet-and-the-relevance-between-linux-commands">1.5 Docker Cheatsheet and the Relevance between linux commands</h3>
+<p>Many command abbreviations are inherited from Linux/Unix-based systems. These long command names can be used, for example, to make it easier to memorize abbreviated commands:
+- cp : Copy
+- rm : Remove
+- exec : Execute
+- cd : Change Directory
+- ls : List
+- ps : Processes
+- diff : Difference</p>
+<blockquote>
+<p>TIP: However, one of the best ways to learn these commands is not to memorize them but to use a "Cheatsheet" document as an aid during the exercises. If you want to use such a document, visit this page: <a href="https://docs.docker.com/get-started/docker_cheatsheet.pdf">Docker CLI Cheat Sheet</a></p>
+</blockquote>
+<h3 id="16-access-to-the-grafana-dashboard">1.6 Access to the Grafana Dashboard</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> If you have already removed the container and image while following the instructions in section 1.4, start from scratch and start the docker container with the same command given earlier:</li>
+<li><mark>docker run -d -p 3000:3000 --name=grafana -e "GF_INSTALL_PLUGINS=iosb-sensorthings-datasource" grafana/grafana:latest</mark></li>
+<li class="task-list-item"><input type="checkbox"/> Now click the <strong>Open Port</strong> button at the top of the page and specify port <strong>3000</strong>. If your forwarded/published port is different, check the actual port number by typing <mark>docker ps</mark>.</li>
+<li class="task-list-item"><input type="checkbox"/> Type "admin" as username and password.</li>
+<li class="task-list-item"><input type="checkbox"/> Grafana will ask for a new password on the next page, type any password.</li>
+<li>If everything is OK, the Grafana start page will be shown.</li>
+</ul>
+<p><img alt="1600 garanfana" src="../images/exr5/1600_grafana.png" /></p>
+<h3 id="17-find-and-check-the-online-datasource">1.7 Find and check the online datasource</h3>
+<ul class="task-list">
+<li>Now you need to select a <strong>FROST Server</strong> stream as the data source (remember that we started the Grafana container with the corresponding plugin)</li>
+<li class="task-list-item"><input type="checkbox"/> Visit page: <a href="https://iot.hamburg.de/">iot.hamburg.de</a></li>
+<li class="task-list-item"><input type="checkbox"/> Click for <strong>SensorThingsApi v1.1</strong><blockquote>
+<p>TIP: You can check the same data source with the <strong>Online API Testing Tool</strong> <a href="https://reqbin.com/">reqbin.com</a> or other alternative online testing tools. (Try requesting for this URL: iot.hamburg.de/v1.1 )</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="18-connect-to-a-specific-dataset-from-sensorthings-api">1.8 Connect to a specific dataset from SensorThings API</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Return to the Grafana page running on localhost, expand the left side menu and go to <strong>Connections</strong>.</li>
+<li class="task-list-item"><input type="checkbox"/> Search for <strong>"FROST SensorThings API Plugin"</strong> and click on the listed plugin name. Click to <strong>"Add new datasource"</strong> button.</li>
+<li class="task-list-item"><input type="checkbox"/> Copy and paste the following address as URL value: <mark>https://iot.hamburg.de/v1.1</mark></li>
+<li class="task-list-item"><input type="checkbox"/> Click to <strong>Save and test</strong></li>
+<li class="task-list-item"><input type="checkbox"/> If you see <mark>Success</mark> message, expand the left menu pane again and go to <strong>Dashboards</strong>.</li>
+<li class="task-list-item"><input type="checkbox"/> Click <strong>Create Dashboard</strong></li>
+<li class="task-list-item"><input type="checkbox"/> Click to <strong>Add Visualization</strong></li>
+<li>Note that your default data source is automatically selected as Frost SensorThings API.</li>
+<li class="task-list-item"><input type="checkbox"/> Select <strong>"iosb-sensorthings-datasource"</strong> as data source, if it is not selected automatically.</li>
+<li class="task-list-item"><input type="checkbox"/> Select Entry Point at the bottom of the page as <strong>Things</strong>.</li>
+<li class="task-list-item"><input type="checkbox"/> Type <strong>"Verkehrszählstelle"</strong> (Vehicle Counting Unit) just below the column <strong>name</strong> and find any sernsor datastream.</li>
+<li class="task-list-item"><input type="checkbox"/> Select the data source with the name "Kfz-Aufkommen an Verkehrszählstelle ... im 15-Min-Intervall" (The number of motor vehicles computed with the infrared camera at 15 minutes intervals) or another dataream with different time interval.</li>
+<li class="task-list-item"><input type="checkbox"/> If you see "No Data" on the graph widget, select another datastream.</li>
+<li class="task-list-item"><input type="checkbox"/> If you see "Data is missing a time field", go to the <strong>Advanced</strong> tab, and set the phenomenonTime Field type as "Time". Then you can select a time interval from the top-right edge of the graph widget.</li>
+<li class="task-list-item"><input type="checkbox"/> When you click to the <strong>"Open Visiualization Suggestions"</strong>, you will see a list of compatible graph types with your selected data.</li>
+<li class="task-list-item"><input type="checkbox"/> Select "<strong>Bar Chart</strong>".</li>
+<li>Click to <strong>Apply</strong> at top right corner of the page.</li>
+</ul>
+<p><img alt="1800 grafana entrypoint" src="../images/exr5/1800_grafana_entrypoint.png" /></p>
+<h3 id="19-customize-the-graph-panel-in-grafana">1.9 Customize the graph panel in Grafana</h3>
+<ul>
+<li>The chart's axes will be set automatically since the data stream provides the "time" and "results" columns.</li>
+<li>If you want to customize your chart panel, check the right pane. (or click on the small arrow near the chart name at top right side of the page to expand the menu)</li>
+<li>Here you can change the chart's orientation, set the text sizes, show or hide the legend, show the result number on the chart, etc.</li>
+<li>A time interval selection button allows you to decrease or increase the time interval shown on the chart (in the upper right corner of the chart).</li>
+<li>Another functional panel can be the "Transform Data" tab, which can transform existing data by applying some functions or queries.</li>
+</ul>
+<p><img alt="1900 grafana graph" src="../images/exr5/1900_grafana_graph.png" /></p>
+<h2 id="2-build-the-app-on-local-computer-with-docker-desktop-and-cli-commands">2. Build the app on local computer with Docker Desktop and CLI commands</h2>
+<p>In this section you will try to prepare all the requirements of the web application described in the "Aim of the Exercise" section. This workflow includes installing Docker Desktop, using CLI commands, running a geoserver container, publishing a wms service, and integrating the WMS service with Grafana Dashboard.</p>
+<h3 id="21-docker-desktop-installation-on-windows-systems-optional">2.1 Docker Desktop Installation on Windows systems (optional)</h3>
+<p><img alt="windows features" src="../images/exr5/2-1_windows_properties.png" /></p>
+<p>Check this step if you want to download and install the Docker Desktop or CLI tool on your personal computer</p>
+<ul>
+<li>If this is your first time downloading and installing Docker Desktop, it may be more effective to enable the *<em>WSL2</em> option in Docker Settings.</li>
+<li>Search for "<strong>Windows Properties</strong>" and try to enable "<strong>Windows Subsystem</strong>". It is mandatory to enable <strong>Hyper-V</strong>. Hyper-V is a virtualization support that might be provided by your computer's CPU hardware. If it is not possible to enable it, you should check the BIOS configuration and look for a virtualization support option (it is usually on the "Advanced" page or tab).</li>
+<li>Enable Windows Subsystem </li>
+<li>Click on the gear icon in the top right corner and go to <strong>Resources &gt; WSL Integration</strong>.</li>
+<li>At the first start of the Docker Desktop app, log in to Docker Hub using the Login button in the top right corner.</li>
+<li>You will continue using the CLI (Command Line Interface) tool, but you can still check the Desktop App to view the containers, images etc.</li>
+</ul>
+<p><img alt="wsl2 option" src="../images/exr5/2-1_wsl2_option.png" /></p>
+<h3 id="22-serving-a-wmtstms-service-from-geoserver-as-a-docker-container">2.2 Serving a WMTS/TMS service from Geoserver as a Docker container</h3>
+<p>To offer a Tiled Map Layer, we need to run a server that will render the given geographic data source in raster file format, taking into account defined coordinate reference systems. We have multiple software options to do this. MapServer, GeoServer, ArcGIS Server or QGIS Server are the most popular ones. You will create a server instance using a docker image containing Geoserver to publish a WMTS/TMS.</p>
+<blockquote>
+<p>TIP: If you want to learn more about the WMTS and TMS visit the follwoing page:
+<a href="https://gis.stackexchange.com/questions/132242/what-are-the-differences-between-tms-xyz-wmts">What are the differences between TMS, XYZ &amp; WMTS</a>
+<a href="https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification">Tile Map Specification</a></p>
+</blockquote>
+<ul>
+<li>Check the Geopackage representing the "StadtTeile" (City Districts) of the city center of Hamburg. (This data was downloaded from https://geoportal-hamburg.de/sga/ and reprojected to EPSG:3857 / Pseudo Mercator. File is stored in <strong>shared_w_geoserver/data_dir/datasets</strong> directory.)</li>
+<li>Extract or save directly to a subfolder under Documents. (Use always ASCII characters and underscore in the folder names, such as "hamburg_wmts". Do not use non-ASCII or special characters such as ä, ß, ü, &lt; &gt; (space) etc.)</li>
+<li>If neccessary, create two nested subfolders in this folder, name it "<strong>data_dir</strong>" and "<strong>datasets</strong>"and move the geopackage file into the "datasets" folder.</li>
+<li>Copy the full path of the previously created folder and replace the relevant part of the following command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"> </span>--publish<span class="w"> </span><span class="m">8085</span>:8080<span class="w"> </span>^
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--name<span class="w"> </span>geoserver<span class="w"> </span>^
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>--volume<span class="w"> </span><span class="s2">&quot;&lt;FULL_PATH_HERE&gt;&quot;</span>:/var/geoserver/datadir<span class="w"> </span>^<span class="w"> </span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>geosolutionsit/geoserver
+</code></pre></div></li>
+<li>Search for "Eingabeaufforderung" (Command Prompt) in the Windows Search bar and run it.<blockquote>
+<p>WARNING: If you can't execute the "docker" command in the command line interface that means the system environmental variable has not been set for your system. However, you can still run the command by finding the docker cli executable. For a windows machine, it is stored in "C:\Program Files\Docker\Docker\resources\bin" with the name "com.docker.cli.exe". You can navigate into this folder by typing "<strong>cd C:\Program Files\Docker\Docker\resources\bin</strong>" then execute the program simply by replacing the word "docker" in the commands with "<strong>com.docker.cli.exe</strong>". For Example: "com.docker.cli.exe run --detach --publish 8085:8080 --name geoserver  --volume "C:\Users\murat\Documents\geoserver_data\datadir":/var/geoserver/datadir geosolutionsit/geoserver"</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>TIP: The character ^ (Caret) is used only to create multi-line command. It works like an escape character and escapes from the next (invisible) newline character. This way, we can write multi-line commands in the windows command line.</p>
+</blockquote>
+<p>For Example: 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>geoserver<span class="w"> </span>--interactive<span class="w"> </span>--tty<span class="w"> </span>^
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>--publish<span class="w"> </span><span class="m">8085</span>:8080<span class="w"> </span>^
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>--volume<span class="w"> </span><span class="s2">&quot;./shared_w_geoserver/data_dir/datasets&quot;</span>:<span class="s2">&quot;/opt/geoserver/data_dir/datasets&quot;</span><span class="w"> </span>^
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>-e<span class="w"> </span><span class="nv">GEOSERVER_ADMIN_USER</span><span class="o">=</span>murat<span class="w"> </span>^
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>-e<span class="w"> </span><span class="nv">GEOSERVER_ADMIN_PASSWORD</span><span class="o">=</span>password<span class="w"> </span>^
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>kartoza/geoserver
+</code></pre></div></p>
+<blockquote>
+<p>TIP: Please note that the directions of the slash (/ or \) characters are different in the -v (--volume) option values. This is because Windows and Linux systems use different types of slashes as directory separators (Windows: Backslash "\", Linux/Unix: Forward Slash "/" )</p>
+</blockquote>
+<ul>
+<li>Check the Docker containers again:</li>
+<li><mark>docker ps</mark></li>
+<li>Open your web browser and go to <a href="http://localhost:8085/geoserver">http://localhost:8085/geoserver</a></li>
+<li>To log in, enter "admin" as username and "geoserver" as password.</li>
+<li>Change the language by using dropdown menu at top right side of the page.</li>
+<li>Since Geoserver is being started for the first time, you must to add a new workspace. Click <strong>Data &gt; Workspaces</strong> in the left pane. Click "<strong>Add New Workspace</strong>" and enter a descriptive name for your workspace and define a namespace URI. Use only ASCII characters in the namespace URI and not use special characters except underscore (_).</li>
+<li>Click to <strong>save</strong>.</li>
+<li>Click on the name of the workspace which you have created and enable <strong>WMS and WMTS</strong> options. Then click to Save again.</li>
+<li>Click <strong>Data &gt; Stores</strong> in the left pane and click "<strong>Add new store</strong>" at the top of the page.</li>
+<li>Select one of the options under "<strong>Vector Data Sources</strong>": Geopackage.</li>
+<li>Check if the workspace is automatically selected. </li>
+<li>Specify a name for the datastore and select a data source using the <strong>Browse</strong> button below <strong>Connection Parameters &gt; database</strong>.</li>
+<li>Click to <strong>save</strong>.</li>
+<li>Go to <strong>Gridsets</strong> in the left menu (under the <strong>Tile Caching</strong> section). Click to <strong>Create a new gridset</strong> and specify the coordinate reference system as EPSG:3857. You can try using <strong>Find</strong> button on the right side or simply type the exact name of the CRS. Click on the <strong>Compute from maximum extent of CRS</strong> link and manually add zoom levels from 0 to 24 by clicking on the <strong>Add Zoom Level</strong> link at the bottom of the page. Specify a name for the custom gridset and click to <strong>Save</strong>.</li>
+<li>Go to the <strong>WMTS</strong> in the left menu (under the <strong>Services</strong> section). Select your workspace and <strong>enable WMTS</strong> using checkbox. Click to <strong>Save</strong>.</li>
+<li>If the workspace is not shown in the menu on WMTS page, go back to the workspace page, select the workspace you created and activate the WMTS option in workspace settings. Then try to activate WMTS service by repeating the previous step.</li>
+<li>This is the last step to publish a WMTS/TMS service. Click <strong>Data &gt; Layers</strong> in the left pane.</li>
+<li>Click "<strong>Add a new Layer</strong>" and select your workspace:store package with the "<strong>Add Layer</strong>" drop-down menu item.</li>
+<li>Click the "<strong>Publish</strong>" link and set a URI-like name for your WMS service layer (you can use non-ASCII characters and signs in the Title and Summary text boxes).</li>
+<li>In the "<strong>Bounding Boxes</strong>" group, click both "<strong>Compute from Data</strong>" and "<strong>Compute from native bounds</strong>" links to automatically calculate the "<strong>Local Bounding Box</strong>" and "<strong>Aspect Bounding Box</strong>".</li>
+<li>Switch to the next tab called "<strong>Publishing</strong>" and select "<strong>Polygon</strong>" from the Available Styles. Click the right arrow icon to apply it to the WMS layer as a style.</li>
+<li>Check the "<strong>Tile Caching</strong>" tab to make sure about the tile. "<strong>Create a cached layer for this layer</strong>" and "<strong>Enable tile caching for this layer</strong>" should be enabled.</li>
+<li>At the bottom side of the Tile Caching tab, there will be the gridset options. Find the drop-down menu near the <strong>Add grid subset</strong> option and select the gridset noted before or the gridset you created.</li>
+<li>Click to <strong>save</strong>.</li>
+</ul>
+<p><img alt="2200 geoserver layer" src="../images/exr5/2200_geoserver_layer.png" /></p>
+<h3 id="23-test-the-availability-of-wmtstms-services-with-qgis">2.3 Test the Availability of WMTS/TMS services with QGIS</h3>
+<p>Since both service standards are commonly used tiled map services, multiple methods exist to test their availability.</p>
+<p><img alt="2300 geoserver preview" src="../images/exr5/2300_geoserver_preview.png" /></p>
+<h4 id="231-method-1-use-the-geoserver-preview-option">2.3.1 Method 1: Use the Geoserver Preview option</h4>
+<ul>
+<li>Go to <strong>Tile Layers</strong> in the left menu of the Geoserver administrator page.</li>
+<li>If you see the layer published before, there will be a preview option to see WMTS integrated with OpenLayers. Click on the drop-down menu under the <strong>Preview</strong> column and select the gridset configured with the CRS EPSG:3857.</li>
+<li>Activate the <strong>(Web) Developer Tool</strong> by pressing Ctrl+Shift+C (or I) in the web browser.</li>
+<li>Go to the Network tab and press the <strong>Reload</strong> button if needed.</li>
+<li>Check the URL sources loaded from the Geoserver instance.</li>
+<li>Copy one of the URL requests and take as note in somewhere. You will use the requested URL in next section to view the same service on QGIS.</li>
+</ul>
+<h4 id="232-method-2-use-qgis-to-test-wmts-services">2.3.2 Method 2: Use QGIS to test WMTS services</h4>
+<ul>
+<li>To use QGIS as a WMTS client, you need to detect the baseurl of the WMTS service. Go to the Welcome page of the Geoserver administrator page by clicking on the logo at the top left corner of the page. Find the <strong>WMTS</strong> box and click on the version number available in the box (The current version number for the WMTS is <strong>1.1.1</strong>).</li>
+<li>This link will automatically forward the page to the GetCapabilities request. Copy the whole address except the part after the question mark (The following part specifies the parameters.).</li>
+<li>In our example, the base URL was: <strong>http://localhost:8085/geoserver/gwc/service/wmts?</strong></li>
+<li>Open QGIS software and navigate to <strong>Layer &gt; Add Layer &gt; Add WMS/WMTS Layer</strong> in the top menu.</li>
+<li>Click the <strong>New</strong> button and paste the base URL into the URL textbox. Specify a custom name and Click <strong>Ok</strong>.</li>
+<li>Click the <strong>Connect</strong> button and select the layer published with the gridset configured with EPSG:3857 CRS. Click the <strong>Add</strong> button.</li>
+</ul>
+<h4 id="233-method-3-use-qgis-to-test-tms-service">2.3.3 Method 3: Use QGIS to test TMS service</h4>
+<p><img alt="2300 qgis with xyz" src="../images/exr5/2300_qgis_w_xyz.png" /></p>
+<ul>
+<li>Go to the Welcome page of the Geoserver by clicking on the logo at the top left corner of the page. Find the <strong>TMS</strong> box and click on the available version number in the same box (The current version number for the TMS is <strong>1.0.0</strong>).</li>
+<li>This link will forward the page to the default page of a TMS service, which shows all available gridsets and their links. Copy the link belonging to the correct gridset with the CRS EPSG:3857.</li>
+<li>Open a new project in QGIS and find the <strong>XYZ Tiles</strong> in the Browser pane (if it is not available, check the option in View &gt; Panel &gt; Browser). Right-click on the "XYZ Tiles" and select the option <strong>New Connection</strong>.</li>
+<li>Paste the URL copied before and add the following string at the end of your URL:</li>
+<li><mark>/{z}/{x}/{-y}.png</mark></li>
+<li>The full link might be like this: <mark>http://localhost:8085/geoserver/gwc/service/tms/1.0.0/yerel%3Adistricts@EPSG3857_256x256@png/{z}/{x}/{-y}.png</mark></li>
+<li>Specify a custom name and click the <strong>Ok</strong> button.</li>
+</ul>
+<blockquote>
+<p>TIP: We used {-y} as the tile row number (north-south axis) as the last coordinate parameter. This has to be specified because we published a TMS layer but accessed it as an XYZ layer. TMS and XYZ standards are quite similar services except for the definition of the Y axis. In the TMS, the Y axis identifies the vertical tile number from bottom to top, while XYZ identifies the Y axis reversely.</p>
+<p>REMINDER: You can activate the "<strong>Debugging/Developer Tool</strong>" by navigating into View &gt; Panels in the top menu. This tool is similar to the (Web) Developer Tool in the web browsers. Press the red circle button (Record icon) to see the requests in more detailed way.</p>
+</blockquote>
+<h3 id="24-integrating-grafana-dashboard-with-the-tiled-map">2.4 Integrating Grafana Dashboard with the Tiled Map</h3>
+<p>Usually, map-based JavaScript libraries support overlaying the map with WMS or WMTS layers. However, the map viewer plugins available in Grafana have limited functionality. There are currently five map plugins (NativePlugin:GeoMap, WorldMap Panel, Orchestra Cities Map, Mapgl, TrackMap) with different features, none of which support adding WMS layers yet. The only possibility to add a base map to these map plugins is to publish a TMS service and connect it like an XYZ service (Check the previous section 2.3.3). </p>
+<h4 id="241-start-grafana-dashboard-and-add-the-xyz-base-map">2.4.1 Start Grafana Dashboard and add the XYZ base map</h4>
+<p><img alt="2410 grafana with xyz" src="../images/exr5/2410_grafana_w_xyz.png" /></p>
+<ul>
+<li>Start a new docker container by typing:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--detach<span class="w"> </span>--publish<span class="w"> </span><span class="m">3000</span>:3000<span class="w"> </span>^
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--name<span class="o">=</span>grafana<span class="w"> </span>^
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>--env<span class="w"> </span><span class="s2">&quot;GF_INSTALL_PLUGINS=iosb-sensorthings-datasource&quot;</span><span class="w"> </span>^
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>grafana/grafana:latest
+</code></pre></div></li>
+<li>Visit the page <a href="http://localhost:3000">localhost:3000</a>. Enter "admin" as username and password.</li>
+<li>The next page in Grafana prompts for a new password, type any password.</li>
+<li>Go to <strong>Connections</strong> in the left menu (Click to three dash icon on the top left corner) and search for "FROST Sensorthings API Plugin" (iosb-sensorthings-datasource).</li>
+<li>Click on the plugin and set the URL as "<strong>https://iot.hamburg.de/v1.1</strong>". Click to <strong>Save &amp; test</strong> button to check if everything works well.</li>
+<li>Go to the <strong>Dashboards</strong> in the left menu and click on the <strong>Add visualization</strong> button.</li>
+<li>Select the <strong>iosb-sensorthings-datasource</strong> as data source.</li>
+<li>Change the visiualization type as <strong>Geomap</strong> (The native map library of Grafana Dashboard) from the top right corner.</li>
+<li>Go to the <strong>Map View</strong> tab in the right menu and change the <strong>View</strong> option as <strong>Coordinates</strong></li>
+<li>Set Latitude, Longitude and Zoom level as following values: 53.56, 9.97, 10 (This configuration sets up the map view to cover Hamburg's city center.)</li>
+<li>Navigate to <strong>Basemap layer</strong> in the right menu.</li>
+<li>Alternatively, you can add XYZ tile layer as <strong>Map layer</strong>. This option will overlay your XYZ layer over the default XYZ base map and will let to set up the transparency of your XYZ layer. If you want to apply this option, go to <strong>Map Layers</strong> and apply similar steps described below.</li>
+<li>Click to <strong>Layer Type</strong> and select the <strong>XYZ Tile Layer</strong> option. This selection will add the default XYZ tile layer which is an ArcGIS service publicly available.</li>
+<li>Copy and paste the XYZ service URL, which you already tested in the section 2.3.3</li>
+</ul>
+<p><img alt="2410 grafana with xyz" src="../images/exr5/2410_grafana_w_xyz.png" /></p>
+<h4 id="242-set-up-a-data-source-to-show-on-the-map">2.4.2 Set up a data source to show on the map</h4>
+<ul>
+<li>You specified the data source in the previous steps, but it has not been used yet. Now you can use it by specifying the attribution.</li>
+<li>Go to the <strong>Query</strong> pane at the left bottom and expand the first query "A" if it is collapsed.</li>
+<li>Click on the <strong>Advanced</strong> tab to specify the attributes and coordinates of a dataset.</li>
+<li>In the <strong>Sensorthings API</strong> URL, you need to specify the relative path of a specific dataset. Also note that the first part of the URL (base URL) was given during the setup of the data source (https://iot.hamburg.de/v1.1). For Example, The collection of the sensor with ID 5647 shows the infrared camera installations used to detect vehicles, including cars and bicycles. <a href="https://iot.hamburg.de/v1.1/Sensors(5647)">https://iot.hamburg.de/v1.1/Sensors(5647)</a> If you check the Datastreams available within this collection, you will reach the datastream connections with given attributes and coordinates as a large array. You should specify a limit for the downloaded array elements to increase the network performance. To do this, you can specify a limit by typing <mark>\$top=100</mark>. So the Sensorthings URL will be as <mark>/Sensors(5647)/Datastreams\?\$top=100</mark> in our example.</li>
+<li>Check the dataset manually in your web browser and try to find some attributes available in the responses. For example, try to find the position of the <strong>phenomenonTime</strong> and the coordinates.</li>
+<li>Expand the tab called <strong>Manually Assign Fields</strong>.</li>
+<li>Go to the textboxes called <strong>Field</strong>, remove the default field "\$.value[*].result" may appear  and add the first attribute by typing <mark>\$.value[*].phenomenonTime</mark>. This query notation represents the nested structure of the JSON file downloaded as a response from FROST server. <strong>Current Document (\$)</strong> &gt; <strong>Any element in Array [*]</strong> &gt; <strong>Attributes or Sub-Objects</strong></li>
+<li>Type "Time" for the phenomenonTime field as an alias and click on the plus (+) icon on the right side.</li>
+<li>Type <mark>\$.value[*].observedArea.coordinates[0]</mark> to specify the longitude value available in the current dataset. Change the data type to <strong>Number</strong> and set the alias as "longitude" or "long". Also, note that the position of the coordinate values might differ if you used a different data source.</li>
+<li>Finally, type <mark>$.value[<em>].observedArea.coordinates[1]</mark> to specify the latitude. Change the data type to "</em><em>Number</em>*" and set the alias as "latitude" or "lat". Unfortunately, there is no descriptive information in the JSON file to determine which element is longitude and which is latitude. You need to use your geographic knowledge about the focused area.</li>
+<li>Go to the <strong>Map Layers</strong> tab on the right pane. Let the layer type as default "Markers" and change the <strong>Location Mode</strong> to "Coords". Then select the longitude/latitude or long/lat fields per each drop-down box.</li>
+<li>Go to the top right corner of the map view and select the period as "<strong>Last 2 Year</strong>".</li>
+</ul>
+<p><img alt="2420 grafana aio" src="../images/exr5/2420_grafana_aio.png" /></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>
