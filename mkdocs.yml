@@ -6,6 +6,9 @@ nav:
   - "Exercise 2 (Python Intro)": exercise2.md
   - "Exercise 3 (SDIs)": exercise3.md
   - "Exercise 4 (Web Map)": exercise4.md
+  - "Exercise 5 (Virtualization)": 
+    - "Preparation for Exercise 5": exercise5_preparation.md
+    - "Exercise 5": exercise5.md
   - "OGC Service Samples": samples_for_discussion.md
   - "Essentials of Web Mapping": essentials_of_web_mapping.md
   - "Virtual Env. Installation":

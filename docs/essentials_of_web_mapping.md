@@ -9,6 +9,8 @@
 - In this document we will discuss concepts related to web mapping based on JavaScript libraries.
 - Since all web mapping libraries used in this document are based on the JavaScript language, we will also partially discuss some basic concepts of JavaScript.
 
+<a href="../essentials_of_web_mapping.slides.html" target="_blank">Presentation Mode</a>
+
 
 ## 1) How to combine different sources in HTML?
 
