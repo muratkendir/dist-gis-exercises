@@ -14,6 +14,7 @@ nav:
   - "Virtual Env. Installation":
     - "Windows w PIP": install_w_pip_on_win.md
     - "Linux w PIP": install_w_pip_on_lnx.md
+  - "Sample OGC Services": ogc_services_samples.md
 theme: material
 markdown_extensions:
   - pymdownx.critic

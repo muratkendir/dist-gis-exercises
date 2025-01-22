@@ -26,6 +26,7 @@ Contact: murat.kendir(at)tum.de
 
 - [OGC Web Service Samples for Discussion](samples_for_discussion.md)
 - [Essentials of Web Mapping](essentials_of_web_mapping.md)
+- [OGC Services Sample Links](ogc_services_samples.md)
 
 ## Local Installation Instructions
 
