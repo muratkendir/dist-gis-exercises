@@ -11,6 +11,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 
 [Presentation Mode](./ogc_services_samples.slides.html)
 
+
 ## Tips & Tricks about the URLs and Parameters
 
 ### Whitespace characters
@@ -27,7 +28,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 
 ### Bavaria - Digital orthophotos 
 
-<p style="word-wrap:break-word;font-family:courier;">https://geoservices.bayern.de/od/wms/dop/v1/dop20?language=ger&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&BBOX=1284416.822854088619%2C6128194.115993234329%2C1285969.715073181316%2C6129565.189462079667&SRS=EPSG%3A3857&WIDTH=1358&HEIGHT=1199&LAYERS=by_dop20c&STYLES=&FORMAT=image%2Fpng&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi%3A96&TRANSPARENT=TRUE</p>
+<p style="background-color:#dad7cb;color:#000;word-wrap:break-word;font-family:courier;">https://geoservices.bayern.de/od/wms/dop/v1/dop20?language=ger&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&BBOX=1284416.822854088619%2C6128194.115993234329%2C1285969.715073181316%2C6129565.189462079667&SRS=EPSG%3A3857&WIDTH=1358&HEIGHT=1199&LAYERS=by_dop20c&STYLES=&FORMAT=image%2Fpng&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi%3A96&TRANSPARENT=TRUE</p>
 
 ### Get Capabilities Link
 
@@ -43,7 +44,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 ## OGC WMS Samples - 2
 ### Hamburg - Buildings - 2D ATKIS
 
-<p style="word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=1111942.144059270155%2C7082582.984302694909%2C1115292.715944103431%2C7085541.258006609045&CRS=EPSG%3A3857&WIDTH=1358&HEIGHT=1200&LAYERS=BU.Building&STYLES=&FORMAT=image%2Fpng&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi%3A96&TRANSPARENT=TRUE</p>
+<p style="background-color:#dad7cb;color:#000;word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=1111942.144059270155%2C7082582.984302694909%2C1115292.715944103431%2C7085541.258006609045&CRS=EPSG%3A3857&WIDTH=1358&HEIGHT=1200&LAYERS=BU.Building&STYLES=&FORMAT=image%2Fpng&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi%3A96&TRANSPARENT=TRUE</p>
 
 ### Get Capabilities Link
 
@@ -57,7 +58,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 ## OGC WMS Samples - 3
 ### Earth Observation Center - Elevation Map Service
 
-<p style="word-wrap:break-word;font-family:courier;">https://geoservice.dlr.de/eoc/elevation/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=1199862.581342106452,6118798.876939699054,1307080.881656771293,6213463.635464943945&CRS=EPSG:3857&WIDTH=1358&HEIGHT=1199&LAYERS=srtm_x-sar_dem_mosaic&STYLES=&FORMAT=image/png&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE</p>
+<p style="background-color:#dad7cb;color:#000;word-wrap:break-word;font-family:courier;">https://geoservice.dlr.de/eoc/elevation/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=1199862.581342106452,6118798.876939699054,1307080.881656771293,6213463.635464943945&CRS=EPSG:3857&WIDTH=1358&HEIGHT=1199&LAYERS=srtm_x-sar_dem_mosaic&STYLES=&FORMAT=image/png&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE</p>
 
 ### Get Capabilities Link
 
@@ -72,7 +73,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 
 ### basemap.de Web Raster
 
-<p style="word-wrap:break-word;font-family:courier;">https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/DE_EPSG_25832_ADV/09/383/297.png</p>
+<p style="background-color:#dad7cb;color:#000;word-wrap:break-word;font-family:courier;">https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/DE_EPSG_25832_ADV/09/383/297.png</p>
 
 ### Get Capabilities Link
 
@@ -89,8 +90,8 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 ### Hamburg - Groundwater Protection *
 
 <p style="background-color:#dad7cb;color:#000;"> Use <a href="https://www.urldecoder.io/">URLDecode.io</a> web site to see the parameters of the WFS request </p>
-
-<p style="font-size:0.6em;word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=de.hh.up:u12_f_gw_flurabstand_max&SRSNAME=EPSG:25832&FILTER=%3Cfes:Filterxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22xmlns:gml%3D%22http://www.opengis.net/gml/3.2%22%3E%0A%3Cfes:And%3E%0A%3Cfes:BBOX%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3Cgml:EnvelopesrsName%3D%22EPSG:25832%22%3E%0A%3Cgml:lowerCorner%3E5643335930170%3C/gml:lowerCorner%3E%0A%3Cgml:upperCorner%3E5683735933740%3C/gml:upperCorner%3E%0A%3C/gml:Envelope%3E%0A%3C/fes:BBOX%3E%0A%3Cfes:Andxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:Notxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:PropertyIsNullxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3C/fes:PropertyIsNull%3E%0A%3C/fes:Not%3E%0A%3Cfes:PropertyIsEqualToxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:Functionxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22name%3D%22IsSurface%22%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3C/fes:Function%3E%0A%3Cfes:Literalxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3Etrue%3C/fes:Literal%3E%0A%3C/fes:PropertyIsEqualTo%3E%0A%3C/fes:And%3E%0A%3C/fes:And%3E%0A%3C/fes:Filter%3E%0A
+</br>
+<p style="background-color:#dad7cb;color:#000;font-size:0.6em;word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=de.hh.up:u12_f_gw_flurabstand_max&SRSNAME=EPSG:25832&FILTER=%3Cfes:Filterxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22xmlns:gml%3D%22http://www.opengis.net/gml/3.2%22%3E%0A%3Cfes:And%3E%0A%3Cfes:BBOX%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3Cgml:EnvelopesrsName%3D%22EPSG:25832%22%3E%0A%3Cgml:lowerCorner%3E5643335930170%3C/gml:lowerCorner%3E%0A%3Cgml:upperCorner%3E5683735933740%3C/gml:upperCorner%3E%0A%3C/gml:Envelope%3E%0A%3C/fes:BBOX%3E%0A%3Cfes:Andxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:Notxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:PropertyIsNullxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3C/fes:PropertyIsNull%3E%0A%3C/fes:Not%3E%0A%3Cfes:PropertyIsEqualToxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:Functionxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22name%3D%22IsSurface%22%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3C/fes:Function%3E%0A%3Cfes:Literalxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3Etrue%3C/fes:Literal%3E%0A%3C/fes:PropertyIsEqualTo%3E%0A%3C/fes:And%3E%0A%3C/fes:And%3E%0A%3C/fes:Filter%3E%0A
 </p>
 
 ### Get Capabilities Link
@@ -107,7 +108,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 
 ### Hamburg - Tax Rates
 
-<p style="font-size:0.6em;word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WFS_Taxenstaende?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=de.hh.up:taxenstaende&COUNT=1000000&SRSNAME=EPSG:25832&BBOX=543859.73267435841262341,5937443.36617781594395638,559909.96083074959460646,5949410.37595691997557878,EPSG:25832</p>
+<p style="background-color:#dad7cb;color:#000;font-size:0.6em;word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WFS_Taxenstaende?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=de.hh.up:taxenstaende&COUNT=1000000&SRSNAME=EPSG:25832&BBOX=543859.73267435841262341,5937443.36617781594395638,559909.96083074959460646,5949410.37595691997557878,EPSG:25832</p>
 
 ### Get Capabilities Link
 
@@ -119,7 +120,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 
 ### North Rhine-Westphalia Selected Geosites
 
-<p style="word-wrap:break-word;font-family:courier;">https://ogc-api.nrw.de/inspire-am-geotope/collections/AM_Geotope_Polygone/items/1?f=json</p>
+<p style="background-color:#dad7cb;color:#000;word-wrap:break-word;font-family:courier;">https://ogc-api.nrw.de/inspire-am-geotope/collections/AM_Geotope_Polygone/items/1?f=json</p>
 
 ### API web interface 
 
@@ -140,7 +141,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 
 ### Traffic volumes in Hamburg
 
-<p style="word-wrap:break-word;font-family:courier;">https://api.hamburg.de/datasets/v1/verkehrsstaerken/collections/radverkehr_pegel/items/1?f=json</p>
+<p style="background-color:#dad7cb;color:#000;word-wrap:break-word;font-family:courier;">https://api.hamburg.de/datasets/v1/verkehrsstaerken/collections/radverkehr_pegel/items/1?f=json</p>
 
 ### API web interface 
 
