@@ -1,0 +1,1323 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../install_w_pip_on_lnx/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Sample OGC Services - dist-gis-exercises (Educational Python Notebooks)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f615399.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ogc-services-samples" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-header__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            dist-gis-exercises (Educational Python Notebooks)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sample OGC Services
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="dist-gis-exercises (Educational Python Notebooks)" class="md-nav__button md-logo" aria-label="dist-gis-exercises (Educational Python Notebooks)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    dist-gis-exercises (Educational Python Notebooks)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 1 (Distributed Sys.)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 2 (Python Intro)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 3 (SDIs)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 4 (Web Map)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercise 5 (Virtualization)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Exercise 5 (Virtualization)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise5_preparation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preparation for Exercise 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samples_for_discussion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OGC Service Samples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../essentials_of_web_mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essentials of Web Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Virtual Env. Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Virtual Env. Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_win/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_lnx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sample OGC Services
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Sample OGC Services
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tips-tricks-about-the-urls-and-parameters" class="md-nav__link">
+    Tips &amp; Tricks about the URLs and Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips & Tricks about the URLs and Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whitespace-characters" class="md-nav__link">
+    Whitespace characters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-web-samples-1" class="md-nav__link">
+    OGC Web Samples - 1
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC Web Samples - 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bavaria-digital-orthophotos" class="md-nav__link">
+    Bavaria - Digital orthophotos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wms-samples-2" class="md-nav__link">
+    OGC WMS Samples - 2
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WMS Samples - 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hamburg-buildings-2d-atkis" class="md-nav__link">
+    Hamburg - Buildings - 2D ATKIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_1" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_1" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wms-samples-3" class="md-nav__link">
+    OGC WMS Samples - 3
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WMS Samples - 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#earth-observation-center-elevation-map-service" class="md-nav__link">
+    Earth Observation Center - Elevation Map Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_2" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_2" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wmts-sample" class="md-nav__link">
+    OGC WMTS Sample
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WMTS Sample">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basemapde-web-raster" class="md-nav__link">
+    basemap.de Web Raster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_3" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_3" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wfs-sample-1" class="md-nav__link">
+    OGC WFS Sample - 1
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WFS Sample - 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hamburg-groundwater-protection" class="md-nav__link">
+    Hamburg - Groundwater Protection *
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_4" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_4" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wfs-sample-2" class="md-nav__link">
+    OGC WFS Sample - 2
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WFS Sample - 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hamburg-tax-rates" class="md-nav__link">
+    Hamburg - Tax Rates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_5" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-api-features-sample-1" class="md-nav__link">
+    OGC API - Features Sample - 1
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC API - Features Sample - 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#north-rhine-westphalia-selected-geosites" class="md-nav__link">
+    North Rhine-Westphalia Selected Geosites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-web-interface" class="md-nav__link">
+    API web interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-conformance-document" class="md-nav__link">
+    API Conformance Document
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_5" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-api-features-sample-2" class="md-nav__link">
+    OGC API - Features Sample - 2
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC API - Features Sample - 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traffic-volumes-in-hamburg" class="md-nav__link">
+    Traffic volumes in Hamburg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-web-interface_1" class="md-nav__link">
+    API web interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-conformance-document_1" class="md-nav__link">
+    API Conformance Document
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tips-tricks-about-the-urls-and-parameters" class="md-nav__link">
+    Tips &amp; Tricks about the URLs and Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips & Tricks about the URLs and Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whitespace-characters" class="md-nav__link">
+    Whitespace characters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-web-samples-1" class="md-nav__link">
+    OGC Web Samples - 1
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC Web Samples - 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bavaria-digital-orthophotos" class="md-nav__link">
+    Bavaria - Digital orthophotos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wms-samples-2" class="md-nav__link">
+    OGC WMS Samples - 2
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WMS Samples - 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hamburg-buildings-2d-atkis" class="md-nav__link">
+    Hamburg - Buildings - 2D ATKIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_1" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_1" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wms-samples-3" class="md-nav__link">
+    OGC WMS Samples - 3
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WMS Samples - 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#earth-observation-center-elevation-map-service" class="md-nav__link">
+    Earth Observation Center - Elevation Map Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_2" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_2" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wmts-sample" class="md-nav__link">
+    OGC WMTS Sample
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WMTS Sample">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basemapde-web-raster" class="md-nav__link">
+    basemap.de Web Raster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_3" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_3" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wfs-sample-1" class="md-nav__link">
+    OGC WFS Sample - 1
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WFS Sample - 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hamburg-groundwater-protection" class="md-nav__link">
+    Hamburg - Groundwater Protection *
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_4" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_4" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-wfs-sample-2" class="md-nav__link">
+    OGC WFS Sample - 2
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC WFS Sample - 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hamburg-tax-rates" class="md-nav__link">
+    Hamburg - Tax Rates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-capabilities-link_5" class="md-nav__link">
+    Get Capabilities Link
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-api-features-sample-1" class="md-nav__link">
+    OGC API - Features Sample - 1
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC API - Features Sample - 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#north-rhine-westphalia-selected-geosites" class="md-nav__link">
+    North Rhine-Westphalia Selected Geosites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-web-interface" class="md-nav__link">
+    API web interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-conformance-document" class="md-nav__link">
+    API Conformance Document
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_5" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ogc-api-features-sample-2" class="md-nav__link">
+    OGC API - Features Sample - 2
+  </a>
+  
+    <nav class="md-nav" aria-label="OGC API - Features Sample - 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traffic-volumes-in-hamburg" class="md-nav__link">
+    Traffic volumes in Hamburg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-web-interface_1" class="md-nav__link">
+    API web interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-conformance-document_1" class="md-nav__link">
+    API Conformance Document
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ogc-services-samples">OGC Services &amp; Samples</h1>
+<p><img align="right" width=100 height=190 src="./images/TUM_Logo_blau_rgb_p.png"/></p>
+<blockquote>
+Munich Technical University || Chair of Geoinformatics </br></br>
+Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+</blockquote>
+
+<ul>
+<li>In this document we provide some examples for OGC services.</li>
+<li>Take a look at the given URLs and their parameters and try to analyze the responses for the GetCapabilities operation.</li>
+</ul>
+<p><a href="../ogc_services_samples.slides.html">Presentation Mode</a></p>
+<h2 id="tips-tricks-about-the-urls-and-parameters">Tips &amp; Tricks about the URLs and Parameters</h2>
+<h3 id="whitespace-characters">Whitespace characters</h3>
+<p style="background-color:#dad7cb;color:#000;"> Use an advanced note editor (or an IDE) such as Notepad++ or SublimeText to copy and paste URLs. If you enable showing all characters in these editors, you may see some special characters that are not shown by default, such as “\n” (Line Feed - LF), “\r\n” (Carriage Return + Line Feed - CR/LF), “\t” (Tab), “\s” (Space). These characters are known as “Whitespace Characters” and are invisible in most editor software.</p>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Whitespace_character">List of the Whitespace Characters - Wikipedia</a></li>
+</ul>
+<p style="background-color:#98c6ea;color:#000;"><b>Showing whitespace characters in SublimeText</b> : Press Ctrl+Shift+P in SublimeText and type "Install Package". Search for the package "RawLineEdit". Select and press Enter to install the package. Check the left-bottom info bar to be sure if the installation succeeded. Press Ctrl+Shift+P again and search for "Toggle Line Edit Mode". You can also assign a keyboard shortcut for any available command.</p>
+
+<p style="background-color:#dad7cb;color:#000;"> <b>Showing whitespace characters in Notepad++</b> : In the Notepad++, click to View \> Show Symbol \> Show All Characters.</p>
+
+<h2 id="ogc-web-samples-1">OGC Web Samples - 1</h2>
+<h3 id="bavaria-digital-orthophotos">Bavaria - Digital orthophotos</h3>
+<p style="word-wrap:break-word;font-family:courier;">https://geoservices.bayern.de/od/wms/dop/v1/dop20?language=ger&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&BBOX=1284416.822854088619%2C6128194.115993234329%2C1285969.715073181316%2C6129565.189462079667&SRS=EPSG%3A3857&WIDTH=1358&HEIGHT=1199&LAYERS=by_dop20c&STYLES=&FORMAT=image%2Fpng&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi%3A96&TRANSPARENT=TRUE</p>
+
+<h3 id="get-capabilities-link">Get Capabilities Link</h3>
+<p><a href="https://geoservices.bayern.de/od/wms/dop/v1/dop20?SERVICE=WMS&VERSION=1.1.0&REQUEST=GetCapabilities" target="_blank">https://geoservices.bayern.de/od/wms/dop/v1/dop20?SERVICE=WMS&amp;VERSION=1.1.0&amp;REQUEST=GetCapabilities</a></p>
+<h3 id="questions">Questions</h3>
+<ul>
+<li>Who is the responsible person or corporation?</li>
+<li>Which Layers are queryable?</li>
+<li>Which image formats supported GetMap?</li>
+<li>Which file formats are supported for the GetFeatureInfo request?</li>
+<li>What is the difference between “Digitales Orthophoto 20cm (BVV)” and “DOP 20 (Farbe)” layers?</li>
+</ul>
+<h2 id="ogc-wms-samples-2">OGC WMS Samples - 2</h2>
+<h3 id="hamburg-buildings-2d-atkis">Hamburg - Buildings - 2D ATKIS</h3>
+<p style="word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=1111942.144059270155%2C7082582.984302694909%2C1115292.715944103431%2C7085541.258006609045&CRS=EPSG%3A3857&WIDTH=1358&HEIGHT=1200&LAYERS=BU.Building&STYLES=&FORMAT=image%2Fpng&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi%3A96&TRANSPARENT=TRUE</p>
+
+<h3 id="get-capabilities-link_1">Get Capabilities Link</h3>
+<p><a href="https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?SERVICE=WMS&VERSION=1.3.0&REQUEST=GETCAPABILITIES" target="_blank">https://geodienste.hamburg.de/HH_WMS_INSPIRE_Gebaeude_2D_ATKIS_Basis_DLM?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GETCAPABILITIES</a></p>
+<h3 id="questions_1">Questions</h3>
+<ul>
+<li>Is GetLegendGraphic operation supported?</li>
+<li>How many CRS are supported?</li>
+<li>Is the default style of “BU.building” layer defined?</li>
+</ul>
+<h2 id="ogc-wms-samples-3">OGC WMS Samples - 3</h2>
+<h3 id="earth-observation-center-elevation-map-service">Earth Observation Center - Elevation Map Service</h3>
+<p style="word-wrap:break-word;font-family:courier;">https://geoservice.dlr.de/eoc/elevation/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=1199862.581342106452,6118798.876939699054,1307080.881656771293,6213463.635464943945&CRS=EPSG:3857&WIDTH=1358&HEIGHT=1199&LAYERS=srtm_x-sar_dem_mosaic&STYLES=&FORMAT=image/png&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE</p>
+
+<h3 id="get-capabilities-link_2">Get Capabilities Link</h3>
+<p><a href="https://geoservice.dlr.de/eoc/elevation/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities" target="_blank">https://geoservice.dlr.de/eoc/elevation/wms?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities</a></p>
+<h3 id="questions_2">Questions</h3>
+<ul>
+<li>Is “SRTM X-SAR Elevation Mosaic” layer queryable?</li>
+<li>What you get when the GetFeatureInfo operation used on map?</li>
+</ul>
+<h2 id="ogc-wmts-sample">OGC WMTS Sample</h2>
+<h3 id="basemapde-web-raster">basemap.de Web Raster</h3>
+<p style="word-wrap:break-word;font-family:courier;">https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/DE_EPSG_25832_ADV/09/383/297.png</p>
+
+<h3 id="get-capabilities-link_3">Get Capabilities Link</h3>
+<p><a href="https://sgx.geodatenzentrum.de/wmts_basemapde/1.0.0/WMTSCapabilities.xml" target="_blank">https://sgx.geodatenzentrum.de/wmts_basemapde/1.0.0/WMTSCapabilities.xml</a></p>
+<h3 id="questions_3">Questions</h3>
+<ul>
+<li>How many Layers are available?</li>
+<li>How many TileMatrixSets are available?</li>
+<li>How many Tile Matrixes does the first TileMatrixSet have?</li>
+</ul>
+<h2 id="ogc-wfs-sample-1">OGC WFS Sample - 1</h2>
+<h3 id="hamburg-groundwater-protection">Hamburg - Groundwater Protection *</h3>
+<p style="background-color:#dad7cb;color:#000;"> Use <a href="https://www.urldecoder.io/">URLDecode.io</a> web site to see the parameters of the WFS request </p>
+
+<p style="font-size:0.6em;word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=de.hh.up:u12_f_gw_flurabstand_max&SRSNAME=EPSG:25832&FILTER=%3Cfes:Filterxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22xmlns:gml%3D%22http://www.opengis.net/gml/3.2%22%3E%0A%3Cfes:And%3E%0A%3Cfes:BBOX%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3Cgml:EnvelopesrsName%3D%22EPSG:25832%22%3E%0A%3Cgml:lowerCorner%3E5643335930170%3C/gml:lowerCorner%3E%0A%3Cgml:upperCorner%3E5683735933740%3C/gml:upperCorner%3E%0A%3C/gml:Envelope%3E%0A%3C/fes:BBOX%3E%0A%3Cfes:Andxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:Notxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:PropertyIsNullxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3C/fes:PropertyIsNull%3E%0A%3C/fes:Not%3E%0A%3Cfes:PropertyIsEqualToxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3E%0A%3Cfes:Functionxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22name%3D%22IsSurface%22%3E%0A%3Cfes:ValueReference%3Egeom%3C/fes:ValueReference%3E%0A%3C/fes:Function%3E%0A%3Cfes:Literalxmlns:fes%3D%22http://www.opengis.net/fes/2.0%22%3Etrue%3C/fes:Literal%3E%0A%3C/fes:PropertyIsEqualTo%3E%0A%3C/fes:And%3E%0A%3C/fes:And%3E%0A%3C/fes:Filter%3E%0A
+</p>
+
+<h3 id="get-capabilities-link_4">Get Capabilities Link</h3>
+<p><a href="https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?REQUEST=GetCapabilities&SERVICE=WFS" target="_blank">https://geodienste.hamburg.de/HH_WFS_Grundwasserschutz?REQUEST=GetCapabilities&amp;SERVICE=WFS</a></p>
+<h3 id="questions_4">Questions</h3>
+<ul>
+<li>How many feature types available?</li>
+<li>Is Filter Encoding supported?</li>
+<li>If yes, then which filters are supported?</li>
+</ul>
+<h2 id="ogc-wfs-sample-2">OGC WFS Sample - 2</h2>
+<h3 id="hamburg-tax-rates">Hamburg - Tax Rates</h3>
+<p style="font-size:0.6em;word-wrap:break-word;font-family:courier;">https://geodienste.hamburg.de/HH_WFS_Taxenstaende?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=de.hh.up:taxenstaende&COUNT=1000000&SRSNAME=EPSG:25832&BBOX=543859.73267435841262341,5937443.36617781594395638,559909.96083074959460646,5949410.37595691997557878,EPSG:25832</p>
+
+<h3 id="get-capabilities-link_5">Get Capabilities Link</h3>
+<p><a href="https://geodienste.hamburg.de/HH_WFS_Taxenstaende?SERVICE=WFS&REQUEST=GetCapabilities" target="_blank">https://geodienste.hamburg.de/HH_WFS_Taxenstaende?SERVICE=WFS&amp;REQUEST=GetCapabilities</a></p>
+<h2 id="ogc-api-features-sample-1">OGC API - Features Sample - 1</h2>
+<h3 id="north-rhine-westphalia-selected-geosites">North Rhine-Westphalia Selected Geosites</h3>
+<p style="word-wrap:break-word;font-family:courier;">https://ogc-api.nrw.de/inspire-am-geotope/collections/AM_Geotope_Polygone/items/1?f=json</p>
+
+<h3 id="api-web-interface">API web interface</h3>
+<p><a href="https://ogc-api.nrw.de/inspire-am-geotope/api?f=html" target="_blank">https://ogc-api.nrw.de/inspire-am-geotope/api?f=html</a></p>
+<h3 id="api-conformance-document">API Conformance Document</h3>
+<p><a href="https://ogc-api.nrw.de/inspire-am-geotope/conformance?f=html" target="_blank">https://ogc-api.nrw.de/inspire-am-geotope/conformance?f=html</a></p>
+<h3 id="questions_5">Questions</h3>
+<ul>
+<li>How many Feature Collections are available on the main service (ogc-api.nrw.de)?</li>
+<li>Which properties can be used to filter geosites (for AM_Geotope_Polygone)?</li>
+<li>What is the temporal range of the service for the geosites collection?</li>
+</ul>
+<h2 id="ogc-api-features-sample-2">OGC API - Features Sample - 2</h2>
+<h3 id="traffic-volumes-in-hamburg">Traffic volumes in Hamburg</h3>
+<p style="word-wrap:break-word;font-family:courier;">https://api.hamburg.de/datasets/v1/verkehrsstaerken/collections/radverkehr_pegel/items/1?f=json</p>
+
+<h3 id="api-web-interface_1">API web interface</h3>
+<p><a href="https://api.hamburg.de/datasets/v1/verkehrsstaerken/api?f=html" target="_blank">https://api.hamburg.de/datasets/v1/verkehrsstaerken/api?f=html</a></p>
+<h3 id="api-conformance-document_1">API Conformance Document</h3>
+<p><a href="https://api.hamburg.de/datasets/v1/verkehrsstaerken/conformance?f=html" target="_blank">https://api.hamburg.de/datasets/v1/verkehrsstaerken/conformance?f=html</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>
