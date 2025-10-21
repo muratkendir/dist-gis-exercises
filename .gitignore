@@ -8,6 +8,7 @@ _backup
 _backup/
 _backup/*
 _backup/**/*
+.images
 .ipynb_checkpoints
 site
 pdf_documents
