@@ -1,6 +1,6 @@
-site_name: "dist-gis-exercises (Educational Python Notebooks)"
-repo_url: https://muratkendir.github.io/dist-gis-exercises/
-site_url: http://127.0.0.1:8000/
+site_name: "dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)"
+repo_url: https://github.com/muratkendir/dist-gis-exercises/
+site_url: https://muratkendir.github.io/dist-gis-exercises/
 nav:
   - Home: index.md
   - "Exercise 1 (Distributed Sys.)" : exercise1.md

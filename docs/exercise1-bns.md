@@ -22,6 +22,8 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
   - [1.5. Docker Cheatsheet and the Relevance between linux commands](#1.5.-Docker-Cheatsheet-and-the-Relevance-between-linux-commands)
   - [1.6. Access to the Grafana Dashboard](#1.6.-Access-to-the-Grafana-Dashboard)
 
+
+
 ## 0. Aim of the Exercise
 
 This exercise primarily focuses on the usage of docker virtualization. You will practice with docker command line interface or the desktop application by running and inspecting some containers and images. In general, you will need to complete the following tasks:
@@ -45,8 +47,9 @@ You can refer to the following resources when needed:
 
 Open the following website:
 [play-with-docker](https://labs.play-with-docker.com)
+
 - [ ] Click to <mark>login</mark> and select <mark>docker</mark>
-  - [ ] Register with your email account first if you do not have a docker hub account.
+  - Register with your email account first if you do not have a docker hub account.
     - If the popup is blocked, disable the popup blocker and try again.
 - [ ] Docker Playground will be launched and a session will be started which will be live for 4 hours.
 - [ ] Click to <mark>Add New Instance</mark>
@@ -61,13 +64,17 @@ Open the following website:
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr5/1100_play_docker.png" alt="Play with Docker" style="border:3px solid darkgray">
   <figcaption>Play with Docker web site</figcaption>
-</figure> 
+</figure>
+
 
 ## 1. First Practice on the Local Machine with Docker
 
 ### 1.1. Docker Desktop Installation on Windows systems - Optional
 
-![windows features](../images/exr5/2-1_windows_properties.png)
+<figure style="width:%100;text-align: center;">
+  <img src="../images/exr5/2-1_windows_properties.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <figcaption>Windows (Built-in) Features</figcaption>
+</figure> 
 
 Check this step if you want to download and install the Docker Desktop or CLI tool on your personal computer
 
@@ -78,7 +85,10 @@ Check this step if you want to download and install the Docker Desktop or CLI to
 - At the first start of the Docker Desktop app, log in to Docker Hub using the Login button in the top right corner.
 - You will continue using the CLI (Command Line Interface) tool, but you can still check the Desktop App to view the containers, images etc.
 
-![wsl2 option](../images/exr5/2-1_wsl2_option.png)
+<figure style="width:%100;text-align: center;">
+  <img src="../images/exr5/2-1_wsl2_option.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <figcaption>WSL2 Option</figcaption>
+</figure>
 
 ### 1.2. Running Docker Container as an Instance
 
@@ -104,13 +114,17 @@ Check this step if you want to download and install the Docker Desktop or CLI to
 - If it is not available, it tries to download it from **Docker Hub** by searching for the same image name.
 
 - [ ] Visit the Docker Hub page and search for our image manually:
-  - https://hub.docker.com
+  - [hub.docker.com](https://hub.docker.com)
 - You can optionally search for any docker image on the command line:
-  - <mark>docker search grafana</mark>
+  - *docker search grafana*
 - Check the available docker images in the host machine:
-  - <mark>docker image ls</mark>
+  - *docker image ls*
 
-![1300 docker hub](../images/exr5/1300_docker_hub.png)
+<figure style="width:%100;text-align: center;">
+  <img src="../images/exr5/1300_docker_hub.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <figcaption>Docker Hub</figcaption>
+</figure>
+
 
 ### 1.4. How to remove/delete docker images from the instance? - Optional
 
@@ -133,6 +147,7 @@ Check this step if you want to download and install the Docker Desktop or CLI to
 ### 1.5. Docker Cheatsheet and the Relevance between linux commands
 
 Many command abbreviations are inherited from Linux/Unix-based systems. These long command names can be used, for example, to make it easier to memorize abbreviated commands:
+
 - cp : Copy
 - rm : Remove
 - exec : Execute
@@ -143,13 +158,17 @@ Many command abbreviations are inherited from Linux/Unix-based systems. These lo
 
 > TIP: However, one of the best ways to learn these commands is not to memorize them but to use a "Cheatsheet" document as an aid during the exercises. If you want to use such a document, visit this page: [Docker CLI Cheat Sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
 
+
 ### 1.6. Access to the Grafana Dashboard
 
 - [ ] If you have already removed the container and image while following the instructions in section 1.4, start from scratch and start the docker container with the same command given earlier:
-  - <mark>docker run -d -p 3000:3000 --name=grafana \-e "GF_INSTALL_PLUGINS=iosb-sensorthings-datasource" grafana/grafana:latest</mark>
+  - **docker run \-d \-p 3000:3000 \-\-name=grafana \-e \"GF_INSTALL_PLUGINS=iosb\-sensorthings\-datasource\" grafana/grafana:latest**
 - [ ] Now click the **Open Port** button at the top of the page and specify port **3000**. If your forwarded/published port is different, check the actual port number by typing <mark>docker ps</mark>.
 - [ ] Type "admin" as username and password.
 - [ ] Grafana will ask for a new password on the next page, type any password.
 - If everything is OK, the Grafana start page will be shown.
 
-![1600 garanfana](../images/exr5/1600_grafana.png)
+<figure style="width:%100;text-align: center;">
+  <img src="../images/exr5/1600_grafana.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <figcaption>Grafana Interface</figcaption>
+</figure>
