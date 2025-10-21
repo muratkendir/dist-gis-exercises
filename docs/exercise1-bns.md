@@ -15,15 +15,15 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
   - [0.2. Cheatsheets](#0.2.-Cheatsheets)
   - [0.3. Play With Docker](#0.3.-Play-With-Docker)
 - [1. First Practice on the Local Machine with Docker](#1.-First-Practice-on-the-Local-Machine-with-Docker)
-  - [1.1. Running Docker Container as an Instance](#1.1.-Running-Docker-Container-as-an-Instance)
-  - [1.2. What actually happens after executing the "docker run" command?](#1.2.-What-actually-happens-after-executing-the-"docker-run"-command?)
-  - [1.3. How to remove/delete docker images from the instance? - Optional](#1.3.-How-to-remove/delete-docker-images-from-the-instance?---Optional)
-  - [1.4 Docker Cheatsheet and the Relevance between linux commands](#1.4-Docker-Cheatsheet-and-the-Relevance-between-linux-commands)
-  - [1.5 Access to the Grafana Dashboard](#1.5-Access-to-the-Grafana-Dashboard)
+  - [1.1. Docker Desktop Installation on Windows systems - Optional](#1.1.-Docker-Desktop-Installation-on-Windows-systems---Optional)
+  - [1.2. Running Docker Container as an Instance](#1.2.-Running-Docker-Container-as-an-Instance)
+  - [1.3. What actually happens after executing the "docker run" command?](#1.3.-What-actually-happens-after-executing-the-"docker-run"-command?)
+  - [1.4. How to remove/delete docker images from the instance? - Optional](#1.4.-How-to-remove/delete-docker-images-from-the-instance?---Optional)
+  - [1.5. Docker Cheatsheet and the Relevance between linux commands](#1.5.-Docker-Cheatsheet-and-the-Relevance-between-linux-commands)
+  - [1.6. Access to the Grafana Dashboard](#1.6.-Access-to-the-Grafana-Dashboard)
 
 ## 0. Aim of the Exercise
 
-[(⤒)](#Table-of-Contents)
 This exercise primarily focuses on the usage of docker virtualization. You will practice with docker command line interface or the desktop application by running and inspecting some containers and images. In general, you will need to complete the following tasks:
 
 - Learn how to use Docker using the given preparation materials.
@@ -34,23 +34,20 @@ You can refer to the following resources when needed:
 
 ### 0.1. General Preparation
 
-[(⤒)](#Table-of-Contents)
 - [ ] Check the <a href="https://www.youtube.com/watch?v=rOTqprHv1YE" target="_blank">What is Docker and How it works?</a> video (16 min)
 - [ ] Check the page <a href="https://www.docker.com/101-tutorial/" target="_blank">"Docker 101"</a> and follow the instructions below one of the options (Docker Desktop / Play with Docker) (~38 min).
 
 ### 0.2. Cheatsheets
 
-[(⤒)](#Table-of-Contents)
 - [ ] <a href="https://docs.docker.com/get-started/docker_cheatsheet.pdf" target="_blank">Docker CLI (Command Line Interface) Cheat Sheet</a>
 
 ### 0.3. Play With Docker
 
-[(⤒)](#Table-of-Contents)
 Open the following website:
 [play-with-docker](https://labs.play-with-docker.com)
 - [ ] Click to <mark>login</mark> and select <mark>docker</mark>
   - [ ] Register with your email account first if you do not have a docker hub account.
-    - [ ] If the popup is blocked, disable the popup blocker and try again.
+    - If the popup is blocked, disable the popup blocker and try again.
 - [ ] Docker Playground will be launched and a session will be started which will be live for 4 hours.
 - [ ] Click to <mark>Add New Instance</mark>
 - [ ] An instance runtime will be started with a specific local ip address and ssh key.
@@ -59,7 +56,7 @@ Open the following website:
 - [ ] Check all available commands: <mark>docker \-\- help</mark>
 - [ ] If you want to check command-specific options and arguments, type <mark>docker any_command \-\- help</mark> (For exp. "docker ps --help")
 
-> TIP: The terminal screen and available commands here will have the same or similar commands as a Linux terminal screen (command line), because usually the examples run on a Linux system. To check which version of Linux is used as the base operating system, type <mark>uname -a</mark> in the terminal.
+> TIP: The terminal screen and available commands here will have the same or similar commands as a Linux terminal screen (command line), because usually the examples run on a Linux system. To check which version of Linux is used as the base operating system, type **uname -a** in the terminal.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr5/1100_play_docker.png" alt="Play with Docker" style="border:3px solid darkgray">
@@ -68,11 +65,23 @@ Open the following website:
 
 ## 1. First Practice on the Local Machine with Docker
 
-[(⤒)](#Table-of-Contents)
+### 1.1. Docker Desktop Installation on Windows systems - Optional
 
-### 1.1. Running Docker Container as an Instance
+![windows features](../images/exr5/2-1_windows_properties.png)
 
-[(⤒)](#Table-of-Contents)
+Check this step if you want to download and install the Docker Desktop or CLI tool on your personal computer
+
+- If this is your first time downloading and installing Docker Desktop, it may be more effective to enable the **WSL2* option in Docker Settings.
+- Search for "**Windows Properties**" and try to enable "**Windows Subsystem**". It is mandatory to enable **Hyper-V**. Hyper-V is a virtualization support that might be provided by your computer's CPU hardware. If it is not possible to enable it, you should check the BIOS configuration and look for a virtualization support option (it is usually on the "Advanced" page or tab).
+- Enable Windows Subsystem 
+- Click on the gear icon in the top right corner and go to **Resources \ WSL Integration**.
+- At the first start of the Docker Desktop app, log in to Docker Hub using the Login button in the top right corner.
+- You will continue using the CLI (Command Line Interface) tool, but you can still check the Desktop App to view the containers, images etc.
+
+![wsl2 option](../images/exr5/2-1_wsl2_option.png)
+
+### 1.2. Running Docker Container as an Instance
+
 - [ ] There is no working docker containers yet.
 - [ ] Start a new docker container by typing:
     ```bash
@@ -89,9 +98,8 @@ Open the following website:
     - <mark>grafana\/grafana:latest</mark> means "publisher\/image:anyTag" : The last argument is the full name of the docker image. Usually, tags include version numbers.
 - [ ] Check the available docker containers by typing <mark>docker ps</mark>
 
-### 1.2. What actually happens after executing the "docker run" command?
+### 1.3. What actually happens after executing the "docker run" command?
 
-[(⤒)](#Table-of-Contents)
 - The Docker app checked if the requested image (grafana/grafana:latest) already exists in our host machine. 
 - If it is not available, it tries to download it from **Docker Hub** by searching for the same image name.
 
@@ -104,9 +112,8 @@ Open the following website:
 
 ![1300 docker hub](../images/exr5/1300_docker_hub.png)
 
-### 1.3. How to remove/delete docker images from the instance? - Optional
+### 1.4. How to remove/delete docker images from the instance? - Optional
 
-[(⤒)](#Table-of-Contents)
 - [ ] Try deleting the image:
   - <mark>docker rmi grafana/grafana:latest</mark>
 - [ ] When an image is referenced to a container, the terminal will show an error and the container may still be running. So what we need to do is first stop the running container and then remove the referenced container:
@@ -123,9 +130,8 @@ Open the following website:
 - [ ] Finally, remove the image from your instance:
   - <mark>docker rmi grafana\/grafana:latest</mark>
 
-### 1.4 Docker Cheatsheet and the Relevance between linux commands
+### 1.5. Docker Cheatsheet and the Relevance between linux commands
 
-[(⤒)](#Table-of-Contents)
 Many command abbreviations are inherited from Linux/Unix-based systems. These long command names can be used, for example, to make it easier to memorize abbreviated commands:
 - cp : Copy
 - rm : Remove
@@ -137,9 +143,8 @@ Many command abbreviations are inherited from Linux/Unix-based systems. These lo
 
 > TIP: However, one of the best ways to learn these commands is not to memorize them but to use a "Cheatsheet" document as an aid during the exercises. If you want to use such a document, visit this page: [Docker CLI Cheat Sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
 
-### 1.5 Access to the Grafana Dashboard
+### 1.6. Access to the Grafana Dashboard
 
-[(⤒)](#Table-of-Contents)
 - [ ] If you have already removed the container and image while following the instructions in section 1.4, start from scratch and start the docker container with the same command given earlier:
   - <mark>docker run -d -p 3000:3000 --name=grafana \-e "GF_INSTALL_PLUGINS=iosb-sensorthings-datasource" grafana/grafana:latest</mark>
 - [ ] Now click the **Open Port** button at the top of the page and specify port **3000**. If your forwarded/published port is different, check the actual port number by typing <mark>docker ps</mark>.
