@@ -830,10 +830,14 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#0.-Aim-of-the-Exercise">0. Aim of the Exercise</a></li>
-<li><a href="#0.1.-General-Preparation">0.1. General Preparation</a></li>
-<li><a href="#0.2.-Cheatsheets">0.2. Cheatsheets</a></li>
-<li><a href="#0.3.-Play-With-Docker">0.3. Play With Docker</a></li>
+<li>
+<ol>
+<li><a href="#0.-Aim-of-the-Exercise">Aim of the Exercise</a></li>
+</ol>
+</li>
+<li>0.1. <a href="#0.1.-General-Preparation">General Preparation</a></li>
+<li>0.2. <a href="#0.2.-Cheatsheets">Cheatsheets</a></li>
+<li>0.3. <a href="#0.3.-Play-With-Docker">Play With Docker</a></li>
 <li><a href="#1.-First-Practice-on-the-Local-Machine-with-Docker">1. First Practice on the Local Machine with Docker</a></li>
 <li><a href="#1.1.-Docker-Desktop-Installation-on-Windows-systems---Optional">1.1. Docker Desktop Installation on Windows systems - Optional</a></li>
 <li><a href="#1.2.-Running-Docker-Container-as-an-Instance">1.2. Running Docker Container as an Instance</a></li>
@@ -853,7 +857,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <h3 id="01-general-preparation">0.1. General Preparation</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Check the <a href="https://www.youtube.com/watch?v=rOTqprHv1YE" target="_blank">What is Docker and How it works?</a> video (16 min)</li>
-<li class="task-list-item"><input type="checkbox"/> Check the page <a href="https://www.docker.com/101-tutorial/" target="_blank">"Docker 101"</a> and follow the instructions below one of the options (Docker Desktop / Play with Docker) (~38 min).</li>
+<li class="task-list-item"><input type="checkbox"/> Check the page <a href="https://docs.docker.com/get-started/introduction/" target="_blank">"Docker - Get started - Introduction"</a> and follow the instructions below one of the options (Docker Desktop / Play with Docker) (~15 min).</li>
 </ul>
 <h3 id="02-cheatsheets">0.2. Cheatsheets</h3>
 <ul class="task-list">
@@ -868,7 +872,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <li>If the popup is blocked, disable the popup blocker and try again.</li>
 </ul>
 </li>
-<li class="task-list-item"><input type="checkbox"/> Docker Playground will be launched and a session will be started which will be live for 4 hours.</li>
+<li class="task-list-item"><input type="checkbox"/> Docker Playground will be launched and a session will be started which will be live for 2 hours.</li>
 <li class="task-list-item"><input type="checkbox"/> Click to <mark>Add New Instance</mark></li>
 <li class="task-list-item"><input type="checkbox"/> An instance runtime will be started with a specific local ip address and ssh key.</li>
 <li class="task-list-item"><input type="checkbox"/> List the running docker containers by typing <mark>docker ps</mark> in the terminal screen (e.g. command prompt of the instance).</li>
@@ -964,7 +968,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 </ul>
 </li>
 <li class="task-list-item"><input type="checkbox"/> Finally, remove the image from your instance:</li>
-<li><mark>docker rmi grafana\/grafana:latest</mark></li>
+<li><mark>docker rmi grafana/grafana:latest</mark></li>
 </ul>
 <h3 id="15-docker-cheatsheet-and-the-relevance-between-linux-commands">1.5. Docker Cheatsheet and the Relevance between linux commands</h3>
 <p>Many command abbreviations are inherited from Linux/Unix-based systems. These long command names can be used, for example, to make it easier to memorize abbreviated commands:</p>
