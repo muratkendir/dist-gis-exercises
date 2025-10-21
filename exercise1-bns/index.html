@@ -933,11 +933,11 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <li class="task-list-item">
 <p><input type="checkbox"/> Visit the Docker Hub page and search for our image manually:</p>
 </li>
-<li>https://hub.docker.com</li>
+<li><a href="https://hub.docker.com">hub.docker.com</a></li>
 <li>You can optionally search for any docker image on the command line:</li>
-<li><mark>docker search grafana</mark></li>
+<li><em>docker search grafana</em></li>
 <li>Check the available docker images in the host machine:</li>
-<li><mark>docker image ls</mark></li>
+<li><em>docker image ls</em></li>
 </ul>
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr5/1300_docker_hub.png" alt="Play with Docker" style="border:3px solid darkgray">
@@ -967,21 +967,23 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <li><mark>docker rmi grafana\/grafana:latest</mark></li>
 </ul>
 <h3 id="15-docker-cheatsheet-and-the-relevance-between-linux-commands">1.5. Docker Cheatsheet and the Relevance between linux commands</h3>
-<p>Many command abbreviations are inherited from Linux/Unix-based systems. These long command names can be used, for example, to make it easier to memorize abbreviated commands:
-- cp : Copy
-- rm : Remove
-- exec : Execute
-- cd : Change Directory
-- ls : List
-- ps : Processes
-- diff : Difference</p>
+<p>Many command abbreviations are inherited from Linux/Unix-based systems. These long command names can be used, for example, to make it easier to memorize abbreviated commands:</p>
+<ul>
+<li>cp : Copy</li>
+<li>rm : Remove</li>
+<li>exec : Execute</li>
+<li>cd : Change Directory</li>
+<li>ls : List</li>
+<li>ps : Processes</li>
+<li>diff : Difference</li>
+</ul>
 <blockquote>
 <p>TIP: However, one of the best ways to learn these commands is not to memorize them but to use a "Cheatsheet" document as an aid during the exercises. If you want to use such a document, visit this page: <a href="https://docs.docker.com/get-started/docker_cheatsheet.pdf">Docker CLI Cheat Sheet</a></p>
 </blockquote>
 <h3 id="16-access-to-the-grafana-dashboard">1.6. Access to the Grafana Dashboard</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> If you have already removed the container and image while following the instructions in section 1.4, start from scratch and start the docker container with the same command given earlier:</li>
-<li><mark>docker run -d -p 3000:3000 --name=grafana -e "GF_INSTALL_PLUGINS=iosb-sensorthings-datasource" grafana/grafana:latest</mark></li>
+<li><strong>docker run -d -p 3000:3000 --name=grafana -e \"GF_INSTALL_PLUGINS=iosb-sensorthings-datasource\" grafana/grafana:latest</strong></li>
 <li class="task-list-item"><input type="checkbox"/> Now click the <strong>Open Port</strong> button at the top of the page and specify port <strong>3000</strong>. If your forwarded/published port is different, check the actual port number by typing <mark>docker ps</mark>.</li>
 <li class="task-list-item"><input type="checkbox"/> Type "admin" as username and password.</li>
 <li class="task-list-item"><input type="checkbox"/> Grafana will ask for a new password on the next page, type any password.</li>
