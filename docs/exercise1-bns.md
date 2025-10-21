@@ -11,17 +11,17 @@ murat.kendir@tum.de
 
 ## Table of Contents
 
-- 0. [Aim of the Exercise](#0.-Aim-of-the-Exercise)
-   - 0.1. [General Preparation](#0.1.-General-Preparation)
-   - 0.2. [Cheatsheets](#0.2.-Cheatsheets)
-   - 0.3. [Play With Docker](#0.3.-Play-With-Docker)
-- 1. [First Practice on the Local Machine with Docker](#1.-First-Practice-on-the-Local-Machine-with-Docker)
-   - 1.1. [Docker Desktop Installation on Windows systems - Optional](#1.1.-Docker-Desktop-Installation-on-Windows-systems---Optional)
-   - 1.2. [Running Docker Container as an Instance](#1.2.-Running-Docker-Container-as-an-Instance)
-   - 1.3. [What actually happens after executing the "docker run" command?](#1.3.-What-actually-happens-after-executing-the-"docker-run"-command?)
-   - 1.4. [How to remove/delete docker images from the instance? - Optional](#1.4.-How-to-remove/delete-docker-images-from-the-instance?---Optional)
-   - 1.5. [Docker Cheatsheet and the Relevance between linux commands](#1.5.-Docker-Cheatsheet-and-the-Relevance-between-linux-commands)
-   - 1.6. [Access to the Grafana Dashboard](#1.6.-Access-to-the-Grafana-Dashboard)
+- 0. [Aim of the Exercise](#0-aim-of-the-exercise)
+   - 0.1. [General Preparation](#01-general-preparation)
+   - 0.2. [Cheatsheets](#02-cheatsheets)
+   - 0.3. [Play With Docker](#03-play-with-docker)
+- 1. [First Practice on the Local Machine with Docker](#1-first-practice-on-the-local-machine-with-docker)
+   - 1.1. [Docker Desktop Installation on Windows systems - Optional](#11-docker-desktop-installation-on-windows-systems-optional)
+   - 1.2. [Running Docker Container as an Instance](#12-running-docker-container-as-an-instance)
+   - 1.3. [What actually happens after executing the "docker run" command?](#13-what-actually-happens-after-executing-the-docker-run-command)
+   - 1.4. [How to remove/delete docker images from the instance? - Optional](#14-how-to-removedelete-docker-images-from-the-instance-optional)
+   - 1.5. [Docker Cheatsheet and the Relevance between linux commands](#15-docker-cheatsheet-and-the-relevance-between-linux-commands)
+   - 1.6. [Access to the Grafana Dashboard](#16-access-to-the-grafana-dashboard)
 
 
 ## 0. Aim of the Exercise

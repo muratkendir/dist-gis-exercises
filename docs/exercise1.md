@@ -12,23 +12,24 @@ murat.kendir@tum.de
 
 ## Table of Contents
 
-- [0. Aim of the Exercise](#0.-Aim-of-the-Exercise)
-  - [0.1 General Preparation](#0.1-General-Preparation)
-  - [0.2 Cheatsheets](#0.2-Cheatsheets)
-- [1. Technical Diagrams and UML](#1.-Technical-Diagrams-and-UML)
-  - [1.1. How to draw a Sequence Diagram using PlantUML](#1.1.-How-to-draw-a-Sequence-Diagram-using-PlantUML)
-    - [1.1.1. Sample PlantUML Code](#1.1.1.-Sample-PlantUML-Code)
-  - [1.2. How to draw a sequence Diagram using Draw.io? - Optional](#1.2.-How-to-draw-a-sequence-Diagram-using-Draw.io?---Optional)
-- [2. Thin-Client & Fat-Client Architectures in the Web Applications](#2.-Thin-Client-&-Fat-Client-Architectures-in-the-Web-Applications)
-  - [2.1. Preparation for the Next Discussion about Tiers - Web Developer Tool / Developer Tool](#2.1.-Preparation-for-the-Next-Discussion-about-Tiers---Web-Developer-Tool-/-Developer-Tool)
-  - [2.2. Discussion about the Tiers in Layered Architectures](#2.2.-Discussion-about-the-Tiers-in-Layered-Architectures)
-    - [2.2.1. Seismic Monitor - IRIS](#2.2.1.-Seismic-Monitor---IRIS)
-    - [2.2.2. Geoportal Bayern](#2.2.2.-Geoportal-Bayern)
-    - [2.2.3. TURF JS - Advanced geospatial analysis for browsers](#2.2.3.-TURF-JS---Advanced-geospatial-analysis-for-browsers)
-- [3. Creating a Sequence Diagram using a Sample Request – Response Example](#3.-Creating-a-Sequence-Diagram-using-a-Sample-Request-–-Response-Example)
-  - [3.1. Review the requests and responses before and after creating a route for mountain bikes in the BayernAtlas web app](#3.1.-Review-the-requests-and-responses-before-and-after-creating-a-route-for-mountain-bikes-in-the-BayernAtlas-web-app)
-  - [3.2. Create the Sequence Diagram by considering the previously interactions](#3.2.-Create-the-Sequence-Diagram-by-considering-the-previously-interactions)
-  - [3.3. Request the UML Sequence Diagram from an AI Chatbot](#3.3.-Request-the-UML-Sequence-Diagram-from-an-AI-Chatbot)
+- [0. Aim of the Exercise](#0-aim-of-the-exercise)
+  - [0.1 General Preparation](#01-general-preparation)
+  - [0.2 Cheatsheets](#02-cheatsheets)
+- [1. Technical Diagrams and UML](#1-technical-diagrams-and-uml)
+  - [1.1. How to draw a Sequence Diagram using PlantUML](#11-how-to-draw-a-sequence-diagram-using-plantuml)
+    - [1.1.1. Sample PlantUML Code](#111-sample-plantuml-code)
+  - [1.2. How to draw a sequence Diagram using Draw.io? - Optional](#12-how-to-draw-a-sequence-diagram-using-drawio-optional)
+- [2. Thin-Client & Fat-Client Architectures in the Web Applications](#2-thin-client-fat-client-architectures-in-the-web-applications)
+  - [2.1. Preparation for the Next Discussion about Tiers - Web Developer Tool / Developer Tool](#21-preparation-for-the-next-discussion-about-tiers-web-developer-tool-developer-tool)
+  - [2.2. Discussion about the Tiers in Layered Architectures](#22-discussion-about-the-tiers-in-layered-architectures)
+    - [2.2.1. Seismic Monitor - IRIS](#221-seismic-monitor-iris)
+    - [2.2.2. Geoportal Bayern](#222-geoportal-bayern)
+    - [2.2.3. TURF JS - Advanced geospatial analysis for browsers](#223-turf-js-advanced-geospatial-analysis-for-browsers)
+- [3. Creating a Sequence Diagram using a Sample Request – Response Example](#3-creating-a-sequence-diagram-using-a-sample-request-response-example)
+  - [3.1. Review the requests and responses before and after creating a route for mountain bikes in the BayernAtlas web app](#31-review-the-requests-and-responses-before-and-after-creating-a-route-for-mountain-bikes-in-the-bayernatlas-web-app)
+  - [3.2. Create the Sequence Diagram by considering the previously interactions](#32-create-the-sequence-diagram-by-considering-the-previously-interactions)
+  - [3.3. Request the UML Sequence Diagram from an AI Chatbot](#33-request-the-uml-sequence-diagram-from-an-ai-chatbot)
+
 
 
 ```python
@@ -90,25 +91,27 @@ There are also alternatives to text-based diagramming tools such as PlantUML, in
 In this exercise, we will focus on using PlantUML, but you can also use different diagramming tools to visualize your diagrams according to your own purposes.
 
 There are multiple ways of rendering PlantUML diagrams:
-- [ ] <a href="http://plantuml.com/" target="_blank">plantuml.com</a> provides an online plantuml server which is free to use. (Recommended Method)
+
+- [ ] [plantuml.com](https://plantuml.com/) provides an online plantuml server which is free to use. (Recommended Method)
   - Just type the plantmul codes into the textbox and press submit button.
 - [ ] In the text editor SublimeText, there is a plugin called "PlantUMLDiagrams". (Optional)
-  - To install this plugin, press \<Ctrl\>+\<Shift\>+\<P\> buttons and type "Install Package".
+  - To install this plugin, press ++ctrl+shift+p++ buttons and type "Install Package".
   - After the list of the plugins appear, search for "PlantUMLDiagrams" and press on it.
-  - After the plugin installation finished, press again \<Ctrl\>+\<Shift\>+\<P\> buttons and search for "Generate Diagrams for Active View"
+  - After the plugin installation finished, press again ++ctrl+shift+p++ buttons and search for "Generate Diagrams for Active View"
   - NOTE: You have to have a "PlantUML file" with the correct notation and file extension (.puml or .pu)
 - [ ] In the code editor **Visual Studio Code**, there is a very popular extension called \"**PlantUML**\".
-  - To install this extension, press \<Ctrl\>+\<Shift\>+\<X\> to open the Extensions view.
+  - To install this extension, press ++ctrl+shift+x++ to open the Extensions view.
   - After the Extensions sidebar appears, search for \"PlantUML\" in the search box.
   - Find the official extension (usually the first one, by Jebbs) from the list and click the blue \"Install\" button.
   - After the extension has finished installing, open your file that contains PlantUML code.
-  - To generate a preview of your diagram, press the shortcut keys \<Alt\>+\<D\>.
-  - (Optional) Alternatively, you can press \<Ctrl\>+\<Shift\>+\<P\> to open the Command Palette, then search for \"PlantUML: Preview Current Diagram\" and press Enter.
+  - To generate a preview of your diagram, press the shortcut keys ++alt+d++ .
+  - (Optional) Alternatively, you can press ++ctrl+shift+p++ to open the Command Palette, then search for \"PlantUML: Preview Current Diagram\" and press Enter.
 - [ ] In Jupyter Lab (You can run it via Anaconda), there is an interactive PlantUML library called "iplantuml" (Optional)
   - Type "pip install iplantuml" in the running jupyter notebook.
   - Create an empty code cell and enter "import iplantuml"
   - Create an additional code cell and start to typing your plantuml text starting with "%%plantuml".
   - After running both of the cells, you can visualize the plantuml diagram
+
 
 #### 1.1.1. Sample PlantUML Code
 
