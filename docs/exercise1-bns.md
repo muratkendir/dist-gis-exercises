@@ -2,26 +2,26 @@
 
 <img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/>
 <blockquote>
-Munich Technical University || Chair of Geoinformatics </br></br>
-Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+Munich Technical University / Chair of Geoinformatics <br>
+Murat Kendir, Jicang Zhu, Prof. Thomas Kolbe <br>
+murat.kendir@tum.de 
 </blockquote>
 
 <div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
 
 ## Table of Contents
 
-- [0. Aim of the Exercise](#0.-Aim-of-the-Exercise)
-  - [0.1. General Preparation](#0.1.-General-Preparation)
-  - [0.2. Cheatsheets](#0.2.-Cheatsheets)
-  - [0.3. Play With Docker](#0.3.-Play-With-Docker)
-- [1. First Practice on the Local Machine with Docker](#1.-First-Practice-on-the-Local-Machine-with-Docker)
-  - [1.1. Docker Desktop Installation on Windows systems - Optional](#1.1.-Docker-Desktop-Installation-on-Windows-systems---Optional)
-  - [1.2. Running Docker Container as an Instance](#1.2.-Running-Docker-Container-as-an-Instance)
-  - [1.3. What actually happens after executing the "docker run" command?](#1.3.-What-actually-happens-after-executing-the-"docker-run"-command?)
-  - [1.4. How to remove/delete docker images from the instance? - Optional](#1.4.-How-to-remove/delete-docker-images-from-the-instance?---Optional)
-  - [1.5. Docker Cheatsheet and the Relevance between linux commands](#1.5.-Docker-Cheatsheet-and-the-Relevance-between-linux-commands)
-  - [1.6. Access to the Grafana Dashboard](#1.6.-Access-to-the-Grafana-Dashboard)
-
+- 0. [Aim of the Exercise](#0.-Aim-of-the-Exercise)
+   - 0.1. [General Preparation](#0.1.-General-Preparation)
+   - 0.2. [Cheatsheets](#0.2.-Cheatsheets)
+   - 0.3. [Play With Docker](#0.3.-Play-With-Docker)
+- 1. [First Practice on the Local Machine with Docker](#1.-First-Practice-on-the-Local-Machine-with-Docker)
+   - 1.1. [Docker Desktop Installation on Windows systems - Optional](#1.1.-Docker-Desktop-Installation-on-Windows-systems---Optional)
+   - 1.2. [Running Docker Container as an Instance](#1.2.-Running-Docker-Container-as-an-Instance)
+   - 1.3. [What actually happens after executing the "docker run" command?](#1.3.-What-actually-happens-after-executing-the-"docker-run"-command?)
+   - 1.4. [How to remove/delete docker images from the instance? - Optional](#1.4.-How-to-remove/delete-docker-images-from-the-instance?---Optional)
+   - 1.5. [Docker Cheatsheet and the Relevance between linux commands](#1.5.-Docker-Cheatsheet-and-the-Relevance-between-linux-commands)
+   - 1.6. [Access to the Grafana Dashboard](#1.6.-Access-to-the-Grafana-Dashboard)
 
 
 ## 0. Aim of the Exercise
@@ -37,7 +37,7 @@ You can refer to the following resources when needed:
 ### 0.1. General Preparation
 
 - [ ] Check the <a href="https://www.youtube.com/watch?v=rOTqprHv1YE" target="_blank">What is Docker and How it works?</a> video (16 min)
-- [ ] Check the page <a href="https://www.docker.com/101-tutorial/" target="_blank">"Docker 101"</a> and follow the instructions below one of the options (Docker Desktop / Play with Docker) (~38 min).
+- [ ] Check the page <a href="https://docs.docker.com/get-started/introduction/" target="_blank">"Docker - Get started - Introduction"</a> and follow the instructions below one of the options (Docker Desktop / Play with Docker) (~15 min).
 
 ### 0.2. Cheatsheets
 
@@ -48,16 +48,16 @@ You can refer to the following resources when needed:
 Open the following website:
 [play-with-docker](https://labs.play-with-docker.com)
 
-- [ ] Click to <mark>login</mark> and select <mark>docker</mark>
+- [ ] Click to *login* and select *docker*
   - Register with your email account first if you do not have a docker hub account.
     - If the popup is blocked, disable the popup blocker and try again.
-- [ ] Docker Playground will be launched and a session will be started which will be live for 4 hours.
-- [ ] Click to <mark>Add New Instance</mark>
+- [ ] Docker Playground will be launched and a session will be started which will be live for 2 hours.
+- [ ] Click to *Add New Instance*
 - [ ] An instance runtime will be started with a specific local ip address and ssh key.
-- [ ] List the running docker containers by typing <mark>docker ps</mark> in the terminal screen (e.g. command prompt of the instance).
-- [ ] If you want to check all (running and idle) available docker containers, type <mark>docker ps \-\- all</mark>
-- [ ] Check all available commands: <mark>docker \-\- help</mark>
-- [ ] If you want to check command-specific options and arguments, type <mark>docker any_command \-\- help</mark> (For exp. "docker ps --help")
+- [ ] List the running docker containers by typing *docker ps* in the terminal screen (e.g. command prompt of the instance).
+- [ ] If you want to check all (running and idle) available docker containers, type *docker ps \-\- all*
+- [ ] Check all available commands: *docker \-\- help*
+- [ ] If you want to check command-specific options and arguments, type *docker any_command \-\- help* (For exp. "docker ps --help")
 
 > TIP: The terminal screen and available commands here will have the same or similar commands as a Linux terminal screen (command line), because usually the examples run on a Linux system. To check which version of Linux is used as the base operating system, type **uname -a** in the terminal.
 
@@ -101,12 +101,13 @@ Check this step if you want to download and install the Docker Desktop or CLI to
     grafana/grafana:latest
     ```
   - Explanations of options and arguments:
-    -  <mark>\-d or \-\-detach</mark> : The container continues to run in the background.
-    - <mark>\-p or \-\-publish</mark> : Forward (Publish) a port in the container to the host (Left side shows the port of the host machine and right side of the column shows the port of the container)
-    - <mark>\-e or \-\-env</mark> : Sets environment variables
-    - <mark>\-\-name (no alias)</mark>: Assign a name to the container, to easily recognize containers.
-    - <mark>grafana\/grafana:latest</mark> means "publisher\/image:anyTag" : The last argument is the full name of the docker image. Usually, tags include version numbers.
-- [ ] Check the available docker containers by typing <mark>docker ps</mark>
+    -  **\-d or \-\-detach** : The container continues to run in the background.
+    - **\-p or \-\-publish** : Forward (Publish) a port in the container to the host (Left side shows the port of the host machine and right side of the column shows the port of the container)
+    - **\-e or \-\-env** : Sets environment variables
+    - **\-\-name (no alias)** : Assign a name to the container, to easily recognize containers.
+    - **grafana\/grafana:latest** means "publisher\/image:anyTag" : The last argument is the full name of the docker image. Usually, tags include version numbers.
+- [ ] Check the available docker containers by typing *docker ps*
+
 
 ### 1.3. What actually happens after executing the "docker run" command?
 
@@ -129,20 +130,20 @@ Check this step if you want to download and install the Docker Desktop or CLI to
 ### 1.4. How to remove/delete docker images from the instance? - Optional
 
 - [ ] Try deleting the image:
-  - <mark>docker rmi grafana/grafana:latest</mark>
+  - ```docker rmi grafana/grafana:latest</mark>```
 - [ ] When an image is referenced to a container, the terminal will show an error and the container may still be running. So what we need to do is first stop the running container and then remove the referenced container:
-  - <mark>docker stop \<CONTAINER_NAME\></mark>
+  - ```docker stop \<CONTAINER_NAME\>```
   - or alternatively use the container ID shown in
-    - Type <mark>docker container list</mark> (same as "ps" command) to see container IDs and names.
-    - <mark>docker stop \<CONTAINER_ID\></mark>
+    - Type ```docker container list``` (same as "ps" command) to see container IDs and names.
+    - ```docker stop \<CONTAINER_ID\>```
 - [ ] Check existing containers with the -all option:
-  - <mark>docker ps \-\-all</mark>
+  - ```docker ps \-\-all```
 - [ ] Remove the container:
-- <mark>docker rm grafana</mark>
+- ```docker rm grafana```
   - or alternatively with Container ID:
-    - <mark>docker rm 829224beac3f</mark> (container IDs are not fixed numbers, try find your container's ID and replace with given one)
+    - ```docker rm 829224beac3f``` (container IDs are not fixed numbers, try find your container's ID and replace with given one)
 - [ ] Finally, remove the image from your instance:
-  - <mark>docker rmi grafana\/grafana:latest</mark>
+  - ```docker rmi grafana/grafana:latest```
 
 ### 1.5. Docker Cheatsheet and the Relevance between linux commands
 
@@ -163,7 +164,7 @@ Many command abbreviations are inherited from Linux/Unix-based systems. These lo
 
 - [ ] If you have already removed the container and image while following the instructions in section 1.4, start from scratch and start the docker container with the same command given earlier:
   - **docker run \-d \-p 3000:3000 \-\-name=grafana \-e \"GF_INSTALL_PLUGINS=iosb\-sensorthings\-datasource\" grafana/grafana:latest**
-- [ ] Now click the **Open Port** button at the top of the page and specify port **3000**. If your forwarded/published port is different, check the actual port number by typing <mark>docker ps</mark>.
+- [ ] Now click the **Open Port** button at the top of the page and specify port **3000**. If your forwarded/published port is different, check the actual port number by typing *docker ps*.
 - [ ] Type "admin" as username and password.
 - [ ] Grafana will ask for a new password on the next page, type any password.
 - If everything is OK, the Grafana start page will be shown.

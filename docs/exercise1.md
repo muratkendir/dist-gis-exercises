@@ -1,9 +1,11 @@
 # Exercise - Distributed Systems & System Arcihtectures
 
 <img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/>
+
 <blockquote>
-Munich Technical University || Chair of Geoinformatics </br></br>
-Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+Munich Technical University / Chair of Geoinformatics <br> 
+Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+murat.kendir@tum.de
 </blockquote>
 
 <div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
@@ -35,7 +37,6 @@ import iplantuml
 
 ## 0. Aim of the Exercise
 
-[(⤒)](#Table-of-Contents)
 This exercise primarily focuses on creating UML Sequence Diagrams and understanding the importance of technically diagramming interactions between distributed systems. You will practice using diagramming tools and encounter spatial web applications to understand the mechanisms working in the background. In general, you will need to complete the following tasks:
 
 - Select a specific interaction on any of the given websites and try to understand the interactions between the user interface and the back-end applications/services using **developer tools** of the browsers. (Chapter 2)
@@ -45,20 +46,17 @@ You can refer to the following resources when needed:
 
 ### 0.1 General Preparation
 
-[(⤒)](#Table-of-Contents)
 - [ ] Check the General Principles of the UML Sequence Diagrams (on Moodle, 1. Week, "01-System Architectures" presentation, "UML Sequence Diagrams" section)
 - [ ] <a href="https://guides.visual-paradigm.com/creating-sequence-diagrams-in-uml-a-comprehensive-tutorial/" target="_blank">Visual Paradigm - UML Tutorial</a>
 - [ ] <a href="https://firefox-source-docs.mozilla.org/devtools-user/" target="_blank">Firefox DevTools User Docs</a>
 
 ### 0.2 Cheatsheets
 
-[(⤒)](#Table-of-Contents)
 - [ ] <a href="https://pdf.plantuml.net/1.2020.22/PlantUML_Language_Reference_Guide_en.pdf" target="_blank">PlantUML Language Reference Guide</a>
 - [ ] <a href="https://youtu.be/2CC0fugc_2o?si=5tYM7X7NVzBOE-FH" target="_blank">Understand Browser Dev Tools Network Tab - Video Tutorial</a>
 
 ## 1. Technical Diagrams and UML
 
-[(⤒)](#Table-of-Contents)
 <blockquote>
 Technical diagrams are a visually rich way of expressing the procedures, workflows, plans, data models or scenarios in various domains. A Unified Modeling Language (UML) diagram is a standardized visual representation used to model and design software systems. It provides a blueprint of the system’s structure and behavior, helping developers, analysts, and stakeholders understand, communicate, and document software architecture and processes.
 </blockquote>
@@ -81,15 +79,10 @@ Please note that we only focus on two type of the UML diagrams (**Sequence Diagr
  Communication | Concrete Resource Diagrams \(AWS/Azure\) 
  Profile | Context\-Container\-Component\-Code \(C4\) 
  Package | Entity\-Relationship \(ER\) 
-
-
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+ 
 
 ### 1.1. How to draw a Sequence Diagram using PlantUML
 
-[(⤒)](#Table-of-Contents)
 PlantUML is an open-source tool that lets you create UML and many other technical diagrams from plain-text source code instead of dragging shapes on a canvas.
 
 There are also alternatives to text-based diagramming tools such as PlantUML, including Mermaid, ZenUML, etc.
@@ -104,6 +97,13 @@ There are multiple ways of rendering PlantUML diagrams:
   - After the list of the plugins appear, search for "PlantUMLDiagrams" and press on it.
   - After the plugin installation finished, press again \<Ctrl\>+\<Shift\>+\<P\> buttons and search for "Generate Diagrams for Active View"
   - NOTE: You have to have a "PlantUML file" with the correct notation and file extension (.puml or .pu)
+- [ ] In the code editor **Visual Studio Code**, there is a very popular extension called \"**PlantUML**\".
+  - To install this extension, press \<Ctrl\>+\<Shift\>+\<X\> to open the Extensions view.
+  - After the Extensions sidebar appears, search for \"PlantUML\" in the search box.
+  - Find the official extension (usually the first one, by Jebbs) from the list and click the blue \"Install\" button.
+  - After the extension has finished installing, open your file that contains PlantUML code.
+  - To generate a preview of your diagram, press the shortcut keys \<Alt\>+\<D\>.
+  - (Optional) Alternatively, you can press \<Ctrl\>+\<Shift\>+\<P\> to open the Command Palette, then search for \"PlantUML: Preview Current Diagram\" and press Enter.
 - [ ] In Jupyter Lab (You can run it via Anaconda), there is an interactive PlantUML library called "iplantuml" (Optional)
   - Type "pip install iplantuml" in the running jupyter notebook.
   - Create an empty code cell and enter "import iplantuml"
@@ -112,7 +112,6 @@ There are multiple ways of rendering PlantUML diagrams:
 
 #### 1.1.1. Sample PlantUML Code
 
-[(⤒)](#Table-of-Contents)
 You can use the following code as an example to test the tools described in the previous section.
 
 
@@ -132,7 +131,7 @@ Deactivate Bob
 @enduml
 ```
 
-    Writing output for /home/murat/gitpot/dist-gis-exercises/040c7242-5471-4432-b002-73e13d658a32.uml to 040c7242-5471-4432-b002-73e13d658a32.svg
+    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/550589d4-9c76-4585-bb28-b01cceb48aed.uml to 550589d4-9c76-4585-bb28-b01cceb48aed.svg
 
 
 
@@ -146,7 +145,6 @@ Deactivate Bob
 
 ### 1.2. How to draw a sequence Diagram using Draw.io? - Optional
 
-[(⤒)](#Table-of-Contents)
 You can create UML diagram on [Diagrams Net](https://app.diagrams.net/)
 
 - [ ] Choose the location where you want to save your diagram. We suggest saving it in your local device, thus you don’t need to log in or register an account.
@@ -169,12 +167,10 @@ You can start drawing by creating a blank diagram.
 
 ## 2. Thin-Client & Fat-Client Architectures in the Web Applications
 
-[(⤒)](#Table-of-Contents)
 In this step,  we will learn how to observe some interactions on different web sites using “web developer tools” (in Firefox) or “Developer Tools” (Chrome). We will discuss which interactions are based on a Fat-Client or Thin-Client architecture in relation to our observations (Relevant Presentation: 01 - System Architectures / page 17).
 
 ### 2.1. Preparation for the Next Discussion about Tiers - Web Developer Tool / Developer Tool
 
-[(⤒)](#Table-of-Contents)
  - Open Firefox or Google Chrome web browser.
  - Simply navigate to the relevant page shown in the next topic ( [IRIS Seismic Monitor](https://ds.iris.edu/seismon/index.phtml) ) or go to a random web site.
  - Press Ctrl + Shift + C buttons together or Ctrl + Shift + I / Alternatively, you can navigate from menu:
@@ -226,7 +222,6 @@ On Firefox: By clicking on a row, you can also view the details of a request and
 
 ### 2.2. Discussion about the Tiers in Layered Architectures
 
-[(⤒)](#Table-of-Contents)
 Examine the following web sites by using the “Web Developer Tools” / “Developer Tools” as described above and try to answer questions:
 - A) What kind of tiers might the web applications have? (Application-Interface, Application, Data)
 - B) Are the parts/files represented on the web app downloaded automatically or is the download triggered by an interaction?
@@ -234,8 +229,6 @@ Examine the following web sites by using the “Web Developer Tools” / “Deve
 
 
 #### 2.2.1. Seismic Monitor - IRIS
-
-[(⤒)](#Table-of-Contents)
 
 [https://ds.iris.edu/seismon/index.phtml](https://ds.iris.edu/seismon/index.phtml)
 
@@ -258,18 +251,16 @@ This website is a very old but working example of a web mapping application. It 
 
 #### 2.2.2. Geoportal Bayern
 
-[(⤒)](#Table-of-Contents)
-
 [https://geoportal.bayern.de/bayernatlas](https://geoportal.bayern.de/bayernatlas)
 
-In the bottom right corner, select the base map to be loaded on the screen.
+In the home page, select the base map to be loaded on the screen.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr1/bayernatlas_basemap.png" alt="BayernAtlas Basemap" style="border:3px solid darkgray">
   <figcaption>BayernAtlas - Basemap Selection</figcaption>
 </figure>
 
-To load bike paths (Radwege), a cycling map, activate the Hiking and cycling trails layers (Freizeit in Bayern > Wander- und Radwege > Radwege). Once activated, you will see a green network on the map.
+To load bike paths (Radwege), a cycling map, activate the Hiking and cycling trails layers (Home page:Themen> Sport- und Freizeit > Wander- und Radwege> Radwege). Once activated, you will see a green network on the map.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr1/bayernatlas_overlay.png" alt="BayernAtlas Overlay" style="border:3px solid darkgray">
@@ -293,8 +284,6 @@ Double-click on the relevant row and you will see a png file on a separate web p
 
 
 #### 2.2.3. TURF JS - Advanced geospatial analysis for browsers
-
-[(⤒)](#Table-of-Contents)
 
 [https://turfjs.org/](https://turfjs.org/)
 
@@ -322,11 +311,8 @@ Try to zoom in and zoom out on one of the map (input or output widget).
 </figure>
 
 
-<div style="page-break-after: always;"></div>
-
 ## 3. Creating a Sequence Diagram using a Sample Request – Response Example
 
-[(⤒)](#Table-of-Contents)
 In this step, you will observe an interaction that takes place in the BayernAtlas web app. This interaction is a simple routing / navigation application that provides a route for specified leisure activity.
 You will then create a sequence diagram taking into account this interaction and possible web services working in the background.
 
@@ -335,7 +321,6 @@ You will then create a sequence diagram taking into account this interaction and
 
 ### 3.1. Review the requests and responses before and after creating a route for mountain bikes in the BayernAtlas web app
 
-[(⤒)](#Table-of-Contents)
 Choose a routing mode. Such as “hiking” (wandern)  as shown in the first icon. Select the start point and end point on the map, a route will be created and a profile showing the elevation along the route.
 
 <figure style="width:%100;text-align: center;">
@@ -390,12 +375,10 @@ In the end, you will get a “route.json” file and a “profile.json” file.
 
 ### 3.2. Create the Sequence Diagram by considering the previously interactions
 
-[(⤒)](#Table-of-Contents)
 - [ ] Reconsider the steps that you handled in the previous section and prepare a UML Sequence Diagram with PlantUML or Draw.io tools.
 
 ### 3.3. Request the UML Sequence Diagram from an AI Chatbot
 
-[(⤒)](#Table-of-Contents)
 - [ ] Describe the interaction with all of it's details to any AI Chatbot and request a PlantUML/Mermaid based UML Sequence Diagram.
 
 <blockquote>TIP: For the Mermaid based texts, you can use the <a href="https://mermaid.live" target="_blank">"mermaid.live"</a> online tool for rendering the diagram.</blockquote>
@@ -404,4 +387,3 @@ In the end, you will get a “route.json” file and a “profile.json” file.
   - What are the differences?
   - Which one seems much more correct?
 
-<div style="page-break-after: always;"></div>
