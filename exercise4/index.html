@@ -953,7 +953,7 @@ GetStyles
 <a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
 <a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">Image</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre></div>
-<p><img alt="leaflet00" src="images/exr4/output_23_0.jpg" /></p>
+<p><img alt="leaflet00" src="../images/exr4/output_23_0.jpg" /></p>
 <h3 id="12-add-a-wms-layer-to-jupyter-notebook-using-ipyleaflet">1.2) Add a WMS layer to Jupyter Notebook using ipyLeaflet</h3>
 <p>As you may know that leaflet is well known and simple-to-use web map library based on JavaScript. However, leaflet has also a widget implementation with Python Notebook which lets users to visualize their leaflet maps in notebook documents. To start using ipyleaflet, type <code>pip install ipyleaflet</code> in your python environment or follow the instructions to install ipyleaflet which are available in <a href="https://ipyleaflet.readthedocs.io/en/latest/installation/index.html">this website</a>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span>
@@ -962,7 +962,7 @@ GetStyles
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
 <a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">display</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
 </code></pre></div>
-<p><img alt="leaflet01" src="images/exr4/leaflet_01.png" />
+<p><img alt="leaflet01" src="../images/exr4/leaflet_01.png" />
 <em>Screenshot taken on Jupyter Notebook</em></p>
 <p>You can change the basemap by importing "basemaps" class into your code.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">basemaps</span>
@@ -998,7 +998,7 @@ GetStyles
 <a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="nb">map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">wms</span><span class="p">)</span>
 <a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="nb">map</span>
 </code></pre></div>
-<p><img alt="leaflet03" src="images/exr4/leaflet_03.png" />
+<p><img alt="leaflet03" src="../images/exr4/leaflet_03.png" />
 <em>Screenshot taken on Jupyter Notebook</em></p>
 <p>Alternatively, you can call any WMS parameter including URL from the former OWSLib object.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">53.547668</span><span class="p">,</span> <span class="mf">9.985685</span><span class="p">)</span>
@@ -1020,7 +1020,7 @@ GetStyles
 <a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="nb">map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">wms</span><span class="p">)</span>
 <a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="nb">map</span>
 </code></pre></div>
-<p><img alt="leaflet04" src="images/exr4/leaflet_04.png" />
+<p><img alt="leaflet04" src="../images/exr4/leaflet_04.png" />
 <em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>ipyLeaflet allows users to create some interactions on their notebooks. Incidentally, it should be noted that these interactions may be less than using the leaflet library in pure JavaScript. Here is one of the posssible interaction of ipyleaflet package, which is clearly described in the <a href="https://ipyleaflet.readthedocs.io/en/latest/controls/split_map_control.html">documentation page</a>.</li>
@@ -1050,7 +1050,7 @@ GetStyles
 <a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>
 <a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="n">m</span>
 </code></pre></div>
-<p><img alt="leaflet05" src="images/exr4/leaflet_05.png" />
+<p><img alt="leaflet05" src="../images/exr4/leaflet_05.png" />
 <em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>You might be wondering what happens to the console (or terminal window) after running the leaflet widget. The console is still there. All you need to show it again is to enable the console by going to View &gt; Show Log Console in the python notebook window.</li>
@@ -1084,7 +1084,7 @@ GetStyles
 <a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="nb">map</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">wms</span><span class="p">)</span>
 <a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a><span class="n">display</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
 </code></pre></div>
-<p><img alt="leaflet06" src="images/exr4/leaflet_06.png" />
+<p><img alt="leaflet06" src="../images/exr4/leaflet_06.png" />
 <em>Screenshot taken on Jupyter Notebook</em></p>
 <ul>
 <li>If you are interested in visualizing a 2D/3D map in a python notebook, ipyleaflet can be considered a good starting point in terms of learning curve. However, there are many different alternative python libraries that support 2D/3D geographic data visualization in python notebooks or in a python framework (Flask, Django etc). Take a glance over these libraries, if you want:</li>
