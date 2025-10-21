@@ -22,7 +22,7 @@
     
     
       
-        <title>Exercise 1 (Distributed Sys.) - dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)</title>
+        <title>Distributed Systems - dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercise 1 (Distributed Sys.)
+              Distributed Systems
             
           </span>
         </div>
@@ -236,6 +236,42 @@
     
   
   
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercise 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Exercise 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -248,7 +284,7 @@
           
   
   <span class="md-ellipsis">
-    Exercise 1 (Distributed Sys.)
+    Distributed Systems
   </span>
   
 
@@ -259,7 +295,7 @@
         
   
   <span class="md-ellipsis">
-    Exercise 1 (Distributed Sys.)
+    Distributed Systems
   </span>
   
 
@@ -449,9 +485,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -460,11 +497,19 @@
         
   
   <span class="md-ellipsis">
-    Bonus Exercise (Docker Usage)
+    Docker Usage (Bonus)
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -540,9 +585,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -553,8 +598,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Exercise 5 (Virtualization)
           </label>
@@ -659,9 +704,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -672,8 +717,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Virtual Env. Installation
           </label>
@@ -954,8 +999,9 @@
 <h1 id="exercise-distributed-systems-system-arcihtectures">Exercise - Distributed Systems &amp; System Arcihtectures</h1>
 <p><img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
 <blockquote>
-Munich Technical University || Chair of Geoinformatics </br></br>
-Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+Munich Technical University / Chair of Geoinformatics <br> 
+Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+murat.kendir@tum.de
 </blockquote>
 
 <div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
@@ -987,24 +1033,24 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">iplantuml</span>
 </code></pre></div>
 <h2 id="0-aim-of-the-exercise">0. Aim of the Exercise</h2>
-<p><a href="#Table-of-Contents">(⤒)</a>
-This exercise primarily focuses on creating UML Sequence Diagrams and understanding the importance of technically diagramming interactions between distributed systems. You will practice using diagramming tools and encounter spatial web applications to understand the mechanisms working in the background. In general, you will need to complete the following tasks:</p>
+<p>This exercise primarily focuses on creating UML Sequence Diagrams and understanding the importance of technically diagramming interactions between distributed systems. You will practice using diagramming tools and encounter spatial web applications to understand the mechanisms working in the background. In general, you will need to complete the following tasks:</p>
 <ul>
 <li>Select a specific interaction on any of the given websites and try to understand the interactions between the user interface and the back-end applications/services using <strong>developer tools</strong> of the browsers. (Chapter 2)</li>
 <li>Try to visualize the selected interaction using <strong>PlantUML</strong> or (alternatively) <strong>Draw.io</strong>, following UML Sequence Diagram rules. (Chapter 3)</li>
 </ul>
 <p>You can refer to the following resources when needed:</p>
 <h3 id="01-general-preparation">0.1 General Preparation</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
-- [ ] Check the General Principles of the UML Sequence Diagrams (on Moodle, 1. Week, "01-System Architectures" presentation, "UML Sequence Diagrams" section)
-- [ ] <a href="https://guides.visual-paradigm.com/creating-sequence-diagrams-in-uml-a-comprehensive-tutorial/" target="_blank">Visual Paradigm - UML Tutorial</a>
-- [ ] <a href="https://firefox-source-docs.mozilla.org/devtools-user/" target="_blank">Firefox DevTools User Docs</a></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Check the General Principles of the UML Sequence Diagrams (on Moodle, 1. Week, "01-System Architectures" presentation, "UML Sequence Diagrams" section)</li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://guides.visual-paradigm.com/creating-sequence-diagrams-in-uml-a-comprehensive-tutorial/" target="_blank">Visual Paradigm - UML Tutorial</a></li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://firefox-source-docs.mozilla.org/devtools-user/" target="_blank">Firefox DevTools User Docs</a></li>
+</ul>
 <h3 id="02-cheatsheets">0.2 Cheatsheets</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
-- [ ] <a href="https://pdf.plantuml.net/1.2020.22/PlantUML_Language_Reference_Guide_en.pdf" target="_blank">PlantUML Language Reference Guide</a>
-- [ ] <a href="https://youtu.be/2CC0fugc_2o?si=5tYM7X7NVzBOE-FH" target="_blank">Understand Browser Dev Tools Network Tab - Video Tutorial</a></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> <a href="https://pdf.plantuml.net/1.2020.22/PlantUML_Language_Reference_Guide_en.pdf" target="_blank">PlantUML Language Reference Guide</a></li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://youtu.be/2CC0fugc_2o?si=5tYM7X7NVzBOE-FH" target="_blank">Understand Browser Dev Tools Network Tab - Video Tutorial</a></li>
+</ul>
 <h2 id="1-technical-diagrams-and-uml">1. Technical Diagrams and UML</h2>
-<p><a href="#Table-of-Contents">(⤒)</a></p>
 <blockquote>
 Technical diagrams are a visually rich way of expressing the procedures, workflows, plans, data models or scenarios in various domains. A Unified Modeling Language (UML) diagram is a standardized visual representation used to model and design software systems. It provides a blueprint of the system’s structure and behavior, helping developers, analysts, and stakeholders understand, communicate, and document software architecture and processes.
 </blockquote>
@@ -1069,13 +1115,8 @@ Technical diagrams are a visually rich way of expressing the procedures, workflo
 </tr>
 </tbody>
 </table>
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
-
 <h3 id="11-how-to-draw-a-sequence-diagram-using-plantuml">1.1. How to draw a Sequence Diagram using PlantUML</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
-PlantUML is an open-source tool that lets you create UML and many other technical diagrams from plain-text source code instead of dragging shapes on a canvas.</p>
+<p>PlantUML is an open-source tool that lets you create UML and many other technical diagrams from plain-text source code instead of dragging shapes on a canvas.</p>
 <p>There are also alternatives to text-based diagramming tools such as PlantUML, including Mermaid, ZenUML, etc.</p>
 <p>In this exercise, we will focus on using PlantUML, but you can also use different diagramming tools to visualize your diagrams according to your own purposes.</p>
 <p>There are multiple ways of rendering PlantUML diagrams:
@@ -1086,14 +1127,20 @@ PlantUML is an open-source tool that lets you create UML and many other technica
   - After the list of the plugins appear, search for "PlantUMLDiagrams" and press on it.
   - After the plugin installation finished, press again \&lt;Ctrl&gt;+\&lt;Shift&gt;+\&lt;P&gt; buttons and search for "Generate Diagrams for Active View"
   - NOTE: You have to have a "PlantUML file" with the correct notation and file extension (.puml or .pu)
+- [ ] In the code editor <strong>Visual Studio Code</strong>, there is a very popular extension called \"<strong>PlantUML</strong>\".
+  - To install this extension, press \&lt;Ctrl&gt;+\&lt;Shift&gt;+\&lt;X&gt; to open the Extensions view.
+  - After the Extensions sidebar appears, search for \"PlantUML\" in the search box.
+  - Find the official extension (usually the first one, by Jebbs) from the list and click the blue \"Install\" button.
+  - After the extension has finished installing, open your file that contains PlantUML code.
+  - To generate a preview of your diagram, press the shortcut keys \&lt;Alt&gt;+\&lt;D&gt;.
+  - (Optional) Alternatively, you can press \&lt;Ctrl&gt;+\&lt;Shift&gt;+\&lt;P&gt; to open the Command Palette, then search for \"PlantUML: Preview Current Diagram\" and press Enter.
 - [ ] In Jupyter Lab (You can run it via Anaconda), there is an interactive PlantUML library called "iplantuml" (Optional)
   - Type "pip install iplantuml" in the running jupyter notebook.
   - Create an empty code cell and enter "import iplantuml"
   - Create an additional code cell and start to typing your plantuml text starting with "%%plantuml".
   - After running both of the cells, you can visualize the plantuml diagram</p>
 <h4 id="111-sample-plantuml-code">1.1.1. Sample PlantUML Code</h4>
-<p><a href="#Table-of-Contents">(⤒)</a>
-You can use the following code as an example to test the tools described in the previous section.</p>
+<p>You can use the following code as an example to test the tools described in the previous section.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">%%</span><span class="n">plantuml</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nd">@startuml</span>
@@ -1108,12 +1155,11 @@ You can use the following code as an example to test the tools described in the 
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">Deactivate</span> <span class="n">Bob</span>
 <a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="nd">@enduml</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing output for /home/murat/gitpot/dist-gis-exercises/040c7242-5471-4432-b002-73e13d658a32.uml to 040c7242-5471-4432-b002-73e13d658a32.svg
+<div class="highlight"><pre><span></span><code>Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/550589d4-9c76-4585-bb28-b01cceb48aed.uml to 550589d4-9c76-4585-bb28-b01cceb48aed.svg
 </code></pre></div>
 <p><img alt="svg" src="../output_8_1.svg" /></p>
 <h3 id="12-how-to-draw-a-sequence-diagram-using-drawio-optional">1.2. How to draw a sequence Diagram using Draw.io? - Optional</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
-You can create UML diagram on <a href="https://app.diagrams.net/">Diagrams Net</a></p>
+<p>You can create UML diagram on <a href="https://app.diagrams.net/">Diagrams Net</a></p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Choose the location where you want to save your diagram. We suggest saving it in your local device, thus you don’t need to log in or register an account.
 You can start drawing by creating a blank diagram.</li>
@@ -1135,22 +1181,22 @@ You can start drawing by creating a blank diagram.</li>
 <p>Tip: In the application you can use the shapes named “Actor”, “Lifeline”, “Activation Bar”, “Self Call”, “Message” and “Return”. If you have forgotten the notations of the UML sequence diagram, check the slides 31-39  of the presentation “01 – System architectures”. </p>
 </blockquote>
 <h2 id="2-thin-client-fat-client-architectures-in-the-web-applications">2. Thin-Client &amp; Fat-Client Architectures in the Web Applications</h2>
-<p><a href="#Table-of-Contents">(⤒)</a>
-In this step,  we will learn how to observe some interactions on different web sites using “web developer tools” (in Firefox) or “Developer Tools” (Chrome). We will discuss which interactions are based on a Fat-Client or Thin-Client architecture in relation to our observations (Relevant Presentation: 01 - System Architectures / page 17).</p>
+<p>In this step,  we will learn how to observe some interactions on different web sites using “web developer tools” (in Firefox) or “Developer Tools” (Chrome). We will discuss which interactions are based on a Fat-Client or Thin-Client architecture in relation to our observations (Relevant Presentation: 01 - System Architectures / page 17).</p>
 <h3 id="21-preparation-for-the-next-discussion-about-tiers-web-developer-tool-developer-tool">2.1. Preparation for the Next Discussion about Tiers - Web Developer Tool / Developer Tool</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
- - Open Firefox or Google Chrome web browser.
- - Simply navigate to the relevant page shown in the next topic ( <a href="https://ds.iris.edu/seismon/index.phtml">IRIS Seismic Monitor</a> ) or go to a random web site.
- - Press Ctrl + Shift + C buttons together or Ctrl + Shift + I / Alternatively, you can navigate from menu:
- - For Firefox: Menu &gt; More Tools &gt; Web Developer Tool
- - For Chrome: Menu &gt; More Tools &gt; Developer Tool
- - Navigate to the Network tab and press reload button. / Alternatively, you can press F5 key for refreshing the page. (If you want to refresh the web page by clearing the cache, press Ctrl + F5)
- - Enable “Disable Cache” by checking the box.
- - Observe at a quick glance which files have been successfully downloaded and which have not. Download status is exposed as “status codes” in the first column of the Network tab. If you want to learn more about status codes, visit the page: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP Status Codes</a> or search for “HTTP status codes”
- - Right-click on the column headers in the Network Pane and enable the Start Time, End Time, Response Time and Duration columns. All these temporal attributes will be visualized in the Timeline (called Waterfall in the Chrome browser) section in the Network Pane. (The same attributes are available in the Waterfall column in the Chrome browser. If you cannot see the Waterfall column, right-click on one of the column headers and enable it).
- - It is now possible to see loaded resources in ascending or descending time order. This is very useful for detecting the latest loaded resources on a web page.
- - Simply click on a row to view methods for these resources (GET/POST or DELETE) and header attributes (such as MIME types, and charset).
- - You can use the “Raw” switch to see raw data in the Response tab.</p>
+<ul>
+<li>Open Firefox or Google Chrome web browser.</li>
+<li>Simply navigate to the relevant page shown in the next topic ( <a href="https://ds.iris.edu/seismon/index.phtml">IRIS Seismic Monitor</a> ) or go to a random web site.</li>
+<li>Press Ctrl + Shift + C buttons together or Ctrl + Shift + I / Alternatively, you can navigate from menu:</li>
+<li>For Firefox: Menu &gt; More Tools &gt; Web Developer Tool</li>
+<li>For Chrome: Menu &gt; More Tools &gt; Developer Tool</li>
+<li>Navigate to the Network tab and press reload button. / Alternatively, you can press F5 key for refreshing the page. (If you want to refresh the web page by clearing the cache, press Ctrl + F5)</li>
+<li>Enable “Disable Cache” by checking the box.</li>
+<li>Observe at a quick glance which files have been successfully downloaded and which have not. Download status is exposed as “status codes” in the first column of the Network tab. If you want to learn more about status codes, visit the page: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP Status Codes</a> or search for “HTTP status codes”</li>
+<li>Right-click on the column headers in the Network Pane and enable the Start Time, End Time, Response Time and Duration columns. All these temporal attributes will be visualized in the Timeline (called Waterfall in the Chrome browser) section in the Network Pane. (The same attributes are available in the Waterfall column in the Chrome browser. If you cannot see the Waterfall column, right-click on one of the column headers and enable it).</li>
+<li>It is now possible to see loaded resources in ascending or descending time order. This is very useful for detecting the latest loaded resources on a web page.</li>
+<li>Simply click on a row to view methods for these resources (GET/POST or DELETE) and header attributes (such as MIME types, and charset).</li>
+<li>You can use the “Raw” switch to see raw data in the Response tab.</li>
+</ul>
 <p>On Chrome: Clear panel, filter requests by requested data type.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr1/chrome_filter_requests.png" alt="Chrome Filter Requests" style="border:3px solid darkgray">
@@ -1182,13 +1228,11 @@ In this step,  we will learn how to observe some interactions on different web s
 </figure>
 
 <h3 id="22-discussion-about-the-tiers-in-layered-architectures">2.2. Discussion about the Tiers in Layered Architectures</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
-Examine the following web sites by using the “Web Developer Tools” / “Developer Tools” as described above and try to answer questions:
+<p>Examine the following web sites by using the “Web Developer Tools” / “Developer Tools” as described above and try to answer questions:
 - A) What kind of tiers might the web applications have? (Application-Interface, Application, Data)
 - B) Are the parts/files represented on the web app downloaded automatically or is the download triggered by an interaction?
 - C) Is the web site in Thin-Client Architecture or Fat-Client Architecture?</p>
 <h4 id="221-seismic-monitor-iris">2.2.1. Seismic Monitor - IRIS</h4>
-<p><a href="#Table-of-Contents">(⤒)</a></p>
 <p><a href="https://ds.iris.edu/seismon/index.phtml">https://ds.iris.edu/seismon/index.phtml</a></p>
 <ul>
 <li>1) Do the HTML, CSS and image files represent the application interface?</li>
@@ -1208,15 +1252,14 @@ Examine the following web sites by using the “Web Developer Tools” / “Deve
 
 <p>This website is a very old but working example of a web mapping application. It is a good example of a "thin client" architecture as data is always downloaded from the server by requests.</p>
 <h4 id="222-geoportal-bayern">2.2.2. Geoportal Bayern</h4>
-<p><a href="#Table-of-Contents">(⤒)</a></p>
 <p><a href="https://geoportal.bayern.de/bayernatlas">https://geoportal.bayern.de/bayernatlas</a></p>
-<p>In the bottom right corner, select the base map to be loaded on the screen.</p>
+<p>In the home page, select the base map to be loaded on the screen.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr1/bayernatlas_basemap.png" alt="BayernAtlas Basemap" style="border:3px solid darkgray">
   <figcaption>BayernAtlas - Basemap Selection</figcaption>
 </figure>
 
-<p>To load bike paths (Radwege), a cycling map, activate the Hiking and cycling trails layers (Freizeit in Bayern &gt; Wander- und Radwege &gt; Radwege). Once activated, you will see a green network on the map.</p>
+<p>To load bike paths (Radwege), a cycling map, activate the Hiking and cycling trails layers (Home page:Themen&gt; Sport- und Freizeit &gt; Wander- und Radwege&gt; Radwege). Once activated, you will see a green network on the map.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr1/bayernatlas_overlay.png" alt="BayernAtlas Overlay" style="border:3px solid darkgray">
   <figcaption>BayernAtlas - Overlay</figcaption>
@@ -1236,7 +1279,6 @@ Open Web Developer Tool, refresh the page, you will see a list of requests with 
 </figure>
 
 <h4 id="223-turf-js-advanced-geospatial-analysis-for-browsers">2.2.3. TURF JS - Advanced geospatial analysis for browsers</h4>
-<p><a href="#Table-of-Contents">(⤒)</a></p>
 <p><a href="https://turfjs.org/">https://turfjs.org/</a></p>
 <p>TurfJS is a JavaScript library that supports dealing with geospatial datasets in browsers and manipulating them using some spatial functions. It usually loads JS packages into the browser in compressed or linearized format like the other JS libraries.</p>
 <blockquote>
@@ -1259,18 +1301,14 @@ Open Web Developer Tool, refresh the page, you will see a list of requests with 
   <figcaption>TurfJS - Zoom In / Out</figcaption>
 </figure>
 
-<div style="page-break-after: always;"></div>
-
 <h2 id="3-creating-a-sequence-diagram-using-a-sample-request-response-example">3. Creating a Sequence Diagram using a Sample Request – Response Example</h2>
-<p><a href="#Table-of-Contents">(⤒)</a>
-In this step, you will observe an interaction that takes place in the BayernAtlas web app. This interaction is a simple routing / navigation application that provides a route for specified leisure activity.
+<p>In this step, you will observe an interaction that takes place in the BayernAtlas web app. This interaction is a simple routing / navigation application that provides a route for specified leisure activity.
 You will then create a sequence diagram taking into account this interaction and possible web services working in the background.</p>
 <blockquote>
 <p>Note: Do not consider timings (start time, duration etc.) of the requests.</p>
 </blockquote>
 <h3 id="31-review-the-requests-and-responses-before-and-after-creating-a-route-for-mountain-bikes-in-the-bayernatlas-web-app">3.1. Review the requests and responses before and after creating a route for mountain bikes in the BayernAtlas web app</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
-Choose a routing mode. Such as “hiking” (wandern)  as shown in the first icon. Select the start point and end point on the map, a route will be created and a profile showing the elevation along the route.</p>
+<p>Choose a routing mode. Such as “hiking” (wandern)  as shown in the first icon. Select the start point and end point on the map, a route will be created and a profile showing the elevation along the route.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/exr1/bayernatlas_routing.png" alt="bayernatlas_routing" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Routing (Interaction)</figcaption>
@@ -1316,11 +1354,13 @@ Let’s assume we need these JSON data for another purposes. But unlike image fi
 
 <p>In the end, you will get a “route.json” file and a “profile.json” file.</p>
 <h3 id="32-create-the-sequence-diagram-by-considering-the-previously-interactions">3.2. Create the Sequence Diagram by considering the previously interactions</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
-- [ ] Reconsider the steps that you handled in the previous section and prepare a UML Sequence Diagram with PlantUML or Draw.io tools.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Reconsider the steps that you handled in the previous section and prepare a UML Sequence Diagram with PlantUML or Draw.io tools.</li>
+</ul>
 <h3 id="33-request-the-uml-sequence-diagram-from-an-ai-chatbot">3.3. Request the UML Sequence Diagram from an AI Chatbot</h3>
-<p><a href="#Table-of-Contents">(⤒)</a>
-- [ ] Describe the interaction with all of it's details to any AI Chatbot and request a PlantUML/Mermaid based UML Sequence Diagram.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Describe the interaction with all of it's details to any AI Chatbot and request a PlantUML/Mermaid based UML Sequence Diagram.</li>
+</ul>
 <blockquote>TIP: For the Mermaid based texts, you can use the <a href="https://mermaid.live" target="_blank">"mermaid.live"</a> online tool for rendering the diagram.</blockquote>
 
 <ul class="task-list">
@@ -1328,7 +1368,6 @@ Let’s assume we need these JSON data for another purposes. But unlike image fi
 <li>What are the differences?</li>
 <li>Which one seems much more correct?</li>
 </ul>
-<div style="page-break-after: always;"></div>
 
 
 
