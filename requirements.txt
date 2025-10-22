@@ -6,6 +6,7 @@ asttokens==3.0.0
 async-lru==2.0.4
 attrs==24.3.0
 babel==2.16.0
+backrefs==5.9
 beautifulsoup4==4.12.3
 bleach==6.2.0
 branca==0.8.1
@@ -13,6 +14,7 @@ certifi==2024.12.14
 cffi==1.17.1
 charset-normalizer==3.4.0
 click==8.3.0
+colorama==0.4.6
 comm==0.2.2
 debugpy==1.8.11
 decorator==5.1.1
@@ -58,6 +60,8 @@ mergedeep==1.3.4
 mistune==3.0.2
 mkdocs==1.6.1
 mkdocs-get-deps==0.2.0
+mkdocs-material==9.6.22
+mkdocs-material-extensions==1.3.1
 nbclient==0.10.2
 nbconvert==7.16.4
 nbformat==5.10.4
@@ -67,6 +71,7 @@ notebook_shim==0.2.4
 overrides==7.7.0
 OWSLib==0.32.0
 packaging==24.2
+paginate==0.5.7
 pandocfilters==1.5.1
 parso==0.8.4
 pathspec==0.12.1
@@ -85,6 +90,11 @@ pyee==12.0.0
 Pygments==2.18.0
 pymdown-extensions==10.16.1
 pyproj==3.7.0
+PyQt5==5.15.11
+PyQt5-Qt5==5.15.17
+PyQt5_sip==12.17.1
+PyQtWebEngine==5.15.7
+PyQtWebEngine-Qt5==5.15.17
 python-dateutil==2.9.0.post0
 python-json-logger==3.2.1
 PyYAML==6.0.2
