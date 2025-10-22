@@ -13,8 +13,8 @@ murat.kendir@tum.de
 ## Table of Contents
 
 - [0. Aim of the Exercise](#0-aim-of-the-exercise)
-  - [0.1 General Preparation](#01-general-preparation)
-  - [0.2 Cheatsheets](#02-cheatsheets)
+   - [0.1 General Preparation](#01-general-preparation)
+   - [0.2 Cheatsheets](#02-cheatsheets)
 - [1. Technical Diagrams and UML](#1-technical-diagrams-and-uml)
   - [1.1. How to draw a Sequence Diagram using PlantUML](#11-how-to-draw-a-sequence-diagram-using-plantuml)
     - [1.1.1. Sample PlantUML Code](#111-sample-plantuml-code)

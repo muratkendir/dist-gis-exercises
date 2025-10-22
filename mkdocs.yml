@@ -23,6 +23,8 @@ nav:
     - "Linux w PIP": install_w_pip_on_lnx.md
   - "Sample OGC Services": ogc_services_samples.md
 theme: material
+extra_css:
+  - extra_style.css
 markdown_extensions:
   - pymdownx.critic
   - pymdownx.caret
