@@ -15,6 +15,7 @@ murat.kendir@tum.de
     - [0.1. General Preparation](#01-general-preparation)
     - [0.2. Cheatsheets](#02-cheatsheets)
     - [0.3. Play With Docker](#03-play-with-docker)
+    - [0.4. Why do we use Docker?](#04-why-do-we-use-docker)
 - [1. First Practice on the Local Machine with Docker](#1-first-practice-on-the-local-machine-with-docker)
     - [1.1. Docker Desktop Installation on Windows systems - Optional](#11-docker-desktop-installation-on-windows-systems-optional)
     - [1.2. Running Docker Container as an Instance](#12-running-docker-container-as-an-instance)
@@ -65,6 +66,20 @@ Open the following website:
   <img src="../images/exr5/1100_play_docker.png" alt="Play with Docker" style="border:3px solid darkgray">
   <figcaption>Play with Docker web site</figcaption>
 </figure>
+
+## 0.4 Why do we use Docker?
+
+To explain why we use virtualization tools such as Docker, we need to summarize the difficulties encountered in any programming process:
+
+- A program script prepared in any programming language may depend on multiple libraries. It is important to know which version of which library is compatible with the main program. Incorrect versions of libraries can prevent the main program from running.
+- Codes prepared in programming languages do not run directly in machine code. They must be compiled to run in machine code. It is important to know on which hardware and operating system this compilation process is performed. Software compiled in one system configuration may not work in another configuration.
+- Running a program designed for server architecture can consume a lot of unnecessary resources. For example, the CPU processing power you allocate to run a single program when requested by clients remains idle when there are no requests for the same program.
+
+In this case, taking advantage of virtualization tools such as Docker provides us with the following opportunities in programming and system architecture tasks:
+
+- System requirements are met directly on pre-configured virtual machines. The main program can be run directly along with dependent libraries.
+- Since the main program is compiled for virtual machines, these compiled and optimized configurations can be run directly on any other system.
+- Since virtualization tools (with Hypervisor support) operate on the principle of sharing system resources, software requirements can be distributed as needed. This results in a more efficient and environmentally friendly architecture. 
 
 
 ## 1. First Practice on the Local Machine with Docker
