@@ -8,10 +8,12 @@ exclude_docs: |
 nav:
   - Home: index.md
   - "Exercise 1" :
-    - "Distributed Systems" : exercise1.md
-    - "Docker Usage (Bonus)" : exercise1-bns.md
-  - "Exercise 2 (Python Intro)": exercise2.md
-  - "Exercise 3 (SDIs)": exercise3.md
+    - "Distributed Systems" : distributed_systems.md
+    - "Docker Usage (Bonus)" : docker_usage.md
+  - "Exercise 2" :
+    - "Introduction to Python" : intro_python.md
+    - "Spatial Data Infrastructures" : sdis.md
+    - "Networks & Internet (Bonus)" : networks_internet.md
   - "Exercise 4 (Web Map)": exercise4.md
   - "Exercise 5 (Virtualization)": 
     - "Preparation for Exercise 5": exercise5_preparation.md

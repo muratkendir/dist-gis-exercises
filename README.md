@@ -13,8 +13,8 @@ Contact: murat.kendir(at)tum.de
 
 ## Exercises
 
-- [Exercise 1 (Distributed Systems, Computer Networks & Internet)](docs/exercise1.md)
-  - [Bonus Exercise (Docker Usage)](docs/exercise1-bns.md)
+- [Exercise 1 (Distributed Systems, Computer Networks & Internet)](docs/distributed_systems.md)
+  - [Bonus Exercise (Docker Usage)](docs/docker_usage.md)
 - [Exercise 2 (Introduction to Python with Samples)](docs/exercise2.md)
 - [Exercise 3 (Spatial Data Infrastructures)](docs/exercise3.md)
 - [Exercise 4 (Web Mapping in 2D / 3D)](docs/exercise4.md)

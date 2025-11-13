@@ -1,0 +1,2336 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"out",
+				"output_folder"
+			],
+			[
+				"objec",
+				"objectclasses"
+			],
+			[
+				"Si",
+				"SimpleQueryBlock"
+			],
+			[
+				"join",
+				"join_type"
+			],
+			[
+				"where",
+				"where_part"
+			],
+			[
+				"from",
+				"from_part"
+			],
+			[
+				"s",
+				"selection_part"
+			],
+			[
+				"ra",
+				"range_alias"
+			],
+			[
+				"inn",
+				"inner_query_block"
+			],
+			[
+				"inner_query",
+				"inner_query_block"
+			],
+			[
+				"gr",
+				"group_elements"
+			],
+			[
+				"se",
+				"select_elements"
+			],
+			[
+				"q",
+				"query_blocks"
+			],
+			[
+				"type",
+				"type_of_effect"
+			],
+			[
+				"t",
+				"type_of_effects"
+			],
+			[
+				"pg_",
+				"pg_establish"
+			],
+			[
+				"advise_",
+				"advise_file"
+			],
+			[
+				"strip",
+				"strip_namespace"
+			],
+			[
+				"file_",
+				"file_extension"
+			],
+			[
+				"list_",
+				"list_toplevel_entities"
+			],
+			[
+				"replace",
+				"replacement_string"
+			],
+			[
+				"full",
+				"full_path"
+			],
+			[
+				"X",
+				"XChildEntity"
+			],
+			[
+				"chil",
+				"child_entity"
+			],
+			[
+				"filte",
+				"filtered_file_list"
+			],
+			[
+				"get",
+				"get_configuration"
+			],
+			[
+				"POSTGRES",
+				"POSTGRES_PASSWORD"
+			],
+			[
+				"a",
+				"assertTrue"
+			],
+			[
+				"assert",
+				"assertTrue"
+			],
+			[
+				"con",
+				"buildingConstructiveElement"
+			],
+			[
+				"Buil",
+				"BuildingConstructiveElement"
+			],
+			[
+				"TE",
+				"textarea"
+			],
+			[
+				"ac",
+				"action"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "mkdocs.yml",
+			"settings":
+			{
+				"buffer_size": 1377,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					10,
+					1,
+					"",
+					null,
+					"AQAAAGMBAAAAAAAAeQEAAAAAAAAMAAAAZXhlcmNpc2UxLm1k",
+					"AQAAAAAAAAABAAAAbwEAAAAAAABjAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"",
+					null,
+					"AQAAAJkBAAAAAAAApQEAAAAAAAANAAAAZXhlcmNpc2UxLWJucw",
+					"AQAAAAAAAAABAAAApgEAAAAAAACZAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 1310,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"",
+					null,
+					"AQAAAMkBAAAAAAAA3wEAAAAAAAAMAAAAZXhlcmNpc2UxLm1k",
+					"AQAAAAAAAAABAAAA1QEAAAAAAADJAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"",
+					null,
+					"AQAAAAoCAAAAAAAAFgIAAAAAAAANAAAAZXhlcmNpc2UxLWJucw",
+					"AQAAAAAAAAABAAAAFwIAAAAAAAAKAgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "docs/index.md",
+			"settings":
+			{
+				"buffer_size": 1475,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"",
+					null,
+					"AQAAAPoBAAAAAAAAEAIAAAAAAAAMAAAAZXhlcmNpc2UxLm1k",
+					"AQAAAAAAAAABAAAABgIAAAAAAAD6AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"",
+					null,
+					"AQAAADYCAAAAAAAAQgIAAAAAAAAJAAAAZXhlcmNpc2Ux",
+					"AQAAAAAAAAABAAAANgIAAAAAAAA/AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEICAAAAAAAAQgIAAAAAAAAEAAAALWJucw",
+					"AQAAAAAAAAABAAAAQgIAAAAAAABGAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAALQAAAAAAAAAtQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtAAAAAAAAAC0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					2,
+					"left_delete",
+					null,
+					"AgAAALQAAAAAAAAAtAAAAAAAAAABAAAACrMAAAAAAAAAswAAAAAAAAABAAAAZQ",
+					"AQAAAAAAAAABAAAAtQAAAAAAAAC1AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAALMAAAAAAAAAtAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAswAAAAAAAACzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					40,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAANoAAAAAAAAA2wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2gAAAAAAAADaAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					41,
+					1,
+					"insert",
+					{
+						"characters": " Felix"
+					},
+					"BgAAANsAAAAAAAAA3AAAAAAAAAAAAAAA3AAAAAAAAADdAAAAAAAAAAAAAADdAAAAAAAAAN4AAAAAAAAAAAAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOEAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2wAAAAAAAADbAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					42,
+					7,
+					"left_delete",
+					null,
+					"BwAAAOAAAAAAAAAA4AAAAAAAAAABAAAAeN8AAAAAAAAA3wAAAAAAAAABAAAAad4AAAAAAAAA3gAAAAAAAAABAAAAbN0AAAAAAAAA3QAAAAAAAAABAAAAZdwAAAAAAAAA3AAAAAAAAAABAAAARtsAAAAAAAAA2wAAAAAAAAABAAAAINoAAAAAAAAA2gAAAAAAAAABAAAALA",
+					"AQAAAAAAAAABAAAA4QAAAAAAAADhAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "113-how-to-reveal-an-ip-address-of-a-web-source",
+			"settings":
+			{
+				"buffer_size": 47,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					2,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAkAEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					3,
+					1,
+					"pretty_json",
+					null,
+					"AQAAAAAAAAAAAAAAxgEAAAAAAACQAQAAeyJpcF9hZGRyIjoiMjAwMTo0Y2EwOjI1MGE6MDplYjhjOjQ1YjphYzk5OjczY2UiLCJ1c2VyX2FnZW50IjoiTW96aWxsYS81LjAgKFgxMTsgVWJ1bnR1OyBMaW51eCB4ODZfNjQ7IHJ2OjE0NC4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzE0NC4wIiwicG9ydCI6IjQ5NTY2IiwibWV0aG9kIjoiR0VUIiwiZW5jb2RpbmciOiJnemlwLCBkZWZsYXRlLCBiciwgenN0ZCIsIm1pbWUiOiJ0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSwqLyo7cT0wLjgiLCJ2aWEiOiIxLjEgZ29vZ2xlIiwiZm9yd2FyZGVkIjoiMjAwMTo0Y2EwOjI1MGE6MDplYjhjOjQ1YjphYzk5OjczY2UsMjYwMDoxOTAxOjA6YjJiZDo6IiwibGFuZ3VhZ2UiOiJlbi1VUyxlbjtxPTAuNSJ9IA",
+					"AQAAAAAAAAABAAAAkAEAAAAAAACQAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAMgAAAAAAAADGAQAAewogICAgImlwX2FkZHIiOiAiMjAwMTo0Y2EwOjI1MGE6MDplYjhjOjQ1YjphYzk5OjczY2UiLAogICAgInVzZXJfYWdlbnQiOiAiTW96aWxsYS81LjAgKFgxMTsgVWJ1bnR1OyBMaW51eCB4ODZfNjQ7IHJ2OjE0NC4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzE0NC4wIiwKICAgICJwb3J0IjogIjQ5NTY2IiwKICAgICJtZXRob2QiOiAiR0VUIiwKICAgICJlbmNvZGluZyI6ICJnemlwLCBkZWZsYXRlLCBiciwgenN0ZCIsCiAgICAibWltZSI6ICJ0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSwqLyo7cT0wLjgiLAogICAgInZpYSI6ICIxLjEgZ29vZ2xlIiwKICAgICJmb3J3YXJkZWQiOiAiMjAwMTo0Y2EwOjI1MGE6MDplYjhjOjQ1YjphYzk5OjczY2UsMjYwMDoxOTAxOjA6YjJiZDo6IiwKICAgICJsYW5ndWFnZSI6ICJlbi1VUyxlbjtxPTAuNSIKfQ",
+					"AQAAAAAAAAABAAAAxgEAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"",
+					null,
+					"BgAAACMAAAAAAAAAJAAAAAAAAAABAAAAIBoAAAAAAAAAGwAAAAAAAAABAAAAIBgAAAAAAAAAGQAAAAAAAAABAAAAIBAAAAAAAAAAEQAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAMgAAAAAAAAAyAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAMQAAAAAAAAAxAAAAMS1FeGFtaW5pbmctdGhlLU5ldHdvcmstJi1JbnRlcm5ldC1JbmZyYXN0cnVjdHVyZQ",
+					"AQAAAAAAAAABAAAAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAMwAAAAAAAAAxAAAAMS1leGFtaW5pbmctdGhlLW5ldHdvcmstJi1pbnRlcm5ldC1pbmZyYXN0cnVjdHVyZQ",
+					"AQAAAAAAAAABAAAAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"",
+					null,
+					"CgAAACsAAAAAAAAALAAAAAAAAAABAAAAICcAAAAAAAAAKAAAAAAAAAABAAAAICUAAAAAAAAAJgAAAAAAAAABAAAAICIAAAAAAAAAIwAAAAAAAAABAAAAIBoAAAAAAAAAGwAAAAAAAAABAAAAIBcAAAAAAAAAGAAAAAAAAAABAAAAIBQAAAAAAAAAFQAAAAAAAAABAAAAIA0AAAAAAAAADgAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAMwAAAAAAAAAzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"left_delete",
+					null,
+					"AQAAADIAAAAAAAAAMgAAAAAAAAABAAAAPw",
+					"AQAAAAAAAAABAAAAMwAAAAAAAAAzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAUAAAAAAAAABQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAALwAAAAAAAAAvAAAAMTEzLUhvdy10by1yZXZlYWwtYW4tSVAtYWRkcmVzcy1vZi1hLXdlYi1zb3VyY2U",
+					"AQAAAAAAAAABAAAALwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "62-add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection",
+			"settings":
+			{
+				"buffer_size": 78,
+				"line_ending": "Unix",
+				"name": "62-add-a-geojson-data-into-the-leaflet-map-using-a"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAFgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"",
+					null,
+					"BAAAAA0AAAAAAAAADgAAAAAAAAABAAAAIAkAAAAAAAAACgAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAFgAAAAAAAAAWAAAAMC4tQWltLW9mLXRoZS1FeGVyY2lzZQ",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAGAAAAAAAAAAVAAAAMC1haW0tb2YtdGhlLWV4ZXJjaXNl",
+					"AQAAAAAAAAABAAAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"",
+					null,
+					"AgAAAAwAAAAAAAAADQAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAGAAAAAAAAAAYAAAAMC4xLi1HZW5lcmFsLVByZXBhcmF0aW9u",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAGAAAAAAAAAAYAAAAMC4xLi1nZW5lcmFsLXByZXBhcmF0aW9u",
+					"AQAAAAAAAAABAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					43,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAFwAAAAAAAAAWAAAAMDEtZ2VuZXJhbC1wcmVwYXJhdGlvbg",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"",
+					null,
+					"AwAAAA4AAAAAAAAADwAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAFwAAAAAAAAAXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAMQ",
+					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					48,
+					1,
+					"insert",
+					{
+						"characters": "1"
+					},
+					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					50,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					52,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAIAAAAAAAAAAgAAAAAAAAABAAAARg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"insert",
+					{
+						"characters": "f"
+					},
+					"AQAAAAIAAAAAAAAAAwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAWAAAAMS1maW5kaW5nLXRoZS1kYXRhc2V0cw",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"",
+					null,
+					"BQAAACAAAAAAAAAAIQAAAAAAAAABAAAAIBYAAAAAAAAAFwAAAAAAAAABAAAAIA0AAAAAAAAADgAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAJgAAAAAAAAAmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					61,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAmAAAAMi4tQ3JlYXRpbmctYS0iU2VydmljZS1TZWxlY3Rpb24tVG9vbCI",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					63,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					66,
+					1,
+					"left_delete",
+					null,
+					"AQAAAA0AAAAAAAAADQAAAAAAAAABAAAAIg",
+					"AQAAAAAAAAABAAAADgAAAAAAAAAOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					69,
+					1,
+					"left_delete",
+					null,
+					"AQAAACMAAAAAAAAAIwAAAAAAAAABAAAAIg",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAKAAAAAAAAAAjAAAAMi1jcmVhdGluZy1hLXNlcnZpY2Utc2VsZWN0aW9uLXRvb2w",
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"",
+					null,
+					"BgAAACMAAAAAAAAAJAAAAAAAAAABAAAAIB8AAAAAAAAAIAAAAAAAAAABAAAAIBwAAAAAAAAAHQAAAAAAAAABAAAAIBAAAAAAAAAAEQAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAKAAAAAAAAAAoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					78,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					81,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					84,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAmAAAAMjEtQWRkaW5nLXNvbWUtaW50ZXJhY3Rpb24tdG8tdGhlLXRvb2w",
+					"AQAAAAAAAAABAAAAJgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					90,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAANgAAAAAAAAAmAAAAMjEtYWRkaW5nLXNvbWUtaW50ZXJhY3Rpb24tdG8tdGhlLXRvb2w",
+					"AQAAAAAAAAABAAAAJgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					91,
+					1,
+					"",
+					null,
+					"CAAAAC4AAAAAAAAALwAAAAAAAAABAAAAICcAAAAAAAAAKAAAAAAAAAABAAAAIB8AAAAAAAAAIAAAAAAAAAABAAAAIBwAAAAAAAAAHQAAAAAAAAABAAAAIBQAAAAAAAAAFQAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAgAAAAAAAAACQAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAANgAAAAAAAAA2AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					94,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					97,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAIAAAAAAAAAAgAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					100,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAANAAAAAAAAAA0AAAAMjItVXNlLXRoZS1jcmVhdGVkLXByb2dyYW0taW4tYW5vdGhlci1weXRob24tcHJvZ3JhbQ",
+					"AQAAAAAAAAABAAAANAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					106,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAJQAAAAAAAAA0AAAAMjItdXNlLXRoZS1jcmVhdGVkLXByb2dyYW0taW4tYW5vdGhlci1weXRob24tcHJvZ3JhbQ",
+					"AQAAAAAAAAABAAAANAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					107,
+					1,
+					"",
+					null,
+					"AwAAABgAAAAAAAAAGQAAAAAAAAABAAAAIA0AAAAAAAAADgAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAJQAAAAAAAAAlAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					110,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					113,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					116,
+					1,
+					"left_delete",
+					null,
+					"AQAAABcAAAAAAAAAFwAAAAAAAAABAAAAKA",
+					"AQAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					119,
+					1,
+					"left_delete",
+					null,
+					"AQAAACEAAAAAAAAAIQAAAAAAAAABAAAAKQ",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					122,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAIQAAAAAAAAAiAAAAMzEtQnVpbGRpbmctRm9vdHByaW50cy1HcnVuZHN0w7xjaw",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					128,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAHgAAAAAAAAAiAAAAMzEtYnVpbGRpbmctZm9vdHByaW50cy1ncnVuZHN0w7xjaw",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					129,
+					1,
+					"",
+					null,
+					"AwAAABEAAAAAAAAAEgAAAAAAAAABAAAAIAkAAAAAAAAACgAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					134,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					137,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAIAAAAAAAAAAgAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					141,
+					1,
+					"left_delete",
+					null,
+					"AQAAABsAAAAAAAAAGwAAAAAAAAABAAAAKQ",
+					"AQAAAAAAAAABAAAAHAAAAAAAAAAcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					144,
+					1,
+					"left_delete",
+					null,
+					"AQAAABAAAAAAAAAAEAAAAAAAAAABAAAAKA",
+					"AQAAAAAAAAABAAAAEQAAAAAAAAARAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					147,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAGgAAAAAAAAAbAAAAMzItTGFuZC1QYXJjZWxzLUZsdXJzdMO8Y2tl",
+					"AQAAAAAAAAABAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					152,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAMAAAAAAAAAAbAAAAMzItbGFuZC1wYXJjZWxzLWZsdXJzdMO8Y2tl",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					153,
+					1,
+					"",
+					null,
+					"BgAAACMAAAAAAAAAJAAAAAAAAAABAAAAICEAAAAAAAAAIgAAAAAAAAABAAAAIBwAAAAAAAAAHQAAAAAAAAABAAAAIBYAAAAAAAAAFwAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAMAAAAAAAAAAwAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					154,
+					1,
+					"left_delete",
+					null,
+					"AQAAAC8AAAAAAAAALwAAAAAAAAABAAAAKQ",
+					"AQAAAAAAAAABAAAAMAAAAAAAAAAwAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					157,
+					2,
+					"left_delete",
+					null,
+					"AgAAACIAAAAAAAAAIgAAAAAAAAABAAAALyEAAAAAAAAAIQAAAAAAAAABAAAALQ",
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					160,
+					1,
+					"left_delete",
+					null,
+					"AQAAAB0AAAAAAAAAHQAAAAAAAAABAAAAKA",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					163,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					166,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					169,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAKgAAAAAAAAArAAAAMzMtRGlnaXRhbC1FbGV2YXRpb24tTW9kZWwtREVNLUjDtmhlbm1vZGVsbA",
+					"AQAAAAAAAAABAAAAKgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					174,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAFQAAAAAAAAArAAAAMzMtZGlnaXRhbC1lbGV2YXRpb24tbW9kZWwtZGVtLWjDtmhlbm1vZGVsbA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAqAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					175,
+					1,
+					"",
+					null,
+					"AwAAAA8AAAAAAAAAEAAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAFQAAAAAAAAAVAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					177,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAFQAAAAAAAAAVAAAAMy40Li1GbG9vZC1SaXNrLVpvbmVz",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAVAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					179,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					182,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					187,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAIgAAAAAAAAATAAAAMzQtZmxvb2Qtcmlzay16b25lcw",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					188,
+					1,
+					"",
+					null,
+					"BQAAABkAAAAAAAAAGgAAAAAAAAABAAAAIBUAAAAAAAAAFgAAAAAAAAABAAAAIBIAAAAAAAAAEwAAAAAAAAABAAAAIAkAAAAAAAAACgAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					191,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					194,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAIQAAAAAAAAAhAAAANC1BZGRpbmctU2VydmljZXMtdG8tR0lTLVNvZnR3YXJl",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					197,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAHAAAAAAAAAAhAAAANC1hZGRpbmctc2VydmljZXMtdG8tZ2lzLXNvZnR3YXJl",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					198,
+					1,
+					"",
+					null,
+					"BAAAABcAAAAAAAAAGAAAAAAAAAABAAAAIBQAAAAAAAAAFQAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAHAAAAAAAAAAcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					201,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					204,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					207,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAGgAAAAAAAAAaAAAANDEtQWRkaW5nLVNlcnZpY2VzLXRvLVFHSVM",
+					"AQAAAAAAAAABAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					213,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAFgAAAAAAAAAaAAAANDEtYWRkaW5nLXNlcnZpY2VzLXRvLXFnaXM",
+					"AQAAAAAAAAABAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					214,
+					1,
+					"",
+					null,
+					"AwAAAA4AAAAAAAAADwAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					217,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAUAAAAAAAAABQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					220,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					223,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					226,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAEwAAAAAAAAATAAAANDExLUFkZC1YWVotQmFzZW1hcA",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					232,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAFgAAAAAAAAATAAAANDExLWFkZC14eXotYmFzZW1hcA",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					233,
+					1,
+					"",
+					null,
+					"AwAAAA4AAAAAAAAADwAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					238,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAUAAAAAAAAABQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					243,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					246,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					250,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAEwAAAAAAAAATAAAANDEyLUFkZC1XTVMtU2VydmljZQ",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					256,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAFgAAAAAAAAATAAAANDEyLWFkZC13bXMtc2VydmljZQ",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					257,
+					1,
+					"",
+					null,
+					"AwAAAA4AAAAAAAAADwAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					262,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAUAAAAAAAAABQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					265,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					268,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					271,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAEwAAAAAAAAATAAAANDEzLUFkZC1XRlMtU2VydmljZQ",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					277,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAIgAAAAAAAAATAAAANDEzLWFkZC13ZnMtc2VydmljZQ",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					278,
+					1,
+					"",
+					null,
+					"BQAAAB4AAAAAAAAAHwAAAAAAAAABAAAAIBcAAAAAAAAAGAAAAAAAAAABAAAAIBQAAAAAAAAAFQAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					281,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					284,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAIAAAAAAAAAAgAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					287,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAIAAAAAAAAAAgAAAANDItQWRkaW5nLVNlcnZpY2VzLXRvLUFyY0dJUy1Qcm8",
+					"AQAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					293,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAIAAAAAAAAAAgAAAANDItYWRkaW5nLXNlcnZpY2VzLXRvLWFyY2dpcy1wcm8",
+					"AQAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					294,
+					1,
+					"",
+					null,
+					"BgAAABwAAAAAAAAAHQAAAAAAAAABAAAAIBkAAAAAAAAAGgAAAAAAAAABAAAAIBEAAAAAAAAAEgAAAAAAAAABAAAAIA0AAAAAAAAADgAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					297,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					300,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					303,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAHgAAAAAAAAAeAAAANDMtQWRkaW5nLWEtV01TLVNlcnZpY2UtaW4tRk1F",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					309,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAANAAAAAAAAAAeAAAANDMtYWRkaW5nLWEtd21zLXNlcnZpY2UtaW4tZm1l",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					310,
+					1,
+					"",
+					null,
+					"CQAAADAAAAAAAAAAMQAAAAAAAAABAAAAICUAAAAAAAAAJgAAAAAAAAABAAAAICIAAAAAAAAAIwAAAAAAAAABAAAAIB4AAAAAAAAAHwAAAAAAAAABAAAAIBsAAAAAAAAAHAAAAAAAAAABAAAAIBMAAAAAAAAAFAAAAAAAAAABAAAAIA8AAAAAAAAAEAAAAAAAAAABAAAAIA0AAAAAAAAADgAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAANAAAAAAAAAA0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					313,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAUAAAAAAAAABQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					316,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					319,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					322,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAMQAAAAAAAAAxAAAANDMxLUFkZGluZy1hLVdNUy1TZXJ2aWNlLXRvLUZNRS1hcy1CYWNrZ3JvdW5kLU1hcA",
+					"AQAAAAAAAAABAAAAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					328,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAALAAAAAAAAAAxAAAANDMxLWFkZGluZy1hLXdtcy1zZXJ2aWNlLXRvLWZtZS1hcy1iYWNrZ3JvdW5kLW1hcA",
+					"AQAAAAAAAAABAAAAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					331,
+					1,
+					"",
+					null,
+					"CAAAACUAAAAAAAAAJgAAAAAAAAABAAAAICIAAAAAAAAAIwAAAAAAAAABAAAAIB4AAAAAAAAAHwAAAAAAAAABAAAAIBsAAAAAAAAAHAAAAAAAAAABAAAAIBMAAAAAAAAAFAAAAAAAAAABAAAAIA8AAAAAAAAAEAAAAAAAAAABAAAAIA0AAAAAAAAADgAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAABgAAAAAAAAAHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					333,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAALAAAAAAAAAAsAAAANC4zLjIuLUFkZGluZy1hLVdNUy1TZXJ2aWNlLXRvLUZNRS1hcy1SZWFkZXI",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					335,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAUAAAAAAAAABQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					338,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					341,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					346,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAOgAAAAAAAAApAAAANDMyLWFkZGluZy1hLXdtcy1zZXJ2aWNlLXRvLWZtZS1hcy1yZWFkZXI",
+					"AQAAAAAAAAABAAAAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					347,
+					1,
+					"",
+					null,
+					"BwAAADQAAAAAAAAANQAAAAAAAAABAAAAICoAAAAAAAAAKwAAAAAAAAABAAAAICYAAAAAAAAAJwAAAAAAAAABAAAAICMAAAAAAAAAJAAAAAAAAAABAAAAIBsAAAAAAAAAHAAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAOgAAAAAAAAA6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					348,
+					1,
+					"left_delete",
+					null,
+					"AQAAADkAAAAAAAAAOQAAAAAAAAABAAAAKQ",
+					"AQAAAAAAAAABAAAAOgAAAAAAAAA6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					351,
+					1,
+					"left_delete",
+					null,
+					"AQAAACsAAAAAAAAAKwAAAAAAAAABAAAAKA",
+					"AQAAAAAAAAABAAAALAAAAAAAAAAsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					356,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAUAAAAAAAAABQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					359,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					362,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					365,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAANQAAAAAAAAA1AAAANDMzLVVzaW5nLUdldEZlYXR1cmVJbmZvLXJlcXVlc3QtaW4tRk1FLU9wdGlvbmFsLVN0ZXA",
+					"AQAAAAAAAAABAAAANQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					371,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAANAAAAAAAAAA1AAAANDMzLXVzaW5nLWdldGZlYXR1cmVpbmZvLXJlcXVlc3QtaW4tZm1lLW9wdGlvbmFsLXN0ZXA",
+					"AQAAAAAAAAABAAAANQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					372,
+					1,
+					"",
+					null,
+					"BwAAACwAAAAAAAAALQAAAAAAAAABAAAAICUAAAAAAAAAJgAAAAAAAAABAAAAIB4AAAAAAAAAHwAAAAAAAAABAAAAIBkAAAAAAAAAGgAAAAAAAAABAAAAIBAAAAAAAAAAEQAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAANAAAAAAAAAA0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					375,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					378,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAMwAAAAAAAAAzAAAANS1BY2Nlc3NpbmctV01TLXNlcnZpY2VzLXdpdGgtT1dTTGliLVB5dGhvbi1MaWJyYXJ5",
+					"AQAAAAAAAAABAAAAMwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					381,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAzAAAANS1hY2Nlc3Npbmctd21zLXNlcnZpY2VzLXdpdGgtb3dzbGliLXB5dGhvbi1saWJyYXJ5",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					382,
+					1,
+					"",
+					null,
+					"BgAAAB8AAAAAAAAAIAAAAAAAAAABAAAAIBoAAAAAAAAAGwAAAAAAAAABAAAAIBIAAAAAAAAAEwAAAAAAAAABAAAAIA4AAAAAAAAADwAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAJgAAAAAAAAAmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					385,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					388,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					391,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAJAAAAAAAAAAkAAAANTEtRXhhbWluZS1hLVdNUy1zZXJ2aWNlLXdpdGgtT1dTTGli",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					397,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAALAAAAAAAAAAkAAAANTEtZXhhbWluZS1hLXdtcy1zZXJ2aWNlLXdpdGgtb3dzbGli",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					398,
+					1,
+					"",
+					null,
+					"BwAAACMAAAAAAAAAJAAAAAAAAAABAAAAIB8AAAAAAAAAIAAAAAAAAAABAAAAIBsAAAAAAAAAHAAAAAAAAAABAAAAIBYAAAAAAAAAFwAAAAAAAAABAAAAIBMAAAAAAAAAFAAAAAAAAAABAAAAIAgAAAAAAAAACQAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAALAAAAAAAAAAsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					401,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					404,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAKwAAAAAAAAArAAAANi1Vc2luZy1pcHlsZWFmbGV0LXRvLXNob3ctdGhlLXdlYi1zZXJ2aWNlcw",
+					"AQAAAAAAAAABAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					410,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAKQAAAAAAAAArAAAANi11c2luZy1pcHlsZWFmbGV0LXRvLXNob3ctdGhlLXdlYi1zZXJ2aWNlcw",
+					"AQAAAAAAAAABAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					411,
+					1,
+					"",
+					null,
+					"CAAAACUAAAAAAAAAJgAAAAAAAAABAAAAIB0AAAAAAAAAHgAAAAAAAAABAAAAIBkAAAAAAAAAGgAAAAAAAAABAAAAIBQAAAAAAAAAFQAAAAAAAAABAAAAIA4AAAAAAAAADwAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAgAAAAAAAAACQAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAKQAAAAAAAAApAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					414,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					417,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					420,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAJwAAAAAAAAAnAAAANjEtQWRkLWEtV01TLWxheWVyLWludG8tdGhlLWxlYWZsZXQtbWFw",
+					"AQAAAAAAAAABAAAAJwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					426,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAUgAAAAAAAAAnAAAANjEtYWRkLWEtd21zLWxheWVyLWludG8tdGhlLWxlYWZsZXQtbWFw",
+					"AQAAAAAAAAABAAAAJwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					427,
+					1,
+					"",
+					null,
+					"DwAAAEcAAAAAAAAASAAAAAAAAAABAAAAID4AAAAAAAAAPwAAAAAAAAABAAAAIDwAAAAAAAAAPQAAAAAAAAABAAAAIDgAAAAAAAAAOQAAAAAAAAABAAAAIDQAAAAAAAAANQAAAAAAAAABAAAAIDIAAAAAAAAAMwAAAAAAAAABAAAAICwAAAAAAAAALQAAAAAAAAABAAAAICgAAAAAAAAAKQAAAAAAAAABAAAAICAAAAAAAAAAIQAAAAAAAAABAAAAIBwAAAAAAAAAHQAAAAAAAAABAAAAIBcAAAAAAAAAGAAAAAAAAAABAAAAIBIAAAAAAAAAEwAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAgAAAAAAAAACQAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAUgAAAAAAAABSAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					430,
+					2,
+					"left_delete",
+					null,
+					"AgAAAD0AAAAAAAAAPQAAAAAAAAABAAAALTwAAAAAAAAAPAAAAAAAAAABAAAALQ",
+					"AQAAAAAAAAABAAAAPgAAAAAAAAA+AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					433,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					436,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAIAAAAAAAAAAgAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					439,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAATgAAAAAAAABOAAAANjItQWRkLWEtR2VvSlNPTi1kYXRhLWludG8tdGhlLWxlYWZsZXQtbWFwLXVzaW5nLWEtT0dDLUFQSS1GZWF0dXJlcy1jb25uZWN0aW9u",
+					"AQAAAAAAAAABAAAATgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"format",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"plan",
+				"PlantUmlDiagrams: Generate Diagrams for Active View"
+			],
+			[
+				"palnt",
+				"PlantUmlDiagrams: Generate Diagrams for Active View"
+			],
+			[
+				"plant",
+				"PlantUmlDiagrams: Generate Diagrams for Active View"
+			],
+			[
+				"pla",
+				"PlantUmlDiagrams: Generate Diagrams for Active View"
+			],
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"postgre",
+				"Set Syntax: PostgreSQL"
+			],
+			[
+				"previe",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"li",
+				"Linearize XML"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"uml",
+				"PlantUmlDiagrams: Continually Generate Diagram"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"jso",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"javas",
+				"Format: Javascript"
+			],
+			[
+				"raw",
+				"Raw Line Edit: Toggle Line Edit Mode"
+			],
+			[
+				"json",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"markdown",
+				"MarkdownEditing: Select Color scheme"
+			],
+			[
+				"markd",
+				"MarkdownEditing: Select Color scheme"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"for",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"js",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"linear",
+				"Linearize XML"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"brow",
+				"View In Browser"
+			],
+			[
+				"browser",
+				"View In Browser"
+			],
+			[
+				"markdow",
+				"Set Syntax: Markdown"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/murat/gitpot/dist-gis-exercises",
+		"/home/murat/gitpot/dist-gis-exercises/other_sources",
+		"/home/murat/gitpot/dist-gis-exercises/other_sources/plantuml"
+	],
+	"file_history":
+	[
+		"/tmp/untitledzoiwm9.svg",
+		"/tmp/untitledmgrnmv.svg",
+		"/tmp/untitledwvnwc8.svg",
+		"/tmp/untitledy_y7uh.svg",
+		"/tmp/untitledcwqtos.svg",
+		"/tmp/untitledz6qjv9.svg",
+		"/tmp/untitledkrkn1l.svg",
+		"/tmp/untitledbkmqpi.svg",
+		"/tmp/untitledpjlvrn.svg",
+		"/tmp/untitledtvvfmv.svg",
+		"/tmp/untitledsi12pp.svg",
+		"/tmp/untitled_62ko0.svg",
+		"/tmp/untitled1rhukd.svg",
+		"/tmp/untitledmc0v2_.svg",
+		"/tmp/untitled6vif23.svg",
+		"/tmp/untitledf48o8n.svg",
+		"/tmp/untitled6weptb.svg",
+		"/tmp/untitled1oz9ac.svg",
+		"/tmp/untitled5lrhkh.svg",
+		"/home/murat/gitpot/citydb-3dtiler/io/io_folder.py",
+		"/home/murat/gitpot/citydb-3dtiler/io/io_tiles.py",
+		"/home/murat/gitpot/citydb-3dtiler/instances/kernel.py",
+		"/home/murat/gitpot/citydb-3dtiler/tile_main.py",
+		"/home/murat/gitpot/citydb-3dtiler/database/pg_connection.py",
+		"/home/murat/gitpot/citydb-3dtiler/output/advise.yml",
+		"/home/murat/gitpot/citydb-3dtiler/classes/advisement.py",
+		"/home/murat/gitpot/citydb-3dtiler/io/io_yaml.py",
+		"/home/murat/gitpot/citydb-3dtiler/advise_main.py",
+		"/home/murat/gitpot/citydb-3dtiler/citydb-3dtiler.py",
+		"/home/murat/gitpot/citydb-3dtiler/noneed_2_readme.md",
+		"/home/murat/gitpot/dist-gis-exercises/docs/index.md",
+		"/home/murat/gitpot/dist-gis-exercises/mkdocs.yml",
+		"/home/murat/gitpot/citydb-3dtiler/advise_sql/get_all_available_objectclasses.sql",
+		"/home/murat/gitpot/citydb-3dtiler/readme.md",
+		"/tmp/svg-viewer/a92bcbed7ededde7dfe00b83582c62cc/classes.png",
+		"/tmp/svg-viewer/abc9172557a9de1c4f391fe0d87495d9/app_mapp.png",
+		"/home/murat/gitpot/citydb-3dtiler/sources/plantuml/classes.puml",
+		"/home/murat/gitpot/citydb-3dtiler/sources/plantuml/app_mapp.puml",
+		"/home/murat/gitpot/citydb-3dtiler/sources/plantuml/app_mapp.svg",
+		"/home/murat/gitpot/citydb-3dtiler/sources/plantuml/classes.svg",
+		"/home/murat/gitpot/citydb-3dtiler/classes/sql_blocks.py",
+		"/home/murat/gitpot/citydb-3dtiler/database/postgresql/pg_connection.py",
+		"/home/murat/gitpot/citydb-3dtiler/io/tiles_io.py",
+		"/home/murat/gitpot/citydb-3dtiler/.gitignore",
+		"/home/murat/gitpot/citydb-3dtiler/output/.gitkeep",
+		"/home/murat/gitpot/citydb-3dtiler/tiler_app/about_tiler_app.md",
+		"/home/murat/gitpot/citydb-3dtiler/database/postgresql/psql.py",
+		"/tmp/svg-viewer/d604b42e71cd4c3f4035ddcad1dbbcec/mindmap.png",
+		"/tmp/svg-viewer/043e7a122eae32bfe6311e5dff62d941/c4_test.png",
+		"/home/murat/Documents/0071_ufo_doctor_doctor/other_diagrams/c4_test.puml",
+		"/home/murat/Documents/0071_ufo_doctor_doctor/other_diagrams/mindmap.puml",
+		"/home/murat/Documents/0071_ufo_doctor_doctor/other_diagrams/c4_test.svg",
+		"/home/murat/Documents/0071_ufo_doctor_doctor/other_diagrams/mindmap.svg",
+		"/home/murat/gitpot/citydb-3dtiler/materializer.py",
+		"/home/murat/gitpot/citydb-3dtiler/.sample_commands.md",
+		"/home/murat/gitpot/citydb-3dtiler/io/yaml_io.py",
+		"/home/murat/gitpot/citydb-3dtiler/sources/plantuml/classes",
+		"/home/murat/gitpot/citydb-3dtiler/io/sql_io.py",
+		"/home/murat/gitpot/citydb-3dtiler/output/advise7.yaml",
+		"/home/murat/gitpot/citydb-3dtiler/advise_sql/calculate_recommended_max_features_per_tile_only_for_toplevel_features.sql",
+		"/home/murat/gitpot/citydb-3dtiler/advise_sql/calculate_recommended_max_features_per_tile.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/alternative_queries/leipzig_2025_donaubauer_transportation_query.sql",
+		"/home/murat/gitpot/x-razor/main.py",
+		"/home/murat/gitpot/x-razor-2/main.py",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/alternative_queries/ingolstadt_nav_felix_2025.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/alternative_queries/kirchenanschoering_2025_knezevic_buildings.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/alternative_queries/ingolstadt_intensity_2025_schwab_.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/alternative_queries/choose_materials_from_opendrive_lane_type_or_objectclass.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/alternative_queries/default_query_backup4.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/alternative_queries/1100_create_geoms_w_transparency_a_realistic-colors.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/alternative_queries/choose_existing_material_from_surfacedata_or_by_specific_property_or_by_objectclass.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/calculate_recommended_max_features_per_tile.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/view_material_data_only_by_objectclass.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/material_data_by_properties_and_classes.sql",
+		"/home/murat/gitpot/citydb-visualizer/sql_queries/default_query.sql",
+		"/run/user/1000/gvfs/smb-share:server=gifs.gis.lrg.tum.de,share=intern/LHM Schulen (Donaubauer)/copc_files_yeltekin/info_GE009.json",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/12_Richmond Baidoo_12077708_assignsubmission_file/Web Map service (RichElsa_group12)/Web Map service (Rich&Elsa_group12)/Get map Requests.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/11_Rexford Boafo Asiedu_12077727_assignsubmission_file/Deliverable 3_Web Map Service/3_getmap_requests.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/04_Yun Bao_12077718_assignsubmission_file/group4_wms_deliverables/getmap_requests.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/03_Gökay Çelik_12077715_assignsubmission_file/Group3_Task5/GetMap_Links.txt",
+		"/home/murat/Downloads/HH_WFS_Grundwasserschutz.gml",
+		"/home/murat/Downloads/newww/1",
+		"/home/murat/Documents/0080_grading_project_work_in_GI/implementation/suse25-group-1-main/_downloaded_data/munich_subway.graphml",
+		"/home/murat/Documents/0080_grading_project_work_in_GI/implementation/suse25-group-1-main/README.md",
+		"/home/murat/Documents/0080_grading_project_work_in_GI/implementation/suse25-group-1-main/_downloaded_data/munich_rail.graphml",
+		"/home/murat/Documents/0080_grading_project_work_in_GI/implementation/suse25-group-1-main/_input_files/investor_locations.geojson",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/09_Yuqi Jiang_12077711_assignsubmission_file/Task_5_Group9/MyWebGISClient.js",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/09_Yuqi Jiang_12077711_assignsubmission_file/Task_5_Group9/Request_GetMap.rtf",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rupal Srivastava_12077728_assignsubmission_file/TASK 5/TASK 5/COST_SLD/buildings_cost.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rupal Srivastava_12077728_assignsubmission_file/grading_Kendir/topo_detail_errors.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rupal Srivastava_12077728_assignsubmission_file/grading_Kendir/topo_errors.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rupal Srivastava_12077728_assignsubmission_file/grading_Kendir/cost_errors.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rachit Yadav_12077726_assignsubmission_file/Web Map Service/cost_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Richmond Baidoo_12077708_assignsubmission_file/Web Map service (RichElsa_group12)/Web Map service (Rich&Elsa_group12)/Cost Development Map (SLD)/Building_cost_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Richmond Baidoo_12077708_assignsubmission_file/Web Map service (RichElsa_group12)/Web Map service (Rich&Elsa_group12)/Cost Development Map (SLD)/landparcel_cost_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rexford Boafo Asiedu_12077727_assignsubmission_file/Deliverable 3_Web Map Service/5. SLD Files/Topograpghy_Style/building_style2.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rexford Boafo Asiedu_12077727_assignsubmission_file/Deliverable 3_Web Map Service/5. SLD Files/Cost_Style/building_cost_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rexford Boafo Asiedu_12077727_assignsubmission_file/Deliverable 3_Web Map Service/5. SLD Files/Cost_Style/cost_style_errors.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rexford Boafo Asiedu_12077727_assignsubmission_file/Deliverable 3_Web Map Service/5. SLD Files/Topograpghy_Style/Traffic_area_topo_style_new2.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Jookyung Lee_12077713_assignsubmission_file/Task5_group10_Jookyung Lee (03798379), Ludwig Agholm (03801405)/Task 5/building_cost.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Mir Enamul Karim_12077732_assignsubmission_file/group7_task5 final/group7_task5/Cost_common.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Mir Enamul Karim_12077732_assignsubmission_file/group7_task5 final/group7_task5/topo_traffic.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Evgeniia Lappo_12077724_assignsubmission_file/task 5/task 5/traffic_area.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Evgeniia Lappo_12077724_assignsubmission_file/task 5/task 5/buildings.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Evgeniia Lappo_12077724_assignsubmission_file/task 5/task 5/cost_b.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Evgeniia Lappo_12077724_assignsubmission_file/task 5/task 5/buildings.sld_error.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Yun Bao_12077718_assignsubmission_file/group4_wms_deliverables/cost_map_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Gökay Çelik_12077715_assignsubmission_file/Group3_Task5/roads_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Gökay Çelik_12077715_assignsubmission_file/Group3_Task5/building_cost.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Gökay Çelik_12077715_assignsubmission_file/Group3_Task5/green_spaces_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Gökay Çelik_12077715_assignsubmission_file/Group3_Task5/roads_cost.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Gökay Çelik_12077715_assignsubmission_file/Group3_Task5/parcel_cost.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Gökay Çelik_12077715_assignsubmission_file/Group3_Task5/greenspace_cost.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/_Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/zone_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/_Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/utility.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/_Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/greenarea.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/_Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/renewable_energy.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Samaneh Mohammadisharmeh_12077730_assignsubmission_file/Web Map Service/SLD/developmentcost_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/_Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/greenarea_error.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Samaneh Mohammadisharmeh_12077730_assignsubmission_file/Web Map Service/SLD/renewableenergyproductionfacility_topo_style_error.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Samaneh Mohammadisharmeh_12077730_assignsubmission_file/Web Map Service/SLD/landparcel_topo_style_error.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Samaneh Mohammadisharmeh_12077730_assignsubmission_file/Web Map Service/SLD/greenspacearea_topo_style_error.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Samaneh Mohammadisharmeh_12077730_assignsubmission_file/Web Map Service/SLD/developmentcost_style_error.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Samaneh Mohammadisharmeh_12077730_assignsubmission_file/Web Map Service/SLD/building_topo_style_error.txt",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/greenarea.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/renewable_energy.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/zone_style.sld",
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Victor Tutu-Biaw_12077737_assignsubmission_file/GeoServer SLDs/GeoServer SLDs/greenarea_error.txt"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 247.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"-"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "mkdocs.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								421,
+								421
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								479
+							]
+						],
+						"settings":
+						{
+							"mde.match_heading_hashes": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "docs/index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								740,
+								740
+							]
+						],
+						"settings":
+						{
+							"mde.match_heading_hashes": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								47
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSON/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"file": "/tmp/svg-viewer/7c7a958d0c9ff6425e1de51980797892/untitledzoiwm9.png",
+					"semi_transient": false,
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/cd8fbf20e7592c30e5dfcf4319e74cf4/untitledmgrnmv.png",
+					"semi_transient": false,
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/23f3d366c7606a8f2999784264aa17a0/untitledwvnwc8.png",
+					"semi_transient": false,
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/3dc729db2f85e3e9e061f420078fc3c5/untitledy_y7uh.png",
+					"semi_transient": false,
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/4ceb27c1c63d7d32625228ac908c3d37/untitledcwqtos.png",
+					"semi_transient": false,
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/679cd6f93e31c8244f2c01d1341c51e9/untitledz6qjv9.png",
+					"semi_transient": false,
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/d31977036ea33c18ac465dfa6ac7c1d7/untitledkrkn1l.png",
+					"semi_transient": false,
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/d541eea9a35f54e221efc5400308449a/untitledbkmqpi.png",
+					"semi_transient": false,
+					"stack_index": 9,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/079973ab619f0182196d6ac09ef9c918/untitledpjlvrn.png",
+					"semi_transient": false,
+					"stack_index": 10,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/4d26cf6f71b8b56c0e50e45a6fd3ac73/untitledtvvfmv.png",
+					"semi_transient": false,
+					"stack_index": 11,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/95efee1b4222b843dc80aeb4915ffdf0/untitledsi12pp.png",
+					"semi_transient": false,
+					"stack_index": 12,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/1fca94a2f9e3e5bee6dd0d4131eeff03/untitled_62ko0.png",
+					"semi_transient": false,
+					"stack_index": 13,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/ed0429aa5239d148be51336a166ccc24/untitled1rhukd.png",
+					"semi_transient": false,
+					"stack_index": 14,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/2a9a00ad9b26421f14471c7c1b6bd26f/untitledmc0v2_.png",
+					"semi_transient": false,
+					"stack_index": 15,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/3a060bb98ebae71d0e550aa1833a8d9a/untitled6vif23.png",
+					"semi_transient": false,
+					"stack_index": 16,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/50fe3373ad57b041581456387d541e9a/untitledf48o8n.png",
+					"semi_transient": false,
+					"stack_index": 17,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/43ac470cfc0dceb4f50e032f38f23c76/untitled6weptb.png",
+					"semi_transient": false,
+					"stack_index": 18,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/04e8bfabddb6d18d0da21e90873e8aee/untitled1oz9ac.png",
+					"semi_transient": false,
+					"stack_index": 19,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"file": "/tmp/svg-viewer/274e3976d1ae0946f626dc7f11342f2d/untitled5lrhkh.png",
+					"semi_transient": false,
+					"stack_index": 20,
+					"stack_multiselect": false,
+					"type": "image"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 78,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "62-add-a-geojson-data-into-the-leaflet-map-using-a",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 85.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Terminus":
+	{
+		"height": 354.0,
+		"history":
+		[
+		]
+	},
+	"output.diff_views":
+	{
+		"height": 508.0
+	},
+	"output.exec":
+	{
+		"height": 156.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "dist-gis-exercises.sublime-project",
+	"replace":
+	{
+		"height": 78.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/gitpot/plant_4_all/plant_4_all.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 347.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

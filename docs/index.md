@@ -3,7 +3,9 @@
 ## The notebooks used in the "Distributed Geoinformation Systems and Cloud Computing" courses
 
 Main Author: M. Sc. Murat Kendir
-Supervisor: Prof. Thomas Kolbe
+Supervisor: Prof. Thomas Kolb
+
+Thanks for contributions : Jicang Zhu
 
 Contact: murat.kendir(at)tum.de
 
@@ -15,10 +17,12 @@ Contact: murat.kendir(at)tum.de
 ## Exercises
 
 - Exercise 1:
-  - [Exercise 1 (Distributed Systems, Computer Networks & Internet)](exercise1.md)
-  - [Bonus Exercise - Docker Usage](exercise1-bns.md)
-- [Exercise 2 (Introduction to Python with Samples)](exercise2.md)
-- [Exercise 3 (Spatial Data Infrastructures)](exercise3.md)
+  - [Exercise 1 (Distributed Systems, Computer Networks & Internet)](distributed_systems.md)
+  - [Bonus Exercise - Docker Usage](docker_usage.md)
+- Exercise 2:
+  - [Introduction to Python](intro_python.md) 
+  - [Spatial Data Infrastructures](sdis.md)
+  - [Computer Networks & Internet](networks_internet.md)
 - [Exercise 4 (Web Mapping in 2D / 3D)](exercise4.md)
 - Exercise 5 (Virtualization & Cloud Computing):
     - [Preparation for Exercise 5](exercise5_preparation.md)
