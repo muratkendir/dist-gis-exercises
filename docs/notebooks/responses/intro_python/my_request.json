@@ -1,0 +1,66 @@
+{
+    "type":"Feature",
+    "geometry":{
+        "type":"Point",
+        "coordinates":[
+            4.680805725672325,
+            52.407239312211836
+        ]
+    },
+    "properties":{
+        "gid":4,
+        "NAAM":"De Slokop",
+        "PLAATS":"Spaarndam",
+        "CATEGORIE":"windmolen",
+        "FUNCTIE":"poldermolen",
+        "TYPE":"8-kante grondzeiler",
+        "STAAT":"bestaand",
+        "RMONNUMMER":"19911",
+        "TBGCNUMMER":"00012",
+        "INFOLINK":"https://zoeken.allemolens.nl/tenbruggencatenummer/00012",
+        "THUMBNAIL":"https://images.memorix.nl/rce/thumb/350x350/c6bbf59b-f95d-709d-3350-5da3e7f9e8f3.jpg",
+        "HFDFUNCTIE":"poldermolen",
+        "FOTOGRAAF":"Frank Terpstra (beeldbank RCE)",
+        "FOTO_GROOT":"https://images.memorix.nl/rce/thumb/fullsize/c6bbf59b-f95d-709d-3350-5da3e7f9e8f3.jpg",
+        "BOUWJAAR":"1877"
+    },
+    "id":"Molens.4",
+    "links":[
+        {
+            "type":"application/json",
+            "rel":"root",
+            "title":"The landing page of this server as JSON",
+            "href":"https://apitestbed.geonovum.nl/adr_pygeoapi/v1?f=json"
+        },
+        {
+            "type":"text/html",
+            "rel":"root",
+            "title":"The landing page of this server as HTML",
+            "href":"https://apitestbed.geonovum.nl/adr_pygeoapi/v1?f=html"
+        },
+        {
+            "rel":"self",
+            "type":"application/geo+json",
+            "title":"This document as GeoJSON",
+            "href":"https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json"
+        },
+        {
+            "rel":"alternate",
+            "type":"application/ld+json",
+            "title":"This document as RDF (JSON-LD)",
+            "href":"https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=jsonld"
+        },
+        {
+            "rel":"alternate",
+            "type":"text/html",
+            "title":"This document as HTML",
+            "href":"https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=html"
+        },
+        {
+            "rel":"collection",
+            "type":"application/json",
+            "title":"Windmills within The Netherlands",
+            "href":"https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills"
+        }
+    ]
+}

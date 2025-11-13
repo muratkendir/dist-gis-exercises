@@ -1,24 +1,16 @@
-*~
-*.*~
+# ignore FOLDERS
+.*
 env-exr
-env-exr/
-env-exr/*
-env-exr/**/*
-_backup
-_backup/
-_backup/*
-_backup/**/*
-.images
-.ipynb_checkpoints
 site
 pdf_documents
-docs/html_documents
-raw_codes/.ipynb_checkpoints
-images/.ipynb_checkpoints
-docs/.ipynb_checkpoints
-docs/responses/.ipynb_checkpoints
+
+# ignore FILES
+*.*~
 docs/responses/**/*
+
+# DONT ignore FILES
 !docs/responses/distributed_systems/.gitkeep
+!docs/responses/intro_python/.gitkeep
 !docs/responses/docker_usage/.gitkeep
 !docs/responses/networks_internet/.gitkeep
 !docs/responses/sdis/.gitkeep

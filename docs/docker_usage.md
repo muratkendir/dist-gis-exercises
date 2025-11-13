@@ -63,7 +63,7 @@ Open the following website:
 > TIP: The terminal screen and available commands here will have the same or similar commands as a Linux terminal screen (command line), because usually the examples run on a Linux system. To check which version of Linux is used as the base operating system, type **uname -a** in the terminal.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr5/1100_play_docker.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <img src="../images/docker_usage/1100_play_docker.png" alt="Play with Docker" style="border:3px solid darkgray">
   <figcaption>Play with Docker web site</figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ In this case, taking advantage of virtualization tools such as Docker provides u
 ### 1.1. Docker Desktop Installation on Windows systems - Optional
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr5/2-1_windows_properties.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <img src="../images/docker_usage/2-1_windows_properties.png" alt="Play with Docker" style="border:3px solid darkgray">
   <figcaption>Windows (Built-in) Features</figcaption>
 </figure> 
 
@@ -101,7 +101,7 @@ Check this step if you want to download and install the Docker Desktop or CLI to
 - You will continue using the CLI (Command Line Interface) tool, but you can still check the Desktop App to view the containers, images etc.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr5/2-1_wsl2_option.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <img src="../images/docker_usage/2-1_wsl2_option.png" alt="Play with Docker" style="border:3px solid darkgray">
   <figcaption>WSL2 Option</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ Check this step if you want to download and install the Docker Desktop or CLI to
   - ```docker image ls```
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr5/1300_docker_hub.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <img src="../images/docker_usage/1300_docker_hub.png" alt="Play with Docker" style="border:3px solid darkgray">
   <figcaption>Docker Hub</figcaption>
 </figure>
 
@@ -185,6 +185,6 @@ Many command abbreviations are inherited from Linux/Unix-based systems. These lo
 - If everything is OK, the Grafana start page will be shown.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr5/1600_grafana.png" alt="Play with Docker" style="border:3px solid darkgray">
+  <img src="../images/docker_usage/1600_grafana.png" alt="Play with Docker" style="border:3px solid darkgray">
   <figcaption>Grafana Interface</figcaption>
 </figure>

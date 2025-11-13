@@ -166,20 +166,20 @@ found_service()
 # my_services.clear()
 ```
 
-    Give an ID (number or unique value)... 1
+    Give an ID (number or unique value)... 99
     Please specify the name Hamburg Buildings
-    Please specify the Url of SDI tranzparenz.hamburg.de
-    Please specify the URL of WMS Service https://geodienste.hamburg.de/wms/building?
+    Please specify the Url of SDI transparenz.hamburg.de
+    Please specify the URL of WMS Service geodienste.hamburg.de/wms/building?
 
 
-    {'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, '1': {'name': 'Hamburg Buildings', 'Url of SDI': 'tranzparenz.hamburg.de', 'URL of WMS Service': 'https://geodienste.hamburg.de/wms/building?'}}
+    {'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, '99': {'name': 'Hamburg Buildings', 'Url of SDI': 'transparenz.hamburg.de', 'URL of WMS Service': 'geodienste.hamburg.de/wms/building?'}}
 
 
-- [ ] **Save the code** above as "service_selection.py" into "raw_codes/exr3" directory.
+- [ ] **Save the code** above as "service_selection.py" into "raw_codes/sdis" directory.
 
 ## 2.2. Use the created program in another python program
 
-- [ ] Check if the file exists in the "/raw_codes/exr3" folder.
+- [ ] Check if the file exists in the "/raw_codes/sdis" folder.
 - [ ] Start a new code and import the functions and variables defined in the previously created python file.
 
 
@@ -191,17 +191,20 @@ found_service()
 # The contents of the modules are only accessible with dot (.) operator.
 
 # Method 1
-from raw_codes.exr3 import service_selection as srv
-#print(srv.keys)
+from raw_codes.sdis import service_selection as srv
+print(srv.keys)
 
 # Method 2
-# from raw_codes.exr3.service_selection import keys, my_services, add_to_store, found_service
+# from raw_codes.sdis.service_selection import keys, my_services, add_to_store, found_service
 # print(keys)
 
 # Now you can call your program to save the data about the found geospatial services:
 # srv.found_service() 
 # srv.my_services.clear()
 ```
+
+    ['name', 'Url of SDI', 'URL of WMS Service']
+
 
 <blockquote> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
 
@@ -509,12 +512,12 @@ list(mytest.operations)
 
 
 
-    [<owslib.map.wms130.OperationMetadata at 0x7228723cc740>,
-     <owslib.map.wms130.OperationMetadata at 0x7228723cc800>,
-     <owslib.map.wms130.OperationMetadata at 0x7228723cc950>,
-     <owslib.map.wms130.OperationMetadata at 0x7228723cc9e0>,
-     <owslib.map.wms130.OperationMetadata at 0x7228723cca70>,
-     <owslib.map.wms130.OperationMetadata at 0x7228723ccb00>]
+    [<owslib.map.wms130.OperationMetadata at 0x7f8fa9e92390>,
+     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e924b0>,
+     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e92600>,
+     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e92690>,
+     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e92720>,
+     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e927b0>]
 
 
 
@@ -540,7 +543,7 @@ for x in mytest.operations:
 ```python
 # type(mytest.getServiceXML())
 # Specify your own relative or full path to save the XML file, if it is required.
-with open("responses/exr3/my_wms_servicexml.xml", "wb") as my_wms_xml:
+with open("responses/sdis/my_wms_servicexml.xml", "wb") as my_wms_xml:
         my_wms_xml.write(mytest.getServiceXML())
 ```
 
@@ -558,7 +561,7 @@ print('Layer Style : ', mytest['WMS_DGM1_HAMBURG'].styles, '\n')
 print('Supported Formats : ', mytest.getOperationByName('GetMap').formatOptions)
 ```
 
-    CRS Options :  ['EPSG:3044', 'EPSG:31467', 'EPSG:4258', 'EPSG:25832', 'EPSG:4326', 'EPSG:3857', 'EPSG:25833', 'CRS:84', 'EPSG:4647'] 
+    CRS Options :  ['EPSG:4647', 'EPSG:25833', 'EPSG:31467', 'EPSG:25832', 'EPSG:3857', 'EPSG:3044', 'EPSG:4326', 'CRS:84', 'EPSG:4258'] 
     
     Bounding Box :  (8.482047, 53.385591, 10.355638, 53.941383) 
     
@@ -679,11 +682,11 @@ my_items = my_api.collection_items('gebaeude', bbox=[9.9767,53.5442,9.9787,53.54
 my_json = json.dumps(my_items)
 
 # Write the request as a json file, preferably with ".geojson" file extension.
-with open('responses/exr3/my_api.geojson', 'w') as f:
+with open('responses/sdis/my_api.geojson', 'w') as f:
     f.write(my_json)
 
 # Check the file and read as geojson to laod into map
-with open('responses/exr3/my_api.geojson', 'r') as f:
+with open('responses/sdis/my_api.geojson', 'r') as f:
     my_data = json.load(f)
 
 # Specify some styles to the geojson data:

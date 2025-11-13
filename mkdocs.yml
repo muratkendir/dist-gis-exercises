@@ -11,7 +11,7 @@ nav:
     - "Distributed Systems" : distributed_systems.md
     - "Docker Usage (Bonus)" : docker_usage.md
   - "Exercise 2" :
-    - "Introduction to Python" : intro_python.md
+    - "Introduction to Python (Optional)" : intro_python.md
     - "Spatial Data Infrastructures" : sdis.md
     - "Networks & Internet (Bonus)" : networks_internet.md
   - "Exercise 4 (Web Map)": exercise4.md

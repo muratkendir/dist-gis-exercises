@@ -134,7 +134,7 @@ Deactivate Bob
 @enduml
 ```
 
-    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/550589d4-9c76-4585-bb28-b01cceb48aed.uml to 550589d4-9c76-4585-bb28-b01cceb48aed.svg
+    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/acae0201-e1a0-4d0b-a9e2-7a1be95471ce.uml to acae0201-e1a0-4d0b-a9e2-7a1be95471ce.svg
 
 
 
@@ -154,14 +154,14 @@ You can create UML diagram on [Diagrams Net](https://app.diagrams.net/)
 You can start drawing by creating a blank diagram.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/diagrams_choose_type.png" alt="Draw.io - Choose Type" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/diagrams_choose_type.png" alt="Draw.io - Choose Type" style="border:3px solid darkgray">
   <figcaption>Draw.io - Choose Type</figcaption>
 </figure> 
 
 - [ ] As you start drawing, a panel will appear on the left side, where you can select UML shapes. Find those relevant shapes and use them to create your sequence diagram. You can refer to the lecture slides and see which shapes are relevant.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/diagrams_uml_shapes.png" alt="Draw.io - UML Shapes Collection" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/diagrams_uml_shapes.png" alt="Draw.io - UML Shapes Collection" style="border:3px solid darkgray">
   <figcaption>Draw.io - UML Shapes Collection</figcaption>
 </figure> 
 
@@ -190,35 +190,35 @@ In this step,  we will learn how to observe some interactions on different web s
 On Chrome: Clear panel, filter requests by requested data type.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/chrome_filter_requests.png" alt="Chrome Filter Requests" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/chrome_filter_requests.png" alt="Chrome Filter Requests" style="border:3px solid darkgray">
   <figcaption>Chrome Filter Requests</figcaption>
 </figure>
 
 On Chrome: Read the request header and the corresponding response, check the detailed data type (MIME type and character encoding / charset).
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/chrome_check_details.png" alt="Chrome Check Details" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/chrome_check_details.png" alt="Chrome Check Details" style="border:3px solid darkgray">
   <figcaption>Chrome Check Details</figcaption>
 </figure>
 
 On Chrome: You can sort requests by clicking on the column names and it is also possible to sort by start time, end time, response time, etc. These are not displayed directly as separate columns, but you can find them in the “Timeline”/“Waterfall”.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/chrome_waterfall.png" alt="Chrome Waterfall" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/chrome_waterfall.png" alt="Chrome Waterfall" style="border:3px solid darkgray">
   <figcaption>Chrome Waterfall</figcaption>
 </figure>
 
 On Firefox: Clear panel, filter requests by type of requested data
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/firefox_data_type.png" alt="Firefox Data Type" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/firefox_data_type.png" alt="Firefox Data Type" style="border:3px solid darkgray">
   <figcaption>Firefox Data Type</figcaption>
 </figure>
 
 On Firefox: By clicking on a row, you can also view the details of a request and corresponding response. Also it’s possible to sort requests by start time, end time, etc. in Firefox.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/firefox_timings.png" alt="Firefox Timings" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/firefox_timings.png" alt="Firefox Timings" style="border:3px solid darkgray">
   <figcaption>Firefox Data Type</figcaption>
 </figure>
 
@@ -238,14 +238,14 @@ Examine the following web sites by using the “Web Developer Tools” / “Deve
 - 1) Do the HTML, CSS and image files represent the application interface?
  
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/iris_dom_contents.png" alt="IRIS Web Contents" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/iris_dom_contents.png" alt="IRIS Web Contents" style="border:3px solid darkgray">
   <figcaption>IRIS - Web Content Types</figcaption>
 </figure>
 
 - 2)  After clicking on a point on the map, the World Seismic Map changed. Thus, the click event triggered the app to download another data from the server.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/iris_interaction.png" alt="IRIS Interaction" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/iris_interaction.png" alt="IRIS Interaction" style="border:3px solid darkgray">
   <figcaption>IRIS - Interaction with the Map</figcaption>
 </figure>
 
@@ -259,14 +259,14 @@ This website is a very old but working example of a web mapping application. It 
 In the home page, select the base map to be loaded on the screen.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_basemap.png" alt="BayernAtlas Basemap" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_basemap.png" alt="BayernAtlas Basemap" style="border:3px solid darkgray">
   <figcaption>BayernAtlas - Basemap Selection</figcaption>
 </figure>
 
 To load bike paths (Radwege), a cycling map, activate the Hiking and cycling trails layers (Home page:Themen> Sport- und Freizeit > Wander- und Radwege> Radwege). Once activated, you will see a green network on the map.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_overlay.png" alt="BayernAtlas Overlay" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_overlay.png" alt="BayernAtlas Overlay" style="border:3px solid darkgray">
   <figcaption>BayernAtlas - Overlay</figcaption>
 </figure>
 
@@ -274,14 +274,14 @@ This individual biking trail net is retrieved from the server and is displayed a
 Open Web Developer Tool, refresh the page, you will see a list of requests with image data. In order not to spend time on previewing each image, you can filter requests by “Name”. In our case, we search for “radwege” data, therefore we type “radwege” in Filter textbox.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_radwege.png" alt="bayernatlas_radwege" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_radwege.png" alt="bayernatlas_radwege" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Radwege (Biking Trails)</figcaption>
 </figure>
 
 Double-click on the relevant row and you will see a png file on a separate web page and you can easily save this bike path image.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_radwege_response.png" alt="bayernatlas_radwege response" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_radwege_response.png" alt="bayernatlas_radwege response" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Radwege (Biking Trails) response</figcaption>
 </figure>
 
@@ -295,21 +295,21 @@ TurfJS is a JavaScript library that supports dealing with geospatial datasets in
 > Tip: You can use [prettier.io](https://prettier.io/) web application to see these files in a “pretty printed” format.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/turf_js_packages.png" alt="turf_js_packages" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/turf_js_packages.png" alt="turf_js_packages" style="border:3px solid darkgray">
   <figcaption>TurfJS - Packages</figcaption>
 </figure>
 
 Clear the available requests in the network pane and try to select an operation on the main web page (For example select “Voronoi”).
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/turf_voronoi.png" alt="turf_js_voronoi" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/turf_voronoi.png" alt="turf_js_voronoi" style="border:3px solid darkgray">
   <figcaption>TurfJS - Voronoi algorithm</figcaption>
 </figure>
 
 Try to zoom in and zoom out on one of the map (input or output widget).
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/turf_zoomin_out.png" alt="turf_js_voronoi" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/turf_zoomin_out.png" alt="turf_js_voronoi" style="border:3px solid darkgray">
   <figcaption>TurfJS - Zoom In / Out</figcaption>
 </figure>
 
@@ -327,33 +327,33 @@ You will then create a sequence diagram taking into account this interaction and
 Choose a routing mode. Such as “hiking” (wandern)  as shown in the first icon. Select the start point and end point on the map, a route will be created and a profile showing the elevation along the route.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_routing.png" alt="bayernatlas_routing" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_routing.png" alt="bayernatlas_routing" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Routing (Interaction)</figcaption>
 </figure>
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_mountain_bike.png" alt="bayernatlas_mountain_bike" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_mountain_bike.png" alt="bayernatlas_mountain_bike" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Mountain Bike (Interaction)</figcaption>
 </figure>
 
 The “route” and “profile” are created using data from the server. We can also download them as JSON files from the Web Developer Tool.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_profile.png" alt="bayernatlas_profile" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_profile.png" alt="bayernatlas_profile" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Profile (Interaction)</figcaption>
 </figure>
 
 Clear the network pane before routing interaction and then observe the requests and responses triggered by this interaction.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_clear_requests.png" alt="bayernatlas_clear_requests" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_clear_requests.png" alt="bayernatlas_clear_requests" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Clear Requests (Interaction)</figcaption>
 </figure>
 
 Check the “method” of the “profile” request and check both of the request and response tabs in the detailed information pane for this service. 
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_profile_response.png" alt="bayernatlas_profile_response" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_profile_response.png" alt="bayernatlas_profile_response" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Profile Response (Interaction)</figcaption>
 </figure>
 
@@ -362,7 +362,7 @@ By clicking the “route” cell, you can view formatted response JSON.
 Look into them respectively, figure out what information is stored in them.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/bayernatlas_route_json.png" alt="bayernatlas_route_json" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/bayernatlas_route_json.png" alt="bayernatlas_route_json" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Route (JSON / Interaction)</figcaption>
 </figure>
 
@@ -370,7 +370,7 @@ If you are familiar with creating files with file extensions as well as changing
 Let’s assume we need these JSON data for another purposes. But unlike image files, which can be directly saved, this JSON data cannot be directly saved by right clicking on the panel. Therefore, we need to create a file with extension on local, copy the whole JSON data and paste it into the file you created. Make sure that the file you created has an extension “.json”, if you don’t see file extensions, check “File name extensions” in File Explore.
 
 <figure style="width:%100;text-align: center;">
-  <img src="../images/exr1/windows_enable_extensions.png" alt="windows_enable_extensions" style="border:3px solid darkgray">
+  <img src="../images/distributed_systems/windows_enable_extensions.png" alt="windows_enable_extensions" style="border:3px solid darkgray">
   <figcaption>Windows - Enable File Extensions</figcaption>
 </figure>
 

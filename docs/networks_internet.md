@@ -53,7 +53,7 @@ edge -> isp : Global IP Address
 @enduml
 ```
 
-    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/cd2d326e-7d15-4044-9bfa-262d238c6c13.uml to cd2d326e-7d15-4044-9bfa-262d238c6c13.svg
+    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/1b2ea486-0fee-4602-a731-859f74cd6b71.uml to 1b2ea486-0fee-4602-a731-859f74cd6b71.svg
 
 
 
@@ -186,7 +186,7 @@ The **“Ping”** command can be used to measure network performance between th
     - ```ping -c 3 mit.edu``` (using a CDN which serves sources from Germany)
     - ```ping -c stanford.edu``` (located in USA)
     - ```ping -c 3 www.tsinghua.edu.cn``` (located in China)
-    - ```ping -c 5 ping -c 3 sydney.edu.au``` (located in Australia)
+    - ```ping -c 3 sydney.edu.au``` (located in Australia)
     - ```ping -c 3 www.u-tokyo.ac.jp``` (located in Japan)
 
 > TIP: "Count" option named as "Number" in the Windows version of the ping command. Use "-n" option instead of "-c" in Windows computers.

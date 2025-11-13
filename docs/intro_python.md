@@ -54,7 +54,12 @@ In this exercise, you will learn how to access similar data sources (web service
 - [ ] Check the URL of a raster image taken as a base map from the BayernAtlas website.
 - [ ] Copy the URL and try requesting this image by pasting the URL into the address bar.
   - [ ] or you can test the URL using the "curl" program at the command prompt (CMD / Eingabeaufforderung).
-![BayernAtlas Basemap Request Sample](../images/exr2/bayernatlas_wmts_image.png)
+
+<figure style="width:%100;text-align: center;">
+  <img src="../images/intro_python/bayernatlas_wmts_image.png" alt="BayernAtlas Basemap Request Sample" style="border:3px solid darkgray">
+  <figcaption>BayernAtlas Basemap Request Sample</figcaption>
+</figure> 
+
 
 ## 2. Make a request with Python and "Requests" library
 
@@ -147,7 +152,7 @@ print( isinstance(mydata, (requests.models.Response)))
 
 
 ```python
-with open("../../responses/exr2/my_requested_image.jpg", "wb") as my_image_file:
+with open("responses/intro_python/my_requested_image.jpg", "wb") as my_image_file:
         my_image_file.write(mydata.content)
 ```
 
@@ -165,7 +170,7 @@ import os
 
 # "os.pardir" is used to choosing the right syntax for navigating to parent directory (for linux it is  "../" )
 # "os.path.join" method is used to join directories to specify the relative path for the file output
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2')+os.path.sep
+export_folder = os.path.join('responses','intro_python')+os.path.sep
 # print(export_folder)
 
 # Replace the URL in the follwing code with your selected URL
@@ -173,10 +178,10 @@ mydata = requests.get("https://intergeo33.bayernwolke.de/betty/c_hist/13/4197/45
 
 with open(export_folder + "my_requested_image_2.jpg", "wb") as my_image_file:
     my_image_file.write(mydata.content)
-    print("File might be saved, check the folder: ../../responses/exr2")
+    print("File might be saved, check the folder: responses/intro_python")
 ```
 
-    File might be saved, check the folder: ../../responses/exr2
+    File might be saved, check the folder: responses/intro_python
 
 
 |  |  |  |
@@ -187,7 +192,12 @@ with open(export_folder + "my_requested_image_2.jpg", "wb") as my_image_file:
 TIP: You may notice that the last line (```my_image_file.write(mydata.content)```) does not contain any parentheses or curly braces to highlight the inner code block. This is because parentheses and curly brackets are not used in the python programming language to do that. You need to use indentation to create a hierarchical programming style (e.g. conditional statements, functions, loops, etc.). Indentation usually consists of 4 space characters, but it can also be customized (e.g. You can use 3 spaces or TAB chacracter). Also note that a column (:) character is needed at the end of the last line before the indented lines.
 
 An example comparison between C and Python programming languages shows how indentation interpreted in python:
-![PythonvsC](../images/exr2/py_vs_c_identation.png)
+
+<figure style="width:%100;text-align: center;">
+  <img src="../images/intro_python/py_vs_c_identation.png" alt="JSON or XML Visualizations" style="border:3px solid darkgray">
+  <figcaption>Identation Concept in Python and C</figcaption>
+</figure> 
+
 
 ### 3.2. Open Images with Pillow (Optional Step)
 
@@ -199,7 +209,7 @@ An example comparison between C and Python programming languages shows how inden
 from PIL import Image
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir,'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 requested_image = Image.open(export_folder + "my_requested_image.jpg")
 
@@ -221,7 +231,7 @@ display(requested_image)
 import webbrowser
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir,'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 webbrowser.open_new_tab(export_folder + "my_requested_image.jpg")
 ```
@@ -246,7 +256,11 @@ webbrowser.open_new_tab(export_folder + "my_requested_image.jpg")
     
 Here you will see different visualizations of JSON or XML files within these extensions:
 
-![JSON or XML Visualizations](../images/exr2/browser_addons.png)
+<figure style="width:%100;text-align: center;">
+  <img src="../images/intro_python/browser_addons.png" alt="JSON or XML Visualizations" style="border:3px solid darkgray">
+  <figcaption>JSON or XML Visualizations</figcaption>
+</figure> 
+
 
 ## 5. How to request JSON, XML, HTML based files from the web services?
 
@@ -286,7 +300,7 @@ Here you have As you may notice, it was not actually converted into a JSON objec
 TIP: If you would select a most python-native encoding format, that would be none of these, but **YAML**. Since, the YAML format is out of our focus for this exercise, we didn't mention about that yet.
 
 - [ ] If you try to save the python dictionary object to a file, you will notice an error.
-```with open("../../responses/exr2/my_request.json", "w") as my_json_request:```
+```with open("responses/intro_python/my_request.json", "w") as my_json_request:```
 
 ```        my_json_request.write(myjson)```
 
@@ -298,7 +312,7 @@ TIP: If you would select a most python-native encoding format, that would be non
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 # Replace the URL with your own URL
 mydata = requests.get("https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json")
@@ -361,6 +375,7 @@ What if you had a text file instead of a python dictionary? Can you convert a te
 - If not, the json parser will throw an error and you may need to use additional string functions such as rstrip, lstrip, replace to fix the problem in the text. You can also browse [this web page](https://www.w3schools.com/python/python_ref_string.asp) for python string methods.
 
 
+
 ```python
 import json
 import requests
@@ -399,7 +414,7 @@ import json
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 # Replace the URL with your own URL
 mydata = requests.get("https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json")
@@ -425,7 +440,7 @@ import json
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 # Replace the URL with your own URL
 mydata = requests.get("https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json")
@@ -454,7 +469,7 @@ import json
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 # Replace the URL with your own URL
 mydata = requests.get("https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json")
@@ -482,7 +497,7 @@ with open(export_folder + "my_request.json", "w") as my_json_req:
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 # Replace the URL with your own URL
 mydata = requests.get("https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json")
@@ -518,7 +533,7 @@ import json
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 with open(export_folder + "my_request.json", "r") as my_json_req:
         json_file = my_json_req.read()
@@ -536,7 +551,12 @@ my_subset = my_object['geometry']
 | **Variable Type** | requests.models.Response | dict | dict
 
 - TIP: If you are confused with the dump and load methods, take a look at the image below which explains how to convert json data into python dictionaries or vice a versa.
-![json load and dump methods](../images/exr2/json_load_dump.png)
+
+<figure style="width:%100;text-align: center;">
+  <img src="../images/intro_python/json_load_dump.png" alt="JSON load and dump methods" style="border:3px solid darkgray">
+  <figcaption>JSON load and dump methods</figcaption>
+</figure> 
+
 
 ## 7. Convert the JSON request into a program that saves only properties to a file
 
@@ -612,7 +632,7 @@ import json
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 # Replace the URL with your own URL
 mydata = requests.get("https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json")
@@ -642,7 +662,7 @@ import json
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 def get_building_properties(custom_url):
     mydata = requests.get(custom_url)
@@ -678,7 +698,7 @@ import json
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 def get_building_properties(custom_url):
     mydata = requests.get(custom_url)
@@ -710,7 +730,7 @@ import json
 import requests
 import os
 
-export_folder = os.path.join(os.pardir, os.pardir, 'responses','exr2') + os.path.sep
+export_folder = os.path.join('responses','intro_python') + os.path.sep
 
 def get_building_properties(custom_url):
     mydata = requests.get(custom_url)
@@ -748,8 +768,8 @@ save_property_as_list(building_properties, custom_file_name)
 ```
 
     Enter the requested URL serves JSON :  https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json
-    Specify a file name with extension :  sample_file
+    Specify a file name with extension :  windmills.json
 
 
-    List saved as a file : ../../responses/exr2/sample_file
+    List saved as a file : responses/intro_python/windmills.json
 
