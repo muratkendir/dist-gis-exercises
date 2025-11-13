@@ -358,7 +358,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction to Python
+    Introduction to Python (Optional)
   </span>
   
 
@@ -1391,20 +1391,20 @@ To do that, we can implement another function which runs an input command for ev
 <a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="n">found_service</span><span class="p">()</span>
 <a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="c1"># my_services.clear()</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Give an ID (number or unique value)... 1
+<div class="highlight"><pre><span></span><code>Give an ID (number or unique value)... 99
 Please specify the name Hamburg Buildings
-Please specify the Url of SDI tranzparenz.hamburg.de
-Please specify the URL of WMS Service https://geodienste.hamburg.de/wms/building?
+Please specify the Url of SDI transparenz.hamburg.de
+Please specify the URL of WMS Service geodienste.hamburg.de/wms/building?
 
 
-{&#39;0&#39;: {&#39;name&#39;: None, &#39;Url of SDI&#39;: None, &#39;URL of WMS Service&#39;: None}, &#39;1&#39;: {&#39;name&#39;: &#39;Hamburg Buildings&#39;, &#39;Url of SDI&#39;: &#39;tranzparenz.hamburg.de&#39;, &#39;URL of WMS Service&#39;: &#39;https://geodienste.hamburg.de/wms/building?&#39;}}
+{&#39;0&#39;: {&#39;name&#39;: None, &#39;Url of SDI&#39;: None, &#39;URL of WMS Service&#39;: None}, &#39;99&#39;: {&#39;name&#39;: &#39;Hamburg Buildings&#39;, &#39;Url of SDI&#39;: &#39;transparenz.hamburg.de&#39;, &#39;URL of WMS Service&#39;: &#39;geodienste.hamburg.de/wms/building?&#39;}}
 </code></pre></div>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> <strong>Save the code</strong> above as "service_selection.py" into "raw_codes/exr3" directory.</li>
+<li class="task-list-item"><input type="checkbox"/> <strong>Save the code</strong> above as "service_selection.py" into "raw_codes/sdis" directory.</li>
 </ul>
 <h2 id="22-use-the-created-program-in-another-python-program">2.2. Use the created program in another python program</h2>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> Check if the file exists in the "/raw_codes/exr3" folder.</li>
+<li class="task-list-item"><input type="checkbox"/> Check if the file exists in the "/raw_codes/sdis" folder.</li>
 <li class="task-list-item"><input type="checkbox"/> Start a new code and import the functions and variables defined in the previously created python file.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># When you save a python file contains classes, functions and variables into another folder</span>
@@ -1414,16 +1414,18 @@ Please specify the URL of WMS Service https://geodienste.hamburg.de/wms/building
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># The contents of the modules are only accessible with dot (.) operator.</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Method 1</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kn">from</span> <span class="nn">raw_codes.exr3</span> <span class="kn">import</span> <span class="n">service_selection</span> <span class="k">as</span> <span class="n">srv</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">#print(srv.keys)</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kn">from</span> <span class="nn">raw_codes.sdis</span> <span class="kn">import</span> <span class="n">service_selection</span> <span class="k">as</span> <span class="n">srv</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">srv</span><span class="o">.</span><span class="n">keys</span><span class="p">)</span>
 <a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
 <a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># Method 2</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># from raw_codes.exr3.service_selection import keys, my_services, add_to_store, found_service</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># from raw_codes.sdis.service_selection import keys, my_services, add_to_store, found_service</span>
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># print(keys)</span>
 <a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
 <a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1"># Now you can call your program to save the data about the found geospatial services:</span>
 <a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># srv.found_service() </span>
 <a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># srv.my_services.clear()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>[&#39;name&#39;, &#39;Url of SDI&#39;, &#39;URL of WMS Service&#39;]
 </code></pre></div>
 <blockquote> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
 
@@ -1688,12 +1690,12 @@ If you are sure about the data is an iterable object (tuple, set, list, dictiona
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">list</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">operations</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x7228723cc740&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7228723cc800&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7228723cc950&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7228723cc9e0&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7228723cca70&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7228723ccb00&gt;]
+<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e92390&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e924b0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e92600&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e92690&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e92720&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e927b0&gt;]
 </code></pre></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> As operations stored as objects in a list (array), we can access them using list index (For Exp. mylist[0]). Then you can check the available methods or attributes in the class instance by typing <code>dir(mytest.operations[0])</code>. </li>
@@ -1713,7 +1715,7 @@ GetStyles
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># type(mytest.getServiceXML())</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Specify your own relative or full path to save the XML file, if it is required.</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/exr3/my_wms_servicexml.xml&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_wms_xml</span><span class="p">:</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/sdis/my_wms_servicexml.xml&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_wms_xml</span><span class="p">:</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="n">my_wms_xml</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">getServiceXML</span><span class="p">())</span>
 </code></pre></div>
 <ul>
@@ -1730,7 +1732,7 @@ GetStyles
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Layer Style : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="p">[</span><span class="s1">&#39;WMS_DGM1_HAMBURG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">styles</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 <a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Supported Formats : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="o">.</span><span class="n">getOperationByName</span><span class="p">(</span><span class="s1">&#39;GetMap&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">formatOptions</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>CRS Options :  [&#39;EPSG:3044&#39;, &#39;EPSG:31467&#39;, &#39;EPSG:4258&#39;, &#39;EPSG:25832&#39;, &#39;EPSG:4326&#39;, &#39;EPSG:3857&#39;, &#39;EPSG:25833&#39;, &#39;CRS:84&#39;, &#39;EPSG:4647&#39;]
+<div class="highlight"><pre><span></span><code>CRS Options :  [&#39;EPSG:4647&#39;, &#39;EPSG:25833&#39;, &#39;EPSG:31467&#39;, &#39;EPSG:25832&#39;, &#39;EPSG:3857&#39;, &#39;EPSG:3044&#39;, &#39;EPSG:4326&#39;, &#39;CRS:84&#39;, &#39;EPSG:4258&#39;]
 
 Bounding Box :  (8.482047, 53.385591, 10.355638, 53.941383)
 
@@ -1822,11 +1824,11 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="n">my_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">my_items</span><span class="p">)</span>
 <a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>
 <a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="c1"># Write the request as a json file, preferably with &quot;.geojson&quot; file extension.</span>
-<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;responses/exr3/my_api.geojson&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;responses/sdis/my_api.geojson&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 <a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">my_json</span><span class="p">)</span>
 <a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>
 <a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a><span class="c1"># Check the file and read as geojson to laod into map</span>
-<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;responses/exr3/my_api.geojson&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;responses/sdis/my_api.geojson&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 <a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>    <span class="n">my_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>
 <a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="c1"># Specify some styles to the geojson data:</span>

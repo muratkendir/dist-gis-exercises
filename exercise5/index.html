@@ -356,7 +356,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction to Python
+    Introduction to Python (Optional)
   </span>
   
 
@@ -1120,7 +1120,7 @@ The steps required to achieve this goal will be as follows:
 <blockquote>
 <p>TIP: The terminal screen and available commands here will have the same or similar commands as a Linux terminal screen (command line), because usually the examples run on a Linux system. To check which version of Linux is used as the base operating system, type <mark>uname -a</mark> in the terminal.</p>
 </blockquote>
-<p><img alt="1100 play docker" src="../images/exr5/1100_play_docker.png" /></p>
+<p><img alt="1100 play docker" src="images/exr5/1100_play_docker.png" /></p>
 <h3 id="12-running-the-first-docker-container-in-instance">1.2 Running the first Docker container in instance</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> There is no working docker containers yet.</li>
@@ -1155,7 +1155,7 @@ The steps required to achieve this goal will be as follows:
 <li>Check the available docker images in the host machine:</li>
 <li><mark>docker image ls</mark></li>
 </ul>
-<p><img alt="1300 docker hub" src="../images/exr5/1300_docker_hub.png" /></p>
+<p><img alt="1300 docker hub" src="images/exr5/1300_docker_hub.png" /></p>
 <h3 id="14-how-to-removedelete-docker-images-from-the-instance-optional">1.4 How to remove/delete docker images from the instance? (Optional)</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Try deleting the image:</li>
@@ -1199,7 +1199,7 @@ The steps required to achieve this goal will be as follows:
 <li class="task-list-item"><input type="checkbox"/> Grafana will ask for a new password on the next page, type any password.</li>
 <li>If everything is OK, the Grafana start page will be shown.</li>
 </ul>
-<p><img alt="1600 garanfana" src="../images/exr5/1600_grafana.png" /></p>
+<p><img alt="1600 garanfana" src="images/exr5/1600_grafana.png" /></p>
 <h3 id="17-find-and-check-the-online-datasource">1.7 Find and check the online datasource</h3>
 <ul class="task-list">
 <li>Now you need to select a <strong>FROST Server</strong> stream as the data source (remember that we started the Grafana container with the corresponding plugin)</li>
@@ -1242,7 +1242,7 @@ The steps required to achieve this goal will be as follows:
 <h2 id="2-build-the-app-on-local-computer-with-docker-desktop-and-cli-commands">2. Build the app on local computer with Docker Desktop and CLI commands</h2>
 <p>In this section you will try to prepare all the requirements of the web application described in the "Aim of the Exercise" section. This workflow includes installing Docker Desktop, using CLI commands, running a geoserver container, publishing a wms service, and integrating the WMS service with Grafana Dashboard.</p>
 <h3 id="21-docker-desktop-installation-on-windows-systems-optional">2.1 Docker Desktop Installation on Windows systems (optional)</h3>
-<p><img alt="windows features" src="../images/exr5/2-1_windows_properties.png" /></p>
+<p><img alt="windows features" src="images/exr5/2-1_windows_properties.png" /></p>
 <p>Check this step if you want to download and install the Docker Desktop or CLI tool on your personal computer</p>
 <ul>
 <li>If this is your first time downloading and installing Docker Desktop, it may be more effective to enable the *<em>WSL2</em> option in Docker Settings.</li>
@@ -1252,7 +1252,7 @@ The steps required to achieve this goal will be as follows:
 <li>At the first start of the Docker Desktop app, log in to Docker Hub using the Login button in the top right corner.</li>
 <li>You will continue using the CLI (Command Line Interface) tool, but you can still check the Desktop App to view the containers, images etc.</li>
 </ul>
-<p><img alt="wsl2 option" src="../images/exr5/2-1_wsl2_option.png" /></p>
+<p><img alt="wsl2 option" src="images/exr5/2-1_wsl2_option.png" /></p>
 <h3 id="22-serving-a-wmtstms-service-from-geoserver-as-a-docker-container">2.2 Serving a WMTS/TMS service from Geoserver as a Docker container</h3>
 <p>To offer a Tiled Map Layer, we need to run a server that will render the given geographic data source in raster file format, taking into account defined coordinate reference systems. We have multiple software options to do this. MapServer, GeoServer, ArcGIS Server or QGIS Server are the most popular ones. You will create a server instance using a docker image containing Geoserver to publish a WMTS/TMS.</p>
 <blockquote>
