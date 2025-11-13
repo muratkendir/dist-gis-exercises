@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://muratkendir.github.io/dist-gis-exercises/exercise3/">
+        <link rel="canonical" href="https://muratkendir.github.io/dist-gis-exercises/sdis/">
       
       
-        <link rel="prev" href="../exercise2/">
+        <link rel="prev" href="../intro_python/">
       
       
-        <link rel="next" href="../exercise4/">
+        <link rel="next" href="../networks_internet/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Exercise 3 (SDIs) - dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)</title>
+        <title>Spatial Data Infrastructures - dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#spatial-data-infrastructures-sdi" class="md-skip">
+        <a href="#exercise-spatial-data-infrastructures-sdi" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercise 3 (SDIs)
+              Spatial Data Infrastructures
             
           </span>
         </div>
@@ -271,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercise1/" class="md-nav__link">
+      <a href="../distributed_systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -291,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercise1-bns/" class="md-nav__link">
+      <a href="../docker_usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -316,13 +316,49 @@
       
   
   
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercise 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Exercise 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
   
     <li class="md-nav__item">
-      <a href="../exercise2/" class="md-nav__link">
+      <a href="../intro_python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercise 2 (Python Intro)
+    Introduction to Python
   </span>
   
 
@@ -330,9 +366,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
     
@@ -350,7 +387,7 @@
           
   
   <span class="md-ellipsis">
-    Exercise 3 (SDIs)
+    Spatial Data Infrastructures
   </span>
   
 
@@ -361,7 +398,7 @@
         
   
   <span class="md-ellipsis">
-    Exercise 3 (SDIs)
+    Spatial Data Infrastructures
   </span>
   
 
@@ -383,16 +420,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#0-reminders" class="md-nav__link">
-    0) Reminders
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
   </a>
   
-    <nav class="md-nav" aria-label="0) Reminders">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0-aim-of-the-exercise" class="md-nav__link">
+    0. Aim of the Exercise
+  </a>
+  
+    <nav class="md-nav" aria-label="0. Aim of the Exercise">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#what-we-have-learned-in-the-previous-exercise" class="md-nav__link">
-    What we have learned in the previous exercise?
+  <a href="#01-general-preparation" class="md-nav__link">
+    0.1. General Preparation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-python-tips" class="md-nav__link">
+    0.2. Python Tips
   </a>
   
 </li>
@@ -404,50 +455,70 @@
       
         <li class="md-nav__item">
   <a href="#1-finding-the-datasets" class="md-nav__link">
-    1) Finding the datasets
+    1. Finding the datasets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-a-a-short-preparation-creating-a-service-selection-tool" class="md-nav__link">
-    2 a) A short preparation - Creating a "Service Selection Tool"
+  <a href="#2-creating-a-service-selection-tool" class="md-nav__link">
+    2. Creating a "Service Selection Tool"
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-b-use-the-created-program-in-another-python-program" class="md-nav__link">
-    2 b) Use the created program in another python program
-  </a>
-  
-    <nav class="md-nav" aria-label="2 b) Use the created program in another python program">
+    <nav class="md-nav" aria-label="2. Creating a "Service Selection Tool"">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3-a-building-footprints-grundstuck" class="md-nav__link">
-    3 a) Building Footprints (Grundstück)
+  <a href="#21-adding-some-interaction-to-the-tool" class="md-nav__link">
+    2.1. Adding some interaction to the tool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-use-the-created-program-in-another-python-program" class="md-nav__link">
+    2.2. Use the created program in another python program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-datasets" class="md-nav__link">
+    3. Datasets
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-building-footprints-grundstuck" class="md-nav__link">
+    3.1. Building Footprints (Grundstück)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-b-land-parcels-flurstucke" class="md-nav__link">
-    3 b) Land Parcels (Flurstücke)
+  <a href="#32-land-parcels-flurstucke" class="md-nav__link">
+    3.2. Land Parcels (Flurstücke)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-c-digital-elevation-model-dem-hohenmodell" class="md-nav__link">
-    3 c) Digital Elevation Model / DEM (Höhenmodell)
+  <a href="#33-digital-elevation-model-dem-hohenmodell" class="md-nav__link">
+    3.3. Digital Elevation Model (DEM / Höhenmodell)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-d-flood-risk-zones" class="md-nav__link">
-    3 d) Flood Risk Zones
+  <a href="#34-flood-risk-zones" class="md-nav__link">
+    3.4. Flood Risk Zones
   </a>
   
 </li>
@@ -459,37 +530,37 @@
       
         <li class="md-nav__item">
   <a href="#4-adding-services-to-gis-software" class="md-nav__link">
-    4) Adding Services to GIS Software
+    4. Adding Services to GIS Software
   </a>
   
-    <nav class="md-nav" aria-label="4) Adding Services to GIS Software">
+    <nav class="md-nav" aria-label="4. Adding Services to GIS Software">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4-a-adding-services-to-qgis" class="md-nav__link">
-    4 a) Adding Services to QGIS
+  <a href="#41-adding-services-to-qgis" class="md-nav__link">
+    4.1. Adding Services to QGIS
   </a>
   
-    <nav class="md-nav" aria-label="4 a) Adding Services to QGIS">
+    <nav class="md-nav" aria-label="4.1. Adding Services to QGIS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4a-i-add-xyz-basemap" class="md-nav__link">
-    4a i) Add XYZ Basemap
+  <a href="#411-add-xyz-basemap" class="md-nav__link">
+    4.1.1. Add XYZ Basemap
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4a-ii-add-wms-service" class="md-nav__link">
-    4a ii) Add WMS Service
+  <a href="#412-add-wms-service" class="md-nav__link">
+    4.1.2. Add WMS Service
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4a-iii-add-wfs-service" class="md-nav__link">
-    4a iii) Add WFS Service
+  <a href="#413-add-wfs-service" class="md-nav__link">
+    4.1.3. Add WFS Service
   </a>
   
 </li>
@@ -500,37 +571,37 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-b-adding-services-to-arcgis-pro" class="md-nav__link">
-    4 b) Adding Services to ArcGIS Pro
+  <a href="#42-adding-services-to-arcgis-pro" class="md-nav__link">
+    4.2. Adding Services to ArcGIS Pro
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-c-adding-a-wms-service-in-fme" class="md-nav__link">
-    4 c) Adding a WMS Service in FME
+  <a href="#43-adding-a-wms-service-in-fme" class="md-nav__link">
+    4.3. Adding a WMS Service in FME
   </a>
   
-    <nav class="md-nav" aria-label="4 c) Adding a WMS Service in FME">
+    <nav class="md-nav" aria-label="4.3. Adding a WMS Service in FME">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4c-i-adding-a-wms-service-to-fme-as-background-map" class="md-nav__link">
-    4c i) Adding a WMS Service to FME as Background Map
+  <a href="#431-adding-a-wms-service-to-fme-as-background-map" class="md-nav__link">
+    4.3.1. Adding a WMS Service to FME as Background Map
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4c-ii-adding-a-wms-service-to-fme-as-reader" class="md-nav__link">
-    4c ii) Adding a WMS Service to FME as Reader
+  <a href="#432-adding-a-wms-service-to-fme-as-reader" class="md-nav__link">
+    4.3.2. Adding a WMS Service to FME as Reader
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4c-iii-using-getfeatureinfo-request-in-fme-optional-step" class="md-nav__link">
-    4c iii) Using GetFeatureInfo request in FME (Optional Step)
+  <a href="#433-using-getfeatureinfo-request-in-fme-optional-step" class="md-nav__link">
+    4.3.3. Using GetFeatureInfo request in FME (Optional Step)
   </a>
   
 </li>
@@ -547,15 +618,15 @@
       
         <li class="md-nav__item">
   <a href="#5-accessing-wms-services-with-owslib-python-library" class="md-nav__link">
-    5) Accessing WMS services with OWSLib Python Library
+    5. Accessing WMS services with OWSLib Python Library
   </a>
   
-    <nav class="md-nav" aria-label="5) Accessing WMS services with OWSLib Python Library">
+    <nav class="md-nav" aria-label="5. Accessing WMS services with OWSLib Python Library">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#5-a-examine-a-wms-service-with-owslib" class="md-nav__link">
-    5 a) Examine a WMS service with OWSLib
+  <a href="#51-examine-a-wms-service-with-owslib" class="md-nav__link">
+    5.1. Examine a WMS service with OWSLib
   </a>
   
 </li>
@@ -567,22 +638,22 @@
       
         <li class="md-nav__item">
   <a href="#6-using-ipyleaflet-to-show-the-web-services" class="md-nav__link">
-    6) Using ipyleaflet to show the web services
+    6. Using ipyleaflet to show the web services
   </a>
   
-    <nav class="md-nav" aria-label="6) Using ipyleaflet to show the web services">
+    <nav class="md-nav" aria-label="6. Using ipyleaflet to show the web services">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add-a-wms-layer-into-the-leaflet-map" class="md-nav__link">
-    Add a WMS layer into the leaflet map
+  <a href="#61-add-a-wms-layer-into-the-leaflet-map" class="md-nav__link">
+    6.1. Add a WMS layer into the leaflet map
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection" class="md-nav__link">
-    Add a GeoJSON data into the leaflet map using a OGC API - Features connection
+  <a href="#62-add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection" class="md-nav__link">
+    6.2. Add a GeoJSON data into the leaflet map using a OGC API - Features connection
   </a>
   
 </li>
@@ -595,6 +666,34 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../networks_internet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networks & Internet (Bonus)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -633,9 +732,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -646,8 +745,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Exercise 5 (Virtualization)
           </label>
@@ -752,9 +851,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -765,8 +864,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Virtual Env. Installation
           </label>
@@ -865,16 +964,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#0-reminders" class="md-nav__link">
-    0) Reminders
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
   </a>
   
-    <nav class="md-nav" aria-label="0) Reminders">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0-aim-of-the-exercise" class="md-nav__link">
+    0. Aim of the Exercise
+  </a>
+  
+    <nav class="md-nav" aria-label="0. Aim of the Exercise">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#what-we-have-learned-in-the-previous-exercise" class="md-nav__link">
-    What we have learned in the previous exercise?
+  <a href="#01-general-preparation" class="md-nav__link">
+    0.1. General Preparation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-python-tips" class="md-nav__link">
+    0.2. Python Tips
   </a>
   
 </li>
@@ -886,50 +999,70 @@
       
         <li class="md-nav__item">
   <a href="#1-finding-the-datasets" class="md-nav__link">
-    1) Finding the datasets
+    1. Finding the datasets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-a-a-short-preparation-creating-a-service-selection-tool" class="md-nav__link">
-    2 a) A short preparation - Creating a "Service Selection Tool"
+  <a href="#2-creating-a-service-selection-tool" class="md-nav__link">
+    2. Creating a "Service Selection Tool"
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-b-use-the-created-program-in-another-python-program" class="md-nav__link">
-    2 b) Use the created program in another python program
-  </a>
-  
-    <nav class="md-nav" aria-label="2 b) Use the created program in another python program">
+    <nav class="md-nav" aria-label="2. Creating a "Service Selection Tool"">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3-a-building-footprints-grundstuck" class="md-nav__link">
-    3 a) Building Footprints (Grundstück)
+  <a href="#21-adding-some-interaction-to-the-tool" class="md-nav__link">
+    2.1. Adding some interaction to the tool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-use-the-created-program-in-another-python-program" class="md-nav__link">
+    2.2. Use the created program in another python program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-datasets" class="md-nav__link">
+    3. Datasets
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-building-footprints-grundstuck" class="md-nav__link">
+    3.1. Building Footprints (Grundstück)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-b-land-parcels-flurstucke" class="md-nav__link">
-    3 b) Land Parcels (Flurstücke)
+  <a href="#32-land-parcels-flurstucke" class="md-nav__link">
+    3.2. Land Parcels (Flurstücke)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-c-digital-elevation-model-dem-hohenmodell" class="md-nav__link">
-    3 c) Digital Elevation Model / DEM (Höhenmodell)
+  <a href="#33-digital-elevation-model-dem-hohenmodell" class="md-nav__link">
+    3.3. Digital Elevation Model (DEM / Höhenmodell)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-d-flood-risk-zones" class="md-nav__link">
-    3 d) Flood Risk Zones
+  <a href="#34-flood-risk-zones" class="md-nav__link">
+    3.4. Flood Risk Zones
   </a>
   
 </li>
@@ -941,37 +1074,37 @@
       
         <li class="md-nav__item">
   <a href="#4-adding-services-to-gis-software" class="md-nav__link">
-    4) Adding Services to GIS Software
+    4. Adding Services to GIS Software
   </a>
   
-    <nav class="md-nav" aria-label="4) Adding Services to GIS Software">
+    <nav class="md-nav" aria-label="4. Adding Services to GIS Software">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4-a-adding-services-to-qgis" class="md-nav__link">
-    4 a) Adding Services to QGIS
+  <a href="#41-adding-services-to-qgis" class="md-nav__link">
+    4.1. Adding Services to QGIS
   </a>
   
-    <nav class="md-nav" aria-label="4 a) Adding Services to QGIS">
+    <nav class="md-nav" aria-label="4.1. Adding Services to QGIS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4a-i-add-xyz-basemap" class="md-nav__link">
-    4a i) Add XYZ Basemap
+  <a href="#411-add-xyz-basemap" class="md-nav__link">
+    4.1.1. Add XYZ Basemap
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4a-ii-add-wms-service" class="md-nav__link">
-    4a ii) Add WMS Service
+  <a href="#412-add-wms-service" class="md-nav__link">
+    4.1.2. Add WMS Service
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4a-iii-add-wfs-service" class="md-nav__link">
-    4a iii) Add WFS Service
+  <a href="#413-add-wfs-service" class="md-nav__link">
+    4.1.3. Add WFS Service
   </a>
   
 </li>
@@ -982,37 +1115,37 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-b-adding-services-to-arcgis-pro" class="md-nav__link">
-    4 b) Adding Services to ArcGIS Pro
+  <a href="#42-adding-services-to-arcgis-pro" class="md-nav__link">
+    4.2. Adding Services to ArcGIS Pro
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-c-adding-a-wms-service-in-fme" class="md-nav__link">
-    4 c) Adding a WMS Service in FME
+  <a href="#43-adding-a-wms-service-in-fme" class="md-nav__link">
+    4.3. Adding a WMS Service in FME
   </a>
   
-    <nav class="md-nav" aria-label="4 c) Adding a WMS Service in FME">
+    <nav class="md-nav" aria-label="4.3. Adding a WMS Service in FME">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4c-i-adding-a-wms-service-to-fme-as-background-map" class="md-nav__link">
-    4c i) Adding a WMS Service to FME as Background Map
+  <a href="#431-adding-a-wms-service-to-fme-as-background-map" class="md-nav__link">
+    4.3.1. Adding a WMS Service to FME as Background Map
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4c-ii-adding-a-wms-service-to-fme-as-reader" class="md-nav__link">
-    4c ii) Adding a WMS Service to FME as Reader
+  <a href="#432-adding-a-wms-service-to-fme-as-reader" class="md-nav__link">
+    4.3.2. Adding a WMS Service to FME as Reader
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4c-iii-using-getfeatureinfo-request-in-fme-optional-step" class="md-nav__link">
-    4c iii) Using GetFeatureInfo request in FME (Optional Step)
+  <a href="#433-using-getfeatureinfo-request-in-fme-optional-step" class="md-nav__link">
+    4.3.3. Using GetFeatureInfo request in FME (Optional Step)
   </a>
   
 </li>
@@ -1029,15 +1162,15 @@
       
         <li class="md-nav__item">
   <a href="#5-accessing-wms-services-with-owslib-python-library" class="md-nav__link">
-    5) Accessing WMS services with OWSLib Python Library
+    5. Accessing WMS services with OWSLib Python Library
   </a>
   
-    <nav class="md-nav" aria-label="5) Accessing WMS services with OWSLib Python Library">
+    <nav class="md-nav" aria-label="5. Accessing WMS services with OWSLib Python Library">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#5-a-examine-a-wms-service-with-owslib" class="md-nav__link">
-    5 a) Examine a WMS service with OWSLib
+  <a href="#51-examine-a-wms-service-with-owslib" class="md-nav__link">
+    5.1. Examine a WMS service with OWSLib
   </a>
   
 </li>
@@ -1049,22 +1182,22 @@
       
         <li class="md-nav__item">
   <a href="#6-using-ipyleaflet-to-show-the-web-services" class="md-nav__link">
-    6) Using ipyleaflet to show the web services
+    6. Using ipyleaflet to show the web services
   </a>
   
-    <nav class="md-nav" aria-label="6) Using ipyleaflet to show the web services">
+    <nav class="md-nav" aria-label="6. Using ipyleaflet to show the web services">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add-a-wms-layer-into-the-leaflet-map" class="md-nav__link">
-    Add a WMS layer into the leaflet map
+  <a href="#61-add-a-wms-layer-into-the-leaflet-map" class="md-nav__link">
+    6.1. Add a WMS layer into the leaflet map
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection" class="md-nav__link">
-    Add a GeoJSON data into the leaflet map using a OGC API - Features connection
+  <a href="#62-add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection" class="md-nav__link">
+    6.2. Add a GeoJSON data into the leaflet map using a OGC API - Features connection
   </a>
   
 </li>
@@ -1092,22 +1225,76 @@
   
 
 
-<h1 id="spatial-data-infrastructures-sdi">Spatial Data Infrastructures (SDI)</h1>
-<p><img align="right" width=190 height=100 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
+<h1 id="exercise-spatial-data-infrastructures-sdi">Exercise - Spatial Data Infrastructures (SDI)</h1>
+<p><img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
 <blockquote>
-Munich Technical University || Chair of Geoinformatics </br></br>
-Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+Munich Technical University / Chair of Geoinformatics <br> 
+Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+murat.kendir@tum.de
 </blockquote>
 
+<div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
+
+<h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li>In the previous exercise we explored the python programming language and tried to create a simple application to request geospatial data using the requests library.</li>
-<li>In this tutorial, you will learn how to search for a geospatial dataset using different levels (regional, city scale, etc.) of “Spatial Data Infrastructures” (SDIs). </li>
+<li><a href="#0-aim-of-the-exercise">0. Aim of the Exercise</a><ul>
+<li><a href="#01-general-preparation">0.1. General Preparation</a></li>
+<li><a href="#02-python-tips">0.2. Python Tips</a></li>
+</ul>
+</li>
+<li><a href="#1-finding-the-datasets">1. Finding the datasets</a></li>
+<li><a href="#2-creating-a-service-selection-tool">2. Creating a "Service Selection Tool"</a><ul>
+<li><a href="#21-adding-some-interaction-to-the-tool">2.1. Adding some interaction to the tool</a></li>
+<li><a href="#22-use-the-created-program-in-another-python-program">2.2. Use the created program in another python program</a></li>
+</ul>
+</li>
+<li><a href="#3-datasets">3. Datasets</a><ul>
+<li><a href="#31-building-footprints-grundstück">3.1. Building Footprints (Grundstück)</a></li>
+<li><a href="#32-land-parcels-flurstücke">3.2. Land Parcels (Flurstücke)</a></li>
+<li><a href="#33-digital-elevation-model-dem-hohenmodell">3.3. Digital Elevation Model (DEM / Höhenmodell)</a></li>
+<li><a href="#34-flood-risk-zones">3.4. Flood Risk Zones</a></li>
+</ul>
+</li>
+<li><a href="#4-adding-services-to-gis-software">4. Adding Services to GIS Software</a><ul>
+<li><a href="#41-adding-services-to-qgis">4.1. Adding Services to QGIS</a><ul>
+<li><a href="#411-add-xyz-basemap">4.1.1. Add XYZ Basemap</a></li>
+<li><a href="#412-add-wms-service">4.1.2. Add WMS Service</a></li>
+<li><a href="#413-add-wfs-service">4.1.3. Add WFS Service</a></li>
+</ul>
+</li>
+<li><a href="#42-adding-services-to-arcgis-pro">4.2. Adding Services to ArcGIS Pro</a></li>
+<li><a href="#43-adding-a-wms-service-in-fme">4.3. Adding a WMS Service in FME</a><ul>
+<li><a href="#431-adding-a-wms-service-to-fme-as-background-map">4.3.1. Adding a WMS Service to FME as Background Map</a></li>
+<li><a href="#432-adding-a-wms-service-to-fme-as-reader">4.3.2. Adding a WMS Service to FME as Reader</a></li>
+<li><a href="#433-using-getfeatureinfo-request-in-fme-optional-step">4.3.3. Using GetFeatureInfo request in FME (Optional Step)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#5-accessing-wms-services-with-owslib-python-library">5. Accessing WMS services with OWSLib Python Library</a><ul>
+<li><a href="#51-examine-a-wms-service-with-owslib">5.1. Examine a WMS service with OWSLib</a></li>
+</ul>
+</li>
+<li><a href="#6-using-ipyleaflet-to-show-the-web-services">6. Using ipyleaflet to show the web services</a><ul>
+<li><a href="#61-add-a-wms-layer-into-the-leaflet-map">6.1. Add a WMS layer into the leaflet map</a></li>
+<li><a href="#62-add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection">6.2. Add a GeoJSON data into the leaflet map using a OGC API - Features connection</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="0-aim-of-the-exercise">0. Aim of the Exercise</h2>
+<p>In the previous exercise we explored the interactions in several Web-GIS applications and we treid to model the ongoing interactions using UML Class Diagrams.</p>
+<p>In this tutorial, you will learn how to search for a geospatial dataset using different levels (regional, city scale, etc.) of “Spatial Data Infrastructures” (SDIs). </p>
+<ul>
 <li>You will explore multiple SDI websites that provide some geospatial datasets in different formats or as different types of web services.</li>
 <li>You will then learn how to combine and represent these datasets in popular GIS platforms such as QGIS and ArcGIS Pro.</li>
 <li>Finally, you will create a small python application that connects and utilizes the selected geospatial data for a specific purpose.</li>
 </ul>
-<h2 id="0-reminders">0) Reminders</h2>
-<h3 id="what-we-have-learned-in-the-previous-exercise">What we have learned in the previous exercise?</h3>
+<p>You can refer to the following resources when needed:</p>
+<h3 id="01-general-preparation">0.1. General Preparation</h3>
+<ul>
+<li><a href="intro_python">Introduction to Python Exercise</a></li>
+</ul>
+<h3 id="02-python-tips">0.2. Python Tips</h3>
 <ul>
 <li>A python program can be executed simply by calling it with the python <strong>interpreter</strong> by simply typing <code>python my_first_python_program.py</code>. </li>
 <li>Python uses <strong>indentation</strong> to highlight the blocks of code.</li>
@@ -1121,7 +1308,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 <li>A python <strong>dictionary</strong> is a bit different from a <strong>JSON</strong> object and they can be converted to eachother with json.load(s) and json.dump(s) functions of json library.</li>
 <li>A questionnaire can be set with <strong><code>input("Enter a custom name")</code></strong> function.</li>
 </ul>
-<h2 id="1-finding-the-datasets">1) Finding the datasets</h2>
+<h2 id="1-finding-the-datasets">1. Finding the datasets</h2>
 <p>Global Sea Level is rising at an increasing rate every year, causing floods to occur more frequently all over the world. This forces local (or regional) governments to take measures against future floods. <b>Suppose you are responsible for preparing a disaster management application in Hamburg.</b> This application will calculate the flood risk for a specific building and generate a report with information on the extent of the risk and the relevant land parcel number. For this purpose, you need to find the most suitable geographic data services using the <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a>, <a href="https://geoportal.de">geoportal.de</a> and <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a>. Imagine that these datasets should contain the following data layers: </p>
 <ul>
     <li>Buildings footprints (DE: Gebeaude Grundstücke) | (will be searched for in the Section 3a)</li>
@@ -1130,15 +1317,16 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
     <li>Flood Risk Zones (DE: Hochwasserrisikos)</li>
 </ul>
 <div align=center>
+
 <figure style="width:282px;padding:10px;background-color:#dad7cb;">
-    <img src="../images/exr3/hamburg_1962.jpg" width=282 height=200/>
+    <img src="../images/sdis/hamburg_1962.jpg" width=282 height=200/>
     <figcaption>During the catastrophic flood of 1962, boats were used to rescue Hamburg residents from flooded buildings.
             <a href="https://www.bloomberg.com/news/features/2023-11-20/the-design-history-of-london-s-mansion-block-apartment-buildings"> Source</a>
     </figcaption>
 </figure>
 </div>
 
-<h2 id="2-a-a-short-preparation-creating-a-service-selection-tool">2 a) A short preparation - Creating a "Service Selection Tool"</h2>
+<h2 id="2-creating-a-service-selection-tool">2. Creating a "Service Selection Tool"</h2>
 <p>Before you start examining the given Spatial Data Infrastructures (SDIs), you will set up a function in python that makes it easy to store the names, links and additional information of the services.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># In Python, there is no need to specify the variable data type.</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># However, you can still use type conversion methods or shortcuts to specify the data type.</span>
@@ -1167,6 +1355,7 @@ Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
 also a shortcut. You can also find this information in related hidden functions like <b>__getitem__()</b> or
 <b>__setitem__()</b>. Type <i><b>dir(my_services)</i></b> or <i><b>dir(dict())</i></b> to reveal them.</blockquote>
 
+<h3 id="21-adding-some-interaction-to-the-tool">2.1. Adding some interaction to the tool</h3>
 <p>Now, suppose that you want to use the function in an interactive way to let other users also add the found services into the dictionary.
 To do that, we can implement another function which runs an input command for every instance in the dictionary:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># You can now define another function to interactively ask and store the knowledge data in your dictionary.</span>
@@ -1202,18 +1391,18 @@ To do that, we can implement another function which runs an input command for ev
 <a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="n">found_service</span><span class="p">()</span>
 <a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="c1"># my_services.clear()</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Give an ID (number or unique value)... 2
-Please specify the name asd
-Please specify the Url of SDI 234
-Please specify the URL of WMS Service asd
+<div class="highlight"><pre><span></span><code>Give an ID (number or unique value)... 1
+Please specify the name Hamburg Buildings
+Please specify the Url of SDI tranzparenz.hamburg.de
+Please specify the URL of WMS Service https://geodienste.hamburg.de/wms/building?
 
 
-{&#39;0&#39;: {&#39;name&#39;: None, &#39;Url of SDI&#39;: None, &#39;URL of WMS Service&#39;: None}, &#39;asd&#39;: {&#39;name&#39;: &#39;sad&#39;, &#39;Url of SDI&#39;: &#39;sad&#39;, &#39;URL of WMS Service&#39;: &#39;sad&#39;}, &#39;1&#39;: {&#39;name&#39;: &#39;asd&#39;, &#39;Url of SDI&#39;: &#39;asd&#39;, &#39;URL of WMS Service&#39;: &#39;asd&#39;}, &#39;2&#39;: {&#39;name&#39;: &#39;asd&#39;, &#39;Url of SDI&#39;: &#39;234&#39;, &#39;URL of WMS Service&#39;: &#39;asd&#39;}}
+{&#39;0&#39;: {&#39;name&#39;: None, &#39;Url of SDI&#39;: None, &#39;URL of WMS Service&#39;: None}, &#39;1&#39;: {&#39;name&#39;: &#39;Hamburg Buildings&#39;, &#39;Url of SDI&#39;: &#39;tranzparenz.hamburg.de&#39;, &#39;URL of WMS Service&#39;: &#39;https://geodienste.hamburg.de/wms/building?&#39;}}
 </code></pre></div>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> <strong>Save the code</strong> above as "service_selection.py" into "/raw_codes/exr3" directory.</li>
+<li class="task-list-item"><input type="checkbox"/> <strong>Save the code</strong> above as "service_selection.py" into "raw_codes/exr3" directory.</li>
 </ul>
-<h2 id="2-b-use-the-created-program-in-another-python-program">2 b) Use the created program in another python program</h2>
+<h2 id="22-use-the-created-program-in-another-python-program">2.2. Use the created program in another python program</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Check if the file exists in the "/raw_codes/exr3" folder.</li>
 <li class="task-list-item"><input type="checkbox"/> Start a new code and import the functions and variables defined in the previously created python file.</li>
@@ -1238,7 +1427,8 @@ Please specify the URL of WMS Service asd
 </code></pre></div>
 <blockquote> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
 
-<h3 id="3-a-building-footprints-grundstuck">3 a) Building Footprints (Grundstück)</h3>
+<h2 id="3-datasets">3. Datasets</h2>
+<h3 id="31-building-footprints-grundstuck">3.1. Building Footprints (Grundstück)</h3>
 <p>Visit the web site <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a> and search for the <strong>building footprints</strong> available for Hamburg city. Try to search with following possible words / tags:
 - Administrative Unit (Verwaltungseinheiten) 
 - House Coordinates (Hauskoordinaten) 
@@ -1253,10 +1443,10 @@ Please specify the URL of WMS Service asd
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function in the code (created in section 2b) and save the relevant information.</p>
 <div align="center">
-<img src="../images/exr3/grundstuecke_service.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/grundstuecke_service.png" width=250 height=250 align=center style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h3 id="3-b-land-parcels-flurstucke">3 b) Land Parcels (Flurstücke)</h3>
+<h3 id="32-land-parcels-flurstucke">3.2. Land Parcels (Flurstücke)</h3>
 <p>Visit the web site <a href="https://geoportal.de">geoportal.de</a> and search for the <strong>land parcels</strong> available for Hamburg city. </p>
 <blockquote>
 <p>TIP: If you can not find the land parcels for the Hamburg city try adding "HH" to your keywords. "HH" is the city code for Hamburg used on license plates and it is possible to find relevant datasets using these codes. More information can be found on this <a href="https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Germany">site</a>.</p>
@@ -1273,10 +1463,10 @@ Please specify the URL of WMS Service asd
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
 <div align="center">
-<img src="../images/exr3/flurstuecke_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/flurstuecke_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h3 id="3-c-digital-elevation-model-dem-hohenmodell">3 c) Digital Elevation Model / DEM (Höhenmodell)</h3>
+<h3 id="33-digital-elevation-model-dem-hohenmodell">3.3. Digital Elevation Model (DEM / Höhenmodell)</h3>
 <p>Visit the web site <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> and search for the <strong>Digital Elevation Model</strong> available for the Hamburg city.
 - Click to "Browse INSPIRE Thematic Datasets".
 - Click to "INSPIRE Data Themes"
@@ -1291,10 +1481,10 @@ Please specify the URL of WMS Service asd
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
 <div align="center">
-<img src="../images/exr3/hohemodell_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/hohemodell_service.png" width=250 height=250 align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h3 id="3-d-flood-risk-zones">3 d) Flood Risk Zones</h3>
+<h3 id="34-flood-risk-zones">3.4. Flood Risk Zones</h3>
 <p>Visit the web site <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> again and search for the <strong>flood risk zones</strong> available for the Hamburg city.</p>
 <ul>
 <li>Click to "Browse Priority Data Sets".</li>
@@ -1311,47 +1501,48 @@ Please specify the URL of WMS Service asd
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
 <div align="center">
-<img src="../images/exr3/flood_risk_service.png" width=250 height=250 align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/flood_risk_service.png" width=250 height=250 align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h2 id="4-adding-services-to-gis-software">4) Adding Services to GIS Software</h2>
+<h2 id="4-adding-services-to-gis-software">4. Adding Services to GIS Software</h2>
 <p>In this chapter, you will learn how to add web services or datasets to a GIS software. You probably don't know what "web service" actually means or how to use it correctly, but you don't need to have a deep understanding of web services right now. You may need to recognize the type of web service, but nothing more.</p>
-<h3 id="4-a-adding-services-to-qgis">4 a) Adding Services to QGIS</h3>
-<h4 id="4a-i-add-xyz-basemap">4a i) Add XYZ Basemap</h4>
+<h3 id="41-adding-services-to-qgis">4.1. Adding Services to QGIS</h3>
+<h4 id="411-add-xyz-basemap">4.1.1. Add XYZ Basemap</h4>
 <ul class="task-list">
 <li>Start by adding a basemap with global coverage and simple styling. "Carto Positron" would be a good option for this purpose. (If you want to try other XYZ basemap services, visit <a href="https://github.com/klakar/QGIS_resources/blob/master/collections/Geosupportsystem/python/qgis_basemaps.py">Klas Karlsson's github repository</a> or search online.</li>
 <li class="task-list-item"><input type="checkbox"/> Find XYZ Tiles in browser panel on the left side and right click to add a new connection.</li>
 <li class="task-list-item"><input type="checkbox"/> Copy and paste <a href="https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png">https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png</a> link to the URL textbox and give any name as you want. Click Ok button.</li>
-<li class="task-list-item"><input type="checkbox"/> Find the city center of Hamburg on the map and zoom in until the canvas covers only some buildings. Alternatively, at the bottom of the QGIS window you can set the scale to 1:2000 or larger.<blockquote>
+<li class="task-list-item"><input type="checkbox"/> Find the city center of Hamburg on the map and zoom in until the canvas covers only some buildings. Alternatively, at the bottom of the QGIS window you can set the scale to 1:2000 or larger.</li>
+</ul>
+<blockquote>
 <p>TIP: Sometimes you need to zoom in on your area of interest to avoid long loading times or just to make sure that the layer is visible in the area.</p>
 </blockquote>
-</li>
-</ul>
 <div align="center">
-<img src="../images/exr3/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
-</div>
-<ul>
-<li>Check the coordinate system of the active map canvas (map widget in the software). If it is defined as OGC:CRS84, change it to EPSG:4326 Coordinate Reference System (CRS). You will notice some distortion on the map canvas, this is normal because EPSG:4326 (aka WGS84) is a geographic coordinate system, not a projected coordinate system. You may need to use this coordinate system from time to time because it is one of the most widely supported CRS by web services.</li>
-<li>Check the type of web services you noted in section 1) and add them considering the type of web services.<blockquote>
-<p>TIP: There are multiple ways to check the type of web services. One could be to check the categories or filters available on the SDI website. The other method could be to check the metadata to find the type. Finally, if you segment the request URL, you might see a query parameter like "service=WMS" or "service=WFS".</p>
-</blockquote>
-</li>
-</ul>
-<div align="center">
-<img src="../images/exr3/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/qgis_adding_xyz.png" width=250 height=auto align="center"  style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h4 id="4a-ii-add-wms-service">4a ii) Add WMS Service</h4>
+<ul>
+<li>Check the coordinate system of the active map canvas (map widget in the software). If it is defined as OGC:CRS84, change it to EPSG:4326 Coordinate Reference System (CRS). You will notice some distortion on the map canvas, this is normal because EPSG:4326 (aka WGS84) is a geographic coordinate system, not a projected coordinate system. You may need to use this coordinate system from time to time because it is one of the most widely supported CRS by web services.</li>
+<li>Check the type of web services you noted in section 1) and add them considering the type of web services.</li>
+</ul>
+<blockquote>
+<p>TIP: There are multiple ways to check the type of web services. One could be to check the categories or filters available on the SDI website. The other method could be to check the metadata to find the type. Finally, if you segment the request URL, you might see a query parameter like "service=WMS" or "service=WFS".</p>
+</blockquote>
+<div align="center">
+<img src="../images/sdis/qgis_crs.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+</div>
+
+<h4 id="412-add-wms-service">4.1.2. Add WMS Service</h4>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Go to <strong>Layer &gt; Add Layer &gt; Add WMS/WMTS Layer</strong> in the menu bar.</li>
 <li class="task-list-item"><input type="checkbox"/> To create a new connection, click the New button and copy &amp; paste the URL you noted in part 1). Click OK and then click the Connect button.</li>
 <li class="task-list-item"><input type="checkbox"/> Click to any available layer in the service, check the coordinate system and click to Add Button.</li>
 </ul>
 <div align="center">
-<img src="../images/exr3/qgis_wms.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/qgis_wms.png" width=250 height=auto align="center" style="padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h4 id="4a-iii-add-wfs-service">4a iii) Add WFS Service</h4>
+<h4 id="413-add-wfs-service">4.1.3. Add WFS Service</h4>
 <blockquote>
 <p><strong>IMPORTANT NOTE</strong> Some servers provide Complex Data Features with WFS services, which makes it difficult to add these services to GIS software. So, if you notice such a WFS with complex data, avoid adding this service.</p>
 </blockquote>
@@ -1364,14 +1555,14 @@ Please specify the URL of WMS Service asd
 <p>Tip: Sometimes features can be presented as overlapping polygons in the same data service.
 If you are in doubt about overlapping polygons, simply change the symbology of the layer in the properties window to transparent fill to reveal the overlapping polygons.</p>
 </blockquote>
-<h3 id="4-b-adding-services-to-arcgis-pro">4 b) Adding Services to ArcGIS Pro</h3>
+<h3 id="42-adding-services-to-arcgis-pro">4.2. Adding Services to ArcGIS Pro</h3>
 <ul class="task-list">
 <li>ArcGIS Pro collects all the data services in the “Servers” section.</li>
 <li class="task-list-item"><input type="checkbox"/> Navigate to Connections &gt; Server &gt; New WMS Server from the Insert tab.      </li>
 <li class="task-list-item"><input type="checkbox"/> Copy &amp; Paste WMS address into “Server URL” text box. Specify user authentication if it is needed.</li>
 </ul>
 <div align="center">
-<img src="../images/exr3/arcgis_pro_add_connection.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/arcgis_pro_add_connection.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <ul class="task-list">
@@ -1382,7 +1573,7 @@ If you are in doubt about overlapping polygons, simply change the symbology of t
 <li class="task-list-item"><input type="checkbox"/> If the WMS server connection is "queryable", you can query features in the WMS layers by clicking directly on them. Zoom in on a specific feature and find the "Locate" icon on the Map tab. Then click on the feature.</li>
 </ul>
 <div align="center">
-<img src="../images/exr3/arcgis_pro_locate.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/arcgis_pro_locate.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 <ul class="task-list">
 <li>You will see feature information in a pop-up window in the right pane. If there are multiple features on the map canvas, you may see multiple WMS layers and multiple feature information windows in the popup.</li>
@@ -1394,21 +1585,23 @@ examine the requests send by ArcGIS Pro.</li>
 automation.</li>
 </ul>
 <div align="center">
-<img src="../images/exr3/arcgis_pro_wms_added.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/arcgis_pro_wms_added.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h3 id="4-c-adding-a-wms-service-in-fme">4 c) Adding a WMS Service in FME</h3>
+<h3 id="43-adding-a-wms-service-in-fme">4.3. Adding a WMS Service in FME</h3>
 <ul>
 <li>There are multiple ways to use web services in FME. One of the simplest is to use the WMS as a background map in the “Visual Preview” window/widget.</li>
 </ul>
-<h4 id="4c-i-adding-a-wms-service-to-fme-as-background-map">4c i) Adding a WMS Service to FME as Background Map</h4>
+<h4 id="431-adding-a-wms-service-to-fme-as-background-map">4.3.1. Adding a WMS Service to FME as Background Map</h4>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> To use a WMS layer as a background map, find “FME Options” in the menu under Tools. Select the “Background Maps” tab.</li>
 <li class="task-list-item"><input type="checkbox"/> Visit the website <a href="https://geoservice.dlr.de">geoservice.dlr.de</a> and search for the service called “TanDEM-X 30m DEM”. Find the endpoint (WMS URL of the service) of one of the Hillshade layers in the service.</li>
 <li class="task-list-item"><input type="checkbox"/> Go back to FME and click on the plus icon (+) at the bottom left in the Background Maps window.</li>
+<li class="task-list-item"><input type="checkbox"/> In the top menu bar, click:FME Workbench → Preferences(On Windows, it’s Tools → FME Options…, but on macOS it’s renamed to Preference)</li>
+<li class="task-list-item"><input type="checkbox"/> In the Preferences window, you will see a sidebar with itesm : Background Maps.</li>
 </ul>
 <div align="center">
-<img src="../images/exr3/fme_fme_options.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/fme_fme_options.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
 <ul class="task-list">
@@ -1419,26 +1612,26 @@ automation.</li>
 <li class="task-list-item"><input type="checkbox"/> If everything went well, you will be able to select the background map as the selected WMS service.</li>
 </ul>
 <div align="center">
-<img src="../images/exr3/fme_background_map.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/fme_background_map.png" width=300 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h4 id="4c-ii-adding-a-wms-service-to-fme-as-reader">4c ii) Adding a WMS Service to FME as Reader</h4>
+<h4 id="432-adding-a-wms-service-to-fme-as-reader">4.3.2. Adding a WMS Service to FME as Reader</h4>
 <ul>
 <li>You can also add the WMS service as a data source (Reader) in FME. This procedure can be useful for tasks related to raster images.</li>
 <li>To do that, just type "OGC WMS" in an empty area on the main pane of FME Workbench. </li>
 <li>“PointOnRasterValueExtractor” can be one of the useful transformers that can select the band color value of a raster image using point coordinates.</li>
 </ul>
 <div align="center">
-<img src="../images/exr3/fme_tandex_featureinfo.png" width=200 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
+<img src="../images/sdis/fme_tandex_featureinfo.png" width=200 height=auto align="center" style="margin:10px;padding:10px;background-color:#dad7cb;"/>
 </div>
 
-<h4 id="4c-iii-using-getfeatureinfo-request-in-fme-optional-step">4c iii) Using GetFeatureInfo request in FME (Optional Step)</h4>
+<h4 id="433-using-getfeatureinfo-request-in-fme-optional-step">4.3.3. Using GetFeatureInfo request in FME (Optional Step)</h4>
 <ul class="task-list">
-<li>Since, the service operation "GetFeatureInfo" is not a mandatory in the WMS satndard, there is no a built-in tool to do use it. (You can search in the <a href="https://hub.safe.com/">Community Hub</a> for such a function)</li>
+<li>Since, the service operation "GetFeatureInfo" is not a mandatory in the WMS standard, there is no a built-in tool to do use it. (You can search in the <a href="https://hub.safe.com/">Community Hub</a> for such a function)</li>
 <li class="task-list-item"><input type="checkbox"/> If you need to implement such a function in FME, then you might be interested with the following tutorial video:</li>
 <li><a href="https://www.youtube.com/watch?v=kNeMNr2fAtM">youtube.com/watch?v=kNeMNr2fAtM</a></li>
 </ul>
-<h2 id="5-accessing-wms-services-with-owslib-python-library">5) Accessing WMS services with OWSLib Python Library</h2>
+<h2 id="5-accessing-wms-services-with-owslib-python-library">5. Accessing WMS services with OWSLib Python Library</h2>
 <p>OWSLib is one of the OGC compliant web service client and it supports OGC interface standards.
 Before using the OWSLib consider the following steps:
 - If you are on working in online environment, please install OWSLib to your current python environment using : <strong>pip install OWSLib</strong>
@@ -1462,7 +1655,7 @@ There are multiple ways to do so:
 - Another option to import only the relevant function: <code>from owslib.wms import WebMapService as any_shorten_form</code>
   - Imports only WebMapService function in the wms module and assigns a custom alias to it.
   - Type: <code>help(any_shorten_form)</code></p>
-<h3 id="5-a-examine-a-wms-service-with-owslib">5 a) Examine a WMS service with OWSLib</h3>
+<h3 id="51-examine-a-wms-service-with-owslib">5.1. Examine a WMS service with OWSLib</h3>
 <p>Select any Web Map Service (WMS) from your previous work, or select a random WMS that covers the city of Hamburg in whole or in part. (If you want to add a random WMS, revisit the <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a> or <a href="https://geoportal.de">geoportal.de</a> or <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> websites to search for the appropriate web service.)</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Decide a way to import the library. </span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span> <span class="nn">owslib.wms</span> <span class="kn">import</span> <span class="n">WebMapService</span> <span class="k">as</span> <span class="n">wms</span>
@@ -1495,12 +1688,12 @@ If you are sure about the data is an iterable object (tuple, set, list, dictiona
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">list</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">operations</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x702a34394ad0&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x702a34396de0&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x702a34394290&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x702a34394230&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x702a343941d0&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x702a343943b0&gt;]
+<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x7228723cc740&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7228723cc800&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7228723cc950&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7228723cc9e0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7228723cca70&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7228723ccb00&gt;]
 </code></pre></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> As operations stored as objects in a list (array), we can access them using list index (For Exp. mylist[0]). Then you can check the available methods or attributes in the class instance by typing <code>dir(mytest.operations[0])</code>. </li>
@@ -1537,7 +1730,7 @@ GetStyles
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Layer Style : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="p">[</span><span class="s1">&#39;WMS_DGM1_HAMBURG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">styles</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 <a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Supported Formats : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="o">.</span><span class="n">getOperationByName</span><span class="p">(</span><span class="s1">&#39;GetMap&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">formatOptions</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>CRS Options :  [&#39;EPSG:25832&#39;, &#39;EPSG:3857&#39;, &#39;EPSG:4258&#39;, &#39;CRS:84&#39;, &#39;EPSG:3044&#39;, &#39;EPSG:25833&#39;, &#39;EPSG:4326&#39;, &#39;EPSG:31467&#39;, &#39;EPSG:4647&#39;]
+<div class="highlight"><pre><span></span><code>CRS Options :  [&#39;EPSG:3044&#39;, &#39;EPSG:31467&#39;, &#39;EPSG:4258&#39;, &#39;EPSG:25832&#39;, &#39;EPSG:4326&#39;, &#39;EPSG:3857&#39;, &#39;EPSG:25833&#39;, &#39;CRS:84&#39;, &#39;EPSG:4647&#39;]
 
 Bounding Box :  (8.482047, 53.385591, 10.355638, 53.941383)
 
@@ -1561,8 +1754,8 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
 <a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="n">Image</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre></div>
-<p><img alt="jpeg" src="../output_40_0.jpg" /></p>
-<h2 id="6-using-ipyleaflet-to-show-the-web-services">6) Using ipyleaflet to show the web services</h2>
+<p><img alt="jpeg" src="../output_47_0.jpg" /></p>
+<h2 id="6-using-ipyleaflet-to-show-the-web-services">6. Using ipyleaflet to show the web services</h2>
 <p>ipyleaflet is a Jupyter / Leaflet bridge enabling interactive maps in the Jupyter notebook.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span>
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
@@ -1580,9 +1773,9 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
 <a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="n">display</span><span class="p">(</span><span class="n">my_map</span><span class="p">)</span>
 </code></pre></div>
-<p><img alt="Map View 01" src="../images/exr3/map_view_01.png" />
-<em>Screenshot taken on Jupyter Notebook</em></p>
-<h3 id="add-a-wms-layer-into-the-leaflet-map">Add a WMS layer into the leaflet map</h3>
+<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
+</code></pre></div>
+<h3 id="61-add-a-wms-layer-into-the-leaflet-map">6.1. Add a WMS layer into the leaflet map</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span><span class="p">,</span> <span class="n">WMSLayer</span><span class="p">,</span> <span class="n">basemaps</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
@@ -1608,9 +1801,9 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="c1"># display(my_map)</span>
 <a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="n">my_map</span>
 </code></pre></div>
-<p><img alt="Map View 02" src="../images/exr3/map_view_02.png" />
-<em>Screenshot taken on Jupyter Notebook</em></p>
-<h3 id="add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection">Add a GeoJSON data into the leaflet map using a OGC API - Features connection</h3>
+<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
+</code></pre></div>
+<h3 id="62-add-a-geojson-data-into-the-leaflet-map-using-a-ogc-api-features-connection">6.2. Add a GeoJSON data into the leaflet map using a OGC API - Features connection</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">GeoJSON</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
 <a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># Add &quot;OGC API - Features&quot; class of the OWSLib</span>
@@ -1660,8 +1853,8 @@ Supported Formats :  [&#39;image/png&#39;, &#39;image/jpeg&#39;, &#39;image/png;
 <a id="__codelineno-14-47" name="__codelineno-14-47" href="#__codelineno-14-47"></a><span class="c1"># display(my_map)</span>
 <a id="__codelineno-14-48" name="__codelineno-14-48" href="#__codelineno-14-48"></a><span class="n">my_map</span>
 </code></pre></div>
-<p><img alt="Map View 03" src="../images/exr3/map_view_03.png" />
-<em>Screenshot taken on Jupyter Notebook</em></p>
+<div class="highlight"><pre><span></span><code>Map(center=[53.5452, 9.9777], controls=(ZoomControl(options=[&#39;position&#39;, &#39;zoom_in_text&#39;, &#39;zoom_in_title&#39;, &#39;zoo…
+</code></pre></div>
 
 
 

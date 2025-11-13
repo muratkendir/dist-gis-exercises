@@ -1,0 +1,1162 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://muratkendir.github.io/dist-gis-exercises/networks_internet/">
+      
+      
+        <link rel="prev" href="../sdis/">
+      
+      
+        <link rel="next" href="../exercise4/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Networks & Internet (Bonus) - dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f615399.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra_style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exercise-computer-networks-internet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="dist-gis-exercises (Distributed GIS &amp; Cloud Computing - Exercises)" class="md-header__button md-logo" aria-label="dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Networks & Internet (Bonus)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/muratkendir/dist-gis-exercises/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="dist-gis-exercises (Distributed GIS &amp; Cloud Computing - Exercises)" class="md-nav__button md-logo" aria-label="dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/muratkendir/dist-gis-exercises/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercise 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Exercise 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../distributed_systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Distributed Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker_usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker Usage (Bonus)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercise 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Exercise 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sdis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spatial Data Infrastructures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Networks & Internet (Bonus)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Networks & Internet (Bonus)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-examining-the-network-internet-infrastructure" class="md-nav__link">
+    1. Examining the Network &amp; Internet Infrastructure
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Examining the Network & Internet Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-ip-addresses" class="md-nav__link">
+    1.1. IP Addresses
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. IP Addresses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-local-ip-adress" class="md-nav__link">
+    1.1.1. Local IP Adress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-global-ip-address" class="md-nav__link">
+    1.1.2. Global IP Address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-how-to-reveal-an-ip-address-of-a-web-source" class="md-nav__link">
+    1.1.3. How to reveal an IP address of a web source?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-checking-other-dns-records-of-a-domain" class="md-nav__link">
+    1.1.4. Checking other DNS records of a domain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ping-command" class="md-nav__link">
+    2. Ping Command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-background-information-about-the-current-internet-infrastructure-optional-step" class="md-nav__link">
+    3. Background Information about the Current Internet Infrastructure (Optional Step)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-dig-command-available-on-linux" class="md-nav__link">
+    4. Dig Command (available on Linux)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-traceroute-command-available-on-linux" class="md-nav__link">
+    5. Traceroute Command (available on Linux)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 4 (Web Map)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercise 5 (Virtualization)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Exercise 5 (Virtualization)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise5_preparation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preparation for Exercise 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samples_for_discussion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OGC Service Samples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../essentials_of_web_mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essentials of Web Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Virtual Env. Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Virtual Env. Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_win/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_w_pip_on_lnx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux w PIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ogc_services_samples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample OGC Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-examining-the-network-internet-infrastructure" class="md-nav__link">
+    1. Examining the Network &amp; Internet Infrastructure
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Examining the Network & Internet Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-ip-addresses" class="md-nav__link">
+    1.1. IP Addresses
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. IP Addresses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-local-ip-adress" class="md-nav__link">
+    1.1.1. Local IP Adress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-global-ip-address" class="md-nav__link">
+    1.1.2. Global IP Address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-how-to-reveal-an-ip-address-of-a-web-source" class="md-nav__link">
+    1.1.3. How to reveal an IP address of a web source?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-checking-other-dns-records-of-a-domain" class="md-nav__link">
+    1.1.4. Checking other DNS records of a domain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ping-command" class="md-nav__link">
+    2. Ping Command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-background-information-about-the-current-internet-infrastructure-optional-step" class="md-nav__link">
+    3. Background Information about the Current Internet Infrastructure (Optional Step)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-dig-command-available-on-linux" class="md-nav__link">
+    4. Dig Command (available on Linux)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-traceroute-command-available-on-linux" class="md-nav__link">
+    5. Traceroute Command (available on Linux)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="exercise-computer-networks-internet">Exercise - Computer Networks &amp; Internet</h1>
+<p><img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
+<blockquote>
+Munich Technical University / Chair of Geoinformatics <br> 
+Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+murat.kendir@tum.de
+</blockquote>
+
+<div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">iplantuml</span>
+</code></pre></div>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#1-examining-the-network-&amp;-internet-infrastructure">1. Examining the Network &amp; Internet Infrastructure</a><ul>
+<li><a href="#11-ip-addresses">1.1. IP Addresses</a><ul>
+<li><a href="#111-local-ip-adress">1.1.1. Local IP Adress</a></li>
+<li><a href="#112-global-ip-adress">1.1.2. Global IP Adress</a></li>
+<li><a href="#113-how-to-reveal-an-ip-address-of-a-web-source">1.1.3. How to reveal an IP address of a web source?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2-ping-command">2. Ping Command</a></li>
+<li><a href="#3-background-information-about-the-current-internet-infrastructure-optional-step">3. Background Information about the Current Internet Infrastructure (Optional Step)</a></li>
+<li><a href="#4-dig-command-available-on-linux">4. Dig Command (available on Linux)</a></li>
+<li><a href="5-traceroute-command-available-on-linux">5. Traceroute Command (available on Linux)</a></li>
+</ul>
+<h2 id="1-examining-the-network-internet-infrastructure">1. Examining the Network &amp; Internet Infrastructure</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">%%</span><span class="n">plantuml</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nd">@startuml</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">cloud</span> <span class="s2">&quot;School Network&quot;</span> <span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  <span class="n">node</span> <span class="s2">&quot;Computer-1&quot;</span> <span class="k">as</span> <span class="n">computer1</span> <span class="p">{</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">node</span> <span class="s2">&quot;Virtual Machine 1&quot;</span> <span class="p">{</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>      <span class="n">artifact</span> <span class="s2">&quot;Sub-Local IP Address 1&quot;</span> <span class="k">as</span> <span class="n">add11</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">}</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">artifact</span> <span class="s2">&quot;Local IP Address 1&quot;</span> <span class="k">as</span> <span class="n">add1</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  <span class="p">}</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">}</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">node</span> <span class="s2">&quot;Router / Gateway&quot;</span> <span class="k">as</span> <span class="n">edge</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">node</span> <span class="s2">&quot;Internet Service Provider (ISP)&quot;</span> <span class="k">as</span> <span class="n">isp</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">add1</span> <span class="o">-&gt;</span> <span class="n">edge</span> <span class="p">:</span> <span class="n">Local</span> <span class="n">IP</span> <span class="n">Address</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="n">add11</span> <span class="o">.&gt;</span> <span class="n">add1</span> <span class="p">:</span> <span class="n">Port</span> <span class="n">Forwarding</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="n">edge</span> <span class="o">-&gt;</span> <span class="n">isp</span> <span class="p">:</span> <span class="n">Global</span> <span class="n">IP</span> <span class="n">Address</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nd">@enduml</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/cd2d326e-7d15-4044-9bfa-262d238c6c13.uml to cd2d326e-7d15-4044-9bfa-262d238c6c13.svg
+</code></pre></div>
+<p><img alt="svg" src="../output_5_1.svg" /></p>
+<h3 id="11-ip-addresses">1.1. IP Addresses</h3>
+<h4 id="111-local-ip-adress">1.1.1. Local IP Adress</h4>
+<blockquote>
+<p>The following steps explain how to reveal IP addresses using command-line based applications. This means you need to run a Command Line Interface (CLI) tool to execute them. Traditionally, CLI tools are called <strong>“Command Prompt”</strong> (or CMD) on Windows systems and <strong>“Terminal”</strong> on Unix-based systems.</p>
+<p>The name of the Command Prompt application is called <strong>“EinGabeAufForderung”</strong> on Windows computers with German as the system language.</p>
+<p>As an alternative for CMD, you can also use <strong>Powershell</strong> CLI tool in Windows computers.</p>
+</blockquote>
+<p>In Windows Systems, it is possible to reveal out the IP addresses (both of v4 and v6) with the <strong>ipconfig</strong> command</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ipconfig<span class="w"> </span>/all
+</code></pre></div>
+<p>In Unix-based Systems, you can use multiple commands such as <strong>ip</strong>, <strong>ifconfig</strong> etc.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ifconfig<span class="w"> </span>&lt;INTERFACE-NAME&gt;
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ip<span class="w"> </span>address<span class="w"> </span>show
+</code></pre></div>
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/internet_protocol_suite.png" alt="The Level of the IP Adresses in Internet Protocol Suite" style="border:3px solid darkgray">
+  <figcaption>The Level of the IP Adresses in Internet Protocol Suite</figcaption>
+</figure>
+
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/windows_cmd_ip4.png" alt="IPv4 and IPv6 addresses are exposed in the CMD tool" style="border:3px solid darkgray">
+  <figcaption>IPv4 and IPv6 addresses are exposed in the CMD tool</figcaption>
+</figure>
+
+<h4 id="112-global-ip-address">1.1.2. Global IP Address</h4>
+<p>There are many methods for revealing a computer network's global IP address. This IP address is usually automatically assigned to users by their ISP company. In some cases, users may prefer not to change their global IP addresses. In this case, they can request <em>static IP addresses</em> from their ISP.</p>
+<p>Method 1: Using a web site</p>
+<ul>
+<li><a href="www.whatismyipaddress.com">whatismyipaddress.com</a></li>
+<li><a href="https://www.myip.com/">myip.com</a></li>
+<li><a href="https://www.geolocation.com/">geolocation.com ( includes Location Information)</a></li>
+<li><a href="https://duckduckgo.com/?&amp;q=my+ip">duckduckgo.com/?&amp;q=my+ip (via Search Engine)</a></li>
+</ul>
+<p>Method 2: Accessing to router interface</p>
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/router_interface.png" alt="IPv4 and IPv6 addresses are exposed in the CMD tool" style="border:3px solid darkgray">
+  <figcaption>The global IP address displayed in the “Status” section of the router's web interface</figcaption>
+</figure>
+
+<p>Method 3: Sending a request to an API</p>
+<p>Powershell Command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">(</span>Invoke-WebRequest<span class="w"> </span>ifconfig.me/ip<span class="o">)</span>.Content.Trim<span class="o">()</span>
+</code></pre></div></p>
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/windows_powershell_external_ip.png" alt="IPv4 and IPv6 addresses are exposed in the CMD tool" style="border:3px solid darkgray">
+  <figcaption>sending a request to ifconfig.me/ip API in Powershell</figcaption>
+</figure>
+
+<p>Linux Terminal Command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl<span class="w"> </span>ifconfig.me/ip
+</code></pre></div></p>
+<p>Via "NSLookUp":
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>nslookup<span class="w"> </span>myip.opendns.com.<span class="w"> </span>reseolver1.opendns.com
+</code></pre></div></p>
+<blockquote>
+<p>TIP: If your Unix-based system cannot run the nslookup or ifconfig commands, you can search for and install the “net-tools” package in your system's default application repository. For example, on Ubuntu, it can be installed with the command <code>sudo apt install net-tools</code></p>
+</blockquote>
+<h4 id="113-how-to-reveal-an-ip-address-of-a-web-source">1.1.3. How to reveal an IP address of a web source?</h4>
+<p><strong>NSLookup</strong> is a tool that can be used to query a server's DNS records. By default, this tool checks the A-type DNS record. However, there are other types of DNS records that can be queried using the same tool.</p>
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/dns_records_sample.png" alt="IPv4 and IPv6 addresses are exposed in the CMD tool" style="border:3px solid darkgray">
+  <figcaption>Different DNS record types listed in a DNS record management system.</figcaption>
+</figure>
+
+<p>If not restricted for security purposes, it is possible to resolve the IP address of web servers that provide certain services through domain(s). For this purpose, "nslookup" or some web applications (such as <a href="https://mxtoolbox.com/supertool.aspx">mxtoolbox.com</a>, <a href="https://www.nslookup.io">nslookup.io</a>) can be used. </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>nslookup<span class="w"> </span>geodienste.hamburg.de
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Copy the IP adress of the web server and by using the command above and paste into address bar of your browser.<ul>
+<li>What is the result?</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>TIP : If you query an IP address directly using the nslookup command, it performs a <strong>reverse lookup</strong> by querying the in-addr.arpa (IPv4) or ip6.arpa (IPv6) zone. If a PTR record exists for that address, the command returns the domain name mapped to the IP.</p>
+</blockquote>
+<h3 id="114-checking-other-dns-records-of-a-domain">1.1.4. Checking other DNS records of a domain</h3>
+<p>You can set the <strong>type</strong> option to expose out other DNS record types (A, AAA, CNAME, MX, NS, SOA):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>nslookup<span class="w"> </span>-type<span class="o">=</span>mx<span class="w"> </span>www.asg.ed.tum.de
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Visit the page <a href="https://mxtoolbox.com">mxtoolbox.com</a> or <a href="https://dnstools.ch">dnstools.ch</a> website to query DNS
+records for the same domain.</li>
+</ul>
+<h2 id="2-ping-command">2. Ping Command</h2>
+<p>The <strong>“Ping”</strong> command can be used to measure network performance between the request and the web resource. Keep in mind that the purpose of the web resource may cause differences in the results. In addition, the location of the request may also affect the result. (For example, querying a web resource located in China from Frankfurt does not mean that the same web resource will return the same result in China.)</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Type “ping -n amazon.DOMAIN_SUFFIX” for different countries that may be near or far from the current country. (For Exp. COM / DE / AU / NZ / CN ) <ul>
+<li><code>ping -c 3 mit.edu</code> (using a CDN which serves sources from Germany)</li>
+<li><code>ping -c stanford.edu</code> (located in USA)</li>
+<li><code>ping -c 3 www.tsinghua.edu.cn</code> (located in China)</li>
+<li><code>ping -c 5 ping -c 3 sydney.edu.au</code> (located in Australia)</li>
+<li><code>ping -c 3 www.u-tokyo.ac.jp</code> (located in Japan)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>TIP: "Count" option named as "Number" in the Windows version of the ping command. Use "-n" option instead of "-c" in Windows computers.</p>
+<p>TIP: In a unix-based system, you can use geoiplookup to resolve the location of the web resources.</p>
+</blockquote>
+<h2 id="3-background-information-about-the-current-internet-infrastructure-optional-step">3. Background Information about the Current Internet Infrastructure (Optional Step)</h2>
+<p>If you would like to learn more about the current internet infrastructure, you can visit the following websites or follow the instructions below.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Global Internet Map (2022): <a href="https://global-internet-map-2022.telegeography.com/">telegeography</a></li>
+<li class="task-list-item"><input type="checkbox"/> 40 Maps that Explain Internet (Vox, 2014) : <a href="https://www.vox.com/a/internet-maps">vox.com/a/internet-maps</a></li>
+<li class="task-list-item"><input type="checkbox"/> Map of the Submarine Cables (2025) : <a href="https://www.submarinecablemap.com/">submarinecablemap.com</a></li>
+<li class="task-list-item"><input type="checkbox"/> Check the Cloud Service Reachability with "cloudping" online tool:<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Visit and make ping test for any cloud service provider <a href="https://www.cloudping.cloud/">cloudping.cloud</a></li>
+<li class="task-list-item"><input type="checkbox"/> Use a VPN browser extension to spoof your location as another country and try the ping test again.</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-dig-command-available-on-linux">4. Dig Command (available on Linux)</h2>
+<blockquote>
+<p>If your Unix-based system does not have the <strong>"dig"</strong> program, you can install it by installing the <strong>"dnsutils"</strong> program.</p>
+</blockquote>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Type <code>dig &lt;WEB_DOMAIN&gt;</code> to resolve the DNS records of the given domain.<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Copy the IP address shown as the target machine for the "A" type DNS record.</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox"/> Type <code>dig +answer -x &lt;COPIED_IP_ADDRESS&gt;</code> to perform a reverse lookup.</li>
+<li class="task-list-item"><input type="checkbox"/> If you have a web domain name, you can compare the previous results with the records accessible from your domain name management system. (For exp. go to Domains &gt; DNS-Records in GoDaddy web site)</li>
+<li class="task-list-item"><input type="checkbox"/> Alternatively, you can visit <a href="https://dnschecker.org/all-tools.php#dnsTool">dnschecker.org</a> and query for the same web sites using "DNS-Lookup" tool.</li>
+</ul>
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/sequence_diagram_for_domain_resolving.png" alt="IPv4 and IPv6 addresses are exposed in the CMD tool" style="border:3px solid darkgray">
+  <figcaption>Source: https://w3.cs.jmu.edu/kirkpams/OpenCSF/Books/csf/html/UDPSockets.html</figcaption>
+</figure>
+
+<h2 id="5-traceroute-command-available-on-linux">5. Traceroute Command (available on Linux)</h2>
+<p>To expose the "hops" while you request any source from internet, you can use "traceroute" command. Traceroute is a standalone application that can be installed with command <code>sudo apt install traceroute</code>. Another option is using dig with "+trace" argument (For exp. <code>dig &lt;WEB_DOMAIN&gt; +trace</code>). Note that the location of the person making the request plays an important role in the route of the hops that appear as a result of the traceroute query.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Find a web domain name whose server is located in Germany and try the traceroute command with it.<ul>
+<li>Sample : <code>traceroute tum.de</code> or <code>dig tum.de +trace</code></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox"/> Find a web domain name whose server is located in far country and try traceroute command on it.<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Alternatively, you can spoof your location using VPN browser extension and run the traceoute command.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>TIP: If you cannot run the traceroute or dig command on your Linux machine, you can use the tracing tools available on the online network tool sites mentioned earlier.</p>
+</blockquote>
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/how_traceroute_works.png" alt="IPv4 and IPv6 addresses are exposed in the CMD tool" style="border:3px solid darkgray">
+  <figcaption>A simplified Computer Network Diagram showing how the traceroute command works</figcaption>
+</figure>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>

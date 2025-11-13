@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://muratkendir.github.io/dist-gis-exercises/exercise2/">
+        <link rel="canonical" href="https://muratkendir.github.io/dist-gis-exercises/intro_python/">
       
       
-        <link rel="prev" href="../exercise1-bns/">
+        <link rel="prev" href="../docker_usage/">
       
       
-        <link rel="next" href="../exercise3/">
+        <link rel="next" href="../sdis/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Exercise 2 (Python Intro) - dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)</title>
+        <title>Introduction to Python - dist-gis-exercises (Distributed GIS & Cloud Computing - Exercises)</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-python-with-an-example-app-based-on-geospatial-data" class="md-skip">
+        <a href="#introduction-to-python" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercise 2 (Python Intro)
+              Introduction to Python
             
           </span>
         </div>
@@ -271,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercise1/" class="md-nav__link">
+      <a href="../distributed_systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -291,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercise1-bns/" class="md-nav__link">
+      <a href="../docker_usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -319,6 +319,42 @@
     
   
   
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercise 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Exercise 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -331,7 +367,7 @@
           
   
   <span class="md-ellipsis">
-    Exercise 2 (Python Intro)
+    Introduction to Python
   </span>
   
 
@@ -342,7 +378,7 @@
         
   
   <span class="md-ellipsis">
-    Exercise 2 (Python Intro)
+    Introduction to Python
   </span>
   
 
@@ -364,44 +400,58 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-visit-bayernatlas-website" class="md-nav__link">
-    Step 1) Visit BayernAtlas website
+  <a href="#table-of-contents" class="md-nav__link">
+    Table Of Contents
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-make-a-request-with-python-and-requests-library" class="md-nav__link">
-    Step 2) Make a request with Python and "Requests" library
+  <a href="#0-aim-of-the-exercise" class="md-nav__link">
+    0. Aim of the Exercise
   </a>
   
-    <nav class="md-nav" aria-label="Step 2) Make a request with Python and "Requests" library">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-visit-bayernatlas-website" class="md-nav__link">
+    1. Visit BayernAtlas website
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-make-a-request-with-python-and-requests-library" class="md-nav__link">
+    2. Make a request with Python and "Requests" library
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Make a request with Python and "Requests" library">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2a-what-is-happened" class="md-nav__link">
-    2a) What is happened?
+  <a href="#21-what-is-happened" class="md-nav__link">
+    2.1. What is happened?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2b-how-to-work-with-libraries" class="md-nav__link">
-    2b) How to work with libraries?
+  <a href="#22-how-to-work-with-libraries" class="md-nav__link">
+    2.2. How to work with libraries?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2c-how-to-expose-the-existing-methods-in-a-library" class="md-nav__link">
-    2c) How to expose the existing methods in a library?
+  <a href="#23-how-to-expose-the-existing-methods-in-a-library" class="md-nav__link">
+    2.3. How to expose the existing methods in a library?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2d-what-we-got-by-the-request" class="md-nav__link">
-    2d) What we got by the request?
+  <a href="#24-what-we-got-by-the-request" class="md-nav__link">
+    2.4. What we got by the request?
   </a>
   
 </li>
@@ -412,23 +462,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-how-to-view-the-content-of-the-response" class="md-nav__link">
-    Step 3) How to view the content of the response?
+  <a href="#3-how-to-view-the-content-of-the-response" class="md-nav__link">
+    3. How to view the content of the response?
   </a>
   
-    <nav class="md-nav" aria-label="Step 3) How to view the content of the response?">
+    <nav class="md-nav" aria-label="3. How to view the content of the response?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3b-optional-open-images-with-pillow" class="md-nav__link">
-    3b (optional) Open Images with Pillow
+  <a href="#31-store-and-open-a-file" class="md-nav__link">
+    3.1. Store and open a file
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3c-optional-open-images-with-web-browser" class="md-nav__link">
-    3c (optional) Open Images with Web Browser
+  <a href="#32-open-images-with-pillow-optional-step" class="md-nav__link">
+    3.2. Open Images with Pillow (Optional Step)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-open-images-with-web-browser-optional-step" class="md-nav__link">
+    3.3. Open Images with Web Browser (Optional Step)
   </a>
   
 </li>
@@ -439,65 +496,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-what-about-json-xml-html-based-files" class="md-nav__link">
-    Step 4) What about JSON / XML / HTML based files?
+  <a href="#4-what-about-json-xml-html-based-files" class="md-nav__link">
+    4. What about JSON, XML, HTML based files?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-5-how-to-request-json-xml-html-based-files-from-the-web-services" class="md-nav__link">
-    Step 5) How to request JSON / XML / HTML based files from the web services?
+  <a href="#5-how-to-request-json-xml-html-based-files-from-the-web-services" class="md-nav__link">
+    5. How to request JSON, XML, HTML based files from the web services?
   </a>
   
-    <nav class="md-nav" aria-label="Step 5) How to request JSON / XML / HTML based files from the web services?">
+    <nav class="md-nav" aria-label="5. How to request JSON, XML, HTML based files from the web services?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#5a-inspect-the-response" class="md-nav__link">
-    5a) Inspect the response
+  <a href="#51-inspect-the-response" class="md-nav__link">
+    5.1. Inspect the response
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5b-convert-dictionary-to-text-using-json-library-dumps-method" class="md-nav__link">
-    5b) Convert Dictionary to Text using JSON library (dumps method)
+  <a href="#52-convert-dictionary-to-text-using-json-library-dumps-method" class="md-nav__link">
+    5.2. Convert Dictionary to Text using JSON library (dumps method)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5c-convert-text-to-dictionary-using-json-library-loads-method" class="md-nav__link">
-    5c) Convert Text to Dictionary using JSON library (loads method)
+  <a href="#53-convert-text-to-dictionary-using-json-library-loads-method" class="md-nav__link">
+    5.3. Convert Text to Dictionary using JSON library (loads method)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5d-save-the-json-file" class="md-nav__link">
-    5d) Save the JSON file
+  <a href="#54-save-the-json-file" class="md-nav__link">
+    5.4. Save the JSON file
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5e-use-one-of-the-parameters-of-dumps-method-eg-indentation" class="md-nav__link">
-    5e) Use one of the parameters of dumps method (e.g. Indentation)
+  <a href="#55-use-one-of-the-parameters-of-dumps-method-eg-indentation" class="md-nav__link">
+    5.5. Use one of the parameters of dumps method (e.g. Indentation)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5f-get-a-subset-of-the-dictionary-using-json-library-__getitem__" class="md-nav__link">
-    5f) Get a subset of the dictionary using JSON library (__getitem__ / [ ] )
+  <a href="#56-get-a-subset-of-the-dictionary-using-json-library" class="md-nav__link">
+    5.6. Get a subset of the dictionary using JSON library
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5g-saving-the-response-as-it-is-in-binary-format" class="md-nav__link">
-    5g) Saving the response as it is in binary format
+  <a href="#57-saving-the-response-as-it-is-in-binary-format" class="md-nav__link">
+    5.7. Saving the response as it is in binary format
   </a>
   
 </li>
@@ -508,37 +565,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-6-read-a-json-file-and-display-in-python-interpreter" class="md-nav__link">
-    Step 6) Read a JSON file and display in python interpreter
+  <a href="#6-read-a-json-file-and-display-in-python-interpreter" class="md-nav__link">
+    6. Read a JSON file and display in python interpreter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-7-convert-the-json-request-into-a-program-that-saves-only-properties-to-a-file" class="md-nav__link">
-    Step 7) Convert the JSON request into a program that saves only properties to a file
+  <a href="#7-convert-the-json-request-into-a-program-that-saves-only-properties-to-a-file" class="md-nav__link">
+    7. Convert the JSON request into a program that saves only properties to a file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-8-convert-your-code-block-into-a-function-and-let-users-define-their-own-url-requests" class="md-nav__link">
-    Step 8) Convert your code block into a function and let users define their own URL requests
+  <a href="#8-convert-your-code-block-into-a-function-and-let-users-define-their-own-url-requests" class="md-nav__link">
+    8. Convert your code block into a function and let users define their own URL requests
   </a>
   
-    <nav class="md-nav" aria-label="Step 8) Convert your code block into a function and let users define their own URL requests">
+    <nav class="md-nav" aria-label="8. Convert your code block into a function and let users define their own URL requests">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#8a-seperate-the-listing-mechanism-as-a-function" class="md-nav__link">
-    8a) Seperate the listing mechanism as a function
+  <a href="#81-seperate-the-listing-mechanism-as-a-function" class="md-nav__link">
+    8.1. Seperate the listing mechanism as a function
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8b-let-the-users-interact-with-your-program-input-function" class="md-nav__link">
-    8b) Let the users interact with your program (input function)
+  <a href="#82-let-the-users-interact-with-your-program-input-function" class="md-nav__link">
+    8.2. Let the users interact with your program (input function)
   </a>
   
 </li>
@@ -555,22 +612,51 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../exercise3/" class="md-nav__link">
+      <a href="../sdis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercise 3 (SDIs)
+    Spatial Data Infrastructures
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../networks_internet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networks & Internet (Bonus)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -608,9 +694,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -621,8 +707,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Exercise 5 (Virtualization)
           </label>
@@ -727,9 +813,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -740,8 +826,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Virtual Env. Installation
           </label>
@@ -840,44 +926,58 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-visit-bayernatlas-website" class="md-nav__link">
-    Step 1) Visit BayernAtlas website
+  <a href="#table-of-contents" class="md-nav__link">
+    Table Of Contents
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-make-a-request-with-python-and-requests-library" class="md-nav__link">
-    Step 2) Make a request with Python and "Requests" library
+  <a href="#0-aim-of-the-exercise" class="md-nav__link">
+    0. Aim of the Exercise
   </a>
   
-    <nav class="md-nav" aria-label="Step 2) Make a request with Python and "Requests" library">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-visit-bayernatlas-website" class="md-nav__link">
+    1. Visit BayernAtlas website
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-make-a-request-with-python-and-requests-library" class="md-nav__link">
+    2. Make a request with Python and "Requests" library
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Make a request with Python and "Requests" library">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2a-what-is-happened" class="md-nav__link">
-    2a) What is happened?
+  <a href="#21-what-is-happened" class="md-nav__link">
+    2.1. What is happened?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2b-how-to-work-with-libraries" class="md-nav__link">
-    2b) How to work with libraries?
+  <a href="#22-how-to-work-with-libraries" class="md-nav__link">
+    2.2. How to work with libraries?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2c-how-to-expose-the-existing-methods-in-a-library" class="md-nav__link">
-    2c) How to expose the existing methods in a library?
+  <a href="#23-how-to-expose-the-existing-methods-in-a-library" class="md-nav__link">
+    2.3. How to expose the existing methods in a library?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2d-what-we-got-by-the-request" class="md-nav__link">
-    2d) What we got by the request?
+  <a href="#24-what-we-got-by-the-request" class="md-nav__link">
+    2.4. What we got by the request?
   </a>
   
 </li>
@@ -888,23 +988,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-how-to-view-the-content-of-the-response" class="md-nav__link">
-    Step 3) How to view the content of the response?
+  <a href="#3-how-to-view-the-content-of-the-response" class="md-nav__link">
+    3. How to view the content of the response?
   </a>
   
-    <nav class="md-nav" aria-label="Step 3) How to view the content of the response?">
+    <nav class="md-nav" aria-label="3. How to view the content of the response?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3b-optional-open-images-with-pillow" class="md-nav__link">
-    3b (optional) Open Images with Pillow
+  <a href="#31-store-and-open-a-file" class="md-nav__link">
+    3.1. Store and open a file
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3c-optional-open-images-with-web-browser" class="md-nav__link">
-    3c (optional) Open Images with Web Browser
+  <a href="#32-open-images-with-pillow-optional-step" class="md-nav__link">
+    3.2. Open Images with Pillow (Optional Step)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-open-images-with-web-browser-optional-step" class="md-nav__link">
+    3.3. Open Images with Web Browser (Optional Step)
   </a>
   
 </li>
@@ -915,65 +1022,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-what-about-json-xml-html-based-files" class="md-nav__link">
-    Step 4) What about JSON / XML / HTML based files?
+  <a href="#4-what-about-json-xml-html-based-files" class="md-nav__link">
+    4. What about JSON, XML, HTML based files?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-5-how-to-request-json-xml-html-based-files-from-the-web-services" class="md-nav__link">
-    Step 5) How to request JSON / XML / HTML based files from the web services?
+  <a href="#5-how-to-request-json-xml-html-based-files-from-the-web-services" class="md-nav__link">
+    5. How to request JSON, XML, HTML based files from the web services?
   </a>
   
-    <nav class="md-nav" aria-label="Step 5) How to request JSON / XML / HTML based files from the web services?">
+    <nav class="md-nav" aria-label="5. How to request JSON, XML, HTML based files from the web services?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#5a-inspect-the-response" class="md-nav__link">
-    5a) Inspect the response
+  <a href="#51-inspect-the-response" class="md-nav__link">
+    5.1. Inspect the response
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5b-convert-dictionary-to-text-using-json-library-dumps-method" class="md-nav__link">
-    5b) Convert Dictionary to Text using JSON library (dumps method)
+  <a href="#52-convert-dictionary-to-text-using-json-library-dumps-method" class="md-nav__link">
+    5.2. Convert Dictionary to Text using JSON library (dumps method)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5c-convert-text-to-dictionary-using-json-library-loads-method" class="md-nav__link">
-    5c) Convert Text to Dictionary using JSON library (loads method)
+  <a href="#53-convert-text-to-dictionary-using-json-library-loads-method" class="md-nav__link">
+    5.3. Convert Text to Dictionary using JSON library (loads method)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5d-save-the-json-file" class="md-nav__link">
-    5d) Save the JSON file
+  <a href="#54-save-the-json-file" class="md-nav__link">
+    5.4. Save the JSON file
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5e-use-one-of-the-parameters-of-dumps-method-eg-indentation" class="md-nav__link">
-    5e) Use one of the parameters of dumps method (e.g. Indentation)
+  <a href="#55-use-one-of-the-parameters-of-dumps-method-eg-indentation" class="md-nav__link">
+    5.5. Use one of the parameters of dumps method (e.g. Indentation)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5f-get-a-subset-of-the-dictionary-using-json-library-__getitem__" class="md-nav__link">
-    5f) Get a subset of the dictionary using JSON library (__getitem__ / [ ] )
+  <a href="#56-get-a-subset-of-the-dictionary-using-json-library" class="md-nav__link">
+    5.6. Get a subset of the dictionary using JSON library
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5g-saving-the-response-as-it-is-in-binary-format" class="md-nav__link">
-    5g) Saving the response as it is in binary format
+  <a href="#57-saving-the-response-as-it-is-in-binary-format" class="md-nav__link">
+    5.7. Saving the response as it is in binary format
   </a>
   
 </li>
@@ -984,37 +1091,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-6-read-a-json-file-and-display-in-python-interpreter" class="md-nav__link">
-    Step 6) Read a JSON file and display in python interpreter
+  <a href="#6-read-a-json-file-and-display-in-python-interpreter" class="md-nav__link">
+    6. Read a JSON file and display in python interpreter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-7-convert-the-json-request-into-a-program-that-saves-only-properties-to-a-file" class="md-nav__link">
-    Step 7) Convert the JSON request into a program that saves only properties to a file
+  <a href="#7-convert-the-json-request-into-a-program-that-saves-only-properties-to-a-file" class="md-nav__link">
+    7. Convert the JSON request into a program that saves only properties to a file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-8-convert-your-code-block-into-a-function-and-let-users-define-their-own-url-requests" class="md-nav__link">
-    Step 8) Convert your code block into a function and let users define their own URL requests
+  <a href="#8-convert-your-code-block-into-a-function-and-let-users-define-their-own-url-requests" class="md-nav__link">
+    8. Convert your code block into a function and let users define their own URL requests
   </a>
   
-    <nav class="md-nav" aria-label="Step 8) Convert your code block into a function and let users define their own URL requests">
+    <nav class="md-nav" aria-label="8. Convert your code block into a function and let users define their own URL requests">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#8a-seperate-the-listing-mechanism-as-a-function" class="md-nav__link">
-    8a) Seperate the listing mechanism as a function
+  <a href="#81-seperate-the-listing-mechanism-as-a-function" class="md-nav__link">
+    8.1. Seperate the listing mechanism as a function
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8b-let-the-users-interact-with-your-program-input-function" class="md-nav__link">
-    8b) Let the users interact with your program (input function)
+  <a href="#82-let-the-users-interact-with-your-program-input-function" class="md-nav__link">
+    8.2. Let the users interact with your program (input function)
   </a>
   
 </li>
@@ -1042,18 +1149,61 @@
   
 
 
-<h1 id="introduction-to-python-with-an-example-app-based-on-geospatial-data">Introduction to Python with an Example App Based on Geospatial Data</h1>
-<p><img align="right" width=190 height=100 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
+<h1 id="introduction-to-python">Introduction to Python</h1>
+<p><img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/></p>
 <blockquote>
-Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir@tum.de
+Munich Technical University / Chair of Geoinformatics <br> 
+Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+murat.kendir@tum.de
 </blockquote>
 
+<div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
+
+<h2 id="table-of-contents">Table Of Contents</h2>
 <ul>
-<li>In the previous exercise we explored the BayernAtlas website and experienced the data services and interactions behind the web interface by using Web Developer Tool.</li>
-<li>In this exercise, you will learn how to access similar data sources (web services) and manage the data using some simple Python codes.</li>
-<li>However, before starting this exercise you need to know more about the datasets and how to access it.</li>
+<li><a href="#0-aim-of-the-exercise">0. Aim of the Exercise</a></li>
+<li><a href="#1-visit-bayernatlas-website">1. Visit BayernAtlas website</a></li>
+<li><a href="#2-make-a-request-with-python-and-requests-library">2. Make a request with Python and "Requests" library</a><ul>
+<li><a href="#21-what-is-happened">2.1. What is happened?</a></li>
+<li><a href="#22-how-to-work-with-libraries">2.2. How to work with libraries?</a></li>
+<li><a href="#23-how-to-expose-the-existing-methods-in-a-library">2.3. How to expose the existing methods in a library?</a></li>
+<li><a href="#24-what-we-got-by-the-request">2.4. What we got by the request?</a></li>
 </ul>
-<h2 id="step-1-visit-bayernatlas-website">Step 1) Visit <a href="https://geoportal.bayern.de/bayernatlas">BayernAtlas</a> website</h2>
+</li>
+<li><a href="#3-how-to-view-the-content-of-the-response">3. How to view the content of the response?</a><ul>
+<li><a href="#31-store-and-open-a-file">3.1. Store and open a file</a></li>
+<li><a href="#32-open-images-with-pillow-optional-step">3.2. Open Images with Pillow (Optional Step)</a></li>
+<li><a href="#33-open-images-with-web-browser-optional-step">3.3. Open Images with Web Browser (Optional Step)</a></li>
+</ul>
+</li>
+<li><a href="#4-what-about-json-xml-html-based-files">4. What about JSON, XML, HTML based files?</a></li>
+<li><a href="#5-how-to-request-json-xml-html-based-files-from-the-web-services">5. How to request JSON, XML, HTML based files from the web services?</a><ul>
+<li><a href="#51-inspect-the-response">5.1. Inspect the response</a></li>
+<li><a href="#52-convert-dictionary-to-text-using-json-library-dumps-method">5.2. Convert Dictionary to Text using JSON library (dumps method)</a></li>
+<li><a href="#53-convert-text-to-dictionary-using-json-library-loads-method">5.3. Convert Text to Dictionary using JSON library (loads method)</a></li>
+<li><a href="#54-save-the-json-file">5.4. Save the JSON file</a></li>
+<li><a href="#55-use-one-of-the-parameters-of-dumps-method-eg-indentation">5.5. Use one of the parameters of dumps method (e.g. Indentation)</a></li>
+<li><a href="#56-get-a-subset-of-the-dictionary-using-json-library">5.6. Get a subset of the dictionary using JSON library</a></li>
+<li><a href="#57-saving-the-response-as-it-is-in-binary-format">5.7. Saving the response as it is in binary format</a></li>
+</ul>
+</li>
+<li><a href="#6-read-a-json-file-and-display-in-python-interpreter">6. Read a JSON file and display in python interpreter</a></li>
+<li><a href="#7-convert-the-json-request-into-a-program-that-saves-only-properties-to-a-file">7. Convert the JSON request into a program that saves only properties to a file</a></li>
+<li><a href="#8-convert-your-code-block-into-a-function-and-let-users-define-their-own-url-requests">8. Convert your code block into a function and let users define their own URL requests</a><ul>
+<li><a href="#81-seperate-the-listing-mechanism-as-a-function">8.1. Seperate the listing mechanism as a function</a></li>
+<li><a href="#82-let-the-users-interact-with-your-program-input-function">8.2. Let the users interact with your program (input function)</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="0-aim-of-the-exercise">0. Aim of the Exercise</h2>
+<p>In this exercise, you will learn how to access similar data sources (web services) and how to manage data using some simple Python code. The main purpose of this exercise is to provide a basic introduction to the Python programming language and general information about the following topics:</p>
+<ul>
+<li>How is the Python programming language generally used?</li>
+<li>How are libraries installed and how can they be called within a program?</li>
+<li>What are the main data types and object types in Python?</li>
+<li>How can we learn the contents of functions and classes when needed?</li>
+</ul>
+<h2 id="1-visit-bayernatlas-website">1. Visit BayernAtlas website</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Open the "web developer tool" by pressing Ctrl+Shift+C (or Ctrl+Shift+I) or by finding the tool in the browser menu.</li>
 <li class="task-list-item"><input type="checkbox"/> Select a background map at any specific location on the map.</li>
@@ -1062,7 +1212,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <li class="task-list-item"><input type="checkbox"/> or you can test the URL using the "curl" program at the command prompt (CMD / Eingabeaufforderung).
 <img alt="BayernAtlas Basemap Request Sample" src="../images/exr2/bayernatlas_wmts_image.png" /></li>
 </ul>
-<h2 id="step-2-make-a-request-with-python-and-requests-library">Step 2) Make a request with Python and "Requests" library</h2>
+<h2 id="2-make-a-request-with-python-and-requests-library">2. Make a request with Python and "Requests" library</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Start a text editor (Notepad, Notepad++, SublimeText) or an IDE (Idle, Spyder, PyCharm)</li>
 <li class="task-list-item"><input type="checkbox"/> Write the following code in the editor and save it as a file with .PY extension.</li>
@@ -1072,12 +1222,12 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </ul>
 </li>
 <li class="task-list-item"><input type="checkbox"/> Open command prompt (Eingabeaufforderung) and navigate to the same folder as your python file. Execute the file by typing <code>python MY_PYTHON_CODE.py</code> (or type in <code>python3 MY_PYTHON_CODE.py</code> in Linux systems)</li>
-<li class="task-list-item"><input type="checkbox"/> Try running python within <strong>interactive</strong> mode by typing <code>python --interactive MY_PYTHON_CODE.py</code>.</li>
+<li class="task-list-item"><input type="checkbox"/> Try running python within <strong>interactive</strong> mode by typing <code>python -i MY_PYTHON_CODE.py</code> (or type in <code>python3 --interactive MY_PYTHON_CODE.py</code> in Linux systems).</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Import the native &quot;requests&quot; library to send a request to the web source.</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Replace the URL in the follwoing code with your selected URL</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Replace the URL in the following code with your selected URL</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://intergeo33.bayernwolke.de/betty/c_hist/13/4197/4598&quot;</span><span class="p">)</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">#Check what the &quot;mydata&quot; object.</span>
@@ -1103,7 +1253,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </tr>
 </tbody>
 </table>
-<h3 id="2a-what-is-happened">2a) What is happened?</h3>
+<h3 id="21-what-is-happened">2.1. What is happened?</h3>
 <ul>
 <li><code>import requests</code> imported the library named "requests". This library is a simple HTTP library supports all the methods available in the HTTP protocol such as GET, POST, DELETE etc.</li>
 <li><code>mydata =</code> defines a variable and assigns it to the following object.</li>
@@ -1115,19 +1265,19 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <ul>
 <li><code>print(mydata)</code> represents the content of the returned object.</li>
 </ul>
-<h3 id="2b-how-to-work-with-libraries">2b) How to work with libraries?</h3>
+<h3 id="22-how-to-work-with-libraries">2.2. How to work with libraries?</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Find and explore the documentation pages available on the Internet. <a href="https://requests.readthedocs.io/en/latest/user/quickstart/">requests doc</a></li>
 <li>Tip: You can use package repositories to find links to documentation pages. <a href="https://pypi.org/project/requests/">Python Package Installer site</a></li>
 <li class="task-list-item"><input type="checkbox"/> Use the help() function to read the summarized documentation about the requests library. Type (<code>help(requests)</code>) and run the code.</li>
 </ul>
-<h3 id="2c-how-to-expose-the-existing-methods-in-a-library">2c) How to expose the existing methods in a library?</h3>
+<h3 id="23-how-to-expose-the-existing-methods-in-a-library">2.3. How to expose the existing methods in a library?</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> In Python, everything is considered an object and each object can be examined by predefined functions such as type, dir, help etc. These predefined functions are called  "Built-ins" and can be listed by typing <code>dir(__builtins__)</code></li>
 <li class="task-list-item"><input type="checkbox"/> Since the requests class is also considered an object you can follow the same procedure to expose existing methods for this class. Type <code>dir(requests)</code></li>
 <li class="task-list-item"><input type="checkbox"/> Note that standard HTTP methods (get, post, put, delete etc.) area available in the list.</li>
 </ul>
-<h3 id="2d-what-we-got-by-the-request">2d) What we got by the request?</h3>
+<h3 id="24-what-we-got-by-the-request">2.4. What we got by the request?</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> If you need to learn more about the data you received with the request, use the following functions:</li>
 <li class="task-list-item"><input type="checkbox"/> <code>help(mydata)</code></li>
@@ -1148,7 +1298,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>True
 </code></pre></div>
-<h2 id="step-3-how-to-view-the-content-of-the-response">Step 3) How to view the content of the response?</h2>
+<h2 id="3-how-to-view-the-content-of-the-response">3. How to view the content of the response?</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> If you type <code>dir(mydata)</code> again, you can see all available methods to reveal the content of the object. <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Try to reveal the content by typing <code>print( mydata.content )</code></li>
@@ -1157,12 +1307,13 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </ul>
 </li>
 <li>TIP: You can follow different tactics to view an image file in python. A standard library (native library) called "webbrowser" can call a minimal browser and display the image inside the browser. Another method would be import the "Image" class from the "PIL" library. To import this class, you can add <code>from PIL import Image</code> at the beginning of your code block. Since "PIL" is not a native python library, you may need to install it on your environment using (<code>pip install Pillow</code>)</li>
+</ul>
+<h3 id="31-store-and-open-a-file">3.1. Store and open a file</h3>
+<ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> For now we will just save the image file in the same folder using the following code:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/exr2/my_requested_image.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_image_file</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;../../responses/exr2/my_requested_image.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_image_file</span><span class="p">:</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>        <span class="n">my_image_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mydata</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>File might be saved, check the folder: responses/exr2
 </code></pre></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> "open" is another built-in function in pyhton. It needs the filename as the first parameter and the file mode as the second parameter. If you want to learn more about the "file mode", visit this page: <a href="https://realpython.com/read-write-files-python/">Real Python</a> or type <code>help(open)</code> in the python interpreter.</li>
@@ -1174,17 +1325,19 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># Detect the current OS and change the relative paths regarding to it.</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1">#print(export_folder)</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># Replace the URL in the follwing code with your selected URL</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://intergeo33.bayernwolke.de/betty/c_hist/13/4197/4598&quot;</span><span class="p">)</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">export_folder</span> <span class="o">+</span> <span class="s2">&quot;my_requested_image.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_image_file</span><span class="p">:</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="n">my_image_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mydata</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File might be saved, check the folder: responses/exr2&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1"># &quot;os.pardir&quot; is used to choosing the right syntax for navigating to parent directory (for linux it is  &quot;../&quot; )</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># &quot;os.path.join&quot; method is used to join directories to specify the relative path for the file output</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span><span class="o">+</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># print(export_folder)</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1"># Replace the URL in the follwing code with your selected URL</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://intergeo33.bayernwolke.de/betty/c_hist/13/4197/4598&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">export_folder</span> <span class="o">+</span> <span class="s2">&quot;my_requested_image_2.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_image_file</span><span class="p">:</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="n">my_image_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mydata</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File might be saved, check the folder: ../../responses/exr2&quot;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>File might be saved, check the folder: responses/exr2
+<div class="highlight"><pre><span></span><code>File might be saved, check the folder: ../../responses/exr2
 </code></pre></div>
 <table>
 <thead>
@@ -1210,7 +1363,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <p>TIP: You may notice that the last line (<code>my_image_file.write(mydata.content)</code>) does not contain any parentheses or curly braces to highlight the inner code block. This is because parentheses and curly brackets are not used in the python programming language to do that. You need to use indentation to create a hierarchical programming style (e.g. conditional statements, functions, loops, etc.). Indentation usually consists of 4 space characters, but it can also be customized (e.g. You can use 3 spaces or TAB chacracter). Also note that a column (:) character is needed at the end of the last line before the indented lines.</p>
 <p>An example comparison between C and Python programming languages shows how indentation interpreted in python:
 <img alt="PythonvsC" src="../images/exr2/py_vs_c_identation.png" /></p>
-<h3 id="3b-optional-open-images-with-pillow">3b (optional) Open Images with Pillow</h3>
+<h3 id="32-open-images-with-pillow-optional-step">3.2. Open Images with Pillow (Optional Step)</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> You can show up the saved image using "PIL" (Pillow) library by running following code.</li>
 <li>TIP : If you are calling the "PIL" library for the first time in your local environment, you may need to install it with <code>pip install pillow</code> command.</li>
@@ -1218,34 +1371,33 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">requested_image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">export_folder</span> <span class="o">+</span> <span class="s2">&quot;my_requested_image.jpg&quot;</span><span class="p">)</span>
 <a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">display</span><span class="p">(</span><span class="n">requested_image</span><span class="p">)</span>
 </code></pre></div>
-<p><img alt="png" src="../output_23_0.png" /></p>
-<h3 id="3c-optional-open-images-with-web-browser">3c (optional) Open Images with Web Browser</h3>
+<p><img alt="png" src="../output_21_0.png" /></p>
+<h3 id="33-open-images-with-web-browser-optional-step">3.3. Open Images with Web Browser (Optional Step)</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> If you are running this notebook in your local environment, you can open the image on your default web browser by using the native python library "webbrowser". Try to execute following code.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">webbrowser</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">webbrowser</span><span class="o">.</span><span class="n">open_new_tab</span><span class="p">(</span><span class="n">export_folder</span> <span class="o">+</span> <span class="s2">&quot;my_requested_image.jpg&quot;</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>True
 </code></pre></div>
-<h2 id="step-4-what-about-json-xml-html-based-files">Step 4) What about JSON / XML / HTML based files?</h2>
+<h2 id="4-what-about-json-xml-html-based-files">4. What about JSON, XML, HTML based files?</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Let's find another web service that offers JSON or GML based data files and follow similar instructions to save this data on our local machine or python environment. Visit following web page:<ul>
-<li><a href="https://www.ldproxy.nrw.de/kataster">Basic geospatial data of the official surveying system in North Rhine-Westphalia</a> (Geobasisdaten des amtlichen Vermessungswesens in Nordrhein-Westfalen
-)</li>
+<li><a href="https://apitestbed.geonovum.nl/adr_pygeoapi/v1/">An OGC API-Features server managed by Geonovum</a> </li>
 </ul>
 </li>
-<li class="task-list-item"><input type="checkbox"/> Select one of the "collection"s (Landparcel/Flurstück, Building/Gebaeude or Administrative Unit/Verwaltungseinheit). </li>
+<li class="task-list-item"><input type="checkbox"/> Select one of the "collection"s (Picnic tables/Picknicktafels, Windmills within The Netherlands or Protected Sites). </li>
 <li class="task-list-item"><input type="checkbox"/> Select one of the features in the list and click on the JSON link at top right side of the page. If the data looks like too complex, try finding and installing a JSON viewer/parser add-on/extension for your browser.<ul>
 <li>TIP: It is recommended to search for "JSON Lite" in Firefox, "JSON-Handle" or "JSON Viewer Pro" in Chrome browser.</li>
 </ul>
@@ -1258,7 +1410,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </ul>
 <p>Here you will see different visualizations of JSON or XML files within these extensions:</p>
 <p><img alt="JSON or XML Visualizations" src="../images/exr2/browser_addons.png" /></p>
-<h2 id="step-5-how-to-request-json-xml-html-based-files-from-the-web-services">Step 5) How to request JSON / XML / HTML based files from the web services?</h2>
+<h2 id="5-how-to-request-json-xml-html-based-files-from-the-web-services">5. How to request JSON, XML, HTML based files from the web services?</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Remove the last two lines from your code block or convert them into comment by adding hashtag (#) to the beginning of lines. (Keyboard Shortcut: Ctrl + / )</li>
 <li class="task-list-item"><input type="checkbox"/> Copy and paste the requested URL in previous step (4) into your code block.</li>
@@ -1267,7 +1419,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
 <a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
@@ -1294,7 +1446,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </tr>
 </tbody>
 </table>
-<h3 id="5a-inspect-the-response">5a) Inspect the response</h3>
+<h3 id="51-inspect-the-response">5.1. Inspect the response</h3>
 <p>Here you have As you may notice, it was not actually converted into a JSON object, but is now a "<strong>JSON serializable Python object</strong>". In general terms it has been converted into a "<strong>python dictionary</strong>" object. JSON stands for Java Script Object Notation and is designed to provide a more developer-friendly alternative to XML. If you would select a most python-native encoding format, that would be none of these, but YAML. However, YAML format is out of our focus for this exercise. That is, it is a natural data exchange format designed for JavaScript, but not for Python. Python uses predefined data types such as tuples, lists and the most JSON-like format "dictionary" to handle the same data internally. The given code part has converted the response object to a JSON by using a method of requests.get, but ...</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Is it really JSON?<ul>
@@ -1314,7 +1466,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <p>TIP: If you would select a most python-native encoding format, that would be none of these, but <strong>YAML</strong>. Since, the YAML format is out of our focus for this exercise, we didn't mention about that yet.</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> If you try to save the python dictionary object to a file, you will notice an error.
-<code>with open("responses/exr2/my_request.json", "w") as my_json_request:</code></li>
+<code>with open("../../responses/exr2/my_request.json", "w") as my_json_request:</code></li>
 </ul>
 <p><code>my_json_request.write(myjson)</code></p>
 <ul class="task-list">
@@ -1326,10 +1478,10 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
 <a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
 <a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># Alternative method:</span>
 <a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c1"># text_file = str(mydata)</span>
@@ -1362,7 +1514,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </tr>
 </tbody>
 </table>
-<h3 id="5b-convert-dictionary-to-text-using-json-library-dumps-method">5b) Convert Dictionary to Text using JSON library (dumps method)</h3>
+<h3 id="52-convert-dictionary-to-text-using-json-library-dumps-method">5.2. Convert Dictionary to Text using JSON library (dumps method)</h3>
 <p>When this method is applied, ‘text_file’ is assumed to be just a dumped json file and is saved with the file extension ‘.json’. So it is currently no different from a normal text file. By importing the ‘json’ library, we will get more functionality within our data, such as filtering, sorting, re-indenting, etc.</p>
 <ul class="task-list">
 <li class="task-list-item">
@@ -1376,7 +1528,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
 <a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
@@ -1410,7 +1562,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </tr>
 </tbody>
 </table>
-<h3 id="5c-convert-text-to-dictionary-using-json-library-loads-method">5c) Convert Text to Dictionary using JSON library (loads method)</h3>
+<h3 id="53-convert-text-to-dictionary-using-json-library-loads-method">5.3. Convert Text to Dictionary using JSON library (loads method)</h3>
 <p>What if you had a text file instead of a python dictionary? Can you convert a text file to a JSON file?
 - [ ] If the response text is in regular JSON format, you can convert it to a dictionary using the <strong>loads</strong> method of the json library (see below).
 - If not, the json parser will throw an error and you may need to use additional string functions such as rstrip, lstrip, replace to fix the problem in the text. You can also browse <a href="https://www.w3schools.com/python/python_ref_string.asp">this web page</a> for python string methods.</p>
@@ -1418,7 +1570,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
 <a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">text</span>
 <a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
@@ -1454,7 +1606,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </tr>
 </tbody>
 </table>
-<h3 id="5d-save-the-json-file">5d) Save the JSON file</h3>
+<h3 id="54-save-the-json-file">5.4. Save the JSON file</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Now, you can copy the JSON file to our local machine by using "with" statement.</li>
 </ul>
@@ -1462,10 +1614,10 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
 <a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
 <a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
@@ -1476,7 +1628,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>
 <a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="c1">#print(json_file)</span>
 </code></pre></div>
-<h3 id="5e-use-one-of-the-parameters-of-dumps-method-eg-indentation">5e) Use one of the parameters of dumps method (e.g. Indentation)</h3>
+<h3 id="55-use-one-of-the-parameters-of-dumps-method-eg-indentation">5.5. Use one of the parameters of dumps method (e.g. Indentation)</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Try using some of the available parameters of "json.dumps" method. (for exp. "indent")<ul>
 <li>To see all available parameters for the dumps method, type <code>help(json.dumps)</code>.</li>
@@ -1487,10 +1639,10 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
 <a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
 <a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>
@@ -1501,7 +1653,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>
 <a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="c1">#print(json_file)</span>
 </code></pre></div>
-<h3 id="5f-get-a-subset-of-the-dictionary-using-json-library-__getitem__">5f) Get a subset of the dictionary using JSON library (__getitem__ / [ ] )</h3>
+<h3 id="56-get-a-subset-of-the-dictionary-using-json-library">5.6. Get a subset of the dictionary using JSON library</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Python dictionaries can be filtered by defining keys. ('geometry' in the sample below)<ul>
 <li>Note that <code>myjson['geometry']</code> and <code>myjson.__getitem__('geometry')</code> will produce the same results.</li>
@@ -1514,10 +1666,10 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
 <a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
 <a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
@@ -1532,17 +1684,17 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>
 <a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="c1">#print(json_file)</span>
 </code></pre></div>
-<h3 id="5g-saving-the-response-as-it-is-in-binary-format">5g) Saving the response as it is in binary format</h3>
+<h3 id="57-saving-the-response-as-it-is-in-binary-format">5.7. Saving the response as it is in binary format</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Another possibility to save the desired JSON file is to export it by reading the data in binary format using the "w" to "b" parameter in the open function. Note that you don't need to import the "json" library as there is nothing to do with the object.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
 <a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
 <a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="n">my_content</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">content</span>
 <a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
@@ -1575,7 +1727,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 </tr>
 </tbody>
 </table>
-<h2 id="step-6-read-a-json-file-and-display-in-python-interpreter">Step 6) Read a JSON file and display in python interpreter</h2>
+<h2 id="6-read-a-json-file-and-display-in-python-interpreter">6. Read a JSON file and display in python interpreter</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> You can read and modify saved files by using the "load" or "loads" method of the "json" library. To do this, you need to use "open" function with the "r" mode, which stands for "read".</li>
 </ul>
@@ -1583,7 +1735,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
 <a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">export_folder</span> <span class="o">+</span> <span class="s2">&quot;my_request.json&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_json_req</span><span class="p">:</span>
 <a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>        <span class="n">json_file</span> <span class="o">=</span> <span class="n">my_json_req</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -1625,7 +1777,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <li>TIP: If you are confused with the dump and load methods, take a look at the image below which explains how to convert json data into python dictionaries or vice a versa.
 <img alt="json load and dump methods" src="../images/exr2/json_load_dump.png" /></li>
 </ul>
-<h2 id="step-7-convert-the-json-request-into-a-program-that-saves-only-properties-to-a-file">Step 7) Convert the JSON request into a program that saves only properties to a file</h2>
+<h2 id="7-convert-the-json-request-into-a-program-that-saves-only-properties-to-a-file">7. Convert the JSON request into a program that saves only properties to a file</h2>
 <p>Suppose we want to save only the attributes of a desired JSON to a text file without all other attributes.</p>
 <p>We can do this easily with loop conditions.</p>
 <ul class="task-list">
@@ -1635,7 +1787,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
 <a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
 <a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
@@ -1652,7 +1804,7 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
 <a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
 <a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>
@@ -1661,9 +1813,21 @@ Murat Kendir, Prof. Thomas Kolbe || Chair of Geoinformatics, TUM || murat.kendir
 <a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="k">for</span> <span class="n">prop</span> <span class="ow">in</span> <span class="n">mysubset</span><span class="p">:</span>
 <a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">prop</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>aktualit
-gebnutzbez
-funktion
+<div class="highlight"><pre><span></span><code>gid
+NAAM
+PLAATS
+CATEGORIE
+FUNCTIE
+TYPE
+STAAT
+RMONNUMMER
+TBGCNUMMER
+INFOLINK
+THUMBNAIL
+HFDFUNCTIE
+FOTOGRAAF
+FOTO_GROOT
+BOUWJAAR
 </code></pre></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Now you can use the "for" condition inside the "open" function to save the properties as a list with automatically generated line numbers.</li>
@@ -1673,10 +1837,10 @@ funktion
 <a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
-<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>
 <a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="c1"># Replace the URL with your own URL</span>
-<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>
 <a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="n">myjson</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>
@@ -1689,7 +1853,7 @@ funktion
 <a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>            <span class="n">myformat</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; : &#39;</span> <span class="o">+</span> <span class="n">prop</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> 
 <a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>            <span class="n">my_req</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">myformat</span><span class="p">)</span>            
 </code></pre></div>
-<h2 id="step-8-convert-your-code-block-into-a-function-and-let-users-define-their-own-url-requests">Step 8) Convert your code block into a function and let users define their own URL requests</h2>
+<h2 id="8-convert-your-code-block-into-a-function-and-let-users-define-their-own-url-requests">8. Convert your code block into a function and let users define their own URL requests</h2>
 <ul class="task-list">
 <li class="task-list-item">
 <p><input type="checkbox"/> You have already entered the URL you want in the code by manually changing the URL part. Now let's make the program more interactive to allow users to define their own URL on each different request. You need to define a function that listens for a user parameter and uses the same parameter in the computations. To do this, you need to use <strong>"def"</strong> which stands for "definition". Move the lines used to transform the data into the function definition using indentation.</p>
@@ -1703,7 +1867,7 @@ funktion
 <a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>
 <a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="k">def</span> <span class="nf">get_building_properties</span><span class="p">(</span><span class="n">custom_url</span><span class="p">):</span>
 <a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>    <span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">custom_url</span><span class="p">)</span>
@@ -1711,7 +1875,7 @@ funktion
 <a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>    <span class="n">mysubset</span> <span class="o">=</span> <span class="n">myjson</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">]</span>
 <a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>    <span class="k">return</span> <span class="n">mysubset</span>
 <a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
-<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="n">mysubset</span> <span class="o">=</span> <span class="n">get_building_properties</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="n">mysubset</span> <span class="o">=</span> <span class="n">get_building_properties</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>
 <a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">export_folder</span> <span class="o">+</span> <span class="s2">&quot;my_request.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_req</span><span class="p">:</span>
 <a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>        <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
@@ -1754,7 +1918,7 @@ funktion
 </tr>
 </tbody>
 </table>
-<h3 id="8a-seperate-the-listing-mechanism-as-a-function">8a) Seperate the listing mechanism as a function</h3>
+<h3 id="81-seperate-the-listing-mechanism-as-a-function">8.1. Seperate the listing mechanism as a function</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> We can also turn the code block that saves the file into a function, so that users can more easily determine the file name.<ul>
 <li>Note that the first parameter (my_object) of the save_property_as_list function is <strong>required</strong>.</li>
@@ -1766,7 +1930,7 @@ funktion
 <a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
 <a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="k">def</span> <span class="nf">get_building_properties</span><span class="p">(</span><span class="n">custom_url</span><span class="p">):</span>
 <a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>    <span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">custom_url</span><span class="p">)</span>
@@ -1783,11 +1947,11 @@ funktion
 <a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>            <span class="n">myformat</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; : &#39;</span> <span class="o">+</span> <span class="n">prop</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> 
 <a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>            <span class="n">my_req</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">myformat</span><span class="p">)</span>
 <a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>
-<a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a><span class="n">building_properties</span> <span class="o">=</span> <span class="n">get_building_properties</span><span class="p">(</span><span class="s2">&quot;https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json&quot;</span><span class="p">)</span>
+<a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a><span class="n">building_properties</span> <span class="o">=</span> <span class="n">get_building_properties</span><span class="p">(</span><span class="s2">&quot;https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json&quot;</span><span class="p">)</span>
 <a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>
 <a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a><span class="n">save_property_as_list</span><span class="p">(</span><span class="n">building_properties</span><span class="p">,</span> <span class="s2">&quot;my_request.txt&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="8b-let-the-users-interact-with-your-program-input-function">8b) Let the users interact with your program (input function)</h3>
+<h3 id="82-let-the-users-interact-with-your-program-input-function">8.2. Let the users interact with your program (input function)</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> You can apply the "input" function to turn the code into an interactive program.</li>
 </ul>
@@ -1795,7 +1959,7 @@ funktion
 <a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="kn">import</span> <span class="nn">os</span>
 <a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>
-<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="n">export_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s1">&#39;responses&#39;</span><span class="p">,</span><span class="s1">&#39;exr2&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">sep</span>
 <a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
 <a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="k">def</span> <span class="nf">get_building_properties</span><span class="p">(</span><span class="n">custom_url</span><span class="p">):</span>
 <a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>    <span class="n">mydata</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">custom_url</span><span class="p">)</span>
@@ -1828,14 +1992,14 @@ funktion
 <a id="__codelineno-20-35" name="__codelineno-20-35" href="#__codelineno-20-35"></a><span class="n">save_property_as_list</span><span class="p">(</span><span class="n">building_properties</span><span class="p">,</span> <span class="n">custom_file_name</span><span class="p">)</span>
 <a id="__codelineno-20-36" name="__codelineno-20-36" href="#__codelineno-20-36"></a>
 <a id="__codelineno-20-37" name="__codelineno-20-37" href="#__codelineno-20-37"></a><span class="c1"># Sample Inputs:</span>
-<a id="__codelineno-20-38" name="__codelineno-20-38" href="#__codelineno-20-38"></a><span class="c1"># https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json</span>
+<a id="__codelineno-20-38" name="__codelineno-20-38" href="#__codelineno-20-38"></a><span class="c1"># https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json</span>
 <a id="__codelineno-20-39" name="__codelineno-20-39" href="#__codelineno-20-39"></a><span class="c1"># my_request2.txt</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Enter the requested URL serves JSON :  https://www.ldproxy.nrw.de/kataster/collections/gebaeudebauwerk/items/DENW42AL1000NmHjBL?f=json
-Specify a file name with extension :
+<div class="highlight"><pre><span></span><code>Enter the requested URL serves JSON :  https://apitestbed.geonovum.nl/adr_pygeoapi/v1/collections/dutch_windmills/items/Molens.4?f=json
+Specify a file name with extension :  sample_file
 
 
-List saved as a file : responses/exr2/request.txt
+List saved as a file : ../../responses/exr2/sample_file
 </code></pre></div>
 
 
