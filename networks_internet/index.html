@@ -975,7 +975,8 @@ murat.kendir@tum.de
 <p>In Windows Systems, it is possible to reveal out the IP addresses (both of v4 and v6) with the <strong>ipconfig</strong> command</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ipconfig<span class="w"> </span>/all
 </code></pre></div>
-<p>In Unix-based Systems, you can use multiple commands such as <strong>ip</strong>, <strong>ifconfig</strong> etc.</p>
+<p>In Linux-based Systems, you can use multiple commands such as <strong>ip</strong>, <strong>ifconfig</strong> etc.</p>
+<p>On Linux-based Systems, inet stands for Ipv4， inet6 stands for Ipv6.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ifconfig<span class="w"> </span>&lt;INTERFACE-NAME&gt;
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ip<span class="w"> </span>address<span class="w"> </span>show
@@ -994,7 +995,7 @@ murat.kendir@tum.de
 <p>There are many methods for revealing a computer network's global IP address. This IP address is usually automatically assigned to users by their ISP company. In some cases, users may prefer not to change their global IP addresses. In this case, they can request <em>static IP addresses</em> from their ISP.</p>
 <p>Method 1: Using a web site</p>
 <ul>
-<li><a href="www.whatismyipaddress.com">whatismyipaddress.com</a></li>
+<li><a href="https://whatismyipaddress.com/">whatismyipaddress.com</a></li>
 <li><a href="https://www.myip.com/">myip.com</a></li>
 <li><a href="https://www.geolocation.com/">geolocation.com ( includes Location Information)</a></li>
 <li><a href="https://duckduckgo.com/?&amp;q=my+ip">duckduckgo.com/?&amp;q=my+ip (via Search Engine)</a></li>
@@ -1006,8 +1007,8 @@ murat.kendir@tum.de
 </figure>
 
 <p>Method 3: Sending a request to an API</p>
-<p>Powershell Command:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">(</span>Invoke-WebRequest<span class="w"> </span>ifconfig.me/ip<span class="o">)</span>.Content.Trim<span class="o">()</span>
+<p>Windows Powershell Command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">(</span>Invoke-WebRequest<span class="w"> </span><span class="s2">&quot;http://ifconfig.me/ip&quot;</span><span class="o">)</span>.Content.Trim<span class="o">()</span>
 </code></pre></div></p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/networks_internet/windows_powershell_external_ip.png" alt="IPv4 and IPv6 addresses are exposed in the CMD tool" style="border:3px solid darkgray">
@@ -1055,7 +1056,7 @@ records for the same domain.</li>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Type “ping -n amazon.DOMAIN_SUFFIX” for different countries that may be near or far from the current country. (For Exp. COM / DE / AU / NZ / CN ) <ul>
 <li><code>ping -c 3 mit.edu</code> (using a CDN which serves sources from Germany)</li>
-<li><code>ping -c stanford.edu</code> (located in USA)</li>
+<li><code>ping -c 3 stanford.edu</code> (located in USA)</li>
 <li><code>ping -c 3 www.tsinghua.edu.cn</code> (located in China)</li>
 <li><code>ping -c 3 sydney.edu.au</code> (located in Australia)</li>
 <li><code>ping -c 3 www.u-tokyo.ac.jp</code> (located in Japan)</li>
