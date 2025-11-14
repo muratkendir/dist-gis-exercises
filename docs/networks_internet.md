@@ -81,7 +81,9 @@ In Windows Systems, it is possible to reveal out the IP addresses (both of v4 an
 ipconfig /all
 ```
 
-In Unix-based Systems, you can use multiple commands such as **ip**, **ifconfig** etc.
+In Linux-based Systems, you can use multiple commands such as **ip**, **ifconfig** etc.
+
+On Linux-based Systems, inet stands for Ipv4， inet6 stands for Ipv6.
 
 ```bash
 ifconfig <INTERFACE-NAME>
@@ -108,7 +110,7 @@ There are many methods for revealing a computer network's global IP address. Thi
 
 Method 1: Using a web site
 
-- [whatismyipaddress.com](www.whatismyipaddress.com)
+- [whatismyipaddress.com](https://whatismyipaddress.com/)
 - [myip.com](https://www.myip.com/)
 - [geolocation.com ( includes Location Information)](https://www.geolocation.com/)
 - [duckduckgo.com/?&q=my+ip (via Search Engine)](https://duckduckgo.com/?&q=my+ip)
@@ -122,9 +124,9 @@ Method 2: Accessing to router interface
 
 Method 3: Sending a request to an API
 
-Powershell Command:
+Windows Powershell Command:
 ```bash
-(Invoke-WebRequest ifconfig.me/ip).Content.Trim()
+(Invoke-WebRequest "http://ifconfig.me/ip").Content.Trim()
 ```
 
 <figure style="width:%100;text-align: center;">
@@ -184,7 +186,7 @@ The **“Ping”** command can be used to measure network performance between th
 
 - [ ] Type “ping -n amazon.DOMAIN_SUFFIX” for different countries that may be near or far from the current country. (For Exp. COM / DE / AU / NZ / CN ) 
     - ```ping -c 3 mit.edu``` (using a CDN which serves sources from Germany)
-    - ```ping -c stanford.edu``` (located in USA)
+    - ```ping -c 3 stanford.edu``` (located in USA)
     - ```ping -c 3 www.tsinghua.edu.cn``` (located in China)
     - ```ping -c 3 sydney.edu.au``` (located in Australia)
     - ```ping -c 3 www.u-tokyo.ac.jp``` (located in Japan)
