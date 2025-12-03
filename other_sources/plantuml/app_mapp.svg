@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="516px" preserveAspectRatio="none" style="width:953px;height:516px;background:#000000;" version="1.1" viewBox="0 0 953 516" width="953px" zoomAndPan="magnify"><defs/><g><rect fill="#0D2011" height="1" style="stroke: #0D2011; stroke-width: 1.0;" width="1" x="0" y="0"/><rect fill="#33FF02" height="21.2969" style="stroke: #33FF02; stroke-width: 1.0;" width="500" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="178" x="6" y="20">[From string (line 12) ]</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="40.2969"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="122" x="5" y="56.5938">@startmindmap</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="72.8906"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="89.1875"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="105.4844"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="121.7813"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="15" x="5" y="138.0781">...</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="175" x="5" y="154.375">... ( skipping 19 lines )</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="15" x="5" y="170.6719">...</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="93" x="45" y="186.9688">FontSize 16</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="113" x="45" y="203.2656">FontStyle Bold</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="227" x="45" y="219.5625">BackgroundColor #FFFFFF90</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="164" x="45" y="235.8594">BorderThickness 0.5</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="138" x="45" y="252.1563">BorderColor Gray</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="144" x="45" y="268.4531">ArrowThickness 2</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="133" x="45" y="284.75">ArrowColor Gray</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="151" x="45" y="301.0469">AttributeIconSize 9</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="10" x="25" y="317.3438">}</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="333.6406"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="10" x="5" y="349.9375">}</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="366.2344"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="500" x="5" y="382.5313">title Folder &amp; File Structure for the Best Documentation Publish</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="398.8281"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="98" x="5" y="415.125">right header</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="468" x="5" y="431.4219">&lt;font color=red size=10&gt; Last Check : 14.11.2025&lt;/font&gt;</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="86" x="5" y="447.7188">endheader</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="464.0156"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="249" x="5" y="480.3125">*[#ghostwhite] main repository</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="100" x="5" y="496.6094">*_ \.gitignore</text><text fill="#FF0000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="941" x="10" y="512.9063">I don't know how to draw multi-root diagram. You should suggest an image so that the PlantUML team implements it :-)</text><!--MD5=[ef1f4ec91c1bd88fda829667a788af9f]
+@startmindmap
+
+
+
+
+skinparam {
+    DefaultFontName Helvetica 
+    defaultTextAlignment center
+    RoundCorner 14
+    Shadowing false
+
+    BackgroundColor transparent
+
+    TitleFontSize 36
+    TitleFontStyle Bold
+
+    minClassWidth 125
+    maxClassWidth 300
+    nodesep 30
+    ranksep 30
+    CircledCharacterRadius 10
+    CircledCharacterFontSize 12
+    CircledCharacterFontColor White
+    Class {
+        FontSize 16
+        FontStyle Bold
+        BackgroundColor #FFFFFF90
+        BorderThickness 0.5
+        BorderColor Gray
+        ArrowThickness 2
+        ArrowColor Gray
+        AttributeIconSize 9
+    }
+
+}
+
+title Folder & File Structure for the Best Documentation Publish
+
+right header
+<font color=red size=10> Last Check : 14.11.2025</font>
+endheader
+
+*[#ghostwhite] main repository
+*_ \.gitignore
+*_ mkdocs.yml
+*_ requirements.txt
+**[#ghostwhite] docs
+
+
+legend left
+    Icons:
+        Main File <&home>
+        Functions <&calculator>
+        Classes/Dictionaries <&briefcase>
+    Box Colors:
+        Folders = Silver
+        Files = White
+endlegend
+
+
+@endmindmap
+
+PlantUML version 1.2020.02(Sun Mar 01 11:22:07 CET 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.8+9-Ubuntu-0ubuntu124.04.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,29 @@
+@startmindmap
+
+!include card-style.puml
+
+title Folder & File Structure for the Best Documentation Publish
+
+right header
+<font color=red size=10> Last Check : 14.11.2025</font>
+endheader
+
+*[#ghostwhite] main repository
+*_ \.gitignore
+*_ mkdocs.yml
+*_ requirements.txt
+**[#ghostwhite] docs
+
+
+legend left
+    Icons:
+        Main File <&home>
+        Functions <&calculator>
+        Classes/Dictionaries <&briefcase>
+    Box Colors:
+        Folders = Gray
+        Files = White
+endlegend
+
+
+@endmindmap

@@ -23,7 +23,9 @@ Contact: murat.kendir(at)tum.de
     - [Introduction to Python (Optional)](intro_python.md) 
     - [Spatial Data Infrastructures](sdis.md)
     - [Computer Networks & Internet](networks_internet.md)
-- [Exercise 4 (Web Mapping in 2D / 3D)](exercise4.md)
+- Exercise 3:
+    - [Basics of Web Mapping](basics_of_web_mapping.md)
+    - [Web Services & Web Mapping in 2D / 3D](web_mapping.md)
 - Exercise 5 (Virtualization & Cloud Computing):
     - [Preparation for Exercise 5](exercise5_preparation.md)
     - [Exercise 5](exercise5.md)
@@ -31,7 +33,6 @@ Contact: murat.kendir(at)tum.de
 ## Other Materials
 
 - [OGC Web Service Samples for Discussion](samples_for_discussion.md)
-- [Essentials of Web Mapping](essentials_of_web_mapping.md)
 - [OGC Services Sample Links](ogc_services_samples.md)
 
 ## Local Installation Instructions

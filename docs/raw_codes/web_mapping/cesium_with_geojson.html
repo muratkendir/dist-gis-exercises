@@ -17,7 +17,7 @@
     const viewer = new Cesium.Viewer("cesiumContainer", {});
           
     //Prepare the URL of GeoJSON       
-    feature_api_query = 'https://api.hamburg.de/datasets/v1/grundwassergleichen_min/collections/u12_l_gleichenplan_min/items?limit=10&gw_stand_in_meter_nhn=20'
+    feature_api_query = 'https://api.hamburg.de/datasets/v1/grundwassergleichen/collections/u12_l_gleichenplan_min/items?limit=10&gw_stand_in_meter_nhn=20&f=json'
     const dataSource = Cesium.GeoJsonDataSource.load(feature_api_query);
           
     // Add GeoJSON file to the viewer

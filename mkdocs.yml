@@ -14,12 +14,13 @@ nav:
     - "Introduction to Python (Optional)" : intro_python.md
     - "Spatial Data Infrastructures" : sdis.md
     - "Networks & Internet (Bonus)" : networks_internet.md
-  - "Exercise 4 (Web Map)": exercise4.md
+  - "Exercise 3" :
+    - "Basics of Web Mapping": basics_of_web_mapping.md
+    - "Web Services & Web Mapping in 2D / 3D": web_mapping.md
   - "Exercise 5 (Virtualization)": 
     - "Preparation for Exercise 5": exercise5_preparation.md
     - "Exercise 5": exercise5.md
   - "OGC Service Samples": samples_for_discussion.md
-  - "Essentials of Web Mapping": essentials_of_web_mapping.md
   - "Virtual Env. Installation":
     - "Windows w PIP": install_w_pip_on_win.md
     - "Linux w PIP": install_w_pip_on_lnx.md

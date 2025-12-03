@@ -1,16 +1,39 @@
 # Geospatial Web Services & Web Mapping in 2D / 3D
 
-<img align="right" width=190 height=100 src="../images/TUM_Logo_blau_rgb_p.png"/>
+<img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/>
+
 <blockquote>
-Munich Technical University || Chair of Geoinformatics </br></br>
-Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+Munich Technical University / Chair of Geoinformatics <br> 
+Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+murat.kendir@tum.de
 </blockquote>
+
+<div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
+
+## Table of Contents
+
+- [0. Aim of the Exercise](#0-aim-of-the-exercise)
+- [1. Accessing WMS service with Python](#1-accessing-wms-service-with-python)
+    - [1.1. Examine a WMS service with OWSLib](#11-examine-a-wms-service-with-owslib)
+    - [1.2. Add a WMS layer to Jupyter Notebook using ipyLeaflet](#12-add-a-wms-layer-to-jupyter-notebook-using-ipyleaflet)
+- [2. Accessing WMS services from JavaScript libraries](#2-accessing-wms-services-from-javascript-libraries)
+    - [2.1. Adding WMS services to OpenLayers](#21-adding-wms-services-to-openlayers)
+    - [2.2. Adding WMS services to CesiumJS](#22-adding-wms-services-to-cesiumjs)
+    - [2.3. Using OGC Feature API as GeoJSON source in Cesium](#23-using-ogc-feature-api-as-geojson-source-in-cesium)
+- [3. Fundamentals of 3D Visualization in CesiumJS](#3-fundamentals-of-3d-visualization-in-cesiumjs)
+    - [3.1. Adding 3D Buildings to the Cesium viewer](#31-adding-3d-buildings-to-the-cesium-viewer)
+    - [3.2. Adding terrain to the Cesium viewer](#32-adding-terrain-to-the-cesium-viewer)
+    - [3.3. Adding custom terrain models, 3DTiles and WMS services to Cesium](#33-adding-custom-terrain-models-3dtiles-and-wms-services-to-cesium)
+
+
+
+## 0. Aim of the Exercise
 
 - In this exercise, you will learn how to use geospatial web services in your applications or web views and how to use the operations supported by the web service. 
 - In the previous exercise, we selected a few web map services from the given Spatial Data Infrastructures (SDIs) and examined the responses using GIS software. 
 - Now you will learn how to connect to and interact with geospatial web services with the help of some popular libraries. Additionally, you will learn how to use 2D and 3D JavaScript libraries which supports and visualize 2D or 3D datasets or web services.
 
-## 1) Accessing WMS service with Python
+## 1. Accessing WMS service with Python
 
 OWSLib is one of the OGC compliant web service client and it supports OGC interface standards.
 Before using the OWSLib consider the following steps:
@@ -39,7 +62,7 @@ There are multiple ways to do so:
   - Imports only WebMapService function in the wms module and assigns a custom alias to it.
   - Type: ```help(any_shorten_form)```
 
-### 1.1) Examine a WMS service with OWSLib
+### 1.1. Examine a WMS service with OWSLib
 Select any Web Map Service (WMS) from your previous work, or select a random WMS that covers the city of Hamburg in whole or in part. (If you want to add a random WMS, revisit the [Hamburg TransparenzPortal](https://transparenz.hamburg.de) or [geoportal.de](https://geoportal.de) or [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu) websites to search for the appropriate web service.)
 
 
@@ -132,7 +155,7 @@ print(mytest.operations[5].name)
 ```python
 # type(mytest.getServiceXML())
 # Specify your own relative or full path to save the XML file, if it is required.
-with open("responses/exr4/my_wms_servicexml.xml", "wb") as my_wms_xml:
+with open("../responses/exr4/my_wms_servicexml.xml", "wb") as my_wms_xml:
         my_wms_xml.write(mytest.getServiceXML())
 ```
 
@@ -180,12 +203,12 @@ Image(img.read())
 
 
     
-![leaflet00](images/exr4/output_23_0.jpg)
+![jpeg](output_24_0.jpg)
     
 
 
 
-### 1.2) Add a WMS layer to Jupyter Notebook using ipyLeaflet
+### 1.2. Add a WMS layer to Jupyter Notebook using ipyLeaflet
 As you may know that leaflet is well known and simple-to-use web map library based on JavaScript. However, leaflet has also a widget implementation with Python Notebook which lets users to visualize their leaflet maps in notebook documents. To start using ipyleaflet, type ```pip install ipyleaflet``` in your python environment or follow the instructions to install ipyleaflet which are available in [this website](https://ipyleaflet.readthedocs.io/en/latest/installation/index.html).
 
 
@@ -197,8 +220,8 @@ map = Map(center=center, zoom=13)
 display(map)
 ```
 
-![leaflet01](images/exr4/leaflet_01.png)
-*Screenshot taken on Jupyter Notebook*
+
+    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
 
 
 You can change the basemap by importing "basemaps" class into your code.
@@ -213,21 +236,22 @@ import IPython
 center = (53.547668, 9.985685)
 map = Map(basemap=basemaps.CartoDB.Positron, center=center, zoom=13)
 #display(map)
-src = 'raw_codes/exr4/ipyleaflet_basemap.html'
+src = '../raw_codes/web_mapping/ipyleaflet_basemap.html'
 embed_minimal_html(src, views=[map])
 IPython.display.IFrame(src, width='100%', height='300px')
 ```
 
 
-[//]: # (![leaflet02](images/exr4/leaflet_02.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
+
+
 
 <iframe
     width="100%"
     height="300px"
-    src="../raw_codes/exr4/ipyleaflet_basemap.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    src="../raw_codes/web_mapping/ipyleaflet_basemap.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 
@@ -251,8 +275,9 @@ map
 ```
 
 
-![leaflet03](images/exr4/leaflet_03.png)
-*Screenshot taken on Jupyter Notebook*
+
+
+    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
 
 
 
@@ -280,8 +305,10 @@ map.add(wms)
 map
 ```
 
-![leaflet04](images/exr4/leaflet_04.png)
-*Screenshot taken on Jupyter Notebook*
+
+
+
+    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
 
 
 
@@ -316,14 +343,15 @@ m
 ```
 
 
-![leaflet05](images/exr4/leaflet_05.png)
-*Screenshot taken on Jupyter Notebook*
+
+
+    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
 
 
 
 - You might be wondering what happens to the console (or terminal window) after running the leaflet widget. The console is still there. All you need to show it again is to enable the console by going to View > Show Log Console in the python notebook window.
 
-![Show Log Console](images/exr4/python_show_log_console.png)
+![Show Log Console](../images/exr4/python_show_log_console.png)
 
 - In the next exercise you will experience how to drag a marker on the map and then send/print its coordinates to the console.
 
@@ -356,8 +384,7 @@ display(map)
 ```
 
 
-![leaflet06](images/exr4/leaflet_06.png)
-*Screenshot taken on Jupyter Notebook*
+    Map(center=[53.547668, 9.985685], controls=(ZoomControl(options=['position', 'zoom_in_text', 'zoom_in_title', …
 
 
 - If you are interested in visualizing a 2D/3D map in a python notebook, ipyleaflet can be considered a good starting point in terms of learning curve. However, there are many different alternative python libraries that support 2D/3D geographic data visualization in python notebooks or in a python framework (Flask, Django etc). Take a glance over these libraries, if you want:
@@ -371,11 +398,11 @@ display(map)
 - If you are looking for more geospatial python libraries or resources, check out the following repository listing some well-known libraries and resources:
   - [GeoPythonInfoTree](https://tum-gis.github.io/geoPythonInfoTree/)
 
-## 2) Accessing WMS services from JavaScript libraries
+## 2. Accessing WMS services from JavaScript libraries
 
 There are many JavaScript libraries that support 2D or 3D map visualizations in web browsers, and sometimes these libraries are used internally as the base environment in desktop applications without resorting to any web browser. For example, threeJS is a JavaScript library that supports visualizing geospatial data on it, meanwhile it is used as a 3D Viewer in QGIS. 
 
-### 2.1) Adding WMS services to OpenLayers
+### 2.1. Adding WMS services to OpenLayers
 
 OpenLayers is one of the oldest and most advanced 2D map viewer libraries in JavaScript. When working in Python, you can search for a "wrapper" for these JavaScript libraries and import them into your code (For Exp. ipyleaflet was a python wrapper of leaflet JavaScript library). You also have another option to store these HTML+JavaScript packages in your directory and render them using the IPython package with the IFrame function (same with the iframe tag in HTML). This method will give you the chance to render HTML in a frame and access it from the Jupyter notebook as well. However, you can also run these standalone HTML files from your directory just by clicking on them.
 
@@ -383,22 +410,22 @@ OpenLayers is one of the oldest and most advanced 2D map viewer libraries in Jav
 ```python
 import IPython
 
-src = 'raw_codes/exr4/openlayers_empty_viewer.html'
+src = '../raw_codes/web_mapping/openlayers_empty_viewer.html'
 
 IPython.display.IFrame(src, width='100%', height='300px')
 ```
 
 
 
-[//]: # (![openlayers01](images/exr4/openlayers_01.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
+
 
 <iframe
     width="100%"
     height="300px"
-    src="../raw_codes/exr4/openlayers_empty_viewer.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    src="../raw_codes/web_mapping/openlayers_empty_viewer.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 
@@ -454,22 +481,22 @@ new ol.layer.Tile({
 ```python
 import IPython
 
-src = 'raw_codes/exr4/openlayers_with_wms.html'
+src = '../raw_codes/web_mapping/openlayers_with_wms.html'
 
 IPython.display.IFrame(src, width='100%', height='300px')
 ```
 
 
 
-[//]: # (![openlayers02](images/exr4/openlayers_02.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
+
 
 <iframe
     width="100%"
     height="300px"
-    src="../raw_codes/exr4/openlayers_with_wms.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    src="../raw_codes/web_mapping/openlayers_with_wms.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 
@@ -489,28 +516,29 @@ IPython.display.IFrame(src, width='100%', height='300px')
 
 > TIP : You can start to play with the given codes by clicking to "Edit" button at right top corner.
 
-### 2.2) Adding WMS services to CesiumJS
+### 2.2. Adding WMS services to CesiumJS
 CesiumJS is a popular 3D Map view library that supports additional 3D assets (object collections) such as 3D Tiles, tiled terrain models, GLTF/GLB (3D) models, etc. However, as a common map display environment, CesiumJS continues to support widely used geospatial data formats and web services such as GeoJSON, WMS, WMTS, etc. Just like we did before for OpenLayers, you can call CesiumJS libraries from a remote repository and visualize them here as HTML views:
 
 
 ```python
 import IPython
 
-src = 'raw_codes/exr4/cesium_empty_viewer.html'
+src = '../raw_codes/web_mapping/cesium_empty_viewer.html'
 
 IPython.display.IFrame(src, width='100%', height='400px')
 ```
 
 
-[//]: # (![cesium01](images/exr4/cesium_01.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
+
+
 
 <iframe
     width="100%"
-    height="300px"
-    src="../raw_codes/exr4/cesium_empty_viewer.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    height="400px"
+    src="../raw_codes/web_mapping/cesium_empty_viewer.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 
@@ -568,22 +596,22 @@ imageryLayers.addImageryProvider(geoWmsLayer);
 ```python
 import IPython
 
-src = 'raw_codes/exr4/cesium_with_wms.html'
+src = '../raw_codes/web_mapping/cesium_with_wms.html'
 
 IPython.display.IFrame(src, width='100%', height='400px')
 ```
 
 
 
-[//]: # (![cesium02](images/exr4/cesium_02.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
+
 
 <iframe
     width="100%"
-    height="300px"
-    src="../raw_codes/exr4/cesium_with_wms.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    height="400px"
+    src="../raw_codes/web_mapping/cesium_with_wms.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 
@@ -597,7 +625,7 @@ IPython.display.IFrame(src, width='100%', height='400px')
     - [Point Clouds as 3D Tiles](https://sandcastle.cesium.com/?src=3D%20Tiles%20Point%20Cloud.html&label=3D%20Tiles) | [Cesium3DTileset](https://cesium.com/learn/cesiumjs/ref-doc/Cesium3DTileset.html)
     - [Segmented Point Clouds as 3D Tiles](https://sandcastle.cesium.com/?src=3D%20Tiles%20Point%20Cloud%20Classification.html&label=3D%20Tiles) | [Cesium3DTileStyle](https://cesium.com/learn/cesiumjs/ref-doc/Cesium3DTileStyle.html)
 
-### 2.3) Using OGC Feature API as GeoJSON source in Cesium
+### 2.3. Using OGC Feature API as GeoJSON source in Cesium
 
 One of the natively supported formats in CesiumJS is the "GeoJSON" data format. GeoJSON is quite similar to JSON files, but is standardized to support geospatial objects with a defined coordinate reference system and geometry property. This means that any OGC Feature API service that provides GeoJSON files can be easily adapted with CesiumJS scenes. The easiest way to import the OGC Feature API is to predefine the query and format in the URL and reference the URL as if calling a GeoJSON file from a repository.
 
@@ -613,7 +641,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {});
     - First 10 (limit=10) of ground water sources which have 20 meters level (gw_stand_in_meter_nhn=20)
       
 ```JavaScript
-feature_api_query = 'https://api.hamburg.de/datasets/v1/grundwassergleichen_min/collections/u12_l_gleichenplan_min/items?limit=10&gw_stand_in_meter_nhn=20'
+feature_api_query = 'https://api.hamburg.de/datasets/v1/grundwassergleichen/collections/u12_l_gleichenplan_min/items?limit=10&gw_stand_in_meter_nhn=20&f=json'
 const dataSource = Cesium.GeoJsonDataSource.load(feature_api_query);
 ```
 
@@ -628,32 +656,32 @@ viewer.zoomTo(dataSource);
 ```python
 import IPython
 
-src = 'raw_codes/exr4/cesium_with_geojson.html'
+src = '../raw_codes/web_mapping/cesium_with_geojson.html'
 
 IPython.display.IFrame(src, width='100%', height='400px')
 ```
 
 
 
-[//]: # (![cesium03](images/exr4/cesium_03.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
+
 
 <iframe
     width="100%"
-    height="300px"
-    src="../raw_codes/exr4/cesium_with_geojson.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    height="400px"
+    src="../raw_codes/web_mapping/cesium_with_geojson.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 
 
 
-## 3) Fundamentals of 3D Visualization in CesiumJS
+## 3. Fundamentals of 3D Visualization in CesiumJS
 
 We have already added a WMS layer to the 3D map environment using the CesiumJS JavaScript library. Adding 2D overlays (GeoJSON, WMTS, WMS, XYZ basemaps etc) to the 3D map environment is not an outdated or unpopular method, but it is just one step in creating a well-designed 3D map. Generally, the steps required to create a 3D map environment can be summarized as follows: Adding 3D models, adding a 3D terrain model, overlaying the terrain with a coverage and finally adjusting the view to focus on the area of interest. In this step, we will try to follow these instructions one by one and experience 3D assets.
 
-### 3.1) Adding 3D Buildings to the Cesium viewer
+### 3.1. Adding 3D Buildings to the Cesium viewer
 
 There are multiple ways to add 3D Tiles to a Cesium map. First of all, we need to consider that 3D Tiles are a set of binary files defined in JSON format and stored in a hierarchy.
 Therefore, to add a 3D Tile to the Cesium map, all that is needed is to find a suitable 3DTiles dataset and reference the main JSON file (usually named as "tileset.json") that stands at the top in the hierarchy. 
@@ -672,22 +700,22 @@ viewer.scene.primitives.add(buildingsTileset);
 ```python
 import IPython
 
-src = 'raw_codes/exr4/cesium_with_wms_with_osm.html'
+src = '../raw_codes/web_mapping/cesium_with_wms_with_osm.html'
 
 IPython.display.IFrame(src, width='100%', height='400px')
 ```
 
 
 
-[//]: # (![cesium04](images/exr4/cesium_04.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
+
 
 <iframe
     width="100%"
-    height="300px"
-    src="../raw_codes/exr4/cesium_with_wms_with_osm.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    height="400px"
+    src="../raw_codes/web_mapping/cesium_with_wms_with_osm.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 
@@ -695,7 +723,7 @@ IPython.display.IFrame(src, width='100%', height='400px')
 
 As you may notice, the predefined 3D building dataset (based on OpenStreetMap extruded buildings, check [OSMBuildings](https://osmbuildings.org) ) is loaded into the scene, but there is a serious problem. The buildings appear to float several hundred meters above the ground. This is because there is no terrain defined yet (a 3d model showing the current heights of the ground) and therefore Cesium works on an artificial surface based on an ellipsoidal geometry (i.e. the WGS84 ellipsoid).
 
-### 3.2) Adding terrain to the Cesium viewer
+### 3.2. Adding terrain to the Cesium viewer
 We can add a globally available terrain by adding these codes into our code. Please consider that, terrain object must be defined in CesiumContainer widget as an option.
 ```JavaScript
 const viewer = new Cesium.Viewer('cesiumContainer', {
@@ -707,7 +735,7 @@ const viewer = new Cesium.Viewer('cesiumContainer', {
 ```python
 import IPython
 
-src = 'raw_codes/exr4/cesium_with_wms_with_osm_with_terrain.html'
+src = '../raw_codes/web_mapping/cesium_with_wms_with_osm_with_terrain.html'
 
 IPython.display.IFrame(src, width='100%', height='400px')
 ```
@@ -715,15 +743,14 @@ IPython.display.IFrame(src, width='100%', height='400px')
 
 
 
-[//]: # (![cesium05](images/exr4/cesium_05.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
 
 <iframe
     width="100%"
-    height="300px"
-    src="../raw_codes/exr4/cesium_with_wms_with_osm_with_terrain.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    height="400px"
+    src="../raw_codes/web_mapping/cesium_with_wms_with_osm_with_terrain.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 
@@ -731,7 +758,7 @@ IPython.display.IFrame(src, width='100%', height='400px')
 
 Just like 3D Tiles, terrain models can also be called from external sources. In this way, it is possible to provide moew accurate and precise terrain models which is a need especially when visualizing smaller buildings on bumpy areas (For example click to search button at right top side of the cesium widget and type "Neuschwanstein Castle").  
 
-### 3.3) Adding custom terrain models, 3DTiles and WMS services to Cesium
+### 3.3. Adding custom terrain models, 3DTiles and WMS services to Cesium
 
 As mentioned earlier, it is possible to add custom-built 3D Tiles and terrain models to Cesium. As these datasets are usually very large and expensive, there are not many publicly available datasets yet. Most of the time, these datasets are provided by an authority with a requirement to use a token or authentication method.
 
@@ -793,21 +820,22 @@ var geourl = 'https://wms.geo.admin.ch/';
 ```python
 import IPython
 
-src = 'raw_codes/exr4/cesium_with_everything_custom.html'
+src = '../raw_codes/web_mapping/cesium_with_everything_custom.html'
 
 IPython.display.IFrame(src, width='100%', height='400px')
 ```
 
 
-[//]: # (![cesium06](images/exr4/cesium_06.png))
-[//]: # (*Screenshot taken on Jupyter Notebook*)
+
+
 
 <iframe
     width="100%"
-    height="300px"
-    src="../raw_codes/exr4/cesium_with_everything_custom.html"
-    style="border:10px solid #005293;margin:0;padding:0;" 
+    height="400px"
+    src="../raw_codes/web_mapping/cesium_with_everything_custom.html"
+    frameborder="0"
     allowfullscreen
+
 ></iframe>
 
 

@@ -1,26 +1,29 @@
-# Essentials of Web Mapping based on JavaScript Libraries
+# Basics of Web Mapping based on JavaScript Libraries
 
-<img align="right" width="10%" height="auto" src="../images/TUM_Logo_blau_rgb_p.png"/>
+<img align="right" width=100 height=190 src="../images/TUM_Logo_blau_rgb_p.png"/>
 
-> Munich Technical University || Chair of Geoinformatics
+<blockquote>
+Munich Technical University / Chair of Geoinformatics <br> 
+Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+murat.kendir@tum.de
+</blockquote>
 
-> Murat Kendir, Prof. Thomas Kolbe || murat.kendir@tum.de
+<div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
+
+## 0. Aim of the Document
 
 - In this document we will discuss concepts related to web mapping based on JavaScript libraries.
 - Since all web mapping libraries used in this document are based on the JavaScript language, we will also partially discuss some basic concepts of JavaScript.
 
-<a href="../essentials_of_web_mapping.slides.html" target="_blank">Presentation Mode</a>
-
-
-## 1) How to combine different sources in HTML?
+## 1. How to combine different sources in HTML?
 
 - In an HTML document, you can combine different resources for use in the web interface.
 - Traditionally, files related to style, content and programs are stored in separate files and combined into one HTML file. One popular method of file separation is to use HTML (content), CSS (style) and Javascript (program) files.
 - It should be noted that separation is not always the best method. Sometimes developers prefer to use them in a single HTML file.
 
-### 1.a-b) Defining styles for HTML elements
+### 1.1. Defining styles using HTML Element Attributes
 
-<a href="../raw_codes/essentials_of_web_map/demo1a.html">Demo 1a</a>
+**[Demo 1a](raw_codes/essentials_of_web_map/demo1a.html)**
 ```html
 <title>My Web Page</title>
 <div align="center">
@@ -31,7 +34,9 @@
 ```
 
 
-<a href="../raw_codes/essentials_of_web_map/demo1b.html">Demo 1b</a>
+### 1.2. Defining styles using inline CSS
+
+**[Demo 1b](raw_codes/essentials_of_web_map/demo1b.html)**
 ```html
 <title>My Web Page</title>
 <style>
@@ -46,9 +51,9 @@
 ```
 
 
-### 1.c) Referencing to HTML elements
+### 1.3. Referencing to HTML elements from CSS
 
-<a href="../raw_codes/essentials_of_web_map/demo1c.html">Demo 1c</a>
+[Demo 1c](raw_codes/essentials_of_web_map/demo1c.html)
 ```html
 <title>My Web Page</title>
 <style>
@@ -63,9 +68,9 @@
 </div>
 ```
 
-### 1.d) Referencing to HTML elements
+### 1.4. Referencing to HTML elements from CSS (Priority Example)
 
-<a href="../raw_codes/essentials_of_web_map/demo1d.html">Demo 1d</a>
+[Demo 1d](raw_codes/essentials_of_web_map/demo1d.html)
 
 ```html
 <title>My Web Page</title>
@@ -82,9 +87,9 @@
 </div>
 ```
 
-### 1.e) Importing Styles from an external file
+### 1.5. Importing Styles from the external CSS files
 
-<a href="../raw_codes/essentials_of_web_map/demo1e.html">Demo 1e</a>
+[Demo 1e](raw_codes/essentials_of_web_map/demo1e.html)
 
 ```html
 <title>My Web Page</title>
@@ -99,14 +104,14 @@
 </div>
 ```
 
-### 1.f) Importing Styles from an external file
+### 1.6. Importing Styles from any CSS source on the Internet
 
-<a href="../raw_codes/essentials_of_web_map/demo1f.html">Demo 1f</a>
+[Demo 1f](raw_codes/essentials_of_web_map/demo1f.html)
 
 ```html
 <title>My Web Page</title>
 
-<link rel="stylesheet" href="https://www.neredekaliyor.com/koordinat_paylasma/my_style.css">
+<link rel="stylesheet" href="https://www.3dcitydb.net/3dcitydb/fileadmin/public/kendir/others/my_style.css">
 
 <div>
     <h1 id="title1">Welcome to my website!</h1>
@@ -116,7 +121,7 @@
 </div>
 ```
 
-## 2.a) How to configure modern web sites using JavaScript libraries?
+## 2. How to configure modern web sites using JavaScript libraries?
 
 - Similar to CSS implementations, JavaScript code can be applied to HTML files using internal or external sources.
 - Modern websites often combine multiple JavaScript libraries.
@@ -128,13 +133,15 @@ An Example: **ThreeJS**
 - Implemented into QGIS to use as 3D Visualizer
   - accessible through **View > 3D Map Views**
 
-<a href="../raw_codes/essentials_of_web_map/demo2a.html">Demo 2a</a>
+[Demo 2a](raw_codes/essentials_of_web_map/demo2a.html)
 
-## 3.a) Web Map with OpenLayers
+## 3. Web Map with OpenLayers (OL)
 
 - OpenLayers is one of the most advanced 2D web map libraries.
 
-<a href="../raw_codes/essentials_of_web_map/demo3a.html">Demo3a</a>
+### 3.1. Visualizing a Simple Map with OL
+
+[Demo3a](raw_codes/essentials_of_web_map/demo3a.html)
 
 ```html
 <html>
@@ -152,7 +159,7 @@ An Example: **ThreeJS**
 </html>
 ```
 
-### 3.b) Understanding the JavaScript code
+### 3.2. Understanding the JavaScript code
 
 ```javascript
 var map = new ol.Map({
@@ -176,36 +183,33 @@ var map = new ol.Map({
       - new ol.source.OSM() --> sets the source of the tile map as OSM
   - view: new ol.View() --> sets view as a new **View** object.
 
-### 3.c) Finding the elements of a JavaScript object
+### 3.3. Finding the elements of a JavaScript object using JavaScript Console
 
 - Type ```console.dir(map)``` in the (Web) Developer Tool of browser
 - After finding the target element, you can print the content with ```console.log(map.targetElement_)```
 - Search for the target, layers and view elements.
 
-<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map.png"/>
-
-### 3.c) Finding the elements of a JavaScript object
+![console_dir](../images/essentials_of_web_map/console_dir_map.png)
 
 - Try to find the specified map center coordinates ```console.dir(map)```
 - Check ```console.log(map.viewPropertyListenerKey_.target.values_)```
 
-<!--<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map_view_elem.png"/>-->
+![console_dir_view](../images/essentials_of_web_map/console_dir_map_view_elem.png)
 
-![console dir map view elem](images/essentials_of_web_map/console_dir_map_view_elem.png)
 
-### 3.d) State Diagram for a HTML Parsing Process (HTML+CSS+OpenLayers)
+### 3.4. State Diagram for a HTML Parsing Process (HTML+CSS+OpenLayers)
 
-<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/sd_html_parsing_sample_for_openlayers.drawio.svg"/>
+![sd_html_parsing_sample_for_openlayers](../images/essentials_of_web_map/sd_html_parsing_sample_for_openlayers.drawio.svg)
 
-## 4.a) In which Coordinate Reference System (CRS)?
+## 4. Coordinate Reference System (CRS)
 
 - Even if a custom CRS is not defined, the map has to be visualized based on a default CRS.
 - Check ```console.log(map.viewPropertyListenerKey_.target.projection_)```
 - Search with the EPSG code on [epsg.io](https://epsg.io) to learn more about it.
 
-<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/console_dir_map_crs.png"/>
+![console_dir_view](../images/essentials_of_web_map/console_dir_map_crs.png)
 
-### 4.b) How about the Zoom Level?
+### 4.1. How about the Zoom Level?
 
 - The zoom level is defined as 10 in the JavaScript code.
 - Many web map applications are using the zoom level as one of the main map constructor.
@@ -214,12 +218,12 @@ var map = new ol.Map({
   - Set the CRS as **EPSG:3857 (Pseudo-Mercator)** in Map Properties
   - Search for "**Zoom Level**" and/or "**Layer Tiles Mapcanvas**" in Plugins Manager
 
-<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/ol_zoom_level.png"/>
+![console_dir_view](../images/essentials_of_web_map/ol_zoom_level.png)
 
 
-### 4.c) Get the current zoom level and write to an HTML element
+### 4.2. Get the current zoom level and write to an HTML element
 
-<a href="../raw_codes/essentials_of_web_map/demo4c.html">Demo4c</a>
+[Demo4c](raw_codes/essentials_of_web_map/demo4c.html)
 
 ```javascript
 function onZoomEnd(evt) {
@@ -233,11 +237,11 @@ map.on('moveend', onZoomEnd);
 ```
 
 
-## 5.a) How to add WMS service to the OpenLayers?
+## 5. How to add WMS service to the OpenLayers?
 
 Which one is a correct definition for a WMS service in OpenLayers?
 
-<a href="../raw_codes/essentials_of_web_map/demo5a.html">Demo5a</a>
+[Demo5a](raw_codes/essentials_of_web_map/demo5a.html)
 
 **A**
 ```javascript
@@ -257,19 +261,19 @@ new Image({
           }),
 ```
 
-### 5.b) How to detect the module hierarchy in a package?
+### 5.1. How to detect the module hierarchy in a package?
 
 Method 1: Check the debugger tool in (Web) Developer Tool.
 
 Method 2: Check the documentation of the used library (e.g. [OpenLayers API Doc](https://openlayers.org/en/latest/apidoc/) ).
 
-<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/ol_imported_modules.png"/>
+![firefox_debugger](../images/essentials_of_web_map/ol_imported_modules.png)
 
-### 5.c) How to get feature info?
+### 5.2. How to get feature info?
 
-<a href="../raw_codes/essentials_of_web_map/demo5c.html">Demo5c</a>
+[Demo5c](raw_codes/essentials_of_web_map/demo5c.html)
 
-- Check the GetFeatureInfo operation's documentation: [OGC e-Learning](http://opengeospatial.github.io/e-learning/wms/text/operations.html#getfeatureinfo)
+- Check the GetFeatureInfo operation's documentation: [GeoServer WMS Doc - GetFeatureInfo](https://docs.geoserver.org/latest/en/user/services/wms/reference.html#getfeatureinfo)
 
 - Check the following classes/methods in OpenLayers API Doc:
   - [Search for "on(type, listener)" method](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html)
@@ -289,12 +293,12 @@ map.on('singleclick', function (evt) {
 });
 ```
 
-### 5.d) Display the feature information in a HTML element
+### 5.3. Display the feature information in a HTML element
 
-<a href="../raw_codes/essentials_of_web_map/demo5c.html">Demo5c</a>
+[Demo5c](raw_codes/essentials_of_web_map/demo5c.html)
 
 - If you are not familiar with some JavaScript functions or classes like 'let', 'const', 'Promise', check the documents for the 2015 JavaScript version (aka ECMAScript 6/ES6):
-  - https://www.w3schools.com/Js/js_es6.asp
+  - [New Features in JavaScript 2015 (EcmaScript 6)](https://www.w3schools.com/Js/js_es6.asp)
 
 ```javascript
 map.on('singleclick', function (evt) {
@@ -317,11 +321,11 @@ map.on('singleclick', function (evt) {
 });
 ```
 
-## 6.a) How to add WMTS layer to the OpenLayers?
+## 6. How to add WMTS layer to the OpenLayers?
 
 [USGS WMTS service (Capabilities)](https://mrdata.usgs.gov/mapcache/wmts?service=wmts&request=getCapabilities)
 
-- Which one is a correct definiiton for a WMTS connection?
+- Which one is a correct definition for a WMTS connection?
 
 **A**
 ```javascript
@@ -350,11 +354,11 @@ const my_wmts = new ol.layer.Tile({
                 });
 ```
 
-### 6.b) What are the resolution and MatrixSet IDs?
+### 6.1. What are the resolution and MatrixSet IDs?
 
 - Also check the EPSG:3857 (Pseudo-Mercator) extents : [EPSG.io](https://epsg.io/3857)
 
-<a href="../raw_codes/essentials_of_web_map/demo6a.html">Demo6a</a>
+[Demo6a](raw_codes/essentials_of_web_map/demo6a.html)
 
 ```javascript
 const projection = ol.proj.get('EPSG:3857');
@@ -371,9 +375,9 @@ for (let z = 0; z < 19; ++z) {
 }
 ```
 
-### 6.c) Implementing the resolution and MatrixSet IDs with openlayers WMTS request
+### 6.2. Implementing the resolution and MatrixSet IDs with openlayers WMTS request
 
-<a href="../raw_codes/essentials_of_web_map/demo6a.html">Demo6a</a>
+[Demo6a](raw_codes/essentials_of_web_map/demo6a.html)
 
 ```javascript
 const my_wmts = new ol.layer.Tile({
@@ -395,7 +399,7 @@ const my_wmts = new ol.layer.Tile({
                 });
 ```
 
-## 7.a) 3D Mapping with Cesium
+## 7. 3D Mapping with Cesium
 
 - The existing base map options in CesiumJS need authorization (API token) to limit map requests (e.g. Bing Map)
 - However, OpenStreetMap offers a tile basemap that does not require any authorization and can be used in CesiumJS.
@@ -413,9 +417,9 @@ const my_wmts = new ol.layer.Tile({
     // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
     const viewer = new Cesium.Viewer('cesiumContainer', {
       //Use OpenStreetMaps
-      imageryProvider : new Cesium.OpenStreetMapImageryProvider({
-        url : 'https://a.tile.openstreetmap.org/'
-      }),
+      baseLayer: new Cesium.ImageryLayer(new Cesium.OpenStreetMapImageryProvider({
+        url: "https://tile.openstreetmap.org/"
+      }))
     });      
   </script>
  </div>
@@ -423,9 +427,9 @@ const my_wmts = new ol.layer.Tile({
 </html>
 ```
 
-### 7b) Converting local JS file references to cloud repository references
+### 7.1. Converting local JS file references to cloud repository references
 
-<a href="../raw_codes/essentials_of_web_map/demo7b.html">Cesium with online repositories</a>
+[Cesium with online repositories](raw_codes/essentials_of_web_map/demo7b.html)
 
 - Usually online JS repositories provided in the documentation page of the library.
   - However, you can also check some known JS repositories such as [cdnjs](https://cdnjs.com), [jsdelivery](https://www.jsdelivr.com) etc.
@@ -443,9 +447,9 @@ const my_wmts = new ol.layer.Tile({
     // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
     const viewer = new Cesium.Viewer('cesiumContainer', {
       //Use OpenStreetMaps
-      imageryProvider : new Cesium.OpenStreetMapImageryProvider({
-        url : 'https://a.tile.openstreetmap.org/'
-      }),
+      baseLayer: new Cesium.ImageryLayer(new Cesium.OpenStreetMapImageryProvider({
+        url: "https://tile.openstreetmap.org/"
+      }))
     });  
   </script>
  </div>
@@ -453,11 +457,11 @@ const my_wmts = new ol.layer.Tile({
 </html>
 ```
 
-### 7.c) Camera Object
+### 7.2. Camera Object
 
 - Unlike 2D maps, 3D map environments need a camera object so that a scene selected on the map can be presented to the end user.
 
-<a href="../raw_codes/essentials_of_web_map/demo7c.html">Cesium with camera initialization</a>
+[Cesium with camera initialization](raw_codes/essentials_of_web_map/demo7c.html)
 
 ```javascript
 // Fly the camera to San Francisco at the given longitude, latitude, and height.
@@ -470,15 +474,13 @@ const my_wmts = new ol.layer.Tile({
     });
 ```
 
-### 7.d) What is "Cartesian3"?
+### 7.3. What is "Cartesian3"?
 
-<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/geo_coord.gif"/>
-
-<img align="center" width="75%" height="auto" src="../images/essentials_of_web_map/cartesian_coord.gif"/>
-
+![Geographic Coordinates](../images/essentials_of_web_map/geo_coord.gif)
+![Cartesian 3D Coordinates](../images/essentials_of_web_map/cartesian_coord.gif)
 - Images taken from [https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html](https://kartoweb.itc.nl/geometrics/Coordinate%20systems/coordsys.html)
 
-### 7.e) How the basemaps are loaded into Cesium (Tiling Mechanism)
+### 7.4. How the basemaps are loaded into Cesium (Tiling Mechanism)
  
 - Visit the next demo page and try to give some tilt angle to the current view.
 - Unfold the Cesium Viewer Inspector and find the Terrain group at the bottom.
@@ -486,15 +488,15 @@ const my_wmts = new ol.layer.Tile({
 
 - This is the basic 2D tiling mechanism that used to overlay 2D maps and terrain files.
 
-<a href="../raw_codes/essentials_of_web_map/demo7d.html">Cesium with viewer Inspector</a>
+[Cesium with viewer Inspector](raw_codes/essentials_of_web_map/demo7d.html)
 
-### 7.f) How to add WMS service to the Cesium
+### 7.5. How to add WMS service to the Cesium
 
 - CesiumJS simply calculates the coverage area and tries to request for the WMS image by comparing with the current view area of the camera (frustum).
 
 - Check the Capabilities of a found WMS service: [München Bezirksteil](https://geoportal.muenchen.de/geoserver/gsm_wfs/vablock_bezirksteil_opendata/ows?service=WMS&version=1.3.0&request=GetCapabilities)
 
-<a href="../raw_codes/essentials_of_web_map/demo7f.html">Cesium with WMS service</a>
+[Cesium with WMS service](raw_codes/essentials_of_web_map/demo7f.html)
 
 ```javascript
 // Add the main URL of WMS service
@@ -514,9 +516,9 @@ const geoWmsLayer = new Cesium.WebMapServiceImageryProvider({
 viewer.imageryLayers.addImageryProvider(geoWmsLayer);
 ```
 
-### 7.g) How to add default world terrain using Cesium Ion token
+### 7.6. How to add default world terrain using Cesium Ion token
 
-<a href="../raw_codes/essentials_of_web_map/demo7g.html">Cesium with Terrain</a>
+[Cesium with Terrain](raw_codes/essentials_of_web_map/demo7g.html)
 
 - Create an account on Cesium Ion and generate a token specifically reserved for an application or limited in time.
 - Add to the beginning of your CesiumJS code.
@@ -538,12 +540,12 @@ viewer.scene.setTerrain(
 ```
 
 
-## 8.a) Adding 3D Tiles
+## 8. 3D Tiles
 
-<a href="../raw_codes/essentials_of_web_map/demo8a.html">Cesium with 3D Tiles</a>
+[Cesium with 3D Tiles](raw_codes/essentials_of_web_map/demo8a.html)
 
 - Add the main JSON link of the 3DTiles to Cesium 
-  - e.g. [BaseMap.de - LOD2 Buildings](https://basemap.de/beta/beta-lod2/)
+  - e.g. [BaseMap.de - LOD2 Buildings](https://basemap.de/produkte-und-dienste/3d/)
 
 ```javascript
 var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
@@ -565,9 +567,9 @@ var cityStyle = new Cesium.Cesium3DTileStyle({
          });
 ```
 
-### 8.b) Enable Cesium 3DTiles Inspector
+### 8.1. Enable Cesium 3DTiles Inspector
 
-<a href="../raw_codes/essentials_of_web_map/demo8b.html" target="_blank">Cesium with 3D Tiles and Inspector</a>
+[Cesium with 3D Tiles and Inspector](raw_codes/essentials_of_web_map/demo8b.html)
 
 ```javascript
 viewer.extend(Cesium.viewerCesium3DTilesInspectorMixin);
