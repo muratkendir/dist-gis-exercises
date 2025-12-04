@@ -351,7 +351,7 @@ m
 
 - You might be wondering what happens to the console (or terminal window) after running the leaflet widget. The console is still there. All you need to show it again is to enable the console by going to View > Show Log Console in the python notebook window.
 
-![Show Log Console](../images/exr4/python_show_log_console.png)
+![Show Log Console](../images/web_mapping/python_show_log_console.png)
 
 - In the next exercise you will experience how to drag a marker on the map and then send/print its coordinates to the console.
 

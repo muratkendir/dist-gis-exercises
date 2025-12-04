@@ -139,6 +139,776 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "mkdocs.yml",
+			"settings":
+			{
+				"buffer_size": 1413,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAGECAAAAAAAAZgIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYQIAAAAAAABhAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"left_delete",
+					null,
+					"AQAAAGQCAAAAAAAAZAIAAAAAAAACAAAAICA",
+					"AQAAAAAAAAABAAAAZgIAAAAAAABmAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAAGQCAAAAAAAAZQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZAIAAAAAAABkAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAGUCAAAAAAAAZgIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZQIAAAAAAABlAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAAGYCAAAAAAAAaAIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZgIAAAAAAABmAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "Exercise"
+					},
+					"CAAAAGcCAAAAAAAAaAIAAAAAAAAAAAAAaAIAAAAAAABpAgAAAAAAAAAAAABpAgAAAAAAAGoCAAAAAAAAAAAAAGoCAAAAAAAAawIAAAAAAAAAAAAAawIAAAAAAABsAgAAAAAAAAAAAABsAgAAAAAAAG0CAAAAAAAAAAAAAG0CAAAAAAAAbgIAAAAAAAAAAAAAbgIAAAAAAABvAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZwIAAAAAAABnAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": " 3"
+					},
+					"AgAAAG8CAAAAAAAAcAIAAAAAAAAAAAAAcAIAAAAAAABxAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbwIAAAAAAABvAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": " :"
+					},
+					"AgAAAHICAAAAAAAAcwIAAAAAAAAAAAAAcwIAAAAAAAB0AgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcgIAAAAAAAByAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAHQCAAAAAAAAeQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdAIAAAAAAAB0AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAAHkCAAAAAAAAegIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAeQIAAAAAAAB5AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAHoCAAAAAAAAewIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAegIAAAAAAAB6AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"cut",
+					null,
+					"AQAAAGADAAAAAAAAYAMAAAAAAAA5AAAAIkVzc2VudGlhbHMgb2YgV2ViIE1hcHBpbmciOiBlc3NlbnRpYWxzX29mX3dlYl9tYXBwaW5nLm1k",
+					"AQAAAAAAAAABAAAAYAMAAAAAAACZAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					4,
+					"left_delete",
+					null,
+					"BAAAAF8DAAAAAAAAXwMAAAAAAAABAAAAIF4DAAAAAAAAXgMAAAAAAAABAAAALVwDAAAAAAAAXAMAAAAAAAACAAAAICBbAwAAAAAAAFsDAAAAAAAAAQAAAAo",
+					"AQAAAAAAAAABAAAAYAMAAAAAAABgAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"paste",
+					null,
+					"AQAAAHsCAAAAAAAAtAIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAewIAAAAAAAB7AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": "Basics"
+					},
+					"BgAAAHwCAAAAAAAAfQIAAAAAAAAJAAAARXNzZW50aWFsfQIAAAAAAAB+AgAAAAAAAAAAAAB+AgAAAAAAAH8CAAAAAAAAAAAAAH8CAAAAAAAAgAIAAAAAAAAAAAAAgAIAAAAAAACBAgAAAAAAAAAAAACBAgAAAAAAAIICAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhQIAAAAAAAB8AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIECAAAAAAAAgQIAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAggIAAAAAAACCAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": "basics"
+					},
+					"BgAAAJQCAAAAAAAAlQIAAAAAAAAJAAAAZXNzZW50aWFslQIAAAAAAACWAgAAAAAAAAAAAACWAgAAAAAAAJcCAAAAAAAAAAAAAJcCAAAAAAAAmAIAAAAAAAAAAAAAmAIAAAAAAACZAgAAAAAAAAAAAACZAgAAAAAAAJoCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnQIAAAAAAACUAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJkCAAAAAAAAmQIAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAmgIAAAAAAACaAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": "web_mapping"
+					},
+					"CwAAAMkCAAAAAAAAygIAAAAAAAAJAAAAZXhlcmNpc2U0ygIAAAAAAADLAgAAAAAAAAAAAADLAgAAAAAAAMwCAAAAAAAAAAAAAMwCAAAAAAAAzQIAAAAAAAAAAAAAzQIAAAAAAADOAgAAAAAAAAAAAADOAgAAAAAAAM8CAAAAAAAAAAAAAM8CAAAAAAAA0AIAAAAAAAAAAAAA0AIAAAAAAADRAgAAAAAAAAAAAADRAgAAAAAAANICAAAAAAAAAAAAANICAAAAAAAA0wIAAAAAAAAAAAAA0wIAAAAAAADUAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyQIAAAAAAADSAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					41,
+					1,
+					"insert",
+					{
+						"characters": "  "
+					},
+					"AgAAAK8CAAAAAAAAsAIAAAAAAAAAAAAAsAIAAAAAAACxAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArwIAAAAAAACvAgAAAAAAAAAAAAAAADRA"
+				],
+				[
+					45,
+					1,
+					"",
+					null,
+					"AQAAALQCAAAAAAAA5gIAAAAAAAAUAAAARXhlcmNpc2UgNCAoV2ViIE1hcCk",
+					"AQAAAAAAAAABAAAAyAIAAAAAAAC0AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					48,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAALYCAAAAAAAAtwIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtgIAAAAAAAC2AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					3,
+					"left_delete",
+					null,
+					"AwAAALYCAAAAAAAAtgIAAAAAAAABAAAALbUCAAAAAAAAtQIAAAAAAAABAAAAILQCAAAAAAAAtAIAAAAAAAABAAAAIw",
+					"AQAAAAAAAAABAAAAtwIAAAAAAAC3AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					52,
+					1,
+					"left_delete",
+					null,
+					"AQAAALQCAAAAAAAAtAIAAAAAAAALAAAAR2Vvc3BhdGlhbCA",
+					"AQAAAAAAAAABAAAAvwIAAAAAAAC0AgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "docs/index.md",
+			"settings":
+			{
+				"buffer_size": 1445,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "    "
+					},
+					"BAAAABADAAAAAAAAEQMAAAAAAAAAAAAAEQMAAAAAAAASAwAAAAAAAAAAAAASAwAAAAAAABMDAAAAAAAAAAAAABMDAAAAAAAAFAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEAMAAAAAAAAQAwAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					8,
+					1,
+					"",
+					null,
+					"AQAAABcDAAAAAAAASQMAAAAAAAAjAAAARXhlcmNpc2UgNCAoV2ViIE1hcHBpbmcgaW4gMkQgLyAzRCk",
+					"AQAAAAAAAAABAAAAFwMAAAAAAAA6AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"left_delete",
+					null,
+					"AQAAABcDAAAAAAAAFwMAAAAAAAANAAAAIyBHZW9zcGF0aWFsIA",
+					"AQAAAAAAAAABAAAAJAMAAAAAAAAXAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "web_mappi"
+					},
+					"CQAAAD4DAAAAAAAAPwMAAAAAAAAJAAAAZXhlcmNpc2U0PwMAAAAAAABAAwAAAAAAAAAAAABAAwAAAAAAAEEDAAAAAAAAAAAAAEEDAAAAAAAAQgMAAAAAAAAAAAAAQgMAAAAAAABDAwAAAAAAAAAAAABDAwAAAAAAAEQDAAAAAAAAAAAAAEQDAAAAAAAARQMAAAAAAAAAAAAARQMAAAAAAABGAwAAAAAAAAAAAABGAwAAAAAAAEcDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARwMAAAAAAAA+AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "ng"
+					},
+					"AgAAAEcDAAAAAAAASAMAAAAAAAAAAAAASAMAAAAAAABJAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARwMAAAAAAABHAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "33-adding-custom-terrain-models-3dtiles-and-wms-services-to-cesium",
+			"settings":
+			{
+				"buffer_size": 66,
+				"line_ending": "Unix",
+				"name": "33-adding-custom-terrain-models-3dtiles-and-wms-se"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAFgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"",
+					null,
+					"BAAAAA0AAAAAAAAADgAAAAAAAAABAAAAIAkAAAAAAAAACgAAAAAAAAABAAAAIAYAAAAAAAAABwAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAFgAAAAAAAAAWAAAAMC4tQWltLW9mLXRoZS1FeGVyY2lzZQ",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAJAAAAAAAAAAVAAAAMC1haW0tb2YtdGhlLWV4ZXJjaXNl",
+					"AQAAAAAAAAABAAAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"",
+					null,
+					"BQAAAB0AAAAAAAAAHgAAAAAAAAABAAAAIBgAAAAAAAAAGQAAAAAAAAABAAAAIBAAAAAAAAAAEQAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAJAAAAAAAAAAkAAAAMS4tQWNjZXNzaW5nLVdNUy1zZXJ2aWNlLXdpdGgtUHl0aG9u",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAjAAAAMS1hY2Nlc3Npbmctd21zLXNlcnZpY2Utd2l0aC1weXRob24",
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"",
+					null,
+					"BgAAAB8AAAAAAAAAIAAAAAAAAAABAAAAIBoAAAAAAAAAGwAAAAAAAAABAAAAIBIAAAAAAAAAEwAAAAAAAAABAAAAIA4AAAAAAAAADwAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAmAAAAMS4xLi1FeGFtaW5lLWEtV01TLXNlcnZpY2Utd2l0aC1PV1NMaWI",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					41,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAOQAAAAAAAAAkAAAAMTEtZXhhbWluZS1hLXdtcy1zZXJ2aWNlLXdpdGgtb3dzbGli",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"",
+					null,
+					"CQAAAC4AAAAAAAAALwAAAAAAAAABAAAAICgAAAAAAAAAKQAAAAAAAAABAAAAIB8AAAAAAAAAIAAAAAAAAAABAAAAIBcAAAAAAAAAGAAAAAAAAAABAAAAIBQAAAAAAAAAFQAAAAAAAAABAAAAIA4AAAAAAAAADwAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAgAAAAAAAAACQAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAOQAAAAAAAAA5AAAAMS4yLi1BZGQtYS1XTVMtbGF5ZXItdG8tSnVweXRlci1Ob3RlYm9vay11c2luZy1pcHlMZWFmbGV0",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAMwAAAAAAAAA3AAAAMTItYWRkLWEtd21zLWxheWVyLXRvLWp1cHl0ZXItbm90ZWJvb2stdXNpbmctaXB5bGVhZmxldA",
+					"AQAAAAAAAAABAAAANwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					65,
+					1,
+					"",
+					null,
+					"BgAAACkAAAAAAAAAKgAAAAAAAAABAAAAIB4AAAAAAAAAHwAAAAAAAAABAAAAIBkAAAAAAAAAGgAAAAAAAAABAAAAIBAAAAAAAAAAEQAAAAAAAAABAAAAIAwAAAAAAAAADQAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAMwAAAAAAAAAzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					67,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAMwAAAAAAAAAzAAAAMi4tQWNjZXNzaW5nLVdNUy1zZXJ2aWNlcy1mcm9tLUphdmFTY3JpcHQtbGlicmFyaWVz",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					69,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAyAAAAMi1hY2Nlc3Npbmctd21zLXNlcnZpY2VzLWZyb20tamF2YXNjcmlwdC1saWJyYXJpZXM",
+					"AQAAAAAAAAABAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"",
+					null,
+					"BQAAABsAAAAAAAAAHAAAAAAAAAABAAAAIBgAAAAAAAAAGQAAAAAAAAABAAAAIA8AAAAAAAAAEAAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAJgAAAAAAAAAmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					77,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAmAAAAMi4xLi1BZGRpbmctV01TLXNlcnZpY2VzLXRvLU9wZW5MYXllcnM",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					82,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					87,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAJAAAAAAAAAAkAAAAMjEtYWRkaW5nLXdtcy1zZXJ2aWNlcy10by1vcGVubGF5ZXJz",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					88,
+					1,
+					"",
+					null,
+					"BQAAABsAAAAAAAAAHAAAAAAAAAABAAAAIBgAAAAAAAAAGQAAAAAAAAABAAAAIA8AAAAAAAAAEAAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					90,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAJAAAAAAAAAAkAAAAMi4yLi1BZGRpbmctV01TLXNlcnZpY2VzLXRvLUNlc2l1bUpT",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					92,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAIAAAAAAAAAAgAAAAAAAAABAAAAMg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					95,
+					2,
+					"left_delete",
+					null,
+					"AgAAAAIAAAAAAAAAAgAAAAAAAAABAAAALgEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					96,
+					1,
+					"insert",
+					{
+						"characters": "2"
+					},
+					"AQAAAAEAAAAAAAAAAgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					101,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAANgAAAAAAAAAiAAAAMjItYWRkaW5nLXdtcy1zZXJ2aWNlcy10by1jZXNpdW1qcw",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					102,
+					1,
+					"",
+					null,
+					"CQAAAC8AAAAAAAAAMAAAAAAAAAABAAAAICwAAAAAAAAALQAAAAAAAAABAAAAICUAAAAAAAAAJgAAAAAAAAABAAAAIB0AAAAAAAAAHgAAAAAAAAABAAAAIBoAAAAAAAAAGwAAAAAAAAABAAAAIBYAAAAAAAAAFwAAAAAAAAABAAAAIA4AAAAAAAAADwAAAAAAAAABAAAAIAoAAAAAAAAACwAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAANgAAAAAAAAA2AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					104,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAANgAAAAAAAAA2AAAAMi4zLi1Vc2luZy1PR0MtRmVhdHVyZS1BUEktYXMtR2VvSlNPTi1zb3VyY2UtaW4tQ2VzaXVt",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAA2AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					108,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					111,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					116,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAALwAAAAAAAAA0AAAAMjMtdXNpbmctb2djLWZlYXR1cmUtYXBpLWFzLWdlb2pzb24tc291cmNlLWluLWNlc2l1bQ",
+					"AQAAAAAAAAABAAAANAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					117,
+					1,
+					"",
+					null,
+					"BgAAACYAAAAAAAAAJwAAAAAAAAABAAAAICMAAAAAAAAAJAAAAAAAAAABAAAAIBUAAAAAAAAAFgAAAAAAAAABAAAAIBIAAAAAAAAAEwAAAAAAAAABAAAAIA8AAAAAAAAAEAAAAAAAAAABAAAAIAIAAAAAAAAAAwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAALwAAAAAAAAAvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					119,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAALwAAAAAAAAAvAAAAMy4tRnVuZGFtZW50YWxzLW9mLTNELVZpc3VhbGl6YXRpb24taW4tQ2VzaXVtSlM",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					125,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					130,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAALQAAAAAAAAAuAAAAMy1mdW5kYW1lbnRhbHMtb2YtM2QtdmlzdWFsaXphdGlvbi1pbi1jZXNpdW1qcw",
+					"AQAAAAAAAAABAAAALgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					132,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAALQAAAAAAAAAtAAAAMy4xLiBBZGRpbmcgM0QgQnVpbGRpbmdzIHRvIHRoZSBDZXNpdW0gdmlld2Vy",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAtAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					136,
+					1,
+					"",
+					null,
+					"BwAAACYAAAAAAAAAJwAAAAAAAAABAAAAIB8AAAAAAAAAIAAAAAAAAAABAAAAIBsAAAAAAAAAHAAAAAAAAAABAAAAIBgAAAAAAAAAGQAAAAAAAAABAAAAIA4AAAAAAAAADwAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					138,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					141,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					146,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAKAAAAAAAAAArAAAAMzEtYWRkaW5nLTNkLWJ1aWxkaW5ncy10by10aGUtY2VzaXVtLXZpZXdlcg",
+					"AQAAAAAAAAABAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					147,
+					1,
+					"",
+					null,
+					"BgAAACEAAAAAAAAAIgAAAAAAAAABAAAAIBoAAAAAAAAAGwAAAAAAAAABAAAAIBYAAAAAAAAAFwAAAAAAAAABAAAAIBMAAAAAAAAAFAAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAKAAAAAAAAAAoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					149,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAMy4yLi1BZGRpbmctdGVycmFpbi10by10aGUtQ2VzaXVtLXZpZXdlcg",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					153,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					156,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					162,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAARQAAAAAAAAAmAAAAMzItYWRkaW5nLXRlcnJhaW4tdG8tdGhlLWNlc2l1bS12aWV3ZXI",
+					"AQAAAAAAAAABAAAAJgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					164,
+					1,
+					"lower_case",
+					null,
+					"AQAAAAAAAAAAAAAARQAAAAAAAABFAAAAMy4zLiBBZGRpbmcgY3VzdG9tIHRlcnJhaW4gbW9kZWxzLCAzRFRpbGVzIGFuZCBXTVMgc2VydmljZXMgdG8gQ2VzaXVt",
+					"AQAAAAAAAAABAAAAAAAAAAAAAABFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					168,
+					1,
+					"",
+					null,
+					"CgAAAD4AAAAAAAAAPwAAAAAAAAABAAAAIDsAAAAAAAAAPAAAAAAAAAABAAAAIDIAAAAAAAAAMwAAAAAAAAABAAAAIC4AAAAAAAAALwAAAAAAAAABAAAAICoAAAAAAAAAKwAAAAAAAAABAAAAICIAAAAAAAAAIwAAAAAAAAABAAAAIBoAAAAAAAAAGwAAAAAAAAABAAAAIBIAAAAAAAAAEwAAAAAAAAABAAAAIAsAAAAAAAAADAAAAAAAAAABAAAAIAQAAAAAAAAABQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					171,
+					1,
+					"left_delete",
+					null,
+					"AQAAACEAAAAAAAAAIQAAAAAAAAABAAAALA",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					174,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					177,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -356,10 +1126,15 @@
 	},
 	"expanded_folders":
 	[
-		"/home/murat/gitpot/dist-gis-exercises"
+		"/home/murat/gitpot/dist-gis-exercises",
+		"/home/murat/gitpot/dist-gis-exercises/docs",
+		"/home/murat/gitpot/dist-gis-exercises/docs/raw_codes"
 	],
 	"file_history":
 	[
+		"/home/murat/gitpot/dist-gis-exercises/docs/raw_codes/essentials_of_web_map/demo7d.html",
+		"/home/murat/gitpot/dist-gis-exercises/docs/raw_codes/essentials_of_web_map/demo7b.html",
+		"/home/murat/gitpot/dist-gis-exercises/docs/raw_codes/essentials_of_web_map/demo7c.html",
 		"/tmp/svg-viewer/7fd37b4f215331d37be45662dad08b91/app_mapp.png",
 		"/home/murat/gitpot/dist-gis-exercises/other_sources/plantuml/app_mapp.puml",
 		"/home/murat/gitpot/dist-gis-exercises/other_sources/plantuml/app_mapp.svg",
@@ -484,10 +1259,7 @@
 		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rexford Boafo Asiedu_12077727_assignsubmission_file/Deliverable 3_Web Map Service/5. SLD Files/Cost_Style/building_cost_style.sld",
 		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rexford Boafo Asiedu_12077727_assignsubmission_file/Deliverable 3_Web Map Service/5. SLD Files/Cost_Style/cost_style_errors.txt",
 		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Rexford Boafo Asiedu_12077727_assignsubmission_file/Deliverable 3_Web Map Service/5. SLD Files/Topograpghy_Style/Traffic_area_topo_style_new2.sld",
-		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Jookyung Lee_12077713_assignsubmission_file/Task5_group10_Jookyung Lee (03798379), Ludwig Agholm (03801405)/Task 5/building_cost.sld",
-		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Mir Enamul Karim_12077732_assignsubmission_file/group7_task5 final/group7_task5/Cost_common.sld",
-		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Mir Enamul Karim_12077732_assignsubmission_file/group7_task5 final/group7_task5/topo_traffic.txt",
-		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Evgeniia Lappo_12077724_assignsubmission_file/task 5/task 5/traffic_area.sld"
+		"/home/murat/Downloads/Foundations of SDI (S25)-Upload Deliverables Web Map Service-3379851/Jookyung Lee_12077713_assignsubmission_file/Task5_group10_Jookyung Lee (03798379), Ludwig Agholm (03801405)/Task 5/building_cost.sld"
 	],
 	"find":
 	{
@@ -528,6 +1300,99 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "mkdocs.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								692,
+								692
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "docs/index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								841,
+								841
+							]
+						],
+						"settings":
+						{
+							"mde.match_heading_hashes": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 66,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								60
+							]
+						],
+						"settings":
+						{
+							"auto_name": "33-adding-custom-terrain-models-3dtiles-and-wms-se",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -591,7 +1456,7 @@
 	"project": "dist-gis-exercises.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 78.0
 	},
 	"save_all_on_build": true,
 	"select_file":
