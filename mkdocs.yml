@@ -17,9 +17,8 @@ nav:
   - "Exercise 3" :
     - "Basics of Web Mapping": basics_of_web_mapping.md
     - "Web Services & Web Mapping in 2D / 3D": web_mapping.md
-  - "Exercise 5 (Virtualization)": 
-    - "Preparation for Exercise 5": exercise5_preparation.md
-    - "Exercise 5": exercise5.md
+  - "Exercise 5": 
+    - "Virtualization": virtualization.md
   - "OGC Service Samples": samples_for_discussion.md
   - "Virtual Env. Installation":
     - "Windows w PIP": install_w_pip_on_win.md
