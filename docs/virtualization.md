@@ -33,7 +33,7 @@ This exercise mainly focuses on Cloud Computing technologies and integrating clo
 - Creating and serving a Tiled Map Layer and interconnecting the service with application interfaces/clients
 - Setting up and publishing a dashboard interface representing a filtered dataset from a Sensorthings API service
 
->Check the "**exercise5_preparation**" document (pdf / ipynb) to review some useful resources.
+>Check the "**docker_usage**" document (pdf / ipynb) to review some useful resources.
 
 Our goal is to provide a web interface to show a map containing sensors' online location data, use a custom tiled layer as a base map, and provide some graphical visualizations based on these sensors using virtualization technologies.
 The steps required to achieve this goal will be as follows:
