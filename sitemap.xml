@@ -2,67 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/basics_of_web_mapping/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/distributed_systems/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/docker_usage/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/install_w_pip_on_lnx/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/install_w_pip_on_win/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/intro_python/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/networks_internet/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/ogc_services_samples/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/samples_for_discussion/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/sdis/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/virtualization/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
     <url>
          <loc>https://muratkendir.github.io/dist-gis-exercises/web_mapping/</loc>
-         <lastmod>2026-01-25</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-06-23</lastmod>
     </url>
 </urlset>
