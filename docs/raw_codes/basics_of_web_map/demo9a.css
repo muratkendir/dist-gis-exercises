@@ -1,0 +1,29 @@
+/* Reset defaults and make map full viewport size */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Floating overlay box matching the style used in the lecture slides */
+#topright_box {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 300px;
+    max-height: 250px;
+    background: white;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000; /* Keeps it on top of map tiles */
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
