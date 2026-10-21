@@ -1,7 +1,7 @@
-// 1. Initialize map object centered over Munich [Lat, Lng]
+// 1. Initialize map object centered over Munich [Lat, Lng] & Zoom Level
 var map = L.map('map').setView([48.137, 11.575], 11);
 
-// 2. Add standard OpenStreetMap tiles securely
+// 2. Add standard OpenStreetMap tiles securely using XYZ standard.
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);

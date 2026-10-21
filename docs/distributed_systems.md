@@ -4,11 +4,11 @@
 
 <blockquote>
 Munich Technical University / Chair of Geoinformatics <br> 
-Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+Murat Kendir*, Rupal Srivastava, Prof. Thomas Kolbe <br> 
 murat.kendir@tum.de
 </blockquote>
 
-<div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
+<div align="right" style="font-size:0.5em;">v. WiSe 2026-2027</div>
 
 ## Table of Contents
 
@@ -134,7 +134,7 @@ Deactivate Bob
 @enduml
 ```
 
-    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/acae0201-e1a0-4d0b-a9e2-7a1be95471ce.uml to acae0201-e1a0-4d0b-a9e2-7a1be95471ce.svg
+    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/4fccfb98-6764-46e2-8099-c13d79529ff2.uml to 4fccfb98-6764-46e2-8099-c13d79529ff2.svg
 
 
 

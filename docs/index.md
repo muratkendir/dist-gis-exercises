@@ -5,9 +5,11 @@
 Main Author: M. Sc. Murat Kendir
 Supervisor: Prof. Thomas Kolb
 
-Thanks for contributions : Jicang Zhu
+Thanks for contributions : Rupal Srivastava
 
 Contact: murat.kendir(at)tum.de
+
+Last Updated : WiSe 2026 - 2027
 
 **Run the Python Notebook via Binder:**
 
@@ -18,17 +20,16 @@ Contact: murat.kendir(at)tum.de
 
 - Exercise 1:
     - [Distributed Systems](distributed_systems.md)
-    - [Docker Usage (Bonus)](docker_usage.md)
+    - [Computer Networks & Internet](networks_internet.md)
 - Exercise 2:
+    - [Docker Usage (Bonus)](docker_usage.md) 
     - [Introduction to Python (Optional)](intro_python.md) 
     - [Spatial Data Infrastructures](sdis.md)
-    - [Computer Networks & Internet](networks_internet.md)
 - Exercise 3:
     - [Basics of Web Mapping](basics_of_web_mapping.md)
     - [Web Services & Web Mapping in 2D / 3D](web_mapping.md)
-- Exercise 5 (Virtualization & Cloud Computing):
-    - [Preparation for Exercise 5](exercise5_preparation.md)
-    - [Exercise 5](exercise5.md)
+- Exercise 4:
+    - [Integration of Web Services & Virtualization](virtualization.md)
 
 ## Other Materials
 

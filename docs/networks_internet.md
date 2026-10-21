@@ -4,11 +4,11 @@
 
 <blockquote>
 Munich Technical University / Chair of Geoinformatics <br> 
-Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+Murat Kendir*, Rupal Srivastava, Prof. Thomas Kolbe <br> 
 murat.kendir@tum.de
 </blockquote>
 
-<div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
+<div align="right" style="font-size:0.5em;">v. WiSe 2026-2027</div>
 
 
 
@@ -53,7 +53,7 @@ edge -> isp : Global IP Address
 @enduml
 ```
 
-    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/1b2ea486-0fee-4602-a731-859f74cd6b71.uml to 1b2ea486-0fee-4602-a731-859f74cd6b71.svg
+    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/85294d16-e4af-4dbe-be74-5a5fea091608.uml to 85294d16-e4af-4dbe-be74-5a5fea091608.svg
 
 
 
