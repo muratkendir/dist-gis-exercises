@@ -15,20 +15,25 @@ Contact: murat.kendir(at)tum.de
 
 - Exercise 1:
     - [Distributed Systems](docs/distributed_systems.md)
-    - [Docker Usage (Bonus)](docs/docker_usage.md)
+    - [Computer Networks & Internet](docs/networks_internet.md)
 - Exercise 2:
-    - [Introduction to Python - Optional](docs/intro_python.md)
-    - [Spatial Data Infrastructures (SDI)](docs/sdis.md)
-    - [Computer Networks & Internet (Bonus)](docs/networks_internet.md)
-- [Exercise 4 (Web Mapping in 2D / 3D)](docs/exercise4.md)
-- Exercise 5 (Virtualization & Cloud Computing)
-  - [Preparation for Exercise 5](docs/exercise5_preparation.md)
-  - [Exercise 5](docs/exercise5.md)
-- [OGC Web Service - Samples for Discussion](docs/samples_for_discussion.md)
+    - [Docker Usage (Bonus)](docs/docker_usage.md) 
+    - [Introduction to Python (Optional)](docs/intro_python.md) 
+    - [Spatial Data Infrastructures](docs/sdis.md)
+- Exercise 3:
+    - [Basics of Web Mapping](docs/basics_of_web_mapping.md)
+    - [Web Services & Web Mapping in 2D / 3D](docs/web_mapping.md)
+- Exercise 4:
+    - [Integration of Web Services & Virtualization](docs/virtualization.md)
+
+## Other Materials
+
+- [OGC Web Service Samples for Discussion](docs/samples_for_discussion.md)
+- [OGC Services Sample Links](docs/ogc_services_samples.md)
 
 ## Local Installation Instructions
 
-- [Virtual Environment Installation on Windows \(with PIP*\)](docs/install_w_pip_on_win.md)
-- [Virtual Environment Installation on Linux \(with PIP\)](docs/install_w_pip_on_lnx.md)
+- [Virtual Env.  on Windows devices with PIP*](docs/install_w_pip_on_win.md)
+- [Virtual Env.  on Linux devices with PIP](docs/install_w_pip_on_lnx.md)
 
 *PIP : Python's native package management system, which can pull the packages from the [PYPI](https://pypi.org/) online repository.
