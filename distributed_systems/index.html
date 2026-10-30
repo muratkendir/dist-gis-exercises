@@ -1548,17 +1548,17 @@ Technical diagrams are a visually rich way of expressing the procedures, workflo
 <li>To install this plugin, press the <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> buttons and type "Install Package".</li>
 <li>After the list of plugins appears, search for "PlantUMLDiagrams" and click on it.</li>
 <li>After the plugin installation finished, press again the <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> buttons and search for "Generate Diagrams for Active View"</li>
-<li>NOTE: You have to have a "PlantUML file" with the correct notation and file extension (.puml or .pu)</li>
-<li class="task-list-item"><input type="checkbox"/> In the <strong>Visual Studio Code</strong> editor, there is a very popular extension called \"<strong>PlantUML</strong>\".</li>
+<li>NOTE: You must have a "PlantUML file" with the correct notation and file extension (.puml or .pu)</li>
+<li class="task-list-item"><input type="checkbox"/> In the <strong>Visual Studio Code</strong> editor, there is an extension with the same name "<strong>PlantUML</strong>".</li>
 <li>To install this extension, press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-x">X</kbd></span> to open the Extensions view.</li>
-<li>After the Extensions sidebar appears, search for \"PlantUML\" in the search box.</li>
-<li>Find the official extension (usually the first one, by Jebbs) from the list and click the blue \"Install\" button.</li>
+<li>After the Extensions sidebar appears, search for "PlantUML" in the search box.</li>
+<li>Find the official extension (usually the first one, by Jebbs) from the list and click the blue <code>Install</code> button.</li>
 <li>After the extension has finished installing, open your file that contains PlantUML code.</li>
 <li>To generate a preview of your diagram, press the shortcut keys <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-d">D</kbd></span> .</li>
-<li>(Optional) Alternatively, you can press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> to open the Command Palette, then search for \"PlantUML: Preview Current Diagram\" and press Enter.</li>
-<li class="task-list-item"><input type="checkbox"/> In Jupyter Lab (You can run it via Anaconda), there is an interactive PlantUML library called "iplantuml" (Optional)</li>
-<li>Type "pip install iplantuml" in the running Jupyter notebook.</li>
-<li>Create an empty code cell and enter "import iplantuml"</li>
+<li>(Optional) Alternatively, you can press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> to open the Command Palette, then search for <code>PlantUML: Preview Current Diagram</code> and press Enter.</li>
+<li class="task-list-item"><input type="checkbox"/> In Jupyter Lab (You can run it via Conda/Anaconda), there is an interactive PlantUML library called "<strong>iplantuml</strong>" (Optional)</li>
+<li>Type <code>pip install iplantuml</code> in the running Jupyter notebook.</li>
+<li>Create an empty code cell and enter <code>import iplantuml</code></li>
 <li>Create an additional code cell, and start typing your PlantUML text starting with <code>%%plantuml</code>.</li>
 <li>After running both of the cells, you can visualize the PlantUML diagram.</li>
 </ul>
@@ -1579,7 +1579,7 @@ Technical diagrams are a visually rich way of expressing the procedures, workflo
 <a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">Deactivate</span> <span class="n">Bob</span>
 <a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nd">@enduml</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/ffa5eafa-221a-41cb-8a02-0774c62dccc9.uml to ffa5eafa-221a-41cb-8a02-0774c62dccc9.svg
+<div class="highlight"><pre><span></span><code>Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/73d463ec-8e41-4284-903a-b8c57319cd97.uml to 73d463ec-8e41-4284-903a-b8c57319cd97.svg
 </code></pre></div>
 <p><img alt="svg" src="../output_8_1.svg" /></p>
 <h3 id="12-how-to-draw-a-sequence-diagram-using-drawio-optional">1.2. How to draw a sequence Diagram using Draw.io? - Optional</h3>
@@ -1605,21 +1605,21 @@ You can start drawing by creating a blank diagram.</li>
 <p>Tip: In the application, you can use the shapes named "Actor", "Lifeline", "Activation Bar", "Self Call", "Message", and "Return". If you have forgotten the notations of the UML sequence diagram, check the slides 31-39  of the presentation “01 – System Architectures”. </p>
 </blockquote>
 <h2 id="2-thin-client-fat-client-architectures-in-the-web-applications">2. Thin-Client &amp; Fat-Client Architectures in the Web Applications</h2>
-<p>In this step,  we will learn how to observe some interactions on different websites using “web developer tools” (in Firefox) or “Developer Tools” (Chrome). We will discuss which interactions are based on a Fat-Client or Thin-Client architecture in relation to our observations (Relevant Presentation: 01 - System Architectures / page 17).</p>
+<p>In this step,  we will learn how to observe some interactions on different websites using “<strong>Web Developer Tools</strong>” (in Firefox) or “Developer Tools” (Chrome). We will discuss which interactions are based on a Fat-Client or Thin-Client architecture in relation to our observations (Relevant Presentation: 1 - System Architectures / page 17).</p>
 <h3 id="21-preparation-for-the-next-discussion-about-tiers-web-developer-tool-developer-tool">2.1. Preparation for the Next Discussion about Tiers - Web Developer Tool / Developer Tool</h3>
 <ul>
 <li>Open Firefox or Google Chrome web browser.</li>
 <li>Simply navigate to the relevant page shown in the next topic ( <a href="https://ds.iris.edu/seismon/index.phtml">IRIS Seismic Monitor</a> ) or go to a random web site.</li>
-<li>Press ++Ctrl + Shift + C++ buttons together or ++Ctrl + Shift + I++ / Alternatively, you can navigate from menu:</li>
-<li>For Firefox: Menu &gt; More Tools &gt; Web Developer Tool</li>
-<li>For Chrome: Menu &gt; More Tools &gt; Developer Tools</li>
-<li>Navigate to the Network tab and press the reload button. / Alternatively, you can press the ++++F5++ key to refresh the page. (If you want to refresh the web page by clearing the cache, press ++Ctrl + F5++)</li>
+<li>Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-c">C</kbd></span> buttons together or <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-i">I</kbd></span> / Alternatively, you can navigate from menu:</li>
+<li>For Firefox: <code>Menu &gt; More Tools &gt; Web Developer Tool</code></li>
+<li>For Chrome: <code>Menu &gt; More Tools &gt; Developer Tools</code></li>
+<li>Navigate to the Network tab and press the reload button. Alternatively, you can press the <span class="keys"><kbd class="key-f5">F5</kbd></span> key to refresh the page. (If you want to refresh the web page by clearing the cache, press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-f5">F5</kbd></span> )</li>
 <li>Enable <code>Disable Cache</code> by checking the box.</li>
-<li>At a glance, observe which files have been successfully downloaded and which have not. Download status is exposed as “status codes” in the first column of the Network tab. If you want to learn more about status codes, visit the page: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP Status Codes</a> or search for “HTTP status codes”</li>
-<li>Right-click on the column headers in the Network Pane and enable the Start Time, End Time, Response Time and Duration columns. All these temporal attributes will be visualized in the Timeline (called Waterfall in the Chrome browser) section in the Network Pane. (The same attributes are available in the Waterfall column in the Chrome browser. If you cannot see the Waterfall column, right-click on one of the column headers and enable it.</li>
+<li>At a glance, observe which files have been successfully downloaded and which have not. Download status is exposed as <code>status codes</code> in the first column of the <code>Network</code> tab. If you want to learn more about status codes, visit the page: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP Status Codes</a> or search for “HTTP status codes”</li>
+<li>Right-click on the column headers in the <code>Network</code> Pane and enable the <code>Start Time</code>, <code>End Time</code>, <code>Response Time</code> and <code>Duration</code> columns. All these temporal attributes will be visualized in the Timeline (called <strong>Waterfall</strong> in the Chrome browser) section in the Network Pane. (The same attributes are available in the Waterfall column in the Chrome browser. If you cannot see the Waterfall column, right-click on one of the column headers and enable it.</li>
 <li>It is now possible to view loaded resources in ascending or descending order of time. This is very useful for detecting the latest loaded resources on a web page.</li>
-<li>Simply click on a row to view methods for these resources (GET/POST or DELETE) and header attributes (such as MIME types and charset).</li>
-<li>You can use the “Raw” switch to see raw data in the Response tab.</li>
+<li>Simply click on a row to view methods for these resources (<strong>GET/POST</strong> or <strong>DELETE</strong>) and header attributes (such as MIME types and charset).</li>
+<li>You can use the <code>Raw</code> switch to see raw data in the Response tab.</li>
 </ul>
 <p>On Chrome: Clear panel, filter requests by requested data type.</p>
 <figure style="width:%100;text-align: center;">
@@ -1627,13 +1627,13 @@ You can start drawing by creating a blank diagram.</li>
   <figcaption>Chrome Filter Requests</figcaption>
 </figure>
 
-<p>On Chrome: Read the request header and the corresponding response, check the detailed data type (MIME type and character encoding / charset).</p>
+<p>On Chrome: Read the request header and the corresponding response, check the detailed data type (<strong>MIME type</strong> and <strong>character encoding/charset</strong>).</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/chrome_check_details.png" alt="Chrome Check Details" style="border:3px solid darkgray">
   <figcaption>Chrome Check Details</figcaption>
 </figure>
 
-<p>On Chrome: You can sort requests by clicking on the column names, and it is also possible to sort by start time, end time, response time, etc. These are not displayed directly as separate columns, but you can find them in the “Timeline”/“Waterfall”.</p>
+<p>On Chrome: You can sort requests by clicking on the column names, and it is also possible to sort by start time, end time, response time, etc. These are not displayed directly as separate columns, but you can find them in the <code>Timeline</code> or <code>Waterfall</code>.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/chrome_waterfall.png" alt="Chrome Waterfall" style="border:3px solid darkgray">
   <figcaption>Chrome Waterfall</figcaption>
@@ -1645,17 +1645,20 @@ You can start drawing by creating a blank diagram.</li>
   <figcaption>Firefox Data Type</figcaption>
 </figure>
 
-<p>On Firefox: By clicking on a row, you can also view the details of a request and the corresponding response. Also it’s possible to sort requests by start time, end time, etc. in Firefox.</p>
+<p>On Firefox: By clicking on a row, you can also view the details of a request and the corresponding response. Also it’s possible to sort requests by <code>start time</code>, <code>end time</code>
+, etc. in Firefox.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/firefox_timings.png" alt="Firefox Timings" style="border:3px solid darkgray">
   <figcaption>Firefox Data Type</figcaption>
 </figure>
 
 <h3 id="22-discussion-about-the-tiers-in-layered-architectures">2.2. Discussion about the Tiers in Layered Architectures</h3>
-<p>Examine the following websites by using the “Web Developer Tools” / “Developer Tools” as described above, and try to answer the questions:
-- A) What kind of tiers might the web applications have? (Application-Interface, Application, Data)
-- B) Are the parts/files represented on the web app downloaded automatically, or is the download triggered by an interaction?
-- C) Is the website in Thin-Client Architecture or Fat-Client Architecture?</p>
+<p>Examine the following websites by using the <code>Web Developer Tools</code> or <code>Developer Tools</code> as described above, and try to answer the questions:</p>
+<ul>
+<li>What kind of tiers might the web applications have? (Application-Interface, Application, Data)</li>
+<li>Are the parts/files represented on the web app downloaded automatically, or is the download triggered by an interaction?</li>
+<li>Is the website in Thin-Client Architecture or Fat-Client Architecture?</li>
+</ul>
 <h4 id="221-seismic-monitor-iris">2.2.1. Seismic Monitor - IRIS</h4>
 <p><a href="https://ds.iris.edu/seismon/index.phtml">https://ds.iris.edu/seismon/index.phtml</a></p>
 <ul>
@@ -1683,14 +1686,14 @@ You can start drawing by creating a blank diagram.</li>
   <figcaption>BayernAtlas - Basemap Selection</figcaption>
 </figure>
 
-<p>To load bike paths (Radwege) and a cycling map, activate the Hiking and cycling trails layers (Home page: Themen &gt; Sport- und Freizeit &gt; Wander- und Radwege &gt; Radwege). Once activated, you will see a green network on the map.</p>
+<p>To load bike paths (Radwege) and a cycling map, activate the Hiking and cycling trails layers (Home page: <code>Themen &gt; Sport- und Freizeit &gt; Wander- und Radwege &gt; Radwege</code> ). Once activated, you will see a green network on the map.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/bayernatlas_overlay.png" alt="BayernAtlas Overlay" style="border:3px solid darkgray">
   <figcaption>BayernAtlas - Overlay</figcaption>
 </figure>
 
 <p>This individual biking trail net is retrieved from the server and is displayed as a transparent image. Let’s assume you need this image for another purpose, but you don’t see any button that allows you to download it directly. In this case, <code>Web Developer Tool</code> might be helpful.
-Open the <code>Web Developer Tool</code>, refresh the page, and you will see a list of requests with image data. In order not to spend time on previewing each image, you can filter requests by “Name”. In our case, we search for “radwege” data; therefore, we type “radwege” in the Filter textbox.</p>
+Open the <code>Web Developer Tool</code>, refresh the page, and you will see a list of requests with image data. In order not to spend time on previewing each image, you can filter requests by <code>Name</code>. In our case, we search for “radwege” data; therefore, we type “radwege” in the Filter textbox.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/bayernatlas_radwege.png" alt="bayernatlas_radwege" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Radwege (Biking Trails)</figcaption>
@@ -1741,11 +1744,11 @@ Open the <code>Web Developer Tool</code>, refresh the page, and you will see a l
 <tbody>
 <tr>
 <td>macOS (Chrome / Firefox)</td>
-<td>++Option + Command + I++</td>
+<td><span class="keys"><kbd class="key-option">Option</kbd><span>+</span><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-i">I</kbd></span></td>
 </tr>
 <tr>
 <td>Windows / Linux (Chrome / Firefox)</td>
-<td>++Ctrl + Shift + I or F12++</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-i">I</kbd></span> or <span class="keys"><kbd class="key-f12">F12</kbd></span></td>
 </tr>
 </tbody>
 </table>
@@ -1764,7 +1767,7 @@ Open the <code>Web Developer Tool</code>, refresh the page, and you will see a l
 <p>Work through the four interactions below and watch the Network tab after each one. Clear the list between tasks so you only see what that interaction triggered.</p>
 <ul>
 <li>Task 1 – Draw a polygon without moving the map. Select the polygon tool, click a few vertices, and close the shape. Watch the JSON panel on the right update. Note which requests, if any, appear in the Network tab.</li>
-<li>Task 2 – Edit the polygon. Drag one vertex to a new position and add a property in the Feature Editor (for example, name = campus). Check again whether any request carries your change. Finish the polygon drawing by double-clicking.</li>
+<li>Task 2 – Edit the polygon. Drag one vertex to a new position and add a property in the Feature Editor (for example, <code>name = campus</code>). Check again whether any request carries your change. Finish the polygon drawing by double-clicking.</li>
 <li>Task 3 – Create a buffer zone. Select the polygon you created, then click on the buffer analysis icon in the top middle of the page.</li>
 <li>Task 4 – Export the data. Open the Export tab in the Feature Editor, choose GeoJSON/ BBOX, and download the file.</li>
 </ul>
@@ -1851,20 +1854,20 @@ Look into them individually and figure out what information is stored in each.</
 </figure>
 
 <p>If you are familiar with creating files with file extensions as well as changing file extensions in the Windows system, you can skip the following file saving experiment.
-Let’s assume we need this JSON data for another purpose. But unlike image files, which can be saved directly, this JSON data cannot be directly saved by right-clicking on the panel. Therefore, we need to create a file with an extension on the local machine, copy the entire JSON data, and paste it into the file you created. Make sure that the file you created has the extension <code>.json</code>. If you don’t see file extensions, check “File name extensions” in File Explorer.</p>
+Let’s assume we need this JSON data for another purpose. But unlike image files, which can be saved directly, this JSON data cannot be directly saved by right-clicking on the panel. Therefore, we need to create a file with an extension on the local machine, copy the entire JSON data, and paste it into the file you created. Make sure that the file you created has the extension <code>.json</code>. If you don’t see file extensions, check <code>File name extensions</code> in File Explorer.</p>
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/windows_enable_extensions.png" alt="windows_enable_extensions" style="border:3px solid darkgray">
   <figcaption>Windows - Enable File Extensions</figcaption>
 </figure>
 
-<p>In the end, you will get a “route.json” file and a “profile.json” file.</p>
+<p>In the end, you will get a <code>route.json</code> file and a <code>profile.json</code> file.</p>
 <h3 id="32-create-the-sequence-diagram-by-considering-the-previously-interactions">3.2. Create the Sequence Diagram by considering the previously interactions</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Reconsider the steps that you handled in the previous section and prepare a UML Sequence Diagram with PlantUML or Draw.io tools.</li>
 </ul>
 <h3 id="33-request-the-uml-sequence-diagram-from-an-ai-chatbot">3.3. Request the UML Sequence Diagram from an AI Chatbot</h3>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> Describe the interaction with all of its details to any AI Chatbot and request a PlantUML/Mermaid-based UML Sequence Diagram.</li>
+<li class="task-list-item"><input type="checkbox"/> Describe the interaction with all of its details to any AI Chatbot and request a PlantUML or Mermaid-based UML Sequence Diagram.</li>
 </ul>
 <blockquote>TIP: For the Mermaid-based texts, you can use the <a href="https://mermaid.live" target="_blank">"mermaid.live"</a> online tool for rendering the diagram.</blockquote>
 
