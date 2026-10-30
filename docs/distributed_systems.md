@@ -105,17 +105,17 @@ There are multiple ways of rendering PlantUML diagrams:
   - To install this plugin, press the ++ctrl+shift+p++ buttons and type "Install Package".
   - After the list of plugins appears, search for "PlantUMLDiagrams" and click on it.
   - After the plugin installation finished, press again the ++ctrl+shift+p++ buttons and search for "Generate Diagrams for Active View"
-  - NOTE: You have to have a "PlantUML file" with the correct notation and file extension (.puml or .pu)
-- [ ] In the **Visual Studio Code** editor, there is a very popular extension called \"**PlantUML**\".
+  - NOTE: You must have a "PlantUML file" with the correct notation and file extension (.puml or .pu)
+- [ ] In the **Visual Studio Code** editor, there is an extension with the same name "**PlantUML**".
   - To install this extension, press ++ctrl+shift+x++ to open the Extensions view.
-  - After the Extensions sidebar appears, search for \"PlantUML\" in the search box.
-  - Find the official extension (usually the first one, by Jebbs) from the list and click the blue \"Install\" button.
+  - After the Extensions sidebar appears, search for "PlantUML" in the search box.
+  - Find the official extension (usually the first one, by Jebbs) from the list and click the blue `Install` button.
   - After the extension has finished installing, open your file that contains PlantUML code.
   - To generate a preview of your diagram, press the shortcut keys ++alt+d++ .
-  - (Optional) Alternatively, you can press ++ctrl+shift+p++ to open the Command Palette, then search for \"PlantUML: Preview Current Diagram\" and press Enter.
-- [ ] In Jupyter Lab (You can run it via Anaconda), there is an interactive PlantUML library called "iplantuml" (Optional)
-  - Type "pip install iplantuml" in the running Jupyter notebook.
-  - Create an empty code cell and enter "import iplantuml"
+  - (Optional) Alternatively, you can press ++ctrl+shift+p++ to open the Command Palette, then search for `PlantUML: Preview Current Diagram` and press Enter.
+- [ ] In Jupyter Lab (You can run it via Conda/Anaconda), there is an interactive PlantUML library called "**iplantuml**" (Optional)
+  - Type `pip install iplantuml` in the running Jupyter notebook.
+  - Create an empty code cell and enter `import iplantuml`
   - Create an additional code cell, and start typing your PlantUML text starting with `%%plantuml`.
   - After running both of the cells, you can visualize the PlantUML diagram.
 
@@ -142,7 +142,7 @@ Deactivate Bob
 @enduml
 ```
 
-    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/ffa5eafa-221a-41cb-8a02-0774c62dccc9.uml to ffa5eafa-221a-41cb-8a02-0774c62dccc9.svg
+    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/73d463ec-8e41-4284-903a-b8c57319cd97.uml to 73d463ec-8e41-4284-903a-b8c57319cd97.svg
 
 
 
@@ -178,22 +178,22 @@ You can start drawing by creating a blank diagram.
 
 ## 2. Thin-Client & Fat-Client Architectures in the Web Applications
 
-In this step,  we will learn how to observe some interactions on different websites using “web developer tools” (in Firefox) or “Developer Tools” (Chrome). We will discuss which interactions are based on a Fat-Client or Thin-Client architecture in relation to our observations (Relevant Presentation: 01 - System Architectures / page 17).
+In this step,  we will learn how to observe some interactions on different websites using “**Web Developer Tools**” (in Firefox) or “Developer Tools” (Chrome). We will discuss which interactions are based on a Fat-Client or Thin-Client architecture in relation to our observations (Relevant Presentation: 1 - System Architectures / page 17).
 
 ### 2.1. Preparation for the Next Discussion about Tiers - Web Developer Tool / Developer Tool
 
  - Open Firefox or Google Chrome web browser.
  - Simply navigate to the relevant page shown in the next topic ( [IRIS Seismic Monitor](https://ds.iris.edu/seismon/index.phtml) ) or go to a random web site.
- - Press ++Ctrl + Shift + C++ buttons together or ++Ctrl + Shift + I++ / Alternatively, you can navigate from menu:
- - For Firefox: Menu > More Tools > Web Developer Tool
- - For Chrome: Menu > More Tools > Developer Tools
- - Navigate to the Network tab and press the reload button. / Alternatively, you can press the ++++F5++ key to refresh the page. (If you want to refresh the web page by clearing the cache, press ++Ctrl + F5++)
+ - Press ++ctrl+shift+c++ buttons together or ++ctrl+shift+i++ / Alternatively, you can navigate from menu:
+ - For Firefox: `Menu > More Tools > Web Developer Tool`
+ - For Chrome: `Menu > More Tools > Developer Tools`
+ - Navigate to the Network tab and press the reload button. Alternatively, you can press the ++f5++ key to refresh the page. (If you want to refresh the web page by clearing the cache, press ++ctrl+f5++ )
  - Enable `Disable Cache` by checking the box.
- - At a glance, observe which files have been successfully downloaded and which have not. Download status is exposed as “status codes” in the first column of the Network tab. If you want to learn more about status codes, visit the page: [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) or search for “HTTP status codes”
- - Right-click on the column headers in the Network Pane and enable the Start Time, End Time, Response Time and Duration columns. All these temporal attributes will be visualized in the Timeline (called Waterfall in the Chrome browser) section in the Network Pane. (The same attributes are available in the Waterfall column in the Chrome browser. If you cannot see the Waterfall column, right-click on one of the column headers and enable it.
+ - At a glance, observe which files have been successfully downloaded and which have not. Download status is exposed as `status codes` in the first column of the `Network` tab. If you want to learn more about status codes, visit the page: [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) or search for “HTTP status codes”
+ - Right-click on the column headers in the `Network` Pane and enable the `Start Time`, `End Time`, `Response Time` and `Duration` columns. All these temporal attributes will be visualized in the Timeline (called **Waterfall** in the Chrome browser) section in the Network Pane. (The same attributes are available in the Waterfall column in the Chrome browser. If you cannot see the Waterfall column, right-click on one of the column headers and enable it.
  - It is now possible to view loaded resources in ascending or descending order of time. This is very useful for detecting the latest loaded resources on a web page.
- - Simply click on a row to view methods for these resources (GET/POST or DELETE) and header attributes (such as MIME types and charset).
- - You can use the “Raw” switch to see raw data in the Response tab.
+ - Simply click on a row to view methods for these resources (**GET/POST** or **DELETE**) and header attributes (such as MIME types and charset).
+ - You can use the `Raw` switch to see raw data in the Response tab.
 
 On Chrome: Clear panel, filter requests by requested data type.
 
@@ -202,14 +202,14 @@ On Chrome: Clear panel, filter requests by requested data type.
   <figcaption>Chrome Filter Requests</figcaption>
 </figure>
 
-On Chrome: Read the request header and the corresponding response, check the detailed data type (MIME type and character encoding / charset).
+On Chrome: Read the request header and the corresponding response, check the detailed data type (**MIME type** and **character encoding/charset**).
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/chrome_check_details.png" alt="Chrome Check Details" style="border:3px solid darkgray">
   <figcaption>Chrome Check Details</figcaption>
 </figure>
 
-On Chrome: You can sort requests by clicking on the column names, and it is also possible to sort by start time, end time, response time, etc. These are not displayed directly as separate columns, but you can find them in the “Timeline”/“Waterfall”.
+On Chrome: You can sort requests by clicking on the column names, and it is also possible to sort by start time, end time, response time, etc. These are not displayed directly as separate columns, but you can find them in the `Timeline` or `Waterfall`.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/chrome_waterfall.png" alt="Chrome Waterfall" style="border:3px solid darkgray">
@@ -223,7 +223,8 @@ On Firefox: Clear panel, filter requests by type of requested data
   <figcaption>Firefox Data Type</figcaption>
 </figure>
 
-On Firefox: By clicking on a row, you can also view the details of a request and the corresponding response. Also it’s possible to sort requests by start time, end time, etc. in Firefox.
+On Firefox: By clicking on a row, you can also view the details of a request and the corresponding response. Also it’s possible to sort requests by `start time`, `end time`
+, etc. in Firefox.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/firefox_timings.png" alt="Firefox Timings" style="border:3px solid darkgray">
@@ -233,10 +234,11 @@ On Firefox: By clicking on a row, you can also view the details of a request and
 
 ### 2.2. Discussion about the Tiers in Layered Architectures
 
-Examine the following websites by using the “Web Developer Tools” / “Developer Tools” as described above, and try to answer the questions:
-- A) What kind of tiers might the web applications have? (Application-Interface, Application, Data)
-- B) Are the parts/files represented on the web app downloaded automatically, or is the download triggered by an interaction?
-- C) Is the website in Thin-Client Architecture or Fat-Client Architecture?
+Examine the following websites by using the `Web Developer Tools` or `Developer Tools` as described above, and try to answer the questions:
+
+- What kind of tiers might the web applications have? (Application-Interface, Application, Data)
+- Are the parts/files represented on the web app downloaded automatically, or is the download triggered by an interaction?
+- Is the website in Thin-Client Architecture or Fat-Client Architecture?
 
 
 #### 2.2.1. Seismic Monitor - IRIS
@@ -271,7 +273,7 @@ On the home page, select the base map to be loaded on the screen.
   <figcaption>BayernAtlas - Basemap Selection</figcaption>
 </figure>
 
-To load bike paths (Radwege) and a cycling map, activate the Hiking and cycling trails layers (Home page: Themen > Sport- und Freizeit > Wander- und Radwege > Radwege). Once activated, you will see a green network on the map.
+To load bike paths (Radwege) and a cycling map, activate the Hiking and cycling trails layers (Home page: `Themen > Sport- und Freizeit > Wander- und Radwege > Radwege` ). Once activated, you will see a green network on the map.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/bayernatlas_overlay.png" alt="BayernAtlas Overlay" style="border:3px solid darkgray">
@@ -279,7 +281,7 @@ To load bike paths (Radwege) and a cycling map, activate the Hiking and cycling 
 </figure>
 
 This individual biking trail net is retrieved from the server and is displayed as a transparent image. Let’s assume you need this image for another purpose, but you don’t see any button that allows you to download it directly. In this case, `Web Developer Tool` might be helpful.
-Open the `Web Developer Tool`, refresh the page, and you will see a list of requests with image data. In order not to spend time on previewing each image, you can filter requests by “Name”. In our case, we search for “radwege” data; therefore, we type “radwege” in the Filter textbox.
+Open the `Web Developer Tool`, refresh the page, and you will see a list of requests with image data. In order not to spend time on previewing each image, you can filter requests by `Name`. In our case, we search for “radwege” data; therefore, we type “radwege” in the Filter textbox.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/bayernatlas_radwege.png" alt="bayernatlas_radwege" style="border:3px solid darkgray">
@@ -335,8 +337,8 @@ Open geojson.io in Chrome or Firefox and open the Developer Tools Network tab be
 
  **System** | **Shortcut to open Developer Tools** 
 ---|---
- macOS (Chrome / Firefox) | ++Option + Command + I++ 
- Windows / Linux (Chrome / Firefox) | ++Ctrl + Shift + I or F12++ 
+ macOS (Chrome / Firefox) | ++option+command+i++ 
+ Windows / Linux (Chrome / Firefox) | ++ctrl+shift+i++ or ++f12++ 
 
 1. Go to [geojson.io](https://geojson.io) and zoom to an area you know, for example, the TUM main campus.
 2. Open the `Developer Tools` and switch to the `Network` tab. If it is hidden, click the » arrow.
@@ -353,7 +355,7 @@ Open geojson.io in Chrome or Firefox and open the Developer Tools Network tab be
 Work through the four interactions below and watch the Network tab after each one. Clear the list between tasks so you only see what that interaction triggered.
 
 * Task 1 – Draw a polygon without moving the map. Select the polygon tool, click a few vertices, and close the shape. Watch the JSON panel on the right update. Note which requests, if any, appear in the Network tab.
-* Task 2 – Edit the polygon. Drag one vertex to a new position and add a property in the Feature Editor (for example, name = campus). Check again whether any request carries your change. Finish the polygon drawing by double-clicking.
+* Task 2 – Edit the polygon. Drag one vertex to a new position and add a property in the Feature Editor (for example, `name = campus`). Check again whether any request carries your change. Finish the polygon drawing by double-clicking.
 * Task 3 – Create a buffer zone. Select the polygon you created, then click on the buffer analysis icon in the top middle of the page.
 * Task 4 – Export the data. Open the Export tab in the Feature Editor, choose GeoJSON/ BBOX, and download the file.
 
@@ -422,14 +424,14 @@ Look into them individually and figure out what information is stored in each.
 </figure>
 
 If you are familiar with creating files with file extensions as well as changing file extensions in the Windows system, you can skip the following file saving experiment.
-Let’s assume we need this JSON data for another purpose. But unlike image files, which can be saved directly, this JSON data cannot be directly saved by right-clicking on the panel. Therefore, we need to create a file with an extension on the local machine, copy the entire JSON data, and paste it into the file you created. Make sure that the file you created has the extension `.json`. If you don’t see file extensions, check “File name extensions” in File Explorer.
+Let’s assume we need this JSON data for another purpose. But unlike image files, which can be saved directly, this JSON data cannot be directly saved by right-clicking on the panel. Therefore, we need to create a file with an extension on the local machine, copy the entire JSON data, and paste it into the file you created. Make sure that the file you created has the extension `.json`. If you don’t see file extensions, check `File name extensions` in File Explorer.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/distributed_systems/windows_enable_extensions.png" alt="windows_enable_extensions" style="border:3px solid darkgray">
   <figcaption>Windows - Enable File Extensions</figcaption>
 </figure>
 
-In the end, you will get a “route.json” file and a “profile.json” file.
+In the end, you will get a `route.json` file and a `profile.json` file.
 
 ### 3.2. Create the Sequence Diagram by considering the previously interactions
 
@@ -437,7 +439,7 @@ In the end, you will get a “route.json” file and a “profile.json” file.
 
 ### 3.3. Request the UML Sequence Diagram from an AI Chatbot
 
-- [ ] Describe the interaction with all of its details to any AI Chatbot and request a PlantUML/Mermaid-based UML Sequence Diagram.
+- [ ] Describe the interaction with all of its details to any AI Chatbot and request a PlantUML or Mermaid-based UML Sequence Diagram.
 
 <blockquote>TIP: For the Mermaid-based texts, you can use the <a href="https://mermaid.live" target="_blank">"mermaid.live"</a> online tool for rendering the diagram.</blockquote>
 
