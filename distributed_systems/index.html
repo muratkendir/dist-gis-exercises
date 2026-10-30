@@ -386,6 +386,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#uml-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      UML Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-uml-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-UML Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#11-how-to-draw-a-sequence-diagram-using-plantuml" class="md-nav__link">
     <span class="md-ellipsis">
       1.1. How to draw a Sequence Diagram using PlantUML
@@ -1146,6 +1164,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#uml-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      UML Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-uml-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-UML Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#11-how-to-draw-a-sequence-diagram-using-plantuml" class="md-nav__link">
     <span class="md-ellipsis">
       1.1. How to draw a Sequence Diagram using PlantUML
@@ -1414,61 +1450,89 @@ Technical diagrams are a visually rich way of expressing the procedures, workflo
 
 <p>In the following table, you will find some UML and non-UML diagram types. </p>
 <p>Please note that we only focus on two types of UML diagrams (<strong>Sequence Diagram &amp; State Machine Diagram</strong>) in the Distributed GIS &amp; Cloud Computing course.</p>
+<h3 id="uml-diagrams">UML Diagrams</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;"><strong>UML Diagram Types</strong></th>
-<th style="text-align: center;"><strong>Non-UML Diagram Types</strong></th>
+<th><strong>Category</strong></th>
+<th><strong>Diagram Type</strong></th>
+<th><strong>Primary Purpose</strong></th>
+<th><strong>Common Fields of Expertise</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><strong>Sequence</strong></td>
-<td style="text-align: center;">JSON Data</td>
+<td>Structure</td>
+<td>Class</td>
+<td>Shows classes, their attributes and operations, and the relationships between them.</td>
+<td>Software engineering, object-oriented design, system analysis</td>
 </tr>
 <tr>
-<td style="text-align: center;">Usecase</td>
-<td style="text-align: center;">Wireframe graphical interface</td>
+<td>Behavior</td>
+<td>Use Case</td>
+<td>Shows the interactions between actors and the functionality provided by the system.</td>
+<td>Requirements engineering, business analysis, system analysis</td>
 </tr>
 <tr>
-<td style="text-align: center;">Class</td>
-<td style="text-align: center;">Archimate</td>
+<td>Behavior – Interaction</td>
+<td>Sequence</td>
+<td>Shows message exchanges between objects in chronological order.</td>
+<td>Software architecture, system design, API design</td>
 </tr>
 <tr>
-<td style="text-align: center;">Activity</td>
-<td style="text-align: center;">Specification and Description Language (SDL)</td>
+<td>Behavior</td>
+<td>Activity</td>
+<td>Shows workflows, process steps, decisions, and parallel activities.</td>
+<td>Business process modeling, workflow design, software engineering</td>
 </tr>
 <tr>
-<td style="text-align: center;">Component</td>
-<td style="text-align: center;">Ditaa</td>
+<td>Behavior</td>
+<td>State Machine</td>
+<td>Shows an object’s states and the transitions between them in response to events.</td>
+<td>Embedded systems, protocol design, event-driven software development</td>
+</tr>
+</tbody>
+</table>
+<h3 id="non-uml-diagrams">Non-UML Diagrams</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Notation</strong></th>
+<th><strong>Type / Scope</strong></th>
+<th><strong>Primary Purpose</strong></th>
+<th><strong>Common Fields of Expertise</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entity–Relationship Diagram (ERD)</td>
+<td>Data modeling diagram</td>
+<td>Shows entities, their attributes, and the relationships between entities.</td>
+<td>Database design, data engineering, information systems</td>
 </tr>
 <tr>
-<td style="text-align: center;"><strong>State (Machine)</strong></td>
-<td style="text-align: center;">Gantt</td>
+<td>C4 Model</td>
+<td>Software architecture model</td>
+<td>Describes a system at the Context, Container, Component, and Code levels.</td>
+<td>Software architecture, solution architecture, technical documentation</td>
 </tr>
 <tr>
-<td style="text-align: center;">Object</td>
-<td style="text-align: center;">MindMap</td>
+<td>Cloud Architecture / Resource Diagram</td>
+<td>Architecture diagram</td>
+<td>Shows cloud resources and their connections on platforms such as AWS or Azure.</td>
+<td>Cloud engineering, DevOps, solution architecture</td>
 </tr>
 <tr>
-<td style="text-align: center;">Deployment</td>
-<td style="text-align: center;">Work Breakdown Structure</td>
+<td>Wireframe</td>
+<td>User interface sketch</td>
+<td>Shows the layout and core functionality of a user interface.</td>
+<td>UX/UI design, product design, frontend development</td>
 </tr>
 <tr>
-<td style="text-align: center;">Timing</td>
-<td style="text-align: center;">Mathematic with AsciiMath or JLaTeXMath notation</td>
-</tr>
-<tr>
-<td style="text-align: center;">Communication</td>
-<td style="text-align: center;">Concrete Resource Diagrams (AWS/Azure)</td>
-</tr>
-<tr>
-<td style="text-align: center;">Profile</td>
-<td style="text-align: center;">Context-Container-Component-Code (C4)</td>
-</tr>
-<tr>
-<td style="text-align: center;">Package</td>
-<td style="text-align: center;">Entity-Relationship (ER)</td>
+<td>Gantt Chart</td>
+<td>Project planning chart</td>
+<td>Shows task durations, schedules, and dependencies.</td>
+<td>Project management, product management, operations planning</td>
 </tr>
 </tbody>
 </table>
