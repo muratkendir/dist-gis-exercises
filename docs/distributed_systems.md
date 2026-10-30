@@ -383,12 +383,12 @@ You will then create a sequence diagram, taking into account this interaction an
 
 Choose a routing mode. Such as “hiking” (wandern)  as shown in the first icon. Select the start point and end points on the map; and a route will be created, and a profile showing the elevation along the route.
 
-<figure style="width:%100;text-align: center;">
+<figure style="width:%33;text-align: center;">
   <img src="../images/distributed_systems/bayernatlas_routing.png" alt="bayernatlas_routing" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Routing (Interaction)</figcaption>
 </figure>
 
-<figure style="width:%100;text-align: center;">
+<figure style="width:%50;text-align: center;">
   <img src="../images/distributed_systems/bayernatlas_mountain_bike.png" alt="bayernatlas_mountain_bike" style="border:3px solid darkgray">
   <figcaption>Bayernatlas - Mountain Bike (Interaction)</figcaption>
 </figure>

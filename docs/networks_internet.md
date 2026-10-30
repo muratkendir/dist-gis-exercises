@@ -18,19 +18,21 @@ import iplantuml
 
 ## Table of Contents
 
-- [1. Examining the Network & Internet Infrastructure](#1-examining-the-network-&-internet-infrastructure)
+- [1. Examining the Network and the Internet Infrastructure](#1-examining-the-network-and-the-internet-infrastructure)
     - [1.1. IP Addresses](#11-ip-addresses)
-        - [1.1.1. Local IP Adress](#111-local-ip-adress)
-        - [1.1.2. Global IP Adress](#112-global-ip-adress)
+        - [1.1.1. Local IP Adress](#111-local-ip-address)
+        - [1.1.2. Global IP Adress](#112-global-ip-address)
         - [1.1.3. How to reveal an IP address of a web source?](#113-how-to-reveal-an-ip-address-of-a-web-source)
 - [2. Ping Command](#2-ping-command)
 - [3. Background Information about the Current Internet Infrastructure (Optional Step)](#3-background-information-about-the-current-internet-infrastructure-optional-step)
-- [4. Dig Command (available on Linux)](#4-dig-command-available-on-linux)
-- [5. Traceroute Command (available on Linux)](5-traceroute-command-available-on-linux)
+- [4. Dig Command (on Linux)](#4-dig-command-on-linux)
+- [5. Traceroute Command (available on Linux)](#5-traceroute-command-available-on-linux)
+- [6. nc (netcat) Command](#6-nc-netcat-command)
+- [7. curl Command](#7-curl-command)
+- [8. Exercise: Why Can’t I Access a Website?](#8-exercise-why-cant-i-access-a-website)
 
 
-
-## 1. Examining the Network & Internet Infrastructure
+## 1. Examining the Network and the Internet Infrastructure
 
 
 ```python
@@ -53,7 +55,7 @@ edge -> isp : Global IP Address
 @enduml
 ```
 
-    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/85294d16-e4af-4dbe-be74-5a5fea091608.uml to 85294d16-e4af-4dbe-be74-5a5fea091608.svg
+    Writing output for /home/murat/gitpot/dist-gis-exercises/docs/notebooks/f3f4cef7-8271-4c83-9847-c02fd7fc99ed.uml to f3f4cef7-8271-4c83-9847-c02fd7fc99ed.svg
 
 
 
@@ -67,7 +69,7 @@ edge -> isp : Global IP Address
 
 ### 1.1. IP Addresses
 
-#### 1.1.1. Local IP Adress
+#### 1.1.1. Local IP Address
 
 > The following steps explain how to reveal IP addresses using command-line based applications. This means you need to run a Command Line Interface (CLI) tool to execute them. Traditionally, CLI tools are called **“Command Prompt”** (or CMD) on Windows systems and **“Terminal”** on Unix-based systems.
 
@@ -92,6 +94,8 @@ ifconfig <INTERFACE-NAME>
 ```bash
 ip address show
 ```
+
+You can view the gateway address — the entry/exit point between networks, typically managed by the router — using the `ip route` command. Entries containing the `dhcp` flag indicate your local machine's gateway address.
 
 <figure style="width:%100;text-align: center;">
   <img src="../images/networks_internet/internet_protocol_suite.png" alt="The Level of the IP Adresses in Internet Protocol Suite" style="border:3px solid darkgray">
@@ -168,7 +172,7 @@ nslookup geodienste.hamburg.de
 > TIP : If you query an IP address directly using the nslookup command, it performs a **reverse lookup** by querying the in-addr.arpa (IPv4) or ip6.arpa (IPv6) zone. If a PTR record exists for that address, the command returns the domain name mapped to the IP.
 
 
-### 1.1.4. Checking other DNS records of a domain
+#### 1.1.4. Checking other DNS records of a domain
 
 You can set the **type** option to expose out other DNS record types (A, AAA, CNAME, MX, NS, SOA):
 
@@ -178,6 +182,18 @@ nslookup -type=mx www.asg.ed.tum.de
 
 - [ ] Visit the page [mxtoolbox.com](https://mxtoolbox.com) or [dnstools.ch](https://dnstools.ch) website to query DNS
 records for the same domain.
+
+#### DNS Record Types
+
+ **Record Type** | **Description** 
+---|---
+ A | Maps a domain name to an IPv4 address. 
+ AAAA | Maps a domain name to an IPv6 address. 
+ CNAME | Creates an alias that points one domain name to another canonical domain name. 
+ MX | Specifies the mail servers responsible for receiving email for a domain. 
+ NS | Specifies the authoritative name servers for a domain or DNS zone. 
+ SOA | Contains administrative information about a DNS zone, including the primary name server, administrator contact, serial number, and timing parameters. 
+
 
 
 ## 2. Ping Command
@@ -207,7 +223,7 @@ If you would like to learn more about the current internet infrastructure, you c
     - [ ] Use a VPN browser extension to spoof your location as another country and try the ping test again.
 
 
-## 4. Dig Command (available on Linux)
+## 4. Dig Command (on Linux)
 
 > If your Unix-based system does not have the **"dig"** program, you can install it by installing the **"dnsutils"** program.
 
@@ -238,3 +254,66 @@ To expose the "hops" while you request any source from internet, you can use "tr
   <img src="../images/networks_internet/how_traceroute_works.png" alt="IPv4 and IPv6 addresses are exposed in the CMD tool" style="border:3px solid darkgray">
   <figcaption>A simplified Computer Network Diagram showing how the traceroute command works</figcaption>
 </figure> 
+
+## 6. nc (netcat) Command
+
+nc (netcat) is a versatile command-line tool on Linux for establishing network connections and exchanging data between machines. It provides raw data streams over TCP or UDP. Its most basic use is connecting to a specific IP address and port:
+
+```bash
+nc 192.168.1.10 80
+```
+
+This command opens a TCP connection to port 80 on the target machine; everything you type from the keyboard is sent to the remote side, and incoming responses are printed to your terminal. You can switch to server mode with the `-l` (listen) flag, use `-v` for verbose output, and `-z` for port scanning. For a UDP connection, add the -u flag:
+
+```bash
+nc -u 192.168.1.10 53
+```
+
+In practice, `nc` serves many purposes: testing whether a port is open, setting up a simple chat server/client, transferring files (`nc -l 1234 > file.txt` on the receiver, `nc 192.168.254.254 1234 < file.txt` on the sender), and even running commands on a remote machine.
+
+## 7. curl Command
+
+curl is a command-line tool for sending requests to servers and transferring data over protocols such as HTTP and HTTPS. It is commonly used to test APIs, inspect server responses, and download files.
+
+GET example — retrieves data from a server:
+
+```bash
+curl https://api.example.com/users/1
+```
+
+POST example — sends data to a server:
+
+```bash
+curl -X POST https://api.example.com/users \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Alice", "email": "alice@example.com"}'
+```
+
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/curl_get_sample.png" alt="Curl Get Sample" style="border:3px solid darkgray">
+  <figcaption>Curl command used to get a specific tile image from web map server</figcaption>
+</figure> 
+
+<figure style="width:%100;text-align: center;">
+  <img src="../images/networks_internet/curl_post_sample.png" alt="Curl Post Sample" style="border:3px solid darkgray">
+  <figcaption>Curl command used to post metadata of a movie to a web server.</figcaption>
+</figure> 
+
+
+## 8. Exercise: Why Can’t I Access a Website?
+
+**Objective: Diagnose a website connectivity problem step by step.**
+
+Use any web site (assume as example.com) as the target website. Run the following commands, record their outputs, and answer the question for each step.
+
+ **Step** | **Command** | **What to check** 
+---|---|---
+ 1 | ip addr | Does your device have a valid IP address? 
+ 2 | ip route | Is a default gateway configured? Note its IP address. 
+ 3 | ping <gateway> | Can you reach the local gateway? 
+ 4 | ping 1.1.1.1 | Can you reach the internet using an IP address? 
+ 5 | dig example.com | Does DNS return an IP address for the website? 
+ 6 | nc -vz example.com 443 | Is the website’s HTTPS port reachable? 
+ 7 | curl -v https://example.com | Do the TLS connection and HTTP request succeed? Note any errors or status codes. 
+ 8 | traceroute example.com | Where does the network path stop or show unusual delays? 
+
