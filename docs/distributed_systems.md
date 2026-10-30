@@ -67,21 +67,27 @@ In the following table, you will find some UML and non-UML diagram types.
 
 Please note that we only focus on two types of UML diagrams (**Sequence Diagram & State Machine Diagram**) in the Distributed GIS & Cloud Computing course.
 
- **UML Diagram Types** | **Non\-UML Diagram Types** 
-:---:|:---:
- **Sequence** | JSON Data 
- Usecase | Wireframe graphical interface 
- Class | Archimate 
- Activity | Specification and Description Language \(SDL\) 
- Component | Ditaa 
- **State \(Machine\)** | Gantt 
- Object | MindMap 
- Deployment | Work Breakdown Structure 
- Timing | Mathematic with AsciiMath or JLaTeXMath notation 
- Communication | Concrete Resource Diagrams \(AWS/Azure\) 
- Profile | Context\-Container\-Component\-Code \(C4\) 
- Package | Entity\-Relationship \(ER\) 
- 
+### UML Diagrams
+
+ **Category** | **Diagram Type** | **Primary Purpose** | **Common Fields of Expertise** 
+---|---|---|---
+ Structure | Class | Shows classes, their attributes and operations, and the relationships between them. | Software engineering, object-oriented design, system analysis 
+ Behavior | Use Case | Shows the interactions between actors and the functionality provided by the system. | Requirements engineering, business analysis, system analysis 
+ Behavior – Interaction | Sequence | Shows message exchanges between objects in chronological order. | Software architecture, system design, API design 
+ Behavior | Activity | Shows workflows, process steps, decisions, and parallel activities. | Business process modeling, workflow design, software engineering 
+ Behavior | State Machine | Shows an object’s states and the transitions between them in response to events. | Embedded systems, protocol design, event-driven software development 
+
+### Non-UML Diagrams
+
+ **Notation** | **Type / Scope** | **Primary Purpose** | **Common Fields of Expertise** 
+---|---|---|---
+ Entity–Relationship Diagram (ERD) | Data modeling diagram | Shows entities, their attributes, and the relationships between entities. | Database design, data engineering, information systems 
+ C4 Model | Software architecture model | Describes a system at the Context, Container, Component, and Code levels. | Software architecture, solution architecture, technical documentation 
+ Cloud Architecture / Resource Diagram | Architecture diagram | Shows cloud resources and their connections on platforms such as AWS or Azure. | Cloud engineering, DevOps, solution architecture 
+ Wireframe | User interface sketch | Shows the layout and core functionality of a user interface. | UX/UI design, product design, frontend development 
+ Gantt Chart | Project planning chart | Shows task durations, schedules, and dependencies. | Project management, product management, operations planning 
+
+
 
 ### 1.1. How to draw a Sequence Diagram using PlantUML
 
