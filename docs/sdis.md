@@ -166,13 +166,13 @@ found_service()
 # my_services.clear()
 ```
 
-    Give an ID (number or unique value)... 99
-    Please specify the name Hamburg Buildings
-    Please specify the Url of SDI transparenz.hamburg.de
-    Please specify the URL of WMS Service geodienste.hamburg.de/wms/building?
+    Give an ID (number or unique value)... 1
+    Please specify the name map
+    Please specify the Url of SDI https://example.com/geoserver
+    Please specify the URL of WMS Service https://example.com/geoserver/wms
 
 
-    {'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, '99': {'name': 'Hamburg Buildings', 'Url of SDI': 'transparenz.hamburg.de', 'URL of WMS Service': 'geodienste.hamburg.de/wms/building?'}}
+    {'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, '1': {'name': 'map', 'Url of SDI': 'https://example.com/geoserver', 'URL of WMS Service': 'https://example.com/geoserver/wms'}}
 
 
 - [ ] **Save the code** above as "service_selection.py" into "raw_codes/sdis" directory.
@@ -203,7 +203,29 @@ print(srv.keys)
 # srv.my_services.clear()
 ```
 
-    ['name', 'Url of SDI', 'URL of WMS Service']
+
+    ---------------------------------------------------------------------------
+
+    ModuleNotFoundError                       Traceback (most recent call last)
+
+    Cell In[4], line 8
+          1 # When you save a python file contains classes, functions and variables into another folder
+          2 # , this folder with its contents can be called as a "python module".
+          3 
+       (...)
+          6 
+          7 # Method 1
+    ----> 8 from raw_codes.sdis import service_selection as srv
+          9 print(srv.keys)
+         11 # Method 2
+         12 # from raw_codes.sdis.service_selection import keys, my_services, add_to_store, found_service
+         13 # print(keys)
+       (...)
+         16 # srv.found_service() 
+         17 # srv.my_services.clear()
+
+
+    ModuleNotFoundError: No module named 'raw_codes'
 
 
 <blockquote> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
@@ -512,12 +534,12 @@ list(mytest.operations)
 
 
 
-    [<owslib.map.wms130.OperationMetadata at 0x7f8fa9e92390>,
-     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e924b0>,
-     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e92600>,
-     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e92690>,
-     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e92720>,
-     <owslib.map.wms130.OperationMetadata at 0x7f8fa9e927b0>]
+    [<owslib.map.wms130.OperationMetadata at 0x7687941ac6e0>,
+     <owslib.map.wms130.OperationMetadata at 0x7687941ac410>,
+     <owslib.map.wms130.OperationMetadata at 0x7687941ac890>,
+     <owslib.map.wms130.OperationMetadata at 0x7687941ac920>,
+     <owslib.map.wms130.OperationMetadata at 0x7687941ac9b0>,
+     <owslib.map.wms130.OperationMetadata at 0x7687941aca70>]
 
 
 
@@ -561,7 +583,7 @@ print('Layer Style : ', mytest['WMS_DGM1_HAMBURG'].styles, '\n')
 print('Supported Formats : ', mytest.getOperationByName('GetMap').formatOptions)
 ```
 
-    CRS Options :  ['EPSG:4647', 'EPSG:25833', 'EPSG:31467', 'EPSG:25832', 'EPSG:3857', 'EPSG:3044', 'EPSG:4326', 'CRS:84', 'EPSG:4258'] 
+    CRS Options :  ['CRS:84', 'EPSG:31467', 'EPSG:3044', 'EPSG:25833', 'EPSG:4647', 'EPSG:4326', 'EPSG:25832', 'EPSG:3857', 'EPSG:4258'] 
     
     Bounding Box :  (8.482047, 53.385591, 10.355638, 53.941383) 
     
