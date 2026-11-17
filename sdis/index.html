@@ -522,13 +522,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-creating-a-service-selection-tool" class="md-nav__link">
+  <a href="#2-creating-a-service-selection-tool-using-python" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Creating a "Service Selection Tool"
+      2. Creating a Service Selection Tool using Python
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Creating a &#34;Service Selection Tool&#34;">
+    <nav class="md-nav" aria-label="2. Creating a Service Selection Tool using Python">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1205,13 +1205,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-creating-a-service-selection-tool" class="md-nav__link">
+  <a href="#2-creating-a-service-selection-tool-using-python" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Creating a "Service Selection Tool"
+      2. Creating a Service Selection Tool using Python
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Creating a &#34;Service Selection Tool&#34;">
+    <nav class="md-nav" aria-label="2. Creating a Service Selection Tool using Python">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1490,14 +1490,14 @@ murat.kendir@tum.de
 </ul>
 </li>
 <li><a href="#1-finding-the-datasets">1. Finding the datasets</a></li>
-<li><a href="#2-creating-a-service-selection-tool">2. Creating a "Service Selection Tool"</a><ul>
+<li><a href="#2-creating-a-service-selection-tool-using-python">2. Creating a Service Selection Tool using Python</a><ul>
 <li><a href="#21-adding-some-interaction-to-the-tool">2.1. Adding some interaction to the tool</a></li>
 <li><a href="#22-use-the-created-program-in-another-python-program">2.2. Use the created program in another python program</a></li>
 </ul>
 </li>
 <li><a href="#3-datasets">3. Datasets</a><ul>
-<li><a href="#31-building-footprints-grundstück">3.1. Building Footprints (Grundstück)</a></li>
-<li><a href="#32-land-parcels-flurstücke">3.2. Land Parcels (Flurstücke)</a></li>
+<li><a href="#31-building-footprints-grundstuck">3.1. Building Footprints (Grundstück)</a></li>
+<li><a href="#32-land-parcels-flurstucke">3.2. Land Parcels (Flurstücke)</a></li>
 <li><a href="#33-digital-elevation-model-dem-hohenmodell">3.3. Digital Elevation Model (DEM / Höhenmodell)</a></li>
 <li><a href="#34-flood-risk-zones">3.4. Flood Risk Zones</a></li>
 </ul>
@@ -1556,7 +1556,7 @@ murat.kendir@tum.de
 <li>A questionnaire can be set with <strong><code>input("Enter a custom name")</code></strong> function.</li>
 </ul>
 <h2 id="1-finding-the-datasets">1. Finding the datasets</h2>
-<p>Global Sea Level is rising at an increasing rate every year, causing floods to occur more frequently all over the world. This forces local (or regional) governments to take measures against future floods. <b>Suppose you are responsible for preparing a disaster management application in Hamburg.</b> This application will calculate the flood risk for a specific building and generate a report with information on the extent of the risk and the relevant land parcel number. For this purpose, you need to find the most suitable geographic data services using the <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a>, <a href="https://geoportal.de">geoportal.de</a> and <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a>. Imagine that these datasets should contain the following data layers: </p>
+<p>Global Sea Level is rising at an increasing rate every year, causing floods to occur more frequently all over the world. This forces local (or regional) governments to take measures against future floods. <b>Suppose you are responsible for preparing a disaster management application in Hamburg.</b> This application will calculate the flood risk for a specific building and generate a report with information on the extent of the risk and the relevant land parcel number. For this purpose, you need to find the most suitable geographic data services using the <a href="https://data.europa.eu">Official Data Portal (formerly known as INSPIRE Geoportal)</a>, <a href="https://geoportal.de">geoportal.de</a> and <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a>. Imagine that these datasets should contain the following data layers: </p>
 <ul>
     <li>Buildings footprints (DE: Gebeaude Grundstücke) | (will be searched for in the Section 3a)</li>
     <li>Land Parcels (DE: Flurstück)</li>
@@ -1573,7 +1573,7 @@ murat.kendir@tum.de
 </figure>
 </div>
 
-<h2 id="2-creating-a-service-selection-tool">2. Creating a "Service Selection Tool"</h2>
+<h2 id="2-creating-a-service-selection-tool-using-python">2. Creating a Service Selection Tool using Python</h2>
 <p>Before you start examining the given Spatial Data Infrastructures (SDIs), you will set up a function in python that makes it easy to store the names, links and additional information of the services.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># In Python, there is no need to specify the variable data type.</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># However, you can still use type conversion methods or shortcuts to specify the data type.</span>
@@ -1638,13 +1638,13 @@ To do that, we can implement another function which runs an input command for ev
 <a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="n">found_service</span><span class="p">()</span>
 <a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="c1"># my_services.clear()</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Give an ID (number or unique value)... 99
-Please specify the name Hamburg Buildings
-Please specify the Url of SDI transparenz.hamburg.de
-Please specify the URL of WMS Service geodienste.hamburg.de/wms/building?
+<div class="highlight"><pre><span></span><code>Give an ID (number or unique value)... fllod_risk_1
+Please specify the name Flood Risk Germany
+Please specify the Url of SDI https://geoportal.bafg.de/arcgis1/services/INSPIRE/NZ/MapServer/WMSServer?
+Please specify the URL of WMS Service https://geoportal.bafg.de/arcgis1/services/INSPIRE/NZ/MapServer/WMSServer?
 
 
-{&#39;0&#39;: {&#39;name&#39;: None, &#39;Url of SDI&#39;: None, &#39;URL of WMS Service&#39;: None}, &#39;99&#39;: {&#39;name&#39;: &#39;Hamburg Buildings&#39;, &#39;Url of SDI&#39;: &#39;transparenz.hamburg.de&#39;, &#39;URL of WMS Service&#39;: &#39;geodienste.hamburg.de/wms/building?&#39;}}
+{&#39;0&#39;: {&#39;name&#39;: None, &#39;Url of SDI&#39;: None, &#39;URL of WMS Service&#39;: None}, &#39;fllod_risk_1&#39;: {&#39;name&#39;: &#39;Flood Risk Germany&#39;, &#39;Url of SDI&#39;: &#39;https://geoportal.bafg.de/arcgis1/services/INSPIRE/NZ/MapServer/WMSServer?&#39;, &#39;URL of WMS Service&#39;: &#39;https://geoportal.bafg.de/arcgis1/services/INSPIRE/NZ/MapServer/WMSServer?&#39;}}
 </code></pre></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> <strong>Save the code</strong> above as "service_selection.py" into "raw_codes/sdis" directory.</li>
@@ -1672,7 +1672,14 @@ Please specify the URL of WMS Service geodienste.hamburg.de/wms/building?
 <a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># srv.found_service() </span>
 <a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># srv.my_services.clear()</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>[&#39;name&#39;, &#39;Url of SDI&#39;, &#39;URL of WMS Service&#39;]
+<div class="highlight"><pre><span></span><code>Give an ID (number or unique value)... 1
+Please specify the name sad
+Please specify the Url of SDI https://eudata
+Please specify the URL of WMS Service FllodRisk/WMs
+
+
+{&#39;0&#39;: {&#39;name&#39;: None, &#39;Url of SDI&#39;: None, &#39;URL of WMS Service&#39;: None}, &#39;1&#39;: {&#39;name&#39;: &#39;sad&#39;, &#39;Url of SDI&#39;: &#39;https://eudata&#39;, &#39;URL of WMS Service&#39;: &#39;FllodRisk/WMs&#39;}}
+[&#39;name&#39;, &#39;Url of SDI&#39;, &#39;URL of WMS Service&#39;]
 </code></pre></div>
 <blockquote> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
 
@@ -1716,10 +1723,7 @@ Please specify the URL of WMS Service geodienste.hamburg.de/wms/building?
 </div>
 
 <h3 id="33-digital-elevation-model-dem-hohenmodell">3.3. Digital Elevation Model (DEM / Höhenmodell)</h3>
-<p>Visit the web site <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> and search for the <strong>Digital Elevation Model</strong> available for the Hamburg city.
-- Click to "Browse INSPIRE Thematic Datasets".
-- Click to "INSPIRE Data Themes"
-- Find the relevant theme on this page and select the country on the following web page.</p>
+<p>Visit the web site <a href="https://data.europa.eu">EU Official Data Portal</a> and search for the <strong>Digital Elevation Model</strong> available for the Hamburg city.</p>
 <p>Explore possible answers to the following questions:
 - [ ] Where is the service URL? (Please find the “Copy” icon under the “Preview Dataset” button.)
 - [ ] What kind of services are available in the theme? 
@@ -1734,18 +1738,16 @@ Please specify the URL of WMS Service geodienste.hamburg.de/wms/building?
 </div>
 
 <h3 id="34-flood-risk-zones">3.4. Flood Risk Zones</h3>
-<p>Visit the web site <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a> again and search for the <strong>flood risk zones</strong> available for the Hamburg city.</p>
+<p>Visit the web site <a href="https://data.europa.eu">EU Official Data Portal</a> again and search for the <strong>flood risk zones</strong> available for the Hamburg city.</p>
 <ul>
-<li>Click to "Browse Priority Data Sets".</li>
-<li>Click to "Environmental Domains".</li>
-<li>Click to "Water".</li>
-<li>Select the country and search with following possible words / tags:</li>
+<li>Search for "Environment" in the the Filter options "Categories"</li>
+<li>Search with following possible words / tags:</li>
 <li>Wasserrahmenrichtlinie (Water Framework Directive)</li>
 <li>Gewässer (Water Bodies)</li>
 <li>Hochwasserrisikos (Flood Risks)</li>
 <li>Fließgewässern (Watercourses)</li>
 </ul>
-<blockquote>TIP: Please find the “Copy” icon under the “Preview Dataset” button to find the service URLs.</blockquote>
+<blockquote>TIP: Click to the small triangles next the title name of the provided layer names and find the "Access URL"s. You can use these URLs to test the provided datasets on a GIS application.</blockquote>
 
 <p>Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “<strong>found_service()</strong>” function.</p>
@@ -1937,12 +1939,12 @@ If you are sure about the data is an iterable object (tuple, set, list, dictiona
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">list</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">operations</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e92390&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e924b0&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e92600&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e92690&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e92720&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7f8fa9e927b0&gt;]
+<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x76ba54e74dd0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x76ba54e74ef0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x76ba54e75040&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x76ba54e750d0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x76ba54e75160&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x76ba54e751f0&gt;]
 </code></pre></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> As operations stored as objects in a list (array), we can access them using list index (For Exp. mylist[0]). Then you can check the available methods or attributes in the class instance by typing <code>dir(mytest.operations[0])</code>. </li>
@@ -1979,7 +1981,7 @@ GetStyles
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Layer Style : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="p">[</span><span class="s1">&#39;WMS_DGM1_HAMBURG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">styles</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 <a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Supported Formats : &#39;</span><span class="p">,</span> <span class="n">mytest</span><span class="o">.</span><span class="n">getOperationByName</span><span class="p">(</span><span class="s1">&#39;GetMap&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">formatOptions</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>CRS Options :  [&#39;EPSG:4647&#39;, &#39;EPSG:25833&#39;, &#39;EPSG:31467&#39;, &#39;EPSG:25832&#39;, &#39;EPSG:3857&#39;, &#39;EPSG:3044&#39;, &#39;EPSG:4326&#39;, &#39;CRS:84&#39;, &#39;EPSG:4258&#39;]
+<div class="highlight"><pre><span></span><code>CRS Options :  [&#39;EPSG:4647&#39;, &#39;EPSG:31467&#39;, &#39;EPSG:25833&#39;, &#39;EPSG:25832&#39;, &#39;CRS:84&#39;, &#39;EPSG:3044&#39;, &#39;EPSG:4258&#39;, &#39;EPSG:3857&#39;, &#39;EPSG:4326&#39;]
 
 Bounding Box :  (8.482047, 53.385591, 10.355638, 53.941383)
 
