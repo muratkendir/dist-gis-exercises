@@ -16,12 +16,12 @@ murat.kendir@tum.de
     - [0.1. General Preparation](#01-general-preparation)
     - [0.2. Python Tips](#02-python-tips)
 - [1. Finding the datasets](#1-finding-the-datasets)
-- [2. Creating a "Service Selection Tool"](#2-creating-a-service-selection-tool)
+- [2. Creating a Service Selection Tool using Python](#2-creating-a-service-selection-tool-using-python)
     - [2.1. Adding some interaction to the tool](#21-adding-some-interaction-to-the-tool)
     - [2.2. Use the created program in another python program](#22-use-the-created-program-in-another-python-program)
 - [3. Datasets](#3-datasets)
-    - [3.1. Building Footprints (Grundstück)](#31-building-footprints-grundstück)
-    - [3.2. Land Parcels (Flurstücke)](#32-land-parcels-flurstücke)
+    - [3.1. Building Footprints (Grundstück)](#31-building-footprints-grundstuck)
+    - [3.2. Land Parcels (Flurstücke)](#32-land-parcels-flurstucke)
     - [3.3. Digital Elevation Model (DEM / Höhenmodell)](#33-digital-elevation-model-dem-hohenmodell)
     - [3.4. Flood Risk Zones](#34-flood-risk-zones)
 - [4. Adding Services to GIS Software](#4-adding-services-to-gis-software)
@@ -74,7 +74,7 @@ You can refer to the following resources when needed:
 
 ## 1. Finding the datasets
 
-Global Sea Level is rising at an increasing rate every year, causing floods to occur more frequently all over the world. This forces local (or regional) governments to take measures against future floods. <b>Suppose you are responsible for preparing a disaster management application in Hamburg.</b> This application will calculate the flood risk for a specific building and generate a report with information on the extent of the risk and the relevant land parcel number. For this purpose, you need to find the most suitable geographic data services using the <a href="https://inspire-geoportal.ec.europa.eu">INSPIRE Geoportal</a>, <a href="https://geoportal.de">geoportal.de</a> and <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a>. Imagine that these datasets should contain the following data layers: 
+Global Sea Level is rising at an increasing rate every year, causing floods to occur more frequently all over the world. This forces local (or regional) governments to take measures against future floods. <b>Suppose you are responsible for preparing a disaster management application in Hamburg.</b> This application will calculate the flood risk for a specific building and generate a report with information on the extent of the risk and the relevant land parcel number. For this purpose, you need to find the most suitable geographic data services using the <a href="https://data.europa.eu">Official Data Portal (formerly known as INSPIRE Geoportal)</a>, <a href="https://geoportal.de">geoportal.de</a> and <a href="https://transparenz.hamburg.de">Hamburg TransparenzPortal</a>. Imagine that these datasets should contain the following data layers: 
 <ul>
     <li>Buildings footprints (DE: Gebeaude Grundstücke) | (will be searched for in the Section 3a)</li>
     <li>Land Parcels (DE: Flurstück)</li>
@@ -91,7 +91,7 @@ Global Sea Level is rising at an increasing rate every year, causing floods to o
 </figure>
 </div>
 
-## 2. Creating a "Service Selection Tool"
+## 2. Creating a Service Selection Tool using Python
 Before you start examining the given Spatial Data Infrastructures (SDIs), you will set up a function in python that makes it easy to store the names, links and additional information of the services.
 
 
@@ -166,13 +166,13 @@ found_service()
 # my_services.clear()
 ```
 
-    Give an ID (number or unique value)... 1
-    Please specify the name map
-    Please specify the Url of SDI https://example.com/geoserver
-    Please specify the URL of WMS Service https://example.com/geoserver/wms
+    Give an ID (number or unique value)... fllod_risk_1
+    Please specify the name Flood Risk Germany
+    Please specify the Url of SDI https://geoportal.bafg.de/arcgis1/services/INSPIRE/NZ/MapServer/WMSServer?
+    Please specify the URL of WMS Service https://geoportal.bafg.de/arcgis1/services/INSPIRE/NZ/MapServer/WMSServer?
 
 
-    {'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, '1': {'name': 'map', 'Url of SDI': 'https://example.com/geoserver', 'URL of WMS Service': 'https://example.com/geoserver/wms'}}
+    {'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, 'fllod_risk_1': {'name': 'Flood Risk Germany', 'Url of SDI': 'https://geoportal.bafg.de/arcgis1/services/INSPIRE/NZ/MapServer/WMSServer?', 'URL of WMS Service': 'https://geoportal.bafg.de/arcgis1/services/INSPIRE/NZ/MapServer/WMSServer?'}}
 
 
 - [ ] **Save the code** above as "service_selection.py" into "raw_codes/sdis" directory.
@@ -203,29 +203,14 @@ print(srv.keys)
 # srv.my_services.clear()
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    ModuleNotFoundError                       Traceback (most recent call last)
-
-    Cell In[4], line 8
-          1 # When you save a python file contains classes, functions and variables into another folder
-          2 # , this folder with its contents can be called as a "python module".
-          3 
-       (...)
-          6 
-          7 # Method 1
-    ----> 8 from raw_codes.sdis import service_selection as srv
-          9 print(srv.keys)
-         11 # Method 2
-         12 # from raw_codes.sdis.service_selection import keys, my_services, add_to_store, found_service
-         13 # print(keys)
-       (...)
-         16 # srv.found_service() 
-         17 # srv.my_services.clear()
+    Give an ID (number or unique value)... 1
+    Please specify the name sad
+    Please specify the Url of SDI https://eudata
+    Please specify the URL of WMS Service FllodRisk/WMs
 
 
-    ModuleNotFoundError: No module named 'raw_codes'
+    {'0': {'name': None, 'Url of SDI': None, 'URL of WMS Service': None}, '1': {'name': 'sad', 'Url of SDI': 'https://eudata', 'URL of WMS Service': 'FllodRisk/WMs'}}
+    ['name', 'Url of SDI', 'URL of WMS Service']
 
 
 <blockquote> TIP : You may notice that importing a library into existing python code is very similar to importing an additional python program. This is so because the import command looks for multiple sources in a order. First it tries to find a python file, then it looks for the corresponding python file in the directories defined as the PYTHONPATH environment variable. To see the defined paths in your system import the library <b>sys</b> and print out <b>sys.path</b> object.</blockquote>
@@ -281,10 +266,7 @@ Finally:
 
 ### 3.3. Digital Elevation Model (DEM / Höhenmodell)
 
-Visit the web site [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu) and search for the **Digital Elevation Model** available for the Hamburg city.
-- Click to "Browse INSPIRE Thematic Datasets".
-- Click to "INSPIRE Data Themes"
-- Find the relevant theme on this page and select the country on the following web page.
+Visit the web site [EU Official Data Portal](https://data.europa.eu) and search for the **Digital Elevation Model** available for the Hamburg city.
 
 Explore possible answers to the following questions:
 - [ ] Where is the service URL? (Please find the “Copy” icon under the “Preview Dataset” button.)
@@ -303,18 +285,16 @@ Finally:
 
 ### 3.4. Flood Risk Zones
 
-Visit the web site [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu) again and search for the **flood risk zones** available for the Hamburg city.
+Visit the web site [EU Official Data Portal](https://data.europa.eu) again and search for the **flood risk zones** available for the Hamburg city.
 
-- Click to "Browse Priority Data Sets".
-- Click to "Environmental Domains".
-- Click to "Water".
-- Select the country and search with following possible words / tags:
+- Search for "Environment" in the the Filter options "Categories"
+- Search with following possible words / tags:
   - Wasserrahmenrichtlinie (Water Framework Directive)
   - Gewässer (Water Bodies)
   - Hochwasserrisikos (Flood Risks)
   - Fließgewässern (Watercourses)
 
-<blockquote>TIP: Please find the “Copy” icon under the “Preview Dataset” button to find the service URLs.</blockquote>
+<blockquote>TIP: Click to the small triangles next the title name of the provided layer names and find the "Access URL"s. You can use these URLs to test the provided datasets on a GIS application.</blockquote>
 
 Finally: 
 - [ ] If you think you have found a web service that suits your purpose, run the “**found_service()**” function.
@@ -534,12 +514,12 @@ list(mytest.operations)
 
 
 
-    [<owslib.map.wms130.OperationMetadata at 0x7687941ac6e0>,
-     <owslib.map.wms130.OperationMetadata at 0x7687941ac410>,
-     <owslib.map.wms130.OperationMetadata at 0x7687941ac890>,
-     <owslib.map.wms130.OperationMetadata at 0x7687941ac920>,
-     <owslib.map.wms130.OperationMetadata at 0x7687941ac9b0>,
-     <owslib.map.wms130.OperationMetadata at 0x7687941aca70>]
+    [<owslib.map.wms130.OperationMetadata at 0x76ba54e74dd0>,
+     <owslib.map.wms130.OperationMetadata at 0x76ba54e74ef0>,
+     <owslib.map.wms130.OperationMetadata at 0x76ba54e75040>,
+     <owslib.map.wms130.OperationMetadata at 0x76ba54e750d0>,
+     <owslib.map.wms130.OperationMetadata at 0x76ba54e75160>,
+     <owslib.map.wms130.OperationMetadata at 0x76ba54e751f0>]
 
 
 
@@ -583,7 +563,7 @@ print('Layer Style : ', mytest['WMS_DGM1_HAMBURG'].styles, '\n')
 print('Supported Formats : ', mytest.getOperationByName('GetMap').formatOptions)
 ```
 
-    CRS Options :  ['CRS:84', 'EPSG:31467', 'EPSG:3044', 'EPSG:25833', 'EPSG:4647', 'EPSG:4326', 'EPSG:25832', 'EPSG:3857', 'EPSG:4258'] 
+    CRS Options :  ['EPSG:4647', 'EPSG:31467', 'EPSG:25833', 'EPSG:25832', 'CRS:84', 'EPSG:3044', 'EPSG:4258', 'EPSG:3857', 'EPSG:4326'] 
     
     Bounding Box :  (8.482047, 53.385591, 10.355638, 53.941383) 
     
