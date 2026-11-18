@@ -51,5 +51,5 @@ def found_service():
     #Note that a list index is very similar to range, but always starts from 0.
     add_to_store(service_id, service_data[0], service_data[1], service_data[2])
 
-found_service()
+# found_service()
 # my_services.clear()

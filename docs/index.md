@@ -22,7 +22,7 @@ Last Updated : WiSe 2026 - 2027
     - [Distributed Systems](distributed_systems.md)
     - [Computer Networks & Internet](networks_internet.md)
 - Exercise 2:
-    - [Docker Usage (Bonus)](docker_usage.md) 
+    - [Docker Usage](docker_usage.md) 
     - [Introduction to Python (Optional)](intro_python.md) 
     - [Spatial Data Infrastructures](sdis.md)
 - Exercise 3:

@@ -17,7 +17,7 @@ Contact: murat.kendir(at)tum.de
     - [Distributed Systems](docs/distributed_systems.md)
     - [Computer Networks & Internet](docs/networks_internet.md)
 - Exercise 2:
-    - [Docker Usage (Bonus)](docs/docker_usage.md) 
+    - [Docker Usage](docs/docker_usage.md) 
     - [Introduction to Python (Optional)](docs/intro_python.md) 
     - [Spatial Data Infrastructures](docs/sdis.md)
 - Exercise 3:
