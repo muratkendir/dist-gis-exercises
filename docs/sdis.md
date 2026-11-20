@@ -558,12 +558,12 @@ list(mytest.operations)
 
 
 
-    [<owslib.map.wms130.OperationMetadata at 0x7029dac1ca40>,
-     <owslib.map.wms130.OperationMetadata at 0x7029dac1e960>,
-     <owslib.map.wms130.OperationMetadata at 0x7029dac1e990>,
-     <owslib.map.wms130.OperationMetadata at 0x7029dac1ea20>,
-     <owslib.map.wms130.OperationMetadata at 0x7029dac1ddf0>,
-     <owslib.map.wms130.OperationMetadata at 0x7029dac1d940>]
+    [<owslib.map.wms130.OperationMetadata at 0x7b6a42e398b0>,
+     <owslib.map.wms130.OperationMetadata at 0x7b6a42e38fb0>,
+     <owslib.map.wms130.OperationMetadata at 0x7b6a4247c200>,
+     <owslib.map.wms130.OperationMetadata at 0x7b6a4247c2c0>,
+     <owslib.map.wms130.OperationMetadata at 0x7b6a4247c350>,
+     <owslib.map.wms130.OperationMetadata at 0x7b6a4247c3e0>]
 
 
 
@@ -587,6 +587,11 @@ for x in mytest.operations:
 
 
 ```python
+# Use "OS" library to manipulate the worksspace (current directory).
+import os
+# Create the given directory. If it already exists, ignore it.
+os.makedirs("responses/sdis", exist_ok=True)
+
 # type(mytest.getServiceXML())
 # Specify your own relative or full path to save the XML file, if it is required.
 with open("responses/sdis/my_wms_servicexml.xml", "wb") as my_wms_xml:

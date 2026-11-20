@@ -4,11 +4,11 @@
 
 <blockquote>
 Munich Technical University / Chair of Geoinformatics <br> 
-Murat Kendir*, Jicang Zhu, Prof. Thomas Kolbe <br> 
+Murat Kendir*, Rupal Srivastava, Prof. Thomas Kolbe <br> 
 murat.kendir@tum.de
 </blockquote>
 
-<div align="right" style="font-size:0.5em;">v. WiSe 2025-2026</div>
+<div align="right" style="font-size:0.75em;">v. WiSe 2026-2027</div>
 
 ## Table Of Contents
 
@@ -75,6 +75,8 @@ In this exercise, you will learn how to access similar data sources (web service
 ```python
 # Import the native "requests" library to send a request to the web source.
 import requests
+# Import the "OS" library to create/edit/delete folders and files.
+import os
 
 # Replace the URL in the following code with your selected URL
 mydata = requests.get("https://intergeo33.bayernwolke.de/betty/c_hist/13/4197/4598")
@@ -164,9 +166,6 @@ TIP: The reason for using "open" function via "with" is that the file should be 
 
 ```python
 import requests
-
-# Detect the current OS and change the relative paths regarding to it.
-import os
 
 # "os.pardir" is used to choosing the right syntax for navigating to parent directory (for linux it is  "../" )
 # "os.path.join" method is used to join directories to specify the relative path for the file output
@@ -412,7 +411,6 @@ type(my_object)
 ```python
 import json
 import requests
-import os
 
 export_folder = os.path.join('responses','intro_python') + os.path.sep
 
