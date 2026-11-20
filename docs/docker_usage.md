@@ -83,7 +83,7 @@ Open the following website:
         - [ ] `hostname -i` (Since the container is based on a minimal unix-based system, it may not support the `ip` or `ifconfig` commands)
         - [ ] `uname --all`
 
-<figure style="width:%100;text-align: center;">
+<figure style="width:100%;text-align:center;">
   <img src="../images/docker_usage/iximiuz_docker_container.png" alt="Play with Docker" style="border:3px solid darkgray">
   <figcaption>Iximiuz Docker Playground</figcaption>
 </figure>
@@ -165,7 +165,7 @@ Follow the next steps if you want to download and install the Docker Desktop or 
 
 ### 2.3. What actually happens after executing the "docker run" command?
 
-- The Docker app checked if the requested image (grafana/grafana:latest) already exists in our host machine. 
+- The Docker app checked if the requested image (grafana/grafana:12.4.1) already exists in our host machine. 
 - If it is not available, it tries to download it from **Docker Hub** by searching for the same image name.
 
 - [ ] Visit the Docker Hub page and search for our image manually:
@@ -189,7 +189,7 @@ Follow the next steps if you want to download and install the Docker Desktop or 
 If you see multiple Docker containers running and a number of irrelevant Docker images on your system, you can remove them by following the instructions below. If not, you can move on to the next topic.
 
 - [ ] Try deleting the image:
-  - ```docker rmi grafana/grafana:latest```
+  - ```docker rmi grafana/grafana:12.4.1```
 - [ ] When an image is referenced to a container, the terminal will show an error and the container may still be running. So what we need to do is first stop the running container and then remove the referenced container:
   - ```docker stop CONTAINER_NAME```
   - or alternatively use the container ID shown in
@@ -202,7 +202,7 @@ If you see multiple Docker containers running and a number of irrelevant Docker 
   - or alternatively with Container ID:
     - ```docker rm 829224beac3f``` (container IDs are not predefined/fixed numbers, try to find the container IDs running on your system and replace them with the given one.)
 - [ ] Finally, remove the image from your instance:
-  - ```docker rmi grafana/grafana:latest```
+  - ```docker rmi grafana/grafana:12.4.1```
 
 ### 2.5. Docker Cheatsheet and the Relevance between linux commands
 
