@@ -1980,12 +1980,12 @@ There are multiple ways to do so:</p>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">list</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">operations</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x7029dac1ca40&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7029dac1e960&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7029dac1e990&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7029dac1ea20&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7029dac1ddf0&gt;,
- &lt;owslib.map.wms130.OperationMetadata at 0x7029dac1d940&gt;]
+<div class="highlight"><pre><span></span><code>[&lt;owslib.map.wms130.OperationMetadata at 0x7b6a42e398b0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7b6a42e38fb0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7b6a4247c200&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7b6a4247c2c0&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7b6a4247c350&gt;,
+ &lt;owslib.map.wms130.OperationMetadata at 0x7b6a4247c3e0&gt;]
 </code></pre></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> As operations stored as objects in a list (array), we can access them using list index (For Exp. mylist[0]). Then you can check the available methods or attributes in the class instance by typing <code>dir(mytest.operations[0])</code>. </li>
@@ -2003,10 +2003,15 @@ GetStyles
 <ul>
 <li>Alternatively, you can inspect the webservice using the <code>getServiceXML</code> method. Please note that the result will be returned as a binary file in XML format. This means that you have to consider the binary format if you want to store or read the returned object as a file. For example, we specified the file mode as "wb" (Write + Binary) in the following code, because the object <code>mytest.getServiceXML()</code> was in bytes format, not a string. </li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># type(mytest.getServiceXML())</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c1"># Specify your own relative or full path to save the XML file, if it is required.</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/sdis/my_wms_servicexml.xml&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_wms_xml</span><span class="p">:</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>        <span class="n">my_wms_xml</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">getServiceXML</span><span class="p">())</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Use &quot;OS&quot; library to manipulate the worksspace (current directory).</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1"># Create the given directory. If it already exists, ignore it.</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">&quot;responses/sdis&quot;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># type(mytest.getServiceXML())</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># Specify your own relative or full path to save the XML file, if it is required.</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;responses/sdis/my_wms_servicexml.xml&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_wms_xml</span><span class="p">:</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        <span class="n">my_wms_xml</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mytest</span><span class="o">.</span><span class="n">getServiceXML</span><span class="p">())</span>
 </code></pre></div>
 <ul>
 <li>Check the saved XML file and try to find where the layers, bounding boxes or coordinate reference systems (CRSs) are defined.</li>
